@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import TextBoxes from './TextBoxes';
+import Headers from './Headers';
+import NameInput from './NameInput';
 
 class Form extends Component {
   constructor() {
@@ -9,7 +10,8 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <TextBoxes/>
+        <Headers/>
+        <NameInput/>
       </div>
     );
   };

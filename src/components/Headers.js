@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import SubHeader from './SubHeader';
 
-const TextBoxes = () => {
+const Headers = () => {
   return (
     <div>
       <Header/>
@@ -11,4 +11,4 @@ const TextBoxes = () => {
   );
 };
 
-export default TextBoxes;
+export default Headers;
