@@ -1,11 +1,11 @@
 import React from 'react';
-import Head from "./styledComponents/header.js";
+import Title from "./styledComponents/titles.js";
 
 const Header = () => {
   return (
-    <Head>
+    <Title>
       Slath!
-    </Head>
+    </Title>
   );
 };
 

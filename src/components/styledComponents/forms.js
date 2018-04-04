@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.body`
+const Content = styled.form`
   margin: 5em;
+  padding: 2em;
   text-align: center;
 `;
 
-export default Wrapper;
+export default Content;

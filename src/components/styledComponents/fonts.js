@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const FontFamily = styled.text`
+const Font = styled.text`
   font-family: "Fontdiner Swanky";
 `;
 
-export default FontFamily;
+export default Font;

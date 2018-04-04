@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Headers from './Headers';
 import NameInputUnit from './NameInputUnit';
-import Pagebox from './styledComponents/form.js'
+import Content from "./styledComponents/forms.js";
 
 
 class Form extends Component {
@@ -27,13 +27,13 @@ class Form extends Component {
 
   render() {
     return (
-      <Pagebox>
+      <Content>
         <Headers/>
           <NameInputUnit
           handleNameInput = {this.handleNameInput}
           handleNameSubmitted = {this.handleNameSubmitted}
         />
-      </Pagebox>
+      </Content>
     );
   };
 }
