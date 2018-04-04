@@ -5,6 +5,7 @@ import Form from '../../components/Form';
 describe('Form', () => {
   let form = shallow(<Form />);
 
+
   describe('Rendering components', () => {
 
     it('renders correctly', () => {
@@ -18,6 +19,10 @@ describe('Form', () => {
     it('renders a NameInputUnit component', () => {
       expect(form.find('NameInputUnit').exists()).toBe(true);
     });
+  });
+
+
+  describe('initializes state successfully', () => {
 
     it('initializes nameSubmitted as false', () => {
       expect(form.state('nameSubmitted')).toEqual(false);
@@ -26,7 +31,22 @@ describe('Form', () => {
     it('initializes name as null', () => {
       expect(form.state('name')).toEqual(null);
     });
+  });
 
+
+  describe('Props are successfully passed down to NameInputUnit component', () => {
+
+    it('passes handleNameInput', () => {
+      expect(form.find('NameInputUnit').prop('handleNameInput')).toBe(form.instance().handleNameInput);
+    });
+
+    it('passes handleNameSubmitted', () => {
+      expect(form.find('NameSubmitted').prop('handleNameSubmitted')).toBe(form.instance().handleNameSubmitted);
+    });
 
   })
+
+
+
 });
+

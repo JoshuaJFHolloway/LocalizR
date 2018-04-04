@@ -12,11 +12,11 @@ class Form extends Component {
   }
 
     handleNameInput = event =>
-      this.setState({ name: event.target.value });
+      this.setState ({ name: event.target.value });
 
 
     handleNameSubmitted = () => {
-      this.setState({
+      this.setState ({
         nameSubmitted: true,
         name: this.state
       })
