@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import ChooseLanguage from '../../components/ChooseLanguage';
 
 describe('ChooseLanguage', () => {
-  const chooselanguage = shallow(<ChooseLanguage />);
+  let chooselanguage = shallow(<ChooseLanguage />);
 
   it('renders correctly', () => {
     expect(chooselanguage).toMatchSnapshot();
