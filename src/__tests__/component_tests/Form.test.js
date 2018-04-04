@@ -45,5 +45,15 @@ describe('Form', () => {
     });
   });
 
+  describe('Updating state successfully', () => {
+
+    it('updates the state of the name when someone types in the box', () => {
+      const event = { target: { name: 'name', value: 'Augustus' } };
+      form.instance().handleNameInput(event);
+      expect(form.state('name')).toEqual('Augustus');
+    })
+  });
+
+
 });
 

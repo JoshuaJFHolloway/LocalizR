@@ -7,7 +7,7 @@ class Form extends Component {
     super();
     this.state = {
       nameSubmitted: false, // button clicked?
-      name: null // null until button clicked to change state
+      name: null // null until person starts typing in box
     };
   }
 
