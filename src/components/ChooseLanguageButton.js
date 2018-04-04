@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ChooseLanguageButton = () => {
+const ChooseLanguageButton = props => {
   return (
-    <button> Spanish </button>
+    <button onClick={props.handleSpanishSubmitted}>Spanish</button>
   );
 };
 

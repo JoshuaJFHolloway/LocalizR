@@ -17,10 +17,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": " Spanish ",
+      "children": "Spanish",
+      "onClick": undefined,
     },
     "ref": null,
-    "rendered": " Spanish ",
+    "rendered": "Spanish",
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +30,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": " Spanish ",
+        "children": "Spanish",
+        "onClick": undefined,
       },
       "ref": null,
-      "rendered": " Spanish ",
+      "rendered": "Spanish",
       "type": "button",
     },
   ],

@@ -21,7 +21,15 @@ describe('ChooseLanguage', () => {
   });
 
   describe('initializes state succesfully', () => {
-    expect(chooselanguage.state('spanish')).toEqual(null);
-  })
+    it('initializes spanish as null', () => {
+      expect(chooselanguage.state('spanish')).toEqual(null);
+    });
+  });
+
+  describe('Props successfully passing down to the ChooseLanguage component', () => {
+    it('passes handleSpanishSubmitted', () => {
+      expect(chooselanguage.find('ChooseLanguageButton').prop('handleSpanishSubmitted')).toBe(chooselanguage.instance().handleSpanishSubmitted);
+    });
+  });
 
 });

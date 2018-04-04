@@ -7,17 +7,23 @@ class ChooseLanguage extends Component {
     super();
     this.state = {
       spanish: null
-    }
+    };
+  };
+
+  handleSpanishSubmitted = () => {
+    this.setState ({ spanish: true })
   };
 
   render() {
     return (
       <div>
         <ChooseLanguageHeader />
-        <ChooseLanguageButton />
+        <ChooseLanguageButton
+          handleSpanishSubmitted = {this.handleSpanishSubmitted}
+        />
       </div>
-    )
-  }
+    );
+  };
 };
 
 export default ChooseLanguage;
