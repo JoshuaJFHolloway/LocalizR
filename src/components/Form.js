@@ -9,7 +9,7 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      dataSubmitted: false, // (will dictate whether next page loads)
+      // dataSubmitted: false, // (will dictate whether next page loads)
       Username: null, // (this will be pushed to database)
       Email: null, // (this will be pushed to database)
       Password: null // (this will be pushed to database)
@@ -29,11 +29,11 @@ class Form extends Component {
     };
 
 
-    handleDataSubmitted = () => {
-        this.setState({
-          dataSubmitted: true
-        });
-      };
+    // handleDataSubmitted = () => {
+    //     this.setState({
+    //       dataSubmitted: true
+    //     });
+    //   };
 
 
   // const VIEWS = {
@@ -79,7 +79,7 @@ class Form extends Component {
           input={"Password"}
         />
         <SubmitButton
-          handleDataSubmitted = {this.handleDataSubmitted}
+          handleDataSubmitted = {this.props.handleDataSubmitted} // use this.props when passing on props to another comp
         />
       </div>
     );

@@ -38,7 +38,7 @@ ShallowWrapper {
           value={null}
 />,
         <SubmitButton
-          handleDataSubmitted={[Function]}
+          handleDataSubmitted={undefined}
 />,
       ],
     },
@@ -100,7 +100,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleDataSubmitted": [Function],
+          "handleDataSubmitted": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -136,7 +136,7 @@ ShallowWrapper {
             value={null}
 />,
           <SubmitButton
-            handleDataSubmitted={[Function]}
+            handleDataSubmitted={undefined}
 />,
         ],
       },
@@ -198,7 +198,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleDataSubmitted": [Function],
+            "handleDataSubmitted": undefined,
           },
           "ref": null,
           "rendered": null,

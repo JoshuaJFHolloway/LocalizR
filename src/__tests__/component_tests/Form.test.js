@@ -28,10 +28,6 @@ describe('Form', () => {
 
   describe('initializes state successfully', () => {
 
-    it('initializes dataSubmitted as false', () => {
-      expect(form.state('dataSubmitted')).toEqual(false);
-    });
-
     it('initializes Username as null', () => {
       expect(form.state('Username')).toEqual(null);
     });
@@ -64,11 +60,6 @@ describe('Form', () => {
       const event = { target: { name: 'Username', value: 'Augustus' } };
       form.instance().handleTextInput(event);
       expect(form.state('Username')).toEqual('Augustus');
-    });
-
-    it('updates the state of dataSubmitted to true', () => {
-      form.instance().handleDataSubmitted();
-      expect(form.state('dataSubmitted')).toEqual(true);
     });
 
   });
