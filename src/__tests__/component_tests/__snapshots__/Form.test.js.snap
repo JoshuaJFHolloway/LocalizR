@@ -21,7 +21,9 @@ ShallowWrapper {
         <Headers />,
         <UsernameInputUnit
           handleUsernameInput={[Function]}
-          handleUsernameSubmitted={[Function]}
+/>,
+        <SubmitButton
+          handleDataSubmitted={[Function]}
 />,
       ],
     },
@@ -42,7 +44,17 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "handleUsernameInput": [Function],
-          "handleUsernameSubmitted": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleDataSubmitted": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -61,7 +73,9 @@ ShallowWrapper {
           <Headers />,
           <UsernameInputUnit
             handleUsernameInput={[Function]}
-            handleUsernameSubmitted={[Function]}
+/>,
+          <SubmitButton
+            handleDataSubmitted={[Function]}
 />,
         ],
       },
@@ -82,7 +96,17 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleUsernameInput": [Function],
-            "handleUsernameSubmitted": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleDataSubmitted": [Function],
           },
           "ref": null,
           "rendered": null,

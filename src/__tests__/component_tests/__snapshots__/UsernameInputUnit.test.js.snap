@@ -22,9 +22,6 @@ ShallowWrapper {
         <UsernameInput
           handleUsernameInput={undefined}
 />,
-        <UsernameSubmit
-          handleUsernameSubmitted={undefined}
-/>,
       ],
     },
     "ref": null,
@@ -49,17 +46,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleUsernameSubmitted": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
     "type": "div",
   },
@@ -73,9 +59,6 @@ ShallowWrapper {
           <UsernameQuestion />,
           <UsernameInput
             handleUsernameInput={undefined}
-/>,
-          <UsernameSubmit
-            handleUsernameSubmitted={undefined}
 />,
         ],
       },
@@ -96,17 +79,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleUsernameInput": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleUsernameSubmitted": undefined,
           },
           "ref": null,
           "rendered": null,

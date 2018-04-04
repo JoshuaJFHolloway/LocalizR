@@ -1,7 +1,6 @@
 import React from 'react'
 import UsernameQuestion from './UsernameQuestion'
 import UsernameInput from './UsernameInput'
-import UsernameSubmit from './UsernameSubmit'
 
 const UsernameInputUnit = props => {
   return (
@@ -9,9 +8,6 @@ const UsernameInputUnit = props => {
       <UsernameQuestion/>
       <UsernameInput
         handleUsernameInput = {props.handleUsernameInput}
-      />
-      <UsernameSubmit
-        handleUsernameSubmitted = {props.handleUsernameSubmitted}
       />
     </div>
   );
