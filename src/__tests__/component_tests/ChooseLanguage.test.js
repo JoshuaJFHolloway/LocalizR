@@ -32,4 +32,12 @@ describe('ChooseLanguage', () => {
     });
   });
 
+  describe('Updates state successfully', () => {
+    
+    it('updates the state of spanish when clicks spanish', () => {
+      chooselanguage.instance().handleSpanishSubmitted();
+      expect(chooselanguage.state('spanish')).toEqual(true);
+    })
+  })
+
 });
