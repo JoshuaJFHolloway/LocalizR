@@ -11,8 +11,12 @@ describe('Form', () => {
       expect(form).toMatchSnapshot();
     });
 
-    it('renders a TextBoxes component', () => {
-      expect(form.find('TextBoxes').exists()).toBe(true);
+    it('renders a Headers component', () => {
+      expect(form.find('Headers').exists()).toBe(true);
+    });
+
+    it('renders a NameInputUnit component', () => {
+      expect(form.find('NameInputUnit').exists()).toBe(true);
     });
 
   })
