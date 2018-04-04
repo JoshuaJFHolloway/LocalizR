@@ -7,8 +7,12 @@ const NameInputUnit = props => {
   return (
     <div>
       <NameQuestion/>
-      <NameInput/>
-      <NameSubmit/>
+      <NameInput
+        handleNameInput = {props.handleNameInput}
+      />
+      <NameSubmit
+        handleNameSubmited = {props.handleNameSubmitted}
+      />
     </div>
   );
 };

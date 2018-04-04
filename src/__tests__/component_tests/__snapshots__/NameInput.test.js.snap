@@ -17,6 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "onChange": undefined,
       "type": "text",
     },
     "ref": null,
@@ -29,6 +30,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "onChange": undefined,
         "type": "text",
       },
       "ref": null,

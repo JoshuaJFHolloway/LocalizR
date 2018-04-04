@@ -2,7 +2,10 @@ import React from 'react';
 
 const NameInput = props => {
   return(
-    <input type="text"/>
+    <input
+      type="text"
+      onChange={props.handleNameInput}
+    />
   )
 };
 

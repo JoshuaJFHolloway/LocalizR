@@ -19,5 +19,14 @@ describe('Form', () => {
       expect(form.find('NameInputUnit').exists()).toBe(true);
     });
 
+    it('initializes nameSubmitted as false', () => {
+      expect(form.state('nameSubmitted')).toEqual(false);
+    });
+
+    it('initializes name as null', () => {
+      expect(form.state('name')).toEqual(null);
+    });
+
+
   })
 });

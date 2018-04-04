@@ -19,8 +19,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <NameQuestion />,
-        <NameInput />,
-        <NameSubmit />,
+        <NameInput
+          handleNameInput={undefined}
+/>,
+        <NameSubmit
+          handleNameSubmited={undefined}
+/>,
       ],
     },
     "ref": null,
@@ -38,7 +42,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "handleNameInput": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -47,7 +53,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "handleNameSubmited": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -63,8 +71,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <NameQuestion />,
-          <NameInput />,
-          <NameSubmit />,
+          <NameInput
+            handleNameInput={undefined}
+/>,
+          <NameSubmit
+            handleNameSubmited={undefined}
+/>,
         ],
       },
       "ref": null,
@@ -82,7 +94,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "handleNameInput": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -91,7 +105,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "handleNameSubmited": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

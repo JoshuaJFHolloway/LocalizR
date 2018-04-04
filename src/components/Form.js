@@ -4,14 +4,33 @@ import NameInputUnit from './NameInputUnit';
 
 class Form extends Component {
   constructor() {
-    super()
+    super();
+    this.state = {
+      nameSubmitted: false, // button clicked?
+      name: null // null until button clicked to change state
+    };
   }
+
+    handleNameInput = event =>
+      this.setState({ name: event.target.value });
+
+
+    handleNameSubmitted = () => {
+      this.setState({
+        nameSubmitted: true,
+        name: this.state
+      })
+    };
+
 
   render() {
     return (
       <div>
         <Headers/>
-        <NameInputUnit/>
+        <NameInputUnit
+          handleNameInput = {this.handleNameInput}
+          handleNameSubmitted = {this.handleNameSubmitted}
+        />
       </div>
     );
   };

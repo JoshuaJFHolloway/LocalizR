@@ -2,7 +2,7 @@ import React from 'react';
 
 const NameSubmit = props => {
   return (
-    <button> Submit </button>
+    <button onClick={props.handleNameSubmitted}> Submit </button>
   );
 };
 

@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": " Submit ",
+      "onClick": undefined,
     },
     "ref": null,
     "rendered": " Submit ",
@@ -30,6 +31,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": " Submit ",
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": " Submit ",
