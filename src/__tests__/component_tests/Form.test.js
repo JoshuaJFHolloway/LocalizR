@@ -5,7 +5,6 @@ import Form from '../../components/Form';
 describe('Form', () => {
   let form = shallow(<Form />);
 
-
   describe('Rendering components', () => {
 
     it('renders correctly', () => {
@@ -21,7 +20,6 @@ describe('Form', () => {
     });
   });
 
-
   describe('initializes state successfully', () => {
 
     it('initializes nameSubmitted as false', () => {
@@ -32,7 +30,6 @@ describe('Form', () => {
       expect(form.state('name')).toEqual(null);
     });
   });
-
 
   describe('Props successfully passing down to the NameInputUnit component', () => {
 
@@ -54,6 +51,4 @@ describe('Form', () => {
     })
   });
 
-
 });
-
