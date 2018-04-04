@@ -11,7 +11,7 @@ const NameInputUnit = props => {
         handleNameInput = {props.handleNameInput}
       />
       <NameSubmit
-        handleNameSubmited = {props.handleNameSubmitted}
+        handleNameSubmitted = {props.handleNameSubmitted}
       />
     </div>
   );

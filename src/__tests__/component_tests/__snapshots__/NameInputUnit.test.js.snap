@@ -23,7 +23,7 @@ ShallowWrapper {
           handleNameInput={undefined}
 />,
         <NameSubmit
-          handleNameSubmited={undefined}
+          handleNameSubmitted={undefined}
 />,
       ],
     },
@@ -54,7 +54,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleNameSubmited": undefined,
+          "handleNameSubmitted": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -75,7 +75,7 @@ ShallowWrapper {
             handleNameInput={undefined}
 />,
           <NameSubmit
-            handleNameSubmited={undefined}
+            handleNameSubmitted={undefined}
 />,
         ],
       },
@@ -106,7 +106,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleNameSubmited": undefined,
+            "handleNameSubmitted": undefined,
           },
           "ref": null,
           "rendered": null,

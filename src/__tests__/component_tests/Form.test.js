@@ -51,9 +51,13 @@ describe('Form', () => {
       const event = { target: { name: 'name', value: 'Augustus' } };
       form.instance().handleNameInput(event);
       expect(form.state('name')).toEqual('Augustus');
-    })
+    });
+
+    it('updates the state of nameSubmitted to true', () => {
+      form.instance().handleNameSubmitted();
+      expect(form.state('nameSubmitted')).toEqual(true);
+    });
+
   });
-
-
 });
 
