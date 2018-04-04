@@ -11,7 +11,7 @@ class Form extends Component {
     };
   }
 
-  //controlled and uncontrolled form fields
+  //controlled and uncontrolled form fields research
 
     handleNameInput = event =>
       this.setState ({ name: event.target.value });
@@ -27,6 +27,9 @@ class Form extends Component {
         nameSubmitted: true,
       })
     };
+
+
+
 
 
   render() {
