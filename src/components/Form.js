@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Headers from './Headers';
-import NameInputUnit from './NameInputUnit';
+import UsernameInputUnit from './UsernameInputUnit';
 
 class Form extends Component {
   constructor() {
@@ -34,7 +34,7 @@ class Form extends Component {
     return (
       <div>
         <Headers/>
-        <NameInputUnit
+        <UsernameInputUnit
           handleUsernameInput = {this.handleUsernameInput}
           handleUsernameSubmitted = {this.handleUsernameSubmitted}
         />

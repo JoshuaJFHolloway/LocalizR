@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Headers />,
-        <NameInputUnit
+        <UsernameInputUnit
           handleUsernameInput={[Function]}
           handleUsernameSubmitted={[Function]}
 />,
@@ -59,7 +59,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Headers />,
-          <NameInputUnit
+          <UsernameInputUnit
             handleUsernameInput={[Function]}
             handleUsernameSubmitted={[Function]}
 />,

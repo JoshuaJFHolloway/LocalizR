@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NameInputUnit Rendering components renders correctly 1`] = `
+exports[`UsernameInputUnit Rendering components renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NameInputUnit />,
+  Symbol(enzyme.__unrendered__): <UsernameInputUnit />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

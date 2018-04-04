@@ -3,7 +3,7 @@ import UsernameQuestion from './UsernameQuestion'
 import UsernameInput from './UsernameInput'
 import UsernameSubmit from './UsernameSubmit'
 
-const NameInputUnit = props => {
+const UsernameInputUnit = props => {
   return (
     <div>
       <UsernameQuestion/>
@@ -17,4 +17,4 @@ const NameInputUnit = props => {
   );
 };
 
-export default NameInputUnit
+export default UsernameInputUnit

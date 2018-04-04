@@ -17,7 +17,7 @@ describe('Form', () => {
     });
 
     it('renders a NameInputUnit component', () => {
-      expect(form.find('NameInputUnit').exists()).toBe(true);
+      expect(form.find('UsernameInputUnit').exists()).toBe(true);
     });
   });
 
@@ -37,11 +37,11 @@ describe('Form', () => {
   describe('Props successfully passing down to the NameInputUnit component', () => {
 
     it('passes handleNameInput', () => {
-      expect(form.find('NameInputUnit').prop('handleNameInput')).toBe(form.instance().handleNameInput);
+      expect(form.find('UsernameInputUnit').prop('handleUsernameInput')).toBe(form.instance().handleUsernameInput);
     });
 
     it('passes handleNameSubmitted', () => {
-      expect(form.find('NameInputUnit').prop('handleNameSubmitted')).toBe(form.instance().handleNameSubmitted);
+      expect(form.find('UsernameInputUnit').prop('handleUsernameSubmitted')).toBe(form.instance().handleUsernameSubmitted);
     });
   });
 

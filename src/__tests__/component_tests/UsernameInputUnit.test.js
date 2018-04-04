@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NameInputUnit from '../../components/NameInputUnit';
+import UsernameInputUnit from '../../components/UsernameInputUnit';
 
-describe('NameInputUnit', () => {
-  let nameinputunit = shallow(<NameInputUnit />);
+describe('UsernameInputUnit', () => {
+  let nameinputunit = shallow(<UsernameInputUnit />);
 
   describe('Rendering components', () => {
 
