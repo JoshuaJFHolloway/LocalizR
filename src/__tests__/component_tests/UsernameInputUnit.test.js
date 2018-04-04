@@ -12,11 +12,11 @@ describe('UsernameInputUnit', () => {
     });
 
     it('renders UsernameQuestion component', () => {
-      expect(nameinputunit.find('UsernameQuestion').exists()).toBe(true);
+      expect(nameinputunit.find('Question').exists()).toBe(true);
     });
 
     it('renders UsernameInput component', () => {
-      expect(nameinputunit.find('UsernameInput').exists()).toBe(true);
+      expect(nameinputunit.find('Input').exists()).toBe(true);
     });
 
   })

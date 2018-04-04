@@ -18,11 +18,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <UsernameQuestion
+        <Question
           name={undefined}
 />,
-        <UsernameInput
-          handleUsernameInput={undefined}
+        <Input
+          handleTextInput={undefined}
           input={undefined}
           value={undefined}
 />,
@@ -46,7 +46,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleUsernameInput": undefined,
+          "handleTextInput": undefined,
           "input": undefined,
           "value": undefined,
         },
@@ -64,11 +64,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <UsernameQuestion
+          <Question
             name={undefined}
 />,
-          <UsernameInput
-            handleUsernameInput={undefined}
+          <Input
+            handleTextInput={undefined}
             input={undefined}
             value={undefined}
 />,
@@ -92,7 +92,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleUsernameInput": undefined,
+            "handleTextInput": undefined,
             "input": undefined,
             "value": undefined,
           },

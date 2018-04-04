@@ -20,19 +20,19 @@ ShallowWrapper {
       "children": Array [
         <Headers />,
         <UsernameInputUnit
-          handleUsernameInput={[Function]}
+          handleTextInput={[Function]}
           input="Username"
           name="Enter your username"
           value={null}
 />,
         <EmailInputUnit
-          handleUsernameInput={[Function]}
+          handleTextInput={[Function]}
           input="Email"
           name="Enter your email"
           value={null}
 />,
         <PasswordInputUnit
-          handleUsernameInput={[Function]}
+          handleTextInput={[Function]}
           input="Password"
           name="Enter your password"
           value={null}
@@ -58,7 +58,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleUsernameInput": [Function],
+          "handleTextInput": [Function],
           "input": "Username",
           "name": "Enter your username",
           "value": null,
@@ -72,7 +72,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleUsernameInput": [Function],
+          "handleTextInput": [Function],
           "input": "Email",
           "name": "Enter your email",
           "value": null,
@@ -86,7 +86,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleUsernameInput": [Function],
+          "handleTextInput": [Function],
           "input": "Password",
           "name": "Enter your password",
           "value": null,
@@ -118,19 +118,19 @@ ShallowWrapper {
         "children": Array [
           <Headers />,
           <UsernameInputUnit
-            handleUsernameInput={[Function]}
+            handleTextInput={[Function]}
             input="Username"
             name="Enter your username"
             value={null}
 />,
           <EmailInputUnit
-            handleUsernameInput={[Function]}
+            handleTextInput={[Function]}
             input="Email"
             name="Enter your email"
             value={null}
 />,
           <PasswordInputUnit
-            handleUsernameInput={[Function]}
+            handleTextInput={[Function]}
             input="Password"
             name="Enter your password"
             value={null}
@@ -156,7 +156,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleUsernameInput": [Function],
+            "handleTextInput": [Function],
             "input": "Username",
             "name": "Enter your username",
             "value": null,
@@ -170,7 +170,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleUsernameInput": [Function],
+            "handleTextInput": [Function],
             "input": "Email",
             "name": "Enter your email",
             "value": null,
@@ -184,7 +184,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleUsernameInput": [Function],
+            "handleTextInput": [Function],
             "input": "Password",
             "name": "Enter your password",
             "value": null,

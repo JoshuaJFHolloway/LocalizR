@@ -18,7 +18,7 @@ class Form extends Component {
 
   //controlled and uncontrolled form fields - research it
 
-    handleUsernameInput = event => {
+    handleTextInput = event => {
 
       const target = event.target;
       const name = target.name;
@@ -41,19 +41,19 @@ class Form extends Component {
       <div>
         <Headers/>
         <UsernameInputUnit
-          handleUsernameInput = {this.handleUsernameInput}
+          handleTextInput = {this.handleTextInput}
           value ={this.state.Username}
           name={"Enter your username"}
           input={"Username"}
         />
         <EmailInputUnit
-          handleUsernameInput = {this.handleUsernameInput}
+          handleTextInput = {this.handleTextInput}
           value ={this.state.Email}
           name={"Enter your email"}
           input={"Email"}
         />
         <PasswordInputUnit
-          handleUsernameInput = {this.handleUsernameInput}
+          handleTextInput = {this.handleTextInput}
           value ={this.state.Password}
           name={"Enter your password"}
           input={"Password"}

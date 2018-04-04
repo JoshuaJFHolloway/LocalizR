@@ -48,8 +48,8 @@ describe('Form', () => {
 
   describe('Props successfully passed down', () => {
 
-    it('passes handleNameInput to the UsernameInputUnit component', () => {
-      expect(form.find('UsernameInputUnit').prop('handleUsernameInput')).toBe(form.instance().handleUsernameInput);
+    it('passes handleTextInput to the UsernameInputUnit component', () => {
+      expect(form.find('UsernameInputUnit').prop('handleTextInput')).toBe(form.instance().handleTextInput);
     });
 
     it('passes handleDataSubmitted to the SubmitButton component', () => {
@@ -62,7 +62,7 @@ describe('Form', () => {
 
     it('updates the state of the name when someone types in the box', () => {
       const event = { target: { name: 'Username', value: 'Augustus' } };
-      form.instance().handleUsernameInput(event);
+      form.instance().handleTextInput(event);
       expect(form.state('Username')).toEqual('Augustus');
     });
 

@@ -1,15 +1,15 @@
 import React from 'react'
-import UsernameQuestion from './UsernameQuestion'
-import UsernameInput from './UsernameInput'
+import Question from './Question'
+import Input from './Input'
 
 const EmailInputUnit = props => {
   return (
     <div>
-      <UsernameQuestion
+      <Question
         name = {props.name}
       />
-      <UsernameInput
-        handleUsernameInput = {props.handleUsernameInput}
+      <Input
+        handleTextInput = {props.handleTextInput}
         value = {props.value}
         input = {props.input}
       />
