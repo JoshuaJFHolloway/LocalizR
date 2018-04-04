@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Headers from './Headers';
 import UsernameInputUnit from './UsernameInputUnit';
+import EmailInputUnit from './EmailInputUnit';
+import PasswordInputUnit from './PasswordInputUnit';
 import SubmitButton from './SubmitButton';
 
 class Form extends Component {
@@ -18,8 +20,12 @@ class Form extends Component {
 
     handleUsernameInput = event => {
 
-      this.setState({Username: event.target.value});
+      const target = event.target;
+      const name = target.name;
 
+      this.setState({
+        [name]: target.value
+      });
     };
 
 
@@ -37,13 +43,21 @@ class Form extends Component {
         <UsernameInputUnit
           handleUsernameInput = {this.handleUsernameInput}
           value ={this.state.Username}
+          name={"Enter your username"}
+          input={"Username"}
         />
-        {/*<UsernameInputUnit*/}
-          {/*handleUsernameInput = {this.handleUsernameInput}*/}
-        {/*/>*/}
-        {/*<UsernameInputUnit*/}
-          {/*handleUsernameInput = {this.handleUsernameInput}*/}
-        {/*/>*/}
+        <EmailInputUnit
+          handleUsernameInput = {this.handleUsernameInput}
+          value ={this.state.Email}
+          name={"Enter your email"}
+          input={"Email"}
+        />
+        <PasswordInputUnit
+          handleUsernameInput = {this.handleUsernameInput}
+          value ={this.state.Password}
+          name={"Enter your password"}
+          input={"Password"}
+        />
         <SubmitButton
           handleDataSubmitted = {this.handleDataSubmitted}
         />

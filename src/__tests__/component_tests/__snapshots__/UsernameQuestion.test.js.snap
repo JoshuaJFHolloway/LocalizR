@@ -17,10 +17,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": " Enter your username ",
+      "children": Array [
+        " ",
+        undefined,
+        " ",
+      ],
     },
     "ref": null,
-    "rendered": " Enter your username ",
+    "rendered": Array [
+      " ",
+      undefined,
+      " ",
+    ],
     "type": "h3",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +37,18 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": " Enter your username ",
+        "children": Array [
+          " ",
+          undefined,
+          " ",
+        ],
       },
       "ref": null,
-      "rendered": " Enter your username ",
+      "rendered": Array [
+        " ",
+        undefined,
+        " ",
+      ],
       "type": "h3",
     },
   ],

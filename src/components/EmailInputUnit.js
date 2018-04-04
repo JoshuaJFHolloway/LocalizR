@@ -2,7 +2,7 @@ import React from 'react'
 import UsernameQuestion from './UsernameQuestion'
 import UsernameInput from './UsernameInput'
 
-const UsernameInputUnit = props => {
+const EmailInputUnit = props => {
   return (
     <div>
       <UsernameQuestion
@@ -17,4 +17,4 @@ const UsernameInputUnit = props => {
   );
 };
 
-export default UsernameInputUnit
+export default EmailInputUnit

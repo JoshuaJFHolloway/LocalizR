@@ -4,7 +4,7 @@ const UsernameInput = props => {
   return(
     <input
       type="text"
-      name="Username"
+      name={props.input}
       value={props.value}
       onChange={props.handleUsernameInput}
     />

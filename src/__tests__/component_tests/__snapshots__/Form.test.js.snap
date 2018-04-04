@@ -21,6 +21,20 @@ ShallowWrapper {
         <Headers />,
         <UsernameInputUnit
           handleUsernameInput={[Function]}
+          input="Username"
+          name="Enter your username"
+          value={null}
+/>,
+        <EmailInputUnit
+          handleUsernameInput={[Function]}
+          input="Email"
+          name="Enter your email"
+          value={null}
+/>,
+        <PasswordInputUnit
+          handleUsernameInput={[Function]}
+          input="Password"
+          name="Enter your password"
           value={null}
 />,
         <SubmitButton
@@ -45,6 +59,36 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "handleUsernameInput": [Function],
+          "input": "Username",
+          "name": "Enter your username",
+          "value": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleUsernameInput": [Function],
+          "input": "Email",
+          "name": "Enter your email",
+          "value": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleUsernameInput": [Function],
+          "input": "Password",
+          "name": "Enter your password",
           "value": null,
         },
         "ref": null,
@@ -75,6 +119,20 @@ ShallowWrapper {
           <Headers />,
           <UsernameInputUnit
             handleUsernameInput={[Function]}
+            input="Username"
+            name="Enter your username"
+            value={null}
+/>,
+          <EmailInputUnit
+            handleUsernameInput={[Function]}
+            input="Email"
+            name="Enter your email"
+            value={null}
+/>,
+          <PasswordInputUnit
+            handleUsernameInput={[Function]}
+            input="Password"
+            name="Enter your password"
             value={null}
 />,
           <SubmitButton
@@ -99,6 +157,36 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleUsernameInput": [Function],
+            "input": "Username",
+            "name": "Enter your username",
+            "value": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleUsernameInput": [Function],
+            "input": "Email",
+            "name": "Enter your email",
+            "value": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleUsernameInput": [Function],
+            "input": "Password",
+            "name": "Enter your password",
             "value": null,
           },
           "ref": null,

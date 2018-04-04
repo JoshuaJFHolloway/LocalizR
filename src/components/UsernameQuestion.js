@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UsernameQuestion = () => {
+const UsernameQuestion = props => {
   return (
-    <h3> Enter your username </h3>
+    <h3> {props.name} </h3>
   )
 };
 
