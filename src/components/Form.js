@@ -9,10 +9,10 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      dataSubmitted: false, // button clicked? (will dictate whether next page loads)
-      Username: null, // null until person starts typing in box (this will be pushed to database)
-      Email: null,
-      Password: null
+      dataSubmitted: false, // (will dictate whether next page loads)
+      Username: null, // (this will be pushed to database)
+      Email: null, // (this will be pushed to database)
+      Password: null // (this will be pushed to database)
     };
   }
 
