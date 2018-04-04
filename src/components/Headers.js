@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import SubHeader from './SubHeader';
+import FontFamily from './styledComponents/headers.js'
 
 const Headers = () => {
   return (
-    <div>
+    <FontFamily>
       <Header/>
       <SubHeader/>
-    </div>
+    </FontFamily>
   );
 };
 

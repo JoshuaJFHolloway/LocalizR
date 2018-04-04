@@ -1,11 +1,12 @@
 import React from 'react';
 import Form from './Form';
+import Wrapper from './styledComponents/app.js';
 
 const App = () => {
   return (
-    <div>
-      <Form/>
-    </div>
+      <Wrapper>
+        <Form/>
+      </Wrapper>
   );
 };
 
