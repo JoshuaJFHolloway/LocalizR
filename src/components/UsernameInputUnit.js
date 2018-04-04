@@ -8,6 +8,7 @@ const UsernameInputUnit = props => {
       <UsernameQuestion/>
       <UsernameInput
         handleUsernameInput = {props.handleUsernameInput}
+        value = {props.value}
       />
     </div>
   );

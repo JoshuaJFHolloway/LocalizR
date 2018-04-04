@@ -21,6 +21,7 @@ ShallowWrapper {
         <Headers />,
         <UsernameInputUnit
           handleUsernameInput={[Function]}
+          value={null}
 />,
         <SubmitButton
           handleDataSubmitted={[Function]}
@@ -44,6 +45,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "handleUsernameInput": [Function],
+          "value": null,
         },
         "ref": null,
         "rendered": null,
@@ -73,6 +75,7 @@ ShallowWrapper {
           <Headers />,
           <UsernameInputUnit
             handleUsernameInput={[Function]}
+            value={null}
 />,
           <SubmitButton
             handleDataSubmitted={[Function]}
@@ -96,6 +99,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleUsernameInput": [Function],
+            "value": null,
           },
           "ref": null,
           "rendered": null,
