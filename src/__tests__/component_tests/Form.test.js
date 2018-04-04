@@ -34,19 +34,16 @@ describe('Form', () => {
   });
 
 
-  describe('Props are successfully passed down to NameInputUnit component', () => {
+  describe('Props successfully passing down to the NameInputUnit component', () => {
 
     it('passes handleNameInput', () => {
       expect(form.find('NameInputUnit').prop('handleNameInput')).toBe(form.instance().handleNameInput);
     });
 
     it('passes handleNameSubmitted', () => {
-      expect(form.find('NameSubmitted').prop('handleNameSubmitted')).toBe(form.instance().handleNameSubmitted);
+      expect(form.find('NameInputUnit').prop('handleNameSubmitted')).toBe(form.instance().handleNameSubmitted);
     });
-
-  })
-
-
+  });
 
 });
 
