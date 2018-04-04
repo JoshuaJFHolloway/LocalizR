@@ -36,6 +36,26 @@ class Form extends Component {
       };
 
 
+  // const VIEWS = {
+  //   scaleQuestion: (
+  //     <ScaleQuestionView
+  //       score={this.state.firstScaleScore}
+  //       handleTextBoxInput={this.handleTextBoxInput}
+  //       handleDisplayClick={this.handleDisplayClick}
+  //     />
+  //   ),
+  //   output: <OutputView score={this.state.savedFirstScaleScore} />
+  //
+  //   decider() {
+  //     if (this.state.buttonClicked === true) {
+  //       return 'output';
+  //     } else return 'scaleQuestion';
+  //   }
+  //
+  // };
+
+
+
   render() {
     return (
       <div>
