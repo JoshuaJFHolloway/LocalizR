@@ -13,4 +13,8 @@ describe('ChooseLanguage', () => {
     expect(chooselanguage.find('ChooseLanguageHeader').exists()).toBe(true);
   });
 
+  it('renders ChooseLanguageButton component', () => {
+    expect(chooselanguage.find('ChooseLanguageButton').exists()).toBe(true);
+  });
+
 });
