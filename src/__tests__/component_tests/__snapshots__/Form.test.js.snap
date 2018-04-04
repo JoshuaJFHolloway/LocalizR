@@ -20,8 +20,8 @@ ShallowWrapper {
       "children": Array [
         <Headers />,
         <NameInputUnit
-          handleNameInput={[Function]}
-          handleNameSubmitted={[Function]}
+          handleUsernameInput={[Function]}
+          handleUsernameSubmitted={[Function]}
 />,
       ],
     },
@@ -41,8 +41,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleNameInput": [Function],
-          "handleNameSubmitted": [Function],
+          "handleUsernameInput": [Function],
+          "handleUsernameSubmitted": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -60,8 +60,8 @@ ShallowWrapper {
         "children": Array [
           <Headers />,
           <NameInputUnit
-            handleNameInput={[Function]}
-            handleNameSubmitted={[Function]}
+            handleUsernameInput={[Function]}
+            handleUsernameSubmitted={[Function]}
 />,
         ],
       },
@@ -81,8 +81,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleNameInput": [Function],
-            "handleNameSubmitted": [Function],
+            "handleUsernameInput": [Function],
+            "handleUsernameSubmitted": [Function],
           },
           "ref": null,
           "rendered": null,

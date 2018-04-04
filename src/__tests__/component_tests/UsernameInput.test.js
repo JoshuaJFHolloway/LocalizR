@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NameInput from '../../components/NameInput';
+import UsernameInput from '../../components/UsernameInput';
 
 describe('NameSubmit', () => {
-  let nameinput = shallow(<NameInput />);
+  let nameinput = shallow(<UsernameInput />);
 
   it('renders correctly', () => {
     expect(nameinput).toMatchSnapshot();

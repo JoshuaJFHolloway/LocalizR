@@ -18,12 +18,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NameQuestion />,
-        <NameInput
-          handleNameInput={undefined}
+        <UsernameQuestion />,
+        <UsernameInput
+          handleUsernameInput={undefined}
 />,
-        <NameSubmit
-          handleNameSubmitted={undefined}
+        <UsernameSubmit
+          handleUsernameSubmitted={undefined}
 />,
       ],
     },
@@ -43,7 +43,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleNameInput": undefined,
+          "handleUsernameInput": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -54,7 +54,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleNameSubmitted": undefined,
+          "handleUsernameSubmitted": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -70,12 +70,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NameQuestion />,
-          <NameInput
-            handleNameInput={undefined}
+          <UsernameQuestion />,
+          <UsernameInput
+            handleUsernameInput={undefined}
 />,
-          <NameSubmit
-            handleNameSubmitted={undefined}
+          <UsernameSubmit
+            handleUsernameSubmitted={undefined}
 />,
         ],
       },
@@ -95,7 +95,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleNameInput": undefined,
+            "handleUsernameInput": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -106,7 +106,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleNameSubmitted": undefined,
+            "handleUsernameSubmitted": undefined,
           },
           "ref": null,
           "rendered": null,

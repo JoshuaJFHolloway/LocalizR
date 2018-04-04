@@ -1,17 +1,17 @@
 import React from 'react'
-import NameQuestion from './NameQuestion'
-import NameInput from './NameInput'
-import NameSubmit from './NameSubmit'
+import UsernameQuestion from './UsernameQuestion'
+import UsernameInput from './UsernameInput'
+import UsernameSubmit from './UsernameSubmit'
 
 const NameInputUnit = props => {
   return (
     <div>
-      <NameQuestion/>
-      <NameInput
-        handleNameInput = {props.handleNameInput}
+      <UsernameQuestion/>
+      <UsernameInput
+        handleUsernameInput = {props.handleUsernameInput}
       />
-      <NameSubmit
-        handleNameSubmitted = {props.handleNameSubmitted}
+      <UsernameSubmit
+        handleUsernameSubmitted = {props.handleUsernameSubmitted}
       />
     </div>
   );
