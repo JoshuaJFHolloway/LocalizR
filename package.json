@@ -1,25 +1,45 @@
 {
-  "name": "slath",
+  "name": "Slath",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
+    "enzyme-adapter-react-16": "^1.1.1",
     "expresss": "0.0.0",
     "foreman": "^2.0.0",
     "marked": "^0.3.19",
     "mongoose": "^5.0.12",
+    "nightwatch": "^0.9.20",
     "nodemon": "^1.17.3",
+    "npm": "^5.8.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "react-scripts": "1.1.4"
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "socks": "^2.1.6",
+    "styled-components": "^3.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "start-dev": "nf start -p 3000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "nightwatch": "node_modules/.bin/nightwatch",
+    "e2e": "npm run launch-selenium",
+    "launch-selenium": "java -jar ./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.9.1.jar",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "jest-cli": "^20.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "selenium-standalone": "^6.13.0",
+    "selenium-server-standalone-jar": "^3.4.0"
   }
 }
