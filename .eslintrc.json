@@ -1,0 +1,24 @@
+{
+    "extends": "standard",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+        "semi": ["error", "always"],
+        "strict": "off",
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+        "no-unused-expressions": "off",
+        "arrow-spacing": ["error", {
+            "before": true,
+            "after": true
+        }],
+        "prefer-promise-reject-errors": "off"
+    }
+}

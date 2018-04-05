@@ -37,6 +37,7 @@ class App extends Component {
       Form: (
         <Form
           handleDataSubmitted = {this.handleDataSubmitted}
+
         />
       ),
       SecondPage: <SecondPage/>

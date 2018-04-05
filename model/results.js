@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 var UsersSchema = new Schema({
   username: String,
-  score: Integer
+  score: Number
 });
 
 module.exports = mongoose.model('User', UsersSchema);
