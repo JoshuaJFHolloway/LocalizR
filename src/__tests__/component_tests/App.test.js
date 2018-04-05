@@ -5,17 +5,9 @@ import App from '../../components/App';
 describe('App', () => {
   const app = shallow(<App />);
 
-  describe('renders children', () => {
-
     it('renders correctly', () => {
       expect(app).toMatchSnapshot();
     });
-
-    it('renders a Form component', () => {
-      expect(app.find('Form').exists()).toBe(true);
-    });
-
-  });
 
   describe('passes props', () => {
 
