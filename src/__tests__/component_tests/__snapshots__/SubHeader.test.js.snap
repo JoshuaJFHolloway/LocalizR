@@ -15,25 +15,25 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": " Your adventure language learning game :D ",
+      "children": "The adventure language learning game!",
     },
     "ref": null,
-    "rendered": " Your adventure language learning game :D ",
-    "type": "h2",
+    "rendered": "The adventure language learning game!",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": " Your adventure language learning game :D ",
+        "children": "The adventure language learning game!",
       },
       "ref": null,
-      "rendered": " Your adventure language learning game :D ",
-      "type": "h2",
+      "rendered": "The adventure language learning game!",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

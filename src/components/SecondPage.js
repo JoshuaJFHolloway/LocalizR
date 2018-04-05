@@ -1,10 +1,14 @@
 import React from 'react';
+import ChooseLanguage from './ChooseLanguage';
 
 const SecondPage = () => {
   return (
-    <button>
-      Second Page has rendered, let the fun begin
-    </button>
+    <div>
+      <button>
+        Second Page has rendered, let the fun begin
+      </button>
+      <ChooseLanguage />
+    </div>
   );
 };
 
