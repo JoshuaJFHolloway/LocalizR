@@ -103,7 +103,9 @@ I want to see a leaderboard
 
 ## Authors
 ------------
+
 Joshua Holloway
 Hannah Hillis
 Kaari Strack
 Magyar-Hunor Tamas
+Jenny Arenas Marin
