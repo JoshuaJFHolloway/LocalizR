@@ -16,6 +16,8 @@ class App extends Component {
     });
   };
 
+  // remember to have checker that all text fields filled before submission
+
   decider() {
     if (this.state.dataSubmitted === true) {
       return 'SecondPage';
