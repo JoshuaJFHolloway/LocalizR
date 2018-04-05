@@ -1,8 +1,9 @@
 import React from 'react';
+import Sub from "./styledComponents/subheadings.js";
 
 const SubHeader = () => {
   return (
-    <h2> Your adventure language learning game :D </h2>
+    <Sub>The adventure language learning game!</Sub>
   );
 };
 

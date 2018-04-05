@@ -30,7 +30,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
+      <Content>
         <Headers/>
         <UsernameInputUnit
           handleTextInput = {this.handleTextInput}
@@ -53,7 +53,7 @@ class Form extends Component {
         <SubmitButton
           handleDataSubmitted = {this.props.handleDataSubmitted} // use this.props when passing on props to another comp
         />
-      </div>
+      </Content>
     );
   };
 }
