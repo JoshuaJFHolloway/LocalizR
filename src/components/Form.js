@@ -4,6 +4,7 @@ import UsernameInputUnit from './UsernameInputUnit';
 import EmailInputUnit from './EmailInputUnit';
 import PasswordInputUnit from './PasswordInputUnit';
 import SubmitButton from './SubmitButton';
+import axios from 'axios';
 
 class Form extends Component {
   constructor() {
@@ -18,15 +19,15 @@ class Form extends Component {
 
   //controlled and uncontrolled form fields - research it
 
-    handleTextInput = event => {
+  handleTextInput = event => {
 
-      const target = event.target;
-      const name = target.name;
+    const target = event.target;
+    const name = target.name;
 
-      this.setState({
-        [name]: target.value
-      });
-    };
+    this.setState({
+      [name]: target.value
+    });
+  };
 
   render() {
     return (

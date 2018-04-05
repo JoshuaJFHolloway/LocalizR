@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Form from './Form';
 import SecondPage from './SecondPage';
+import axios from 'axios';
+
 
 class App extends Component {
   constructor() {
@@ -10,10 +12,14 @@ class App extends Component {
     }
   }
 
-  handleDataSubmitted = () => {
+  handleDataSubmitted = (user) => {
     this.setState({
       dataSubmitted: true
     });
+    axios.post(this.props.url, user)
+      .catch(err => {
+        console.error(err);
+      });
   };
 
   // remember to have checker that all text fields filled before submission

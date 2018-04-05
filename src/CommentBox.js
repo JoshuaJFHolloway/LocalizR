@@ -7,7 +7,7 @@ import style from './style';
 class CommentBox extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: [] };
+    this.state = { data: [] }; // do we need this? - Just in CommentList
   }
 
   loadCommentsFromServer = () => {
