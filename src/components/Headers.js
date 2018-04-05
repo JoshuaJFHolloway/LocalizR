@@ -7,6 +7,7 @@ const Headers = () => {
   return (
     <Font>
       <Header/>
+      <img src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150" />
       <SubHeader/>
     </Font>
   );

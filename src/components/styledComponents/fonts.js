@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Font = styled.text`
-  font-family: "Fontdiner Swanky";
+  font-family: "Short Stack";
 `;
 
 export default Font;

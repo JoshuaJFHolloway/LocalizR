@@ -1,8 +1,9 @@
 import React from 'react'
+import Text from './styledComponents/text.js'
 
 const NameQuestion = () => {
   return (
-    <h3> What is your name? </h3>
+    <Text> What is your name? </Text>
   )
 };
 
