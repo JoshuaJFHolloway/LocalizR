@@ -2,7 +2,7 @@
 
 <img align="right" src="https://image.ibb.co/kqvkwc/la_index.png" alt="screenshot" width="450"/>
 
-Welcome to the repo for our FINAL PROJECT at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
+Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
 
 __DESIGNED BY__:
 - Joshua Holloway
@@ -11,19 +11,32 @@ __DESIGNED BY__:
 - Magyar-Hunor Tamas
 Jenny Arenas Marin
 
-### Tech Stack <img src="https://image.ibb.co/czRdzx/la_reactnpm.png" width="100" />
+<hr>
 
-Front End: React, CSS (styled components).
+## Tech Stack
 
-Back End: Node.js, Express.js, Mongodb & Mongoose.
+<img src="https://image.ibb.co/czRdzx/la_reactnpm.png" width="100" alight="left"/>
 
-TDD: Jest.
+__Front End__:
+- React
+- CSS (styled components)
 
-### Set-up & Installation :computer:
+__Back End__:
+- Node.js
+- Express.js
+- Mongodb
+- Mongoose
+
+__TDD__:
+- Jest
+
+<hr>
+
+## Set-up & Installation :computer:
 
 Open the Terminal (or iTerm) by pressing ⌘ and spacebar.
 
-<img src="https://image.ibb.co/dXVJXH/la_terminal.png" alt="commandspacebar" width="300" align="right"/>
+<img src="https://image.ibb.co/dXVJXH/la_terminal.png" alt="commandspacebar" width="400" align="right"/>
 
 Click [HERE](https://nodejs.org/en/) to download and install node.js if you do not have it.
 
@@ -43,6 +56,9 @@ Run the server, and begin!
 ```
 $ npm run start-dev
 ```
+
+<hr>
+
 ## User Stories :video_game:
 
 __Minimum Viable Product__:
