@@ -5,7 +5,6 @@ import Form from '../../components/Form';
 describe('Form', () => {
   let form = shallow(<Form />);
 
-
   describe('Rendering components', () => {
 
     it('renders correctly', () => {
@@ -33,7 +32,6 @@ describe('Form', () => {
     });
   });
 
-
   describe('initializes state successfully', () => {
 
     it('initializes Username as null', () => {
@@ -48,7 +46,6 @@ describe('Form', () => {
       expect(form.state('Password')).toEqual(null);
     });
   });
-
 
   describe('Props successfully passed down', () => {
 
@@ -68,6 +65,7 @@ describe('Form', () => {
   describe('Updating state successfully', () => {
 
     it('updates the state of the name when someone types in the box', () => {
+      
       const event = { target: { name: 'Username', value: 'Augustus' } };
       form.instance().handleTextInput(event);
       expect(form.state('Username')).toEqual('Augustus');
@@ -75,4 +73,3 @@ describe('Form', () => {
 
   });
 });
-
