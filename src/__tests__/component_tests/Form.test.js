@@ -20,6 +20,14 @@ describe('Form', () => {
       expect(form.find('UsernameInputUnit').exists()).toBe(true);
     });
 
+    it('renders a EmailInputUnit component', () => {
+      expect(form.find('EmailInputUnit').exists()).toBe(true);
+    });
+
+    it('renders a PasswordInputUnit component', () => {
+      expect(form.find('PasswordInputUnit').exists()).toBe(true);
+    });
+
     it('renders a SubmitButton component', () => {
       expect(form.find('SubmitButton').exists()).toBe(true);
     });
@@ -46,6 +54,9 @@ describe('Form', () => {
 
     it('passes handleTextInput to the UsernameInputUnit component', () => {
       expect(form.find('UsernameInputUnit').prop('handleTextInput')).toBe(form.instance().handleTextInput);
+      // expect(form.find('UsernameInputUnit').prop('value')).toBe(form.instance().handleTextInput);
+      // expect(form.find('UsernameInputUnit').prop('name')).toBe(form.instance().handleTextInput);
+      // expect(form.find('UsernameInputUnit').prop('input')).toBe(form.instance().handleTextInput);
     });
 
     it('passes handleDataSubmitted to the SubmitButton component', () => {
