@@ -40,4 +40,20 @@ describe('App', () => {
     });
   });
 
+  describe('Renders depending on decider function', () => {
+
+    beforeEach(() => {
+      app.setState({ dataSubmitted: false });
+    });
+
+    it('renders SecondPage when dataSubmitted equals true', () => {
+      app.instance().handleDataSubmitted();
+      expect(app.instance().decider()).toEqual('SecondPage');
+    });
+
+    it('renders Form when dataSubmitted equals false', () => {
+      expect(app.instance().decider()).toEqual('Form');
+    });
+
+  });
 });
