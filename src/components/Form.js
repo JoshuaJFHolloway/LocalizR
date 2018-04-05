@@ -22,7 +22,6 @@ class Form extends Component {
 
       const target = event.target;
       const name = target.name;
-
       this.setState({
         [name]: target.value
       });

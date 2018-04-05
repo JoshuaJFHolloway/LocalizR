@@ -26,6 +26,10 @@ describe('App', () => {
 
   describe('Updating state successfully', () => {
 
+    beforeEach(() => {
+      app.instance().textEntered()
+    });
+
     it('updates the state of dataSubmitted to true', () => {
       app.instance().handleDataSubmitted();
       expect(app.state('dataSubmitted')).toEqual(true);
