@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
+import SecondPage from './SecondPage';
 
 class App extends Component {
   constructor() {
@@ -17,17 +18,25 @@ class App extends Component {
 
   decider() {
     if (this.state.dataSubmitted === true) {
-      return 'secondPage';
+      return 'SecondPage';
     } else return 'Form';
   }
 
+
   render() {
-    return (
-      <div>
+
+    const Views = {
+      Form: (
         <Form
           handleDataSubmitted = {this.handleDataSubmitted}
         />
-        {/*{VIEWS[this.decider()]}*/}
+      ),
+      SecondPage: <SecondPage/>
+    };
+
+    return (
+      <div>
+        {Views[this.decider()]}
       </div>
     )
   };
