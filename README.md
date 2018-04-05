@@ -3,6 +3,8 @@
 This is an interactive game that allows the user to learn a new language.
 
 ## Tech Stack
+--------------
+
 - Front End: 
     - React
 
@@ -15,8 +17,11 @@ This is an interactive game that allows the user to learn a new language.
     - Jest
 
 
-##Getting started
+## Getting started
+-------------------
+
 This instructions will give you a copy of the project up and running on your local machine.
+
 
 ### Set up 
 
@@ -31,19 +36,22 @@ This instructions will give you a copy of the project up and running on your loc
 
 4. Install the dependencies required
     $npm install
-    
+
 5. run the express and react server
     $npm run start-dev
 
-## User Stories
 
-###MVP
+## User Stories
+-----------------
+
+```
+### MVP
 
 As a traveller,
 So I can learn useful phrases
 I want to be able to practice a language
 
-###Features
+### Features
 
 As a traveller
 So I can learn a language
@@ -61,7 +69,7 @@ As a user
 So I can keep track of my progress
 I want to be able to see my score
 
-###Extra features
+### Extra features
 
 As a user
 So I can play the game
@@ -86,11 +94,15 @@ I want to be able to hear audio
 As a user
 So finally I can satisfy my competitiveness
 I want to see a leaderboard
+```
+
 
 ## Diagram
+------------
 
 
-##Authors
+## Authors
+------------
 Joshua Holloway
 Hannah Hillis
 Kaari Strack
