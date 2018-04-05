@@ -1,35 +1,57 @@
 import React, { Component } from 'react';
 import Headers from './Headers';
-import NameInputUnit from './NameInputUnit';
+import UsernameInputUnit from './UsernameInputUnit';
+import EmailInputUnit from './EmailInputUnit';
+import PasswordInputUnit from './PasswordInputUnit';
+import SubmitButton from './SubmitButton';
 
 class Form extends Component {
   constructor() {
     super();
     this.state = {
-      nameSubmitted: false, // button clicked?
-      name: null // null until person starts typing in box
+      // dataSubmitted: false, // (will dictate whether next page loads)
+      Username: null, // (this will be pushed to database)
+      Email: null, // (this will be pushed to database)
+      Password: null // (this will be pushed to database)
     };
   }
 
-    handleNameInput = event =>
-      this.setState ({ name: event.target.value });
+  //controlled and uncontrolled form fields - research it
 
+    handleTextInput = event => {
 
-    handleNameSubmitted = () => {
-      this.setState ({
-        nameSubmitted: true,
-        name: this.state
-      })
+      const target = event.target;
+      const name = target.name;
+
+      this.setState({
+        [name]: target.value
+      });
     };
-
 
   render() {
     return (
       <div>
         <Headers/>
-        <NameInputUnit
-          handleNameInput = {this.handleNameInput}
-          handleNameSubmitted = {this.handleNameSubmitted}
+        <UsernameInputUnit
+          handleTextInput = {this.handleTextInput}
+          value ={this.state.Username}
+          name={"Enter your username"}
+          input={"Username"}
+        />
+        <EmailInputUnit
+          handleTextInput = {this.handleTextInput}
+          value ={this.state.Email}
+          name={"Enter your email"}
+          input={"Email"}
+        />
+        <PasswordInputUnit
+          handleTextInput = {this.handleTextInput}
+          value ={this.state.Password}
+          name={"Enter your password"}
+          input={"Password"}
+        />
+        <SubmitButton
+          handleDataSubmitted = {this.props.handleDataSubmitted} // use this.props when passing on props to another comp
         />
       </div>
     );

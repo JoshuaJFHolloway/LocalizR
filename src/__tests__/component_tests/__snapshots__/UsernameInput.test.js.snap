@@ -4,7 +4,7 @@ exports[`NameSubmit renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NameInput />,
+  Symbol(enzyme.__unrendered__): <Input />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,8 +17,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "name": undefined,
       "onChange": undefined,
       "type": "text",
+      "value": undefined,
     },
     "ref": null,
     "rendered": null,
@@ -30,8 +32,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "name": undefined,
         "onChange": undefined,
         "type": "text",
+        "value": undefined,
       },
       "ref": null,
       "rendered": null,

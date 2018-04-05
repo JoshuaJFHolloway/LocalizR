@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import NameQuestion from '../../components/NameQuestion';
+import UsernameQuestion from '../../components/Question';
 
 describe('NameQuestion', () => {
-  let namequestion = shallow(<NameQuestion />);
+  let namequestion = shallow(<UsernameQuestion />);
 
   it('renders correctly', () => {
     expect(namequestion).toMatchSnapshot();

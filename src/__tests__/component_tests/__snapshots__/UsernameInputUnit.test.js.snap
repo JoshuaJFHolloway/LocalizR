@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NameInputUnit Rendering components renders correctly 1`] = `
+exports[`UsernameInputUnit Rendering components renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NameInputUnit />,
+  Symbol(enzyme.__unrendered__): <UsernameInputUnit />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,12 +18,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NameQuestion />,
-        <NameInput
-          handleNameInput={undefined}
+        <Question
+          name={undefined}
 />,
-        <NameSubmit
-          handleNameSubmited={undefined}
+        <Input
+          handleTextInput={undefined}
+          input={undefined}
+          value={undefined}
 />,
       ],
     },
@@ -33,17 +34,8 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
         "props": Object {
-          "handleNameInput": undefined,
+          "name": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -54,7 +46,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleNameSubmited": undefined,
+          "handleTextInput": undefined,
+          "input": undefined,
+          "value": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -70,12 +64,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NameQuestion />,
-          <NameInput
-            handleNameInput={undefined}
+          <Question
+            name={undefined}
 />,
-          <NameSubmit
-            handleNameSubmited={undefined}
+          <Input
+            handleTextInput={undefined}
+            input={undefined}
+            value={undefined}
 />,
         ],
       },
@@ -85,17 +80,8 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
           "props": Object {
-            "handleNameInput": undefined,
+            "name": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -106,7 +92,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleNameSubmited": undefined,
+            "handleTextInput": undefined,
+            "input": undefined,
+            "value": undefined,
           },
           "ref": null,
           "rendered": null,
