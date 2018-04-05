@@ -1,48 +1,46 @@
-# *SLATH!*
+# SLATH! :es:
 
-This is an interactive game that allows the user to learn a new language.
+Welcome to the repo for our *FINAL PROJECT* at Makers Academy, January '18! This is our application - an interactive game that allows the user to learn Spanish whilst having fun!
+
+## Authors
+
+Joshua Holloway, Hannah Hillis, Kaari Strack, Magyar-Hunor Tamas & Jenny Arenas Marin
 
 ## Tech Stack
---------------
-
-- Front End: 
+Front End: 
     - React
 
-- Back End: 
+Back End: 
     - Node.js
     - Express.js
-    - Mongodb and mongoose
+    - Mongodb & Mongoose
 
-- Testing:
+Testing:
     - Jest
 
+### Set-up & Installation
 
-## Getting started
--------------------
+1. Open the Terminal (or iTerm) by pressing ⌘ and spacebar.
+<img src="https://image.ibb.co/dXVJXH/la_terminal.png" alt="commandspacebar" />
 
-This instructions will give you a copy of the project up and running on your local machine.
-
-
-### Set up 
-
-1. Check if you have node.js installed in your computer  
-    $ node -v
-
-2. If not, check the instructions in node.js.org
-
-3. Clone the repo in your computer 
-
-    $git clone https://github.com/JoshuaJFHolloway/Slath.git
-
-4. Install the dependencies required
-    $npm install
-
-5. run the express and react server
-    $npm run start-dev
-
+2. Check and see if you have node.js installed. Follow the instructions at node.js.org if you need to download it.
+```
+$ node -v
+```
+2. Clone this repo onto your computer!
+```
+$git clone https://github.com/JoshuaJFHolloway/Slath.git
+```
+3. Install the required dependencies.
+```
+$npm install
+```
+4. Run the Express and React server, and begin!
+```
+$npm run start-dev
+```
 
 ## User Stories
------------------
 
 ```
 ### MVP
@@ -96,16 +94,6 @@ So finally I can satisfy my competitiveness
 I want to see a leaderboard
 ```
 
+## Screenshot
 
-## Diagram
-------------
-
-
-## Authors
-------------
-
-Joshua Holloway
-Hannah Hillis
-Kaari Strack
-Magyar-Hunor Tamas
-Jenny Arenas Marin
+<img src="https://image.ibb.co/kqvkwc/la_index.png" alt="screenshot" />
