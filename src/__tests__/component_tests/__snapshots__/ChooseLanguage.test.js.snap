@@ -18,9 +18,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <ChooseLanguageHeader />,
-        <ChooseLanguageButton
-          handleSpanishSubmitted={[Function]}
+        <SubHeader
+          subheader="Choose your language!"
+/>,
+        <Picture
+          handlePictureClicked={[Function]}
 />,
       ],
     },
@@ -30,7 +32,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "subheader": "Choose your language!",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -40,7 +44,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleSpanishSubmitted": [Function],
+          "handlePictureClicked": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -56,9 +60,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ChooseLanguageHeader />,
-          <ChooseLanguageButton
-            handleSpanishSubmitted={[Function]}
+          <SubHeader
+            subheader="Choose your language!"
+/>,
+          <Picture
+            handlePictureClicked={[Function]}
 />,
         ],
       },
@@ -68,7 +74,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "subheader": "Choose your language!",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -78,7 +86,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleSpanishSubmitted": [Function],
+            "handlePictureClicked": [Function],
           },
           "ref": null,
           "rendered": null,

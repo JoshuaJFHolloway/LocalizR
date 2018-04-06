@@ -18,10 +18,6 @@ describe('Quiz', () => {
       expect(quiz.find('QuizPicture').exists()).toBe(true);
     })
 
-    it('renders a QuizQuestion component', () => {
-      expect(quiz.find('QuizQuestion').exists()).toBe(true);
-    })
-
     it('renders a QuizAnswer component', () => {
       expect(quiz.find('QuizAnswer').exists()).toBe(true);
     })

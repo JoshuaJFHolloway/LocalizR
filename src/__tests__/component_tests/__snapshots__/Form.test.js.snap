@@ -40,7 +40,7 @@ ShallowWrapper {
           value={null}
 />,
         <SubmitButton
-          buttonName="Spanish"
+          buttonName="Submit"
           handleDataSubmitted={undefined}
 />,
       ],
@@ -105,7 +105,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "buttonName": "Spanish",
+          "buttonName": "Submit",
           "handleDataSubmitted": undefined,
         },
         "ref": null,
@@ -144,7 +144,7 @@ ShallowWrapper {
             value={null}
 />,
           <SubmitButton
-            buttonName="Spanish"
+            buttonName="Submit"
             handleDataSubmitted={undefined}
 />,
         ],
@@ -209,7 +209,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "buttonName": "Spanish",
+            "buttonName": "Submit",
             "handleDataSubmitted": undefined,
           },
           "ref": null,

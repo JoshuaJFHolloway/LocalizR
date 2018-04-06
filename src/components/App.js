@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
-import SecondPage from './SecondPage';
+import ChooseLanguage from './ChooseLanguage';
 import axios from 'axios';
 import Quiz from './Quiz';
 
@@ -31,7 +31,7 @@ class App extends Component {
 
   decider() {
     if (this.state.dataSubmitted === true) {
-      return 'Quiz';
+      return 'ChooseLanguage';
     } else return 'Form';
   }
 
@@ -62,7 +62,7 @@ class App extends Component {
 
         />
       ),
-      Quiz: <Quiz/>
+      ChooseLanguage: <ChooseLanguage/>
     };
 
     return (
