@@ -10,6 +10,7 @@ class App extends Component {
     }
   }
 
+
   handleDataSubmitted = () => {
     if(this.textEntered() === true) {
       this.setState({
@@ -27,7 +28,6 @@ class App extends Component {
 
 
   textEntered() {
-
     let Username = this.Form.state.Username;
     let Email = this.Form.state.Email;
     let Password = this.Form.state.Password;

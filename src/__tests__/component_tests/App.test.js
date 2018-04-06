@@ -26,9 +26,8 @@ describe('App', () => {
 
   describe('Updating state successfully', () => {
 
-    beforeEach(() => {
-      app.instance().textEntered()
-    });
+    // trying to mock textEntered as true to allow state to change
+    // if this is too difficult then mock user input into all three text boxes
 
     it('updates the state of dataSubmitted to true', () => {
       app.instance().handleDataSubmitted();
@@ -43,6 +42,10 @@ describe('App', () => {
     });
 
     it('renders SecondPage when dataSubmitted equals true', () => {
+
+      // trying to mock textEntered as true to allow state to change
+      // if this is too difficult then mock user input into all three text boxes
+
       app.instance().handleDataSubmitted();
       expect(app.instance().decider()).toEqual('SecondPage');
     });
