@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import SpanishQuiz from './SpanishQuiz';
 
-
-
 class ChooseLanguage extends Component {
 
   constructor(){
