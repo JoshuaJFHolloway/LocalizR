@@ -12,11 +12,18 @@ class App extends Component {
     }
   }
 
-  handleDataSubmitted = (user) => {
+  // hash() {
+  //   { username: this.Form.state.Username }
+  // }
+
+  handleDataSubmitted = () => {
     if(this.textEntered() === true) {
       this.setState({
         dataSubmitted: true,
       });
+      const user = {username: this.Form.state.Username,
+                    email: this.Form.state.Email,
+                    password: this.Form.state.Password }
        axios.post(this.props.url, user)
       .catch(err => {
         console.error(err);
