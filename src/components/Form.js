@@ -4,7 +4,6 @@ import UsernameInputUnit from './UsernameInputUnit';
 import EmailInputUnit from './EmailInputUnit';
 import PasswordInputUnit from './PasswordInputUnit';
 import SubmitButton from './SubmitButton';
-import axios from 'axios';
 
 class Form extends Component {
   constructor() {
@@ -56,7 +55,7 @@ class Form extends Component {
         />
         <SubmitButton
           handleDataSubmitted = {this.props.handleDataSubmitted} // use this.props when passing on props to another comp
-          buttonName = {"Spanish"}
+          buttonName = {"Submit"}
         />
       </div>
     );
