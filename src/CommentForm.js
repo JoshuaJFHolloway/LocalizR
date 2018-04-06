@@ -1,5 +1,4 @@
-//CommentForm.js
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import style from './style';
 
 class CommentForm extends Component {
@@ -27,7 +26,7 @@ class CommentForm extends Component {
     this.props.onCommentSubmit({ author: author, text: text });
     this.setState({ author:'', text:''})
     console.log(`${this.state.author} said "${this.state.text}"`)
-    //we will be tying this into the POST method in a bit
+
   }
   render() {
     return (

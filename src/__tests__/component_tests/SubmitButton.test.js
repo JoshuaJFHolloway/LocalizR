@@ -9,4 +9,15 @@ describe('Submit data', () => {
     expect(submit).toMatchSnapshot();
   });
 
+
+  describe('when a user clicks the button', () => {
+
+    it('should call the handleDataSubmitted function', () => {
+      let mockhandleDataSubmitted = jest.fn();
+      let submit = shallow(<SubmitButton handleDataSubmitted = {mockhandleDataSubmitted} />);
+      submit.find("#submitButton").simulate('click');
+      expect(mockhandleDataSubmitted).toBeCalled();
+    })
+  });
+
 });
