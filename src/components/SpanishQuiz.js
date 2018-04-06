@@ -4,7 +4,7 @@ import QuizPicture from './QuizPicture';
 import QuizQuestion from './QuizQuestion';
 import QuizAnswers from './QuizAnswers';
 
-class Quiz extends Component {
+class SpanishQuiz extends Component {
   constructor() {
     super();
     this.state = {
@@ -42,4 +42,4 @@ class Quiz extends Component {
   }
 }
 
-export default Quiz;
+export default SpanishQuiz;
