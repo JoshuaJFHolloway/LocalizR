@@ -19,4 +19,17 @@ describe('SecondPage', () => {
       expect(secondpage.find('Picture').exists()).toBe(true);
     });
   })
+
+  describe('Initializes state successfully', () =>{
+    it('initializes spanish as null', () => {
+      expect(secondpage.state('spanish')).toEqual(null);
+    });
+  });
+
+  describe('Updates state successfully', () => {
+    it("Updates the state when clicks spanish Picture component", () => {
+      secondpage.instance().handlePictureClicked();
+      expect(secondpage.state('spanish')).toEqual(true);
+    })
+  })
 });

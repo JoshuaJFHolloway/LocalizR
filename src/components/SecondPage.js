@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import SubHeader from './SubHeader';
 import Picture from './Picture';
 
-const SecondPage = () => {
-  return (
-    <div>
-      <SubHeader
-        subheader={"Choose your language!"}
-      />
-      <Picture />
-    </div>
-  );
+
+
+class SecondPage extends Component {
+  
+  constructor(){
+    super();
+    this.state = {
+      spanish: null
+    };
+  };
+
+  handlePictureClicked = () => {
+    this.setState ({spanish: true});
+  }
+
+  render(){
+    return (
+      <div>
+        <SubHeader
+          subheader={"Choose your language!"}
+        />
+        <Picture />
+      </div>
+    );
+
+  }
+  
+  
 };
 
 export default SecondPage;
