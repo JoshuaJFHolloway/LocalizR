@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SubHeader from './SubHeader';
-import Picture from './Picture';
+import LanguageList from './LanguageList';
+import SpanishQuiz from './SpanishQuiz';
 
 
 
@@ -15,33 +15,31 @@ class ChooseLanguage extends Component {
 
   handlePictureClicked = () => {
     this.setState ({spanish: true});
-  }
+  };
 
   decider (){
     if(this.state.spanish === true){
-      return 'Quiz'
-    } else return 'ChooseLanguage'
+      return 'SpanishQuiz'
+    } else return 'LanguageList'
   };
 
-  render(){
+  render() {
+
     const quizViews = {
-      Quiz: < Quiz />
-    }
+      LanguageList: (
+        <LanguageList
+          handlePictureClicked = {this.handlePictureClicked}
+        />
+      ),
+      SpanishQuiz: <SpanishQuiz/>
+    };
 
     return (
       <div>
-        <SubHeader
-          subheader={"Choose your language!"}
-        />
-        <Picture
-        handlePictureClicked = {this.handlePictureClicked}
-        />
+      {quizViews[this.decider()]}
       </div>
-    );
-
-  }
-
-
-};
+    )
+  };
+}
 
 export default ChooseLanguage;
