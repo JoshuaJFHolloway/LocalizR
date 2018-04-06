@@ -4,7 +4,6 @@ import UsernameInputUnit from './UsernameInputUnit';
 import EmailInputUnit from './EmailInputUnit';
 import PasswordInputUnit from './PasswordInputUnit';
 import SubmitButton from './SubmitButton';
-import axios from 'axios';
 
 class Form extends Component {
   constructor() {

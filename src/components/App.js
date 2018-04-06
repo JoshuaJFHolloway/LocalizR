@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Form from './Form';
 import ChooseLanguage from './ChooseLanguage';
 import axios from 'axios';
+import Quiz from './Quiz';
 
 
 class App extends Component {
@@ -12,11 +13,14 @@ class App extends Component {
     }
   }
 
-  handleDataSubmitted = (user) => {
+  handleDataSubmitted = () => {
     if(this.textEntered() === true) {
       this.setState({
         dataSubmitted: true,
       });
+      const user = {username: this.Form.state.Username,
+                    email: this.Form.state.Email,
+                    password: this.Form.state.Password };
        axios.post(this.props.url, user)
       .catch(err => {
         console.error(err);
@@ -51,6 +55,7 @@ class App extends Component {
           handleDataSubmitted = {this.handleDataSubmitted}
 
           ref={(Form) => {this.Form = Form;}}
+
           // If you want to access the state of a component's children, you can assign
           // a property called ref to each child. This property takes a callback function
           // that is passed a reference to the attached component.

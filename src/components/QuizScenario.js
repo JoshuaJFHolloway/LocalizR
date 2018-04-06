@@ -1,8 +1,8 @@
 import React from 'react';
 
-const QuizScenario = () => {
+const QuizScenario = props => {
   return (
-    <h1>Scenario_name_here</h1>
+    <h1>{props.scenario}</h1>
   )
 };
 

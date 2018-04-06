@@ -1,109 +1,90 @@
-# *SLATH!*
+# SLATH! :es:
 
-This is an interactive game that allows the user to learn a new language.
+<img align="right" src="https://image.ibb.co/kqvkwc/la_index.png" alt="screenshot" width="450"/>
+
+Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
+
+__DESIGNED BY__:
+- Joshua Holloway
+- Hannah Hillis
+- Kaari Strack
+- Magyar-Hunor Tamas
+Jenny Arenas Marin
+
+<hr>
 
 ## Tech Stack
---------------
 
-- Front End: 
-    - React
+<img src="https://image.ibb.co/czRdzx/la_reactnpm.png" width="100" alight="left"/>
 
-- Back End: 
-    - Node.js
-    - Express.js
-    - Mongodb and mongoose
+__Front End__:
+- React
+- CSS (styled components)
 
-- Testing:
-    - Jest
+__Back End__:
+- Node.js
+- Express.js
+- Mongodb
+- Mongoose
 
+__TDD__:
+- Jest
 
-## Getting started
--------------------
+<hr>
 
-This instructions will give you a copy of the project up and running on your local machine.
+## Set-up & Installation :computer:
 
+Open the Terminal (or iTerm) by pressing ⌘ and spacebar.
 
-### Set up 
+<img src="https://image.ibb.co/dXVJXH/la_terminal.png" alt="commandspacebar" width="400" align="right"/>
 
-1. Check if you have node.js installed in your computer  
-    $ node -v
+Click [HERE](https://nodejs.org/en/) to download and install node.js if you do not have it.
 
-2. If not, check the instructions in node.js.org
-
-3. Clone the repo in your computer 
-
-    $git clone https://github.com/JoshuaJFHolloway/Slath.git
-
-4. Install the dependencies required
-    $npm install
-
-5. run the express and react server
-    $npm run start-dev
-
-
-## User Stories
------------------
-
+Verify your installation by typing:
 ```
-### MVP
-
-As a traveller,
-So I can learn useful phrases
-I want to be able to practice a language
-
-### Features
-
-As a traveller
-So I can learn a language
-I want to be able to test myself by choosing the correct answer
-
-As a user
-So I can decide what to practice
-I want to be able to select a language
-
-As a user
-So I can play the game
-I want to be able to enter my details
-
-As a user
-So I can keep track of my progress
-I want to be able to see my score
-
-### Extra features
-
-As a user
-So I can play the game
-I want to be able to sign up
-
-As a user 
-So I can play the game 
-I want to able to sign in
-
-As a user
-So I can follow my story
-I want to see the outcome of my answer
-
-As a user
-So I can keep my account secure
-I want to be able to sign out
-
-As a user 
-So I can improve my pronunciation
-I want to be able to hear audio
-
-As a user
-So finally I can satisfy my competitiveness
-I want to see a leaderboard
+$ node -v
+```
+Clone this repo onto your computer:
+```
+$ git clone *copy & paste https or SSH link here*
+```
+Install the required dependencies:
+```
+$ npm install
+```
+Run the server, and begin!
+```
+$ npm run start-dev
 ```
 
+<hr>
 
-## Diagram
-------------
+## User Stories :video_game:
 
+__Minimum Viable Product__:
 
-## Authors
-------------
-Joshua Holloway
-Hannah Hillis
-Kaari Strack
-Magyar-Hunor Tamas
+- As a traveller, so I can learn useful phrases, I want to be able to practice a language.
+
+__Features__:
+
+- As a user, so I can decide what to practice, I want to be able to select a language.
+
+- As a traveller, so I can learn a language, I want to be able to choose an answer to a question.
+
+- As a user, so I can play the game, I want to be able to enter my details.
+
+- As a user, so I can keep track of my progress, I want to be able to see my score.
+
+__Extras__
+
+- As a user, so I can play the game, I want to be able to sign up.
+
+- As a user, so I can play the game, I want to able to sign in.
+
+- As a user, so I can follow my story, I want to see the outcome of my answer.
+
+- As a user, so I can keep my account secure, I want to be able to sign out.
+
+- As a user, so I can improve my pronunciation, I want to be able to hear example audio.
+
+- As a user, so finally I can satisfy my competitiveness, I want to see a leaderboard.
