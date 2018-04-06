@@ -17,7 +17,17 @@ class ChooseLanguage extends Component {
     this.setState ({spanish: true});
   }
 
+  decider (){
+    if(this.state.spanish === true){
+      return 'Quiz'
+    } else return 'ChooseLanguage'
+  };
+
   render(){
+    const quizViews = {
+      Quiz: < Quiz />
+    }
+
     return (
       <div>
         <SubHeader

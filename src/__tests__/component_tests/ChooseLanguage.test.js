@@ -32,11 +32,18 @@ describe('ChooseLanguage', () => {
     });
   });
 
+  describe("When spanish equals true", () => {
+    it("It renders the Quiz page", () => {
+      chooselanguage.instance().handlePictureClicked();
+      expect(chooselanguage.decider).toHaveBeenCalled();
+    });
+  })
+
 
   describe('Updates state successfully', () => {
     it("Updates the state when clicks spanish Picture component", () => {
       chooselanguage.instance().handlePictureClicked();
       expect(chooselanguage.state('spanish')).toEqual(true);
-    })
-  })
+    });
+  });
 });
