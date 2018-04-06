@@ -23,7 +23,9 @@ class SecondPage extends Component {
         <SubHeader
           subheader={"Choose your language!"}
         />
-        <Picture />
+        <Picture 
+        handlePictureClicked = {this.handlePictureClicked}
+        />
       </div>
     );
 

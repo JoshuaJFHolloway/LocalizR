@@ -21,7 +21,9 @@ ShallowWrapper {
         <SubHeader
           subheader="Choose your language!"
 />,
-        <Picture />,
+        <Picture
+          handlePictureClicked={[Function]}
+/>,
       ],
     },
     "ref": null,
@@ -41,7 +43,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "handlePictureClicked": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -59,7 +63,9 @@ ShallowWrapper {
           <SubHeader
             subheader="Choose your language!"
 />,
-          <Picture />,
+          <Picture
+            handlePictureClicked={[Function]}
+/>,
         ],
       },
       "ref": null,
@@ -79,7 +85,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "handlePictureClicked": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

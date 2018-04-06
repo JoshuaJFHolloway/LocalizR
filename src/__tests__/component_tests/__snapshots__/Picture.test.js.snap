@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "alt": "themeimage",
+      "onClick": undefined,
       "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
       "width": "150",
     },
@@ -32,6 +33,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "alt": "themeimage",
+        "onClick": undefined,
         "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
         "width": "150",
       },

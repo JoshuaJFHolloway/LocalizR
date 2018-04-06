@@ -25,6 +25,13 @@ describe('SecondPage', () => {
       expect(secondpage.state('spanish')).toEqual(null);
     });
   });
+  
+  describe('Props successfully passing down to the SecondPage component', () =>{
+    it('passes handlePictureClicked', () => {
+      expect(secondpage.find('Picture').prop('handlePictureClicked')).toBe(secondpage.instance().handlePictureClicked);
+    });
+  });
+
 
   describe('Updates state successfully', () => {
     it("Updates the state when clicks spanish Picture component", () => {

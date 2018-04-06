@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Picture = () => {
+const Picture = props => {
     
     return (
-        <img src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150" />
+        <img onClick={props.handlePictureClicked} src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150" />
     );
 };
 
