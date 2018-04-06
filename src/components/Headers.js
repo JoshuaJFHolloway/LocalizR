@@ -10,7 +10,8 @@ const Headers = (props) => {
         header={props.header}
       />
       <img src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150" />
-      <SubHeader/>
+      <SubHeader
+        subheader={props.subheader}/>
     </Font>
   );
 };

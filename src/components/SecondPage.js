@@ -1,13 +1,12 @@
 import React from 'react';
-import ChooseLanguage from './ChooseLanguage';
+import SubHeader from './SubHeader';
 
 const SecondPage = () => {
   return (
     <div>
-      <button>
-        Second Page has rendered, let the fun begin
-      </button>
-      <ChooseLanguage />
+      <SubHeader
+        subheader={"Choose your language!"}
+      />
     </div>
   );
 };

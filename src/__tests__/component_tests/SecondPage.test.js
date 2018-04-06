@@ -11,8 +11,8 @@ describe('SecondPage', () => {
       expect(secondpage).toMatchSnapshot();
     })
 
-    it('renders ChooseLanguage component', () => {
-      expect(secondpage.find('ChooseLanguage').exists()).toBe(true);
+    it('renders Header component', () => {
+      expect(secondpage.find('SubHeader').exists()).toBe(true);
     });
   })
 });
