@@ -17,14 +17,53 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "alt": "themeimage",
-      "onClick": undefined,
-      "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
-      "width": "150",
+      "children": <button>
+        <img
+                alt="themeimage"
+                onClick={undefined}
+                src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
+                width="150"
+        />
+         
+</button>,
     },
     "ref": null,
-    "rendered": null,
-    "type": "img",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="themeimage"
+            onClick={undefined}
+            src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
+            width="150"
+/>,
+          " ",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "themeimage",
+            "onClick": undefined,
+            "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
+            "width": "150",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        " ",
+      ],
+      "type": "button",
+    },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -32,14 +71,53 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "alt": "themeimage",
-        "onClick": undefined,
-        "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
-        "width": "150",
+        "children": <button>
+          <img
+                    alt="themeimage"
+                    onClick={undefined}
+                    src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
+                    width="150"
+          />
+           
+</button>,
       },
       "ref": null,
-      "rendered": null,
-      "type": "img",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="themeimage"
+              onClick={undefined}
+              src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
+              width="150"
+/>,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "themeimage",
+              "onClick": undefined,
+              "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
+              "width": "150",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          " ",
+        ],
+        "type": "button",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
