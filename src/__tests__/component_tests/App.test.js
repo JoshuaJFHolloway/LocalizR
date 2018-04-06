@@ -26,6 +26,9 @@ describe('App', () => {
 
   describe('Updating state successfully', () => {
 
+    // trying to mock textEntered as true to allow state to change
+    // if this is too difficult then mock user input into all three text boxes
+
     it('updates the state of dataSubmitted to true', () => {
       app.instance().handleDataSubmitted();
       expect(app.state('dataSubmitted')).toEqual(true);
@@ -39,6 +42,19 @@ describe('App', () => {
     });
 
     it('renders SecondPage when dataSubmitted equals true', () => {
+
+      import { textEntered } from '../../components/App'
+
+      jest.mock('../../components/App', () => ({
+        textEntered: jest.fn(),
+      }));
+
+      textEntered.mockImplementation(() => true);
+
+
+      // trying to mock textEntered as true to allow state to change
+      // if this is too difficult then mock user input into all three text boxes
+
       app.instance().handleDataSubmitted();
       expect(app.instance().decider()).toEqual('SecondPage');
     });

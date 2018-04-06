@@ -21,13 +21,14 @@ class Form extends Component {
 
   handleTextInput = event => {
 
-    const target = event.target;
-    const name = target.name;
 
-    this.setState({
-      [name]: target.value
-    });
-  };
+      const target = event.target;
+      const name = target.name;
+      this.setState({
+        [name]: target.value
+      });
+    };
+
 
   render() {
     return (

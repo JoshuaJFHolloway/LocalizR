@@ -51,9 +51,18 @@ describe('Form', () => {
 
     it('passes handleTextInput to the UsernameInputUnit component', () => {
       expect(form.find('UsernameInputUnit').prop('handleTextInput')).toBe(form.instance().handleTextInput);
-      // expect(form.find('UsernameInputUnit').prop('value')).toBe(form.instance().handleTextInput);
-      // expect(form.find('UsernameInputUnit').prop('name')).toBe(form.instance().handleTextInput);
-      // expect(form.find('UsernameInputUnit').prop('input')).toBe(form.instance().handleTextInput);
+    });
+
+    it('passes value to the UsernameInputUnit component', () => {
+      expect(form.find('UsernameInputUnit').prop('value')).toBe(form.instance().state.Username);
+    });
+
+    it('passes value to the UsernameInputUnit component', () => {
+      expect(form.find('UsernameInputUnit').prop('name')).toEqual("Enter your username")
+    });
+
+    it('passes value to the UsernameInputUnit component', () => {
+      expect(form.find('UsernameInputUnit').prop('input')).toEqual("Username");
     });
 
     it('passes handleDataSubmitted to the SubmitButton component', () => {
