@@ -4,8 +4,8 @@ import Picture from './Picture';
 
 
 
-class SecondPage extends Component {
-  
+class ChooseLanguage extends Component {
+
   constructor(){
     super();
     this.state = {
@@ -23,15 +23,15 @@ class SecondPage extends Component {
         <SubHeader
           subheader={"Choose your language!"}
         />
-        <Picture 
+        <Picture
         handlePictureClicked = {this.handlePictureClicked}
         />
       </div>
     );
 
   }
-  
-  
+
+
 };
 
-export default SecondPage;
+export default ChooseLanguage;
