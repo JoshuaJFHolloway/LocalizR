@@ -14,5 +14,9 @@ describe('SecondPage', () => {
     it('renders Header component', () => {
       expect(secondpage.find('SubHeader').exists()).toBe(true);
     });
+
+    it("renders Picture component", () => {
+      expect(secondpage.find('Picture').exists()).toBe(true);
+    });
   })
 });

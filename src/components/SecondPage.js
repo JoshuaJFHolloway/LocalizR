@@ -1,5 +1,6 @@
 import React from 'react';
 import SubHeader from './SubHeader';
+import Picture from './Picture';
 
 const SecondPage = () => {
   return (
@@ -7,6 +8,7 @@ const SecondPage = () => {
       <SubHeader
         subheader={"Choose your language!"}
       />
+      <Picture />
     </div>
   );
 };
