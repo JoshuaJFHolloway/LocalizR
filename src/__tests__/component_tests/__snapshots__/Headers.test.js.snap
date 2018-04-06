@@ -18,7 +18,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Header />,
+        <Header
+          header={undefined}
+/>,
         <img
           alt="themeimage"
           src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
@@ -33,7 +35,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "header": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -70,7 +74,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Header />,
+          <Header
+            header={undefined}
+/>,
           <img
             alt="themeimage"
             src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
@@ -85,7 +91,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "header": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

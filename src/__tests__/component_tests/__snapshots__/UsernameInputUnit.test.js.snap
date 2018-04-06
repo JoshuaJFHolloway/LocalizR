@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Question
-          name={undefined}
+          dob={undefined}
 />,
         <Input
           handleTextInput={undefined}
@@ -35,7 +35,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "name": undefined,
+          "dob": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -65,7 +65,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Question
-            name={undefined}
+            dob={undefined}
 />,
           <Input
             handleTextInput={undefined}
@@ -81,7 +81,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "name": undefined,
+            "dob": undefined,
           },
           "ref": null,
           "rendered": null,
