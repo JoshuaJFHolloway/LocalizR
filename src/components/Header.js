@@ -1,10 +1,10 @@
 import React from 'react';
 import Title from "./styledComponents/titles.js";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Title>
-      Slath!
+      {props.header}
     </Title>
   );
 };

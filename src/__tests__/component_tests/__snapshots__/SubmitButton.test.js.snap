@@ -17,12 +17,20 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": " Submit ",
+      "children": Array [
+        " ",
+        undefined,
+        " ",
+      ],
       "id": "submitButton",
       "onClick": undefined,
     },
     "ref": null,
-    "rendered": " Submit ",
+    "rendered": Array [
+      " ",
+      undefined,
+      " ",
+    ],
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,12 +39,20 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": " Submit ",
+        "children": Array [
+          " ",
+          undefined,
+          " ",
+        ],
         "id": "submitButton",
         "onClick": undefined,
       },
       "ref": null,
-      "rendered": " Submit ",
+      "rendered": Array [
+        " ",
+        undefined,
+        " ",
+      ],
       "type": "button",
     },
   ],

@@ -33,7 +33,9 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <Headers/>
+        <Headers
+          header={"Slath!"}
+        />
         <UsernameInputUnit
           handleTextInput = {this.handleTextInput}
           value ={this.state.Username}
@@ -54,6 +56,7 @@ class Form extends Component {
         />
         <SubmitButton
           handleDataSubmitted = {this.props.handleDataSubmitted} // use this.props when passing on props to another comp
+          buttonName = {"Spanish"}
         />
       </div>
     );
