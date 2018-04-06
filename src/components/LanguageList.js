@@ -1,15 +1,15 @@
 import React from 'react';
-import SubHeader from './Subheader'
+import SubHeader from './SubHeader'
 import Picture from './Picture'
 
-const LanguageList = () => {
+const LanguageList = (props) => {
   return (
     <div>
       <SubHeader
         subheader={"Choose your language!"}
       />
       <Picture
-        handlePictureClicked = {this.props.handlePictureClicked}
+        handlePictureClicked = {props.handlePictureClicked}
       />
     </div>
   );

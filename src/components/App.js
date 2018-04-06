@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Form from './Form';
 import ChooseLanguage from './ChooseLanguage';
 import axios from 'axios';
-import Quiz from './SpanishQuiz';
 
 
 class App extends Component {

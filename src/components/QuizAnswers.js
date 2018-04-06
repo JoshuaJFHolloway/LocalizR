@@ -17,6 +17,7 @@ const QuizAnswers = () => {
     answer ={'los pantalones rojos'}
     />
     </div>
+
   )
 };
 

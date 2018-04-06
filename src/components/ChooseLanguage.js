@@ -12,7 +12,9 @@ class ChooseLanguage extends Component {
   };
 
   handlePictureClicked = () => {
-    this.setState ({spanish: true});
+    this.setState({
+      spanish: true
+    });
   };
 
   decider (){
