@@ -4,13 +4,13 @@ const QuizAnswer = props => {
   return (
   <div>  
     <div>
-      <button id={"submitButton"} onClick={props.handleAnswerSubmitted}> {props.answer1}</button>
+      <button id={"submitButton1"} onClick={props.handleAnswerSubmitted}> {props.answer1}</button>
     </div>
     <div>  
-      <button id={"submitButton"} onClick={props.handleAnswerSubmitted}> {props.answer2}</button>
+      <button id={"submitButton2"} onClick={props.handleAnswerSubmitted}> {props.answer2}</button>
     </div>
     <div>  
-      <button id={"submitButton"} onClick={props.handleAnswerSubmitted}> {props.answer3}</button>
+      <button id={"submitButton3"} onClick={props.handleAnswerSubmitted}> {props.answer3}</button>
     </div>
    </div> 
   )

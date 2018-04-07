@@ -20,7 +20,7 @@ ShallowWrapper {
       "children": Array [
         <div>
           <button
-                    id="submitButton"
+                    id="submitButton1"
                     onClick={undefined}
           >
                      
@@ -28,7 +28,7 @@ ShallowWrapper {
 </div>,
         <div>
           <button
-                    id="submitButton"
+                    id="submitButton2"
                     onClick={undefined}
           >
                      
@@ -36,7 +36,7 @@ ShallowWrapper {
 </div>,
         <div>
           <button
-                    id="submitButton"
+                    id="submitButton3"
                     onClick={undefined}
           >
                      
@@ -52,7 +52,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <button
-            id="submitButton"
+            id="submitButton1"
             onClick={undefined}
 >
              
@@ -68,7 +68,7 @@ ShallowWrapper {
               " ",
               undefined,
             ],
-            "id": "submitButton",
+            "id": "submitButton1",
             "onClick": undefined,
           },
           "ref": null,
@@ -86,7 +86,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <button
-            id="submitButton"
+            id="submitButton2"
             onClick={undefined}
 >
              
@@ -102,7 +102,7 @@ ShallowWrapper {
               " ",
               undefined,
             ],
-            "id": "submitButton",
+            "id": "submitButton2",
             "onClick": undefined,
           },
           "ref": null,
@@ -120,7 +120,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <button
-            id="submitButton"
+            id="submitButton3"
             onClick={undefined}
 >
              
@@ -136,7 +136,7 @@ ShallowWrapper {
               " ",
               undefined,
             ],
-            "id": "submitButton",
+            "id": "submitButton3",
             "onClick": undefined,
           },
           "ref": null,
@@ -160,7 +160,7 @@ ShallowWrapper {
         "children": Array [
           <div>
             <button
-                        id="submitButton"
+                        id="submitButton1"
                         onClick={undefined}
             >
                          
@@ -168,7 +168,7 @@ ShallowWrapper {
 </div>,
           <div>
             <button
-                        id="submitButton"
+                        id="submitButton2"
                         onClick={undefined}
             >
                          
@@ -176,7 +176,7 @@ ShallowWrapper {
 </div>,
           <div>
             <button
-                        id="submitButton"
+                        id="submitButton3"
                         onClick={undefined}
             >
                          
@@ -192,7 +192,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <button
-              id="submitButton"
+              id="submitButton1"
               onClick={undefined}
 >
                
@@ -208,7 +208,7 @@ ShallowWrapper {
                 " ",
                 undefined,
               ],
-              "id": "submitButton",
+              "id": "submitButton1",
               "onClick": undefined,
             },
             "ref": null,
@@ -226,7 +226,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <button
-              id="submitButton"
+              id="submitButton2"
               onClick={undefined}
 >
                
@@ -242,7 +242,7 @@ ShallowWrapper {
                 " ",
                 undefined,
               ],
-              "id": "submitButton",
+              "id": "submitButton2",
               "onClick": undefined,
             },
             "ref": null,
@@ -260,7 +260,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <button
-              id="submitButton"
+              id="submitButton3"
               onClick={undefined}
 >
                
@@ -276,7 +276,7 @@ ShallowWrapper {
                 " ",
                 undefined,
               ],
-              "id": "submitButton",
+              "id": "submitButton3",
               "onClick": undefined,
             },
             "ref": null,

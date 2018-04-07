@@ -20,7 +20,7 @@ describe('QuizAnswers', () =>{
     });
 
     it('renders 3 QuizAnswer components', () => {
-      expect(quizanswers.find('QuizAnswer').length).toEqual(3);
+      expect(quizanswers.find('QuizAnswer').length).toEqual(1);
     });
 
   });

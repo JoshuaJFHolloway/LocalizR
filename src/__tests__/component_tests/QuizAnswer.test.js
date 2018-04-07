@@ -12,11 +12,23 @@ describe('QuizAnswer', () => {
   });
 
   describe('when user clicks QuizAnswer button', () => {
-    it('should call the handleAnswerSubmitted function', () => {
+    it('should call the handleAnswerSubmitted function when user clicks first button', () => {
       let mockhandleAnswerSubmitted = jest.fn();
       let submit = shallow(<QuizAnswer handleAnswerSubmitted = {mockhandleAnswerSubmitted}/>);
-      submit.find("#submitButton").simulate('click');
+      submit.find("#submitButton1").simulate('click');
       expect(mockhandleAnswerSubmitted).toBeCalled();
-    })
+    });
+    it('should call the handleAnswerSubmitted function when user clicks second button', () => {
+      let mockhandleAnswerSubmitted = jest.fn();
+      let submit = shallow(<QuizAnswer handleAnswerSubmitted = {mockhandleAnswerSubmitted}/>);
+      submit.find("#submitButton2").simulate('click');
+      expect(mockhandleAnswerSubmitted).toBeCalled();
+    });
+    it('should call the handleAnswerSubmitted function when user clicks third button', () => {
+      let mockhandleAnswerSubmitted = jest.fn();
+      let submit = shallow(<QuizAnswer handleAnswerSubmitted = {mockhandleAnswerSubmitted}/>);
+      submit.find("#submitButton3").simulate('click');
+      expect(mockhandleAnswerSubmitted).toBeCalled();
+    });
   })
 });
