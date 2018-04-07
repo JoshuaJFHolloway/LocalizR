@@ -3,8 +3,9 @@ import Sub from "./styledComponents/subheadings.js";
 
 const SubHeader = (props) => {
   return (
-    <Sub>{props.subheader}</Sub>
+    <Sub>{props.subHeader}</Sub>
   );
 };
 
 export default SubHeader;
+

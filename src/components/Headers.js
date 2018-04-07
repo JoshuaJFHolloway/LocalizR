@@ -11,7 +11,7 @@ const Headers = (props) => {
       />
       <img src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150" />
       <SubHeader
-        subheader={props.subheader}/>
+        subheader={props.subHeader}/>
     </Font>
   );
 };

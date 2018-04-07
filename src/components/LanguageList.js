@@ -6,7 +6,7 @@ const LanguageList = (props) => {
   return (
     <div>
       <SubHeader
-        subheader={"Choose your language!"}
+        subHeader={"Choose your language!"}
       />
       <Picture
         handlePictureClicked = {props.handlePictureClicked}
