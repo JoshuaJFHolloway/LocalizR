@@ -9,5 +9,9 @@ describe('ResultsPage', () => {
     it('renders correcrly', () => {
       expect(resultspage).toMatchSnapshot();
     });
+
+    it('renders SubHeader correctly', () => {
+      expect(resultspage.find('SubHeader').exists()).toBe(true);
+    });
   });
 });
