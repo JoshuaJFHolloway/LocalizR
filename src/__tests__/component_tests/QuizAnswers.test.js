@@ -10,6 +10,10 @@ describe('QuizAnswers', () =>{
    describe('renders components correctly',() =>{
      it('renders correctly', () => {
        expect(quizanswers).toMatchSnapshot();    
+     });
+
+     it('renders QuizAnswer', () =>{
+       expect(quizanswers.find('QuizAnswer').exists()).toBe(true);   
      })
    }) 
 })
