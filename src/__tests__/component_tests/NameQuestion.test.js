@@ -6,10 +6,12 @@ describe('NameQuestion',() => {
    
   let namequestion = shallow(<NameQuestion />)
   
- describe('renders components correctly', () => {
+  describe('renders components correctly', () => {
     
     it('renders correctly',() =>{
-        expect(namequestion).toMatchSnapshot();
-    })
- }) 
-})
+      expect(namequestion).toMatchSnapshot();
+    });
+
+  });
+  
+});
