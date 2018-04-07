@@ -15,6 +15,10 @@ describe('LanguageList', () => {
     it('renders SubHeader correctly', () => {
       expect(languagelist.find('SubHeader').exists()).toBe(true);
     });
+
+    it('renders Picture correctly ', () => {
+       expect(languagelist.find('Picture').exists()).toBe(true); 
+    });
   });
     
 });
