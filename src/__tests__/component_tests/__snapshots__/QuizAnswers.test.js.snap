@@ -4,7 +4,9 @@ exports[`QuizAnswers renders components correctly renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <QuizAnswers />,
+  Symbol(enzyme.__unrendered__): <QuizAnswers
+    answer="el vestido rojo"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
