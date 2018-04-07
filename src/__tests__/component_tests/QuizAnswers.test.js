@@ -18,6 +18,10 @@ describe('QuizAnswers', () =>{
 
      it('renders QuizCorrectAnswer', () => {
        expect(quizanswers.find('QuizCorrectAnswer').exists()).toBe(true);  
-     })
-   }) 
-})
+     });
+
+   });
+});
+
+//Test incomplete, we don't know how to test the same component with different props
+// and if appears more than once.
