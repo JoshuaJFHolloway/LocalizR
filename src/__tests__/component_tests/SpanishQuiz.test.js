@@ -9,5 +9,9 @@ describe('SpanishQuiz', () => {
     it('renders correctly', () => {
       expect(spanishquiz).toMatchSnapshot();
     });
+
+    it('renders SpanishQuizQ page', () => {
+      expect(spanishquiz.find('SpanishQuizQ').exists()).toBe(true);
+    });
   });
 });
