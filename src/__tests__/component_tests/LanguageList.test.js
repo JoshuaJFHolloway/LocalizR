@@ -4,10 +4,17 @@ import LanguageList from '../../components/LanguageList';
 
 describe('LanguageList', () => {
 
-    let languagelist = shallow(<LanguageList />)
+  let languagelist = shallow(<LanguageList />)
 
+  describe('renders components correctly', () => {
+    
     it('renders correctly', () => {
-        expect(languagelist).toMatchSnapshot();
+      expect(languagelist).toMatchSnapshot();
     });
 
+    it('renders SubHeader correctly', () => {
+      expect(languagelist.find('SubHeader').exists()).toBe(true);
+    });
+  });
+    
 });
