@@ -15,14 +15,7 @@ const QuizAnswers = (props) => {
         correctAnswer={props.correctAnswer}
         handleCorrectAnswerSubmitted = {props.handleCorrectAnswerSubmitted}
       />
-      {/* <QuizAnswer
-        answer2={props.answer2}
-        handleAnswerSubmitted = {props.handleAnswerSubmitted}
-      /> */}
-      {/* <QuizAnswer
-        answer={props.answer}
-        handleAnswerSubmitted = {props.handleAnswerSubmitted}
-      /> */}
+      
     </div>
 
   )
