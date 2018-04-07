@@ -10,6 +10,10 @@ describe('EmailInputUnit' ,() => {
      it('renders correctly',() => {
         expect(emailinputunit).toMatchSnapshot(); 
      }); 
+
+     it('renders Question correctly', () =>{
+        expect(emailinputunit.find('Question').exists()).toBe(true);
+     });
   });
 
 });
