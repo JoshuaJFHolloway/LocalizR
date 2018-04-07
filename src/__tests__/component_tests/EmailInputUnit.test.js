@@ -14,6 +14,10 @@ describe('EmailInputUnit' ,() => {
      it('renders Question correctly', () =>{
         expect(emailinputunit.find('Question').exists()).toBe(true);
      });
+     
+     it('renders Input correctly', () => {
+        expect(emailinputunit.find('Input').exists()).toBe(true); 
+     });
   });
 
 });
