@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quiz Rendering components renders correctly 1`] = `
+exports[`SpanishQuizQ Rendering components renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SpanishQuiz />,
+  Symbol(enzyme.__unrendered__): <SpanishQuizQ />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <QuizScenario
-          scenario="You are getting ready for your date"
+          scenario="You choose to wear this for your date"
 />,
         <QuizPicture
           picture="https://www.opposuits.co.uk/media/catalog/product/cache/1/image/550x/925f46717e92fbc24a8e2d03b22927e1/s/s/ss_reddevil-lifestyle-01.jpg"
@@ -27,7 +27,10 @@ ShallowWrapper {
         <QuizQuestion
           question="Which of these is your suit?"
 />,
-        <QuizAnswers />,
+        <QuizAnswers
+          handleAnswerSubmitted={undefined}
+          handleCorrectAnswerSubmitted={undefined}
+/>,
       ],
     },
     "ref": null,
@@ -37,7 +40,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "scenario": "You are getting ready for your date",
+          "scenario": "You choose to wear this for your date",
         },
         "ref": null,
         "rendered": null,
@@ -69,7 +72,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "handleAnswerSubmitted": undefined,
+          "handleCorrectAnswerSubmitted": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -85,7 +91,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <QuizScenario
-            scenario="You are getting ready for your date"
+            scenario="You choose to wear this for your date"
 />,
           <QuizPicture
             picture="https://www.opposuits.co.uk/media/catalog/product/cache/1/image/550x/925f46717e92fbc24a8e2d03b22927e1/s/s/ss_reddevil-lifestyle-01.jpg"
@@ -93,7 +99,10 @@ ShallowWrapper {
           <QuizQuestion
             question="Which of these is your suit?"
 />,
-          <QuizAnswers />,
+          <QuizAnswers
+            handleAnswerSubmitted={undefined}
+            handleCorrectAnswerSubmitted={undefined}
+/>,
         ],
       },
       "ref": null,
@@ -103,7 +112,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "scenario": "You are getting ready for your date",
+            "scenario": "You choose to wear this for your date",
           },
           "ref": null,
           "rendered": null,
@@ -135,7 +144,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "handleAnswerSubmitted": undefined,
+            "handleCorrectAnswerSubmitted": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

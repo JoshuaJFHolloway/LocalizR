@@ -17,10 +17,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <button>
+      "children": <button
+        onClick={undefined}
+>
         <img
                 alt="themeimage"
-                onClick={undefined}
                 src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
                 width="150"
         />
@@ -36,12 +37,12 @@ ShallowWrapper {
         "children": Array [
           <img
             alt="themeimage"
-            onClick={undefined}
             src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
             width="150"
 />,
           " ",
         ],
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -51,7 +52,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "themeimage",
-            "onClick": undefined,
             "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
             "width": "150",
           },
@@ -71,10 +71,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <button>
+        "children": <button
+          onClick={undefined}
+>
           <img
                     alt="themeimage"
-                    onClick={undefined}
                     src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
                     width="150"
           />
@@ -90,12 +91,12 @@ ShallowWrapper {
           "children": Array [
             <img
               alt="themeimage"
-              onClick={undefined}
               src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
               width="150"
 />,
             " ",
           ],
+          "onClick": undefined,
         },
         "ref": null,
         "rendered": Array [
@@ -105,7 +106,6 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "themeimage",
-              "onClick": undefined,
               "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
               "width": "150",
             },

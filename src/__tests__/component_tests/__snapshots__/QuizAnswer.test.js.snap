@@ -17,11 +17,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <button>
-        id=
-        submitButton
-         onClick=
-        &gt; 
+      "children": <button
+        id="submitButton"
+        onClick={undefined}
+>
+         
 </button>,
     },
     "ref": null,
@@ -31,21 +31,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          "id=",
-          "submitButton",
-          " onClick=",
-          undefined,
-          "> ",
+          " ",
           undefined,
         ],
+        "id": "submitButton",
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": Array [
-        "id=",
-        "submitButton",
-        " onClick=",
-        undefined,
-        "> ",
+        " ",
         undefined,
       ],
       "type": "button",
@@ -58,11 +52,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <button>
-          id=
-          submitButton
-           onClick=
-          &gt; 
+        "children": <button
+          id="submitButton"
+          onClick={undefined}
+>
+           
 </button>,
       },
       "ref": null,
@@ -72,21 +66,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "id=",
-            "submitButton",
-            " onClick=",
-            undefined,
-            "> ",
+            " ",
             undefined,
           ],
+          "id": "submitButton",
+          "onClick": undefined,
         },
         "ref": null,
         "rendered": Array [
-          "id=",
-          "submitButton",
-          " onClick=",
-          undefined,
-          "> ",
+          " ",
           undefined,
         ],
         "type": "button",
