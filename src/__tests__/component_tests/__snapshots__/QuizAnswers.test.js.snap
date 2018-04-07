@@ -21,20 +21,14 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <QuizAnswer
-          answer="el vestido rojo"
+          answer1={undefined}
+          answer2={undefined}
+          answer3={undefined}
           handleAnswerSubmitted={undefined}
 />,
         <QuizCorrectAnswer
-          answer="el traje rojo"
+          correctAnswer={undefined}
           handleCorrectAnswerSubmitted={undefined}
-/>,
-        <QuizAnswer
-          answer="el abrigo rojo"
-          handleAnswerSubmitted={undefined}
-/>,
-        <QuizAnswer
-          answer="los pantalones rojos"
-          handleAnswerSubmitted={undefined}
 />,
       ],
     },
@@ -45,7 +39,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "answer": "el vestido rojo",
+          "answer1": undefined,
+          "answer2": undefined,
+          "answer3": undefined,
           "handleAnswerSubmitted": undefined,
         },
         "ref": null,
@@ -57,32 +53,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "answer": "el traje rojo",
+          "correctAnswer": undefined,
           "handleCorrectAnswerSubmitted": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "answer": "el abrigo rojo",
-          "handleAnswerSubmitted": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "answer": "los pantalones rojos",
-          "handleAnswerSubmitted": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -99,20 +71,14 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <QuizAnswer
-            answer="el vestido rojo"
+            answer1={undefined}
+            answer2={undefined}
+            answer3={undefined}
             handleAnswerSubmitted={undefined}
 />,
           <QuizCorrectAnswer
-            answer="el traje rojo"
+            correctAnswer={undefined}
             handleCorrectAnswerSubmitted={undefined}
-/>,
-          <QuizAnswer
-            answer="el abrigo rojo"
-            handleAnswerSubmitted={undefined}
-/>,
-          <QuizAnswer
-            answer="los pantalones rojos"
-            handleAnswerSubmitted={undefined}
 />,
         ],
       },
@@ -123,7 +89,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "answer": "el vestido rojo",
+            "answer1": undefined,
+            "answer2": undefined,
+            "answer3": undefined,
             "handleAnswerSubmitted": undefined,
           },
           "ref": null,
@@ -135,32 +103,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "answer": "el traje rojo",
+            "correctAnswer": undefined,
             "handleCorrectAnswerSubmitted": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "answer": "el abrigo rojo",
-            "handleAnswerSubmitted": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "answer": "los pantalones rojos",
-            "handleAnswerSubmitted": undefined,
           },
           "ref": null,
           "rendered": null,
