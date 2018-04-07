@@ -3,15 +3,17 @@ import Header from './Header';
 import SubHeader from './SubHeader';
 import Font from "./styledComponents/fonts.js";
 
-const Headers = (props) => {
+const Headers = () => {
   return (
     <Font>
       <Header
-        header={props.header}
+        header={"slath"}
       />
-      <img src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150" />
+      <img
+        // src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150"
+        />
       <SubHeader
-        subheader={props.subHeader}/>
+        subHeader={"Be a traveler, not a tourist"}/>
     </Font>
   );
 };

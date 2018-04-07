@@ -33,7 +33,6 @@ class Form extends Component {
     return (
       <div>
         <Headers
-          header={"Slath!"}
         />
         <UsernameInputUnit
           handleTextInput = {this.handleTextInput}
