@@ -15,6 +15,10 @@ describe('PasswordInputUnit', () => {
 
     it('renders Question component', () => {
       expect(passwordinputunit.find('Question').exists()).toBe(true);
+    });
+
+    it("renders Input component", () => {
+      expect(passwordinputunit.find('Input').exists()).toBe(true);
     })
 
   })   
