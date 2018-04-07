@@ -27,12 +27,37 @@ class App extends Component {
     }
   };
 
+  handleLoginSubmitted = () => {
+    if(this.loginDetailsEntered() === true) {
+      this.setState({
+        dataSubmitted: true,
+      });
+      const user = {username: this.Form.state.Username,
+        email: this.Form.state.Email,
+        password: this.Form.state.Password };
+      axios.post(this.props.url, user)
+        .catch(err => {
+          console.error(err);
+        });
+    }
+  };
+
 
   decider() {
     if (this.state.dataSubmitted === true) {
       return 'ChooseLanguage';
     } else return 'Form';
   }
+
+
+  loginDetailsEntered() {
+    let Email = this.Form.state.Email;
+    let Password = this.Form.state.Password;
+
+    if(Email && Password !== null) {
+      return true
+    }
+  };
 
 
   textEntered() {
@@ -52,7 +77,7 @@ class App extends Component {
       Form: (
         <Form
           handleDataSubmitted = {this.handleDataSubmitted}
-
+          handleLoginSubmitted ={this.handleLoginSubmitted}
           ref={(Form) => {this.Form = Form;}}
 
           // If you want to access the state of a component's children, you can assign
