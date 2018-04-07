@@ -10,4 +10,13 @@ describe('QuizCorrectAnswer', () => {
       expect(quizcorrectanswer).toMatchSnapshot();
     });
   });
+
+  describe('when user clicks QuizCorrectAnswer button', () => {
+    it('should call the handleCorrectAnswerSubmitted function', () => {
+      let mockhandleCorrectAnswerSubmitted = jest.fn();
+      let submit = shallow(<QuizCorrectAnswer handleCorrectAnswerSubmitted = {mockhandleCorrectAnswerSubmitted} />);
+      submit.find("#submitButton").simulate('click');
+      expect(mockhandleCorrectAnswerSubmitted).toBeCalled();
+    });
+  });
 });
