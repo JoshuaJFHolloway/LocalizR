@@ -10,34 +10,32 @@ describe('ChooseLanguage', () => {
     it('renders correctly', () => {
       expect(chooselanguage).toMatchSnapshot();
     });
-
-    it('renders ChooseLanguageHeader component', () => {
-      expect(chooselanguage.find('ChooseLanguageHeader').exists()).toBe(true);
-    });
-
-    it('renders ChooseLanguageButton component', () => {
-      expect(chooselanguage.find('ChooseLanguageButton').exists()).toBe(true);
-    });
   });
 
-  describe('initializes state succesfully', () => {
+  describe('Initializes state successfully', () =>{
     it('initializes spanish as null', () => {
       expect(chooselanguage.state('spanish')).toEqual(null);
     });
   });
 
-  describe('Props successfully passing down to the ChooseLanguage component', () => {
-    it('passes handleSpanishSubmitted', () => {
-      expect(chooselanguage.find('ChooseLanguageButton').prop('handleSpanishSubmitted')).toBe(chooselanguage.instance().handleSpanishSubmitted);
+  describe('Props successfully passing down to the chooselanguage component', () =>{
+    it('passes handlePictureClicked', () => {
+      expect(chooselanguage.find('LanguageList').prop('handlePictureClicked')).toBe(chooselanguage.instance().handlePictureClicked);
     });
   });
 
-  describe('Updates state successfully', () => {
-    
-    it('updates the state of spanish when clicks spanish', () => {
-      chooselanguage.instance().handleSpanishSubmitted();
-      expect(chooselanguage.state('spanish')).toEqual(true);
-    })
-  })
+  describe("When spanish equals true", () => {
+    it("It renders the Quiz page", () => {
+      chooselanguage.instance().handlePictureClicked();
+      expect(chooselanguage.instance().decider()).toEqual("SpanishQuiz");
+    });
+  });
 
+
+  describe('Updates state successfully', () => {
+    it("Updates the state when clicks spanish Picture component", () => {
+      chooselanguage.instance().handlePictureClicked();
+      expect(chooselanguage.state('spanish')).toEqual(true);
+    });
+  });
 });

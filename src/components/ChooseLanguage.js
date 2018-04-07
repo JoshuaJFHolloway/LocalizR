@@ -1,29 +1,45 @@
 import React, { Component } from 'react';
-import ChooseLanguageHeader from './ChooseLanguageHeader';
-import ChooseLanguageButton from './ChooseLanguageButton';
+import LanguageList from './LanguageList';
+import SpanishQuiz from './SpanishQuiz';
 
 class ChooseLanguage extends Component {
-  constructor() {
+
+  constructor(){
     super();
     this.state = {
       spanish: null
     };
   };
 
-  handleSpanishSubmitted = () => {
-    this.setState ({ spanish: true })
+  handlePictureClicked = () => {
+    this.setState({
+      spanish: true
+    });
+  };
+
+  decider (){
+    if(this.state.spanish === true){
+      return 'SpanishQuiz'
+    } else return 'LanguageList'
   };
 
   render() {
+
+    const quizViews = {
+      LanguageList: (
+        <LanguageList
+          handlePictureClicked = {this.handlePictureClicked}
+        />
+      ),
+      SpanishQuiz: <SpanishQuiz/>
+    };
+
     return (
       <div>
-        <ChooseLanguageHeader />
-        <ChooseLanguageButton
-          handleSpanishSubmitted = {this.handleSpanishSubmitted}
-        />
+      {quizViews[this.decider()]}
       </div>
-    );
+    )
   };
-};
+}
 
 export default ChooseLanguage;

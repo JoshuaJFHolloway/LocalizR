@@ -1,9 +1,9 @@
 import React from 'react';
 
-const QuizAnswer = () => {
+const QuizAnswer = props => {
   return (
     <div>
-      <button>Answer 1</button>
+      <button id={"submitButton"} onClick={props.handleAnswerSubmitted}> {props.answer}</button>
     </div>
   )
 };

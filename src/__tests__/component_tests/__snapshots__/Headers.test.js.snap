@@ -26,7 +26,9 @@ ShallowWrapper {
           src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
           width="150"
 />,
-        <SubHeader />,
+        <SubHeader
+          subheader={undefined}
+/>,
       ],
     },
     "ref": null,
@@ -59,7 +61,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "subheader": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -82,7 +86,9 @@ ShallowWrapper {
             src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
             width="150"
 />,
-          <SubHeader />,
+          <SubHeader
+            subheader={undefined}
+/>,
         ],
       },
       "ref": null,
@@ -115,7 +121,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "subheader": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

@@ -1,8 +1,10 @@
 import React from 'react';
 
-const QuizPicture = () => {
+const QuizPicture = (props) => {
   return (
-    <img src="https://www.betterphoto.com/uploads/processed/0837/0809120751121sdsduk.jpg"/>
+    <img
+      src={props.picture}
+    />
   )
 };
 

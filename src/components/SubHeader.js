@@ -1,10 +1,11 @@
 import React from 'react';
 import Sub from "./styledComponents/subheadings.js";
 
-const SubHeader = () => {
+const SubHeader = (props) => {
   return (
-    <Sub>The adventure language learning game!</Sub>
+    <Sub>{props.subHeader}</Sub>
   );
 };
 
 export default SubHeader;
+

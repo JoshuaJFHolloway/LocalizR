@@ -17,10 +17,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": "The adventure language learning game!",
+      "children": undefined,
     },
     "ref": null,
-    "rendered": "The adventure language learning game!",
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +29,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": "The adventure language learning game!",
+        "children": undefined,
       },
       "ref": null,
-      "rendered": "The adventure language learning game!",
+      "rendered": null,
       "type": [Function],
     },
   ],

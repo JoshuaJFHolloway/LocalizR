@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Quiz from '../../components/Quiz';
+import Quiz from '../../components/SpanishQuiz';
 
 describe('Quiz', () => {
   let quiz = shallow(<Quiz />);
@@ -18,12 +18,12 @@ describe('Quiz', () => {
       expect(quiz.find('QuizPicture').exists()).toBe(true);
     })
 
-    it('renders a QuizQuestion component', () => {
-      expect(quiz.find('QuizQuestion').exists()).toBe(true);
+    it('renders a QuizAnswer component', () => {
+      expect(quiz.find('QuizAnswers').exists()).toBe(true);
     })
 
     it('renders a QuizAnswer component', () => {
-      expect(quiz.find('QuizAnswer').exists()).toBe(true);
+      expect(quiz.find('QuizQuestion').exists()).toBe(true);
     })
   });
 });
