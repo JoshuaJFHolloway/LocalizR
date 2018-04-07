@@ -14,6 +14,10 @@ describe('QuizAnswers', () =>{
 
      it('renders QuizAnswer', () =>{
        expect(quizanswers.find('QuizAnswer').exists()).toBe(true);   
+     });
+
+     it('renders QuizCorrectAnswer', () => {
+       expect(quizanswers.find('QuizCorrectAnswer').exists()).toBe(true);  
      })
    }) 
 })
