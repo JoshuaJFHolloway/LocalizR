@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Headers from './Headers';
-import UsernameInputUnit from './UsernameInputUnit';
-import EmailInputUnit from './EmailInputUnit';
-import PasswordInputUnit from './PasswordInputUnit';
-import SubmitButton from './SubmitButton';
+import LoginForm from './LoginForm';
+import SignUpForm from './SignUpForm';
+import LoginAndSignUpButtons from './LoginAndSignUpButtons';
 
 class Form extends Component {
   constructor() {
@@ -12,14 +11,15 @@ class Form extends Component {
       // dataSubmitted: false, // (will dictate whether next page loads)
       Username: null, // (this will be pushed to database)
       Email: null, // (this will be pushed to database)
-      Password: null // (this will be pushed to database)
+      Password: null, // (this will be pushed to database)
+      LoginButtonPressed: null,
+      SignUpButtonPressed: null
     };
   }
 
   //controlled and uncontrolled form fields - research it
 
   handleTextInput = event => {
-
 
       const target = event.target;
       const name = target.name;
@@ -28,35 +28,65 @@ class Form extends Component {
       });
     };
 
+  handleLoginButton = () => {
+    this.setState({
+      LoginButtonPressed: true
+    })
+  };
+
+  handleSignUpButton = () => {
+    this.setState({
+      SignUpButtonPressed: true
+    })
+  };
+
+  decider() {
+    if (this.state.LoginButtonPressed === true) {
+      return 'LoginForm';
+    } if (this.state.SignUpButtonPressed === true) {
+      return 'SignUpForm'
+    } else return 'LoginAndSignUpButtons';
+  }
+
 
   render() {
+
+    const Views = {
+      LoginForm: (
+        <LoginForm
+          handleLoginSubmitted = {this.props.handleLoginSubmitted}
+          handleTextInput = {this.handleTextInput}
+          username ={this.state.Username}
+          email ={this.state.Email}
+          password ={this.state.Password}
+        />
+      ),
+      SignUpForm: (
+        <SignUpForm
+          handleDataSubmitted = {this.props.handleDataSubmitted}
+          handleTextInput = {this.handleTextInput}
+          username ={this.state.Username}
+          email ={this.state.Email}
+          password ={this.state.Password}
+        />),
+      LoginAndSignUpButtons: (
+        <LoginAndSignUpButtons
+          handleLoginButton = {this.handleLoginButton}
+          handleSignUpButton = {this.handleSignUpButton}
+      />
+      )
+    };
+
     return (
       <div>
-        <Headers
-          header={"Slath!"}
-        />
-        <UsernameInputUnit
-          handleTextInput = {this.handleTextInput}
-          value ={this.state.Username}
-          name={"Enter your username"}
-          input={"Username"}
-        />
-        <EmailInputUnit
-          handleTextInput = {this.handleTextInput}
-          value ={this.state.Email}
-          name={"Enter your email"}
-          input={"Email"}
-        />
-        <PasswordInputUnit
-          handleTextInput = {this.handleTextInput}
-          value ={this.state.Password}
-          name={"Enter your password"}
-          input={"Password"}
-        />
-        <SubmitButton
-          handleDataSubmitted = {this.props.handleDataSubmitted} // use this.props when passing on props to another comp
-          buttonName = {"Submit"}
-        />
+        <Headers/>
+        {Views[this.decider()]}
+
+        {/*<Login*/}
+          {/*handleDataSubmitted = {this.props.handleDataSubmitted}*/}
+          {/*handleTextInput = {this.handleTextInput}*/}
+        {/*/>*/}
+
       </div>
     );
   };
