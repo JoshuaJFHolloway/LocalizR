@@ -44,9 +44,7 @@ class Form extends Component {
   //     SignUpButtonPressed: true
   //   })
   // };
-  goTo(route) {
-     this.props.history.replace(`/${route}`)
-   }
+
 
    login() {
      auth.login();
@@ -102,23 +100,23 @@ class Form extends Component {
         <Headers/>
 
         {
-                  // !isAuthenticated() && (
+                  !auth.isAuthenticated() && (
                       <button
 
                         onClick={this.login.bind(this)}
                       >
                         Log In or Sign Up
                       </button>
-                    // )
+                    )
                 }
                 {
-                  // isAuthenticated() && (
+                  auth.isAuthenticated() && (
                       <button
                         onClick={this.logout.bind(this)}
                       >
                         Log Out
                       </button>
-                    // )
+                    )
                 }
 
         {Views[this.decider()]}

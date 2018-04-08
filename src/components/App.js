@@ -16,10 +16,6 @@ class App extends Component {
 
   }
 
-
-
-
-
   handleDataSubmitted = () => {
     // if(this.textEntered() === true) {
       this.setState({
