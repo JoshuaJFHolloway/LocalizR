@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Form from './Form';
 import ChooseLanguage from './ChooseLanguage';
 import axios from 'axios';
+import Auth from '../Auth/Auth.js';
 
+
+const auth = new Auth();
 
 class App extends Component {
   constructor() {
@@ -10,7 +13,23 @@ class App extends Component {
     this.state = {
       dataSubmitted: false,
     }
+
   }
+
+
+
+  goTo(route) {
+     this.props.history.replace(`/${route}`)
+   }
+
+   login() {
+     auth.login();
+   }
+
+   logout() {
+     auth.logout();
+   }
+
 
   handleDataSubmitted = () => {
     if(this.textEntered() === true) {
@@ -73,6 +92,10 @@ class App extends Component {
 
   render() {
 
+    // const { isAuthenticated } = this.props.auth;
+
+
+
     const Views = {
       Form: (
         <Form
@@ -91,6 +114,26 @@ class App extends Component {
 
     return (
       <div>
+      {
+                // !isAuthenticated() && (
+                    <button
+
+                      onClick={this.login.bind(this)}
+                    >
+                      Log In
+                    </button>
+                  // )
+              }
+              {
+                // isAuthenticated() && (
+                    <button
+                      onClick={this.logout.bind(this)}
+                    >
+                      Log Out
+                    </button>
+                  // )
+              }
+
         {Views[this.decider()]}
       </div>
     )
