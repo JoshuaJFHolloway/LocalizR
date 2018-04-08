@@ -32,7 +32,7 @@ class App extends Component {
 
 
   handleDataSubmitted = () => {
-    if(this.textEntered() === true) {
+    // if(this.textEntered() === true) {
       this.setState({
         dataSubmitted: true,
       });
@@ -43,7 +43,7 @@ class App extends Component {
       .catch(err => {
         console.error(err);
       });
-    }
+    // }
   };
 
   handleLoginSubmitted = () => {

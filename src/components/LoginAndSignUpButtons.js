@@ -1,19 +1,16 @@
 import React from 'react'
-import LoginButton from './LoginButton';
+import SubmitButton from './SubmitButton';
 import SignUpButton from './SignUpButton';
 
 const LoginAndSignUpButtons = props => {
   return (
     <div>
-      <LoginButton
-        handleLoginButton = {props.handleLoginButton}
-        name ={"Login"}
+      <SubmitButton
+        handleDataSubmitted = {props.handleDataSubmitted} // use this.props when passing on props to another comp
+        buttonName = {"Start"}
       />
 
-      <SignUpButton
-        handleSignUpButton = {props.handleSignUpButton}
-        name ={"Sign up"}
-      />
+
     </div>
   )
 };

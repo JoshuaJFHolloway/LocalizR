@@ -30,15 +30,16 @@ class Form extends Component {
 
   handleLoginButton = () => {
     this.setState({
-      LoginButtonPressed: true
+      // LoginButtonPressed: true,
+      dataSubmitted: true
     })
   };
 
-  handleSignUpButton = () => {
-    this.setState({
-      SignUpButtonPressed: true
-    })
-  };
+  // handleSignUpButton = () => {
+  //   this.setState({
+  //     SignUpButtonPressed: true
+  //   })
+  // };
 
   decider() {
     if (this.state.LoginButtonPressed === true) {
@@ -71,6 +72,8 @@ class Form extends Component {
         />),
       LoginAndSignUpButtons: (
         <LoginAndSignUpButtons
+        handleDataSubmitted = {this.props.handleDataSubmitted}
+
           handleLoginButton = {this.handleLoginButton}
           handleSignUpButton = {this.handleSignUpButton}
       />
