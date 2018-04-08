@@ -17,4 +17,4 @@ const PasswordInputUnit = props => {
   );
 };
 
-export default PasswordInputUnit
+export default PasswordInputUnit;

@@ -8,17 +8,21 @@ const SpanishQuizQ = props => {
   return (
     <div>
       <QuizScenario
-        scenario={"You choose to wear this for your date"}
+        scenario={props.scenario}
       />
       <QuizPicture
-        picture={"https://www.opposuits.co.uk/media/catalog/product/cache/1/image/550x/925f46717e92fbc24a8e2d03b22927e1/s/s/ss_reddevil-lifestyle-01.jpg"}
+        picture={props.picture}
       />
       <QuizQuestion
-        question={"Which of these is your suit?"}
+        question={props.question}
       />
       <QuizAnswers
         handleAnswerSubmitted = {props.handleAnswerSubmitted}
         handleCorrectAnswerSubmitted = {props.handleCorrectAnswerSubmitted}
+        answer1={props.answer1}
+        correctAnswer={props.correctAnswer}
+        answer2={props.answer2}
+        answer3={props.answer3}
       />
     </div>
   )

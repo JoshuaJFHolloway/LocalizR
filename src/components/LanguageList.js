@@ -1,6 +1,6 @@
 import React from 'react';
-import SubHeader from './SubHeader'
 import Picture from './Picture'
+import SubHeader from './SubHeader'
 
 const LanguageList = (props) => {
   return (
@@ -11,6 +11,7 @@ const LanguageList = (props) => {
       <Picture
         handlePictureClicked = {props.handlePictureClicked}
       />
+      {props.spanishScenarios}
     </div>
   );
 };
