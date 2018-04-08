@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import SpanishQuiz from './SpanishQuiz';
+import SpanishScenarios from './SpanishScenarios'
+
 
 class ChooseLanguage extends Component {
 
   constructor(){
     super();
     this.state = {
-      spanish: null
+      spanish: null,
+      spanishScen1: null
     };
   };
 
@@ -17,10 +20,19 @@ class ChooseLanguage extends Component {
     });
   };
 
+  handleScenarioClicked = () => {
+    this.setState({
+      spanishScenario1: true
+    });
+  };
+
+
   decider (){
     if(this.state.spanish === true){
-      return 'SpanishQuiz'
-    } else return 'LanguageList'
+      return 'SpanishScenarios';
+    } if(this.state.spanishScen1 === true) {
+      return 'SpanishQuiz';
+    } else return 'LanguageList';
   };
 
   render() {
@@ -31,7 +43,17 @@ class ChooseLanguage extends Component {
           handlePictureClicked = {this.handlePictureClicked}
         />
       ),
-      SpanishQuiz: <SpanishQuiz/>
+      SpanishScenarios: (
+        <LanguageList
+          handlePictureClicked = {this.handlePictureClicked}
+          spanishScenarios = {<SpanishScenarios
+            handleScenarioClicked = {this.handleScenarioClicked}
+          />}
+        />
+      ),
+      SpanishQuiz: (
+        <SpanishQuiz/>
+      )
     };
 
     return (

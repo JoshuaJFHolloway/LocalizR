@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import EmailInputUnit from './EmailInputUnit';
 import PasswordInputUnit from './PasswordInputUnit';
 import SubmitButton from './SubmitButton';
