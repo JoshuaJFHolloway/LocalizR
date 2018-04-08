@@ -9,17 +9,16 @@ class ChooseLanguage extends Component {
   constructor(){
     super();
     this.state = {
-      spanish: null,
-      spanishScen1: null,
-      languageListToggle: null
+      spanish: false,
+      spanishScen1: false,
+
     };
   };
 
   handlePictureClicked = () => {
-    this.setState({
-      spanish: true,
-      languageListToggle: true // toggle preVState code
-    });
+    this.setState(prevState => ({
+      spanish: !prevState.spanish
+    }));
   };
 
   handleScenarioClicked = () => {
@@ -32,8 +31,6 @@ class ChooseLanguage extends Component {
   decider (){
       if(this.state.spanishScen1 === true && this.state.spanish === true) {
       return 'SpanishQuiz';
-    } if(this.state.spanish === true) {
-      return '';
     } if(this.state.spanish === true) {
       return 'SpanishScenarios';
     } else return 'LanguageList';
