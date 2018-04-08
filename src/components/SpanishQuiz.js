@@ -32,12 +32,14 @@ class SpanishQuiz extends Component {
 
 
   decider = () => {
-    if (this.state.counter === 3) {
+    if (this.state.counter === 4) {
       return 'ResultsPage';
       } else if (this.state.counter === 1) {
         return 'SpanishQuizQ2';
       } else if (this.state.counter === 2){
         return 'SpanishQuizQ3';
+      } else if (this.state.counter === 3){
+        return 'SpanishQuizQ4'
       }
       else return 'SpanishQuizQ';
     };
@@ -91,6 +93,34 @@ class SpanishQuiz extends Component {
             correctAnswer={"Flores"}
             answer2={"Cucharas"}
             answer3={"Uvas"}
+          />
+        ),
+
+        SpanishQuizQ4: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"You want to impress your date with a nice compliment ...."}
+            picture={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
+            question={"Which of these is the best compliment?"}
+            answer1={"Bello"}
+            correctAnswer={"Guapa"}
+            answer2={"Extraña"}
+            answer3={"Grande"}
+          />
+        ),
+
+        SpanishQuizQ5: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"You want to impress your date with a nice compliment ...."}
+            picture={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
+            question={"Which of these is the best compliment?"}
+            answer1={"Bello"}
+            correctAnswer={"Guapa"}
+            answer2={"Extraña"}
+            answer3={"Grande"}
           />
         ),
     };
