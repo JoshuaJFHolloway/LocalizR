@@ -32,7 +32,7 @@ class SpanishQuiz extends Component {
 
 
   decider = () => {
-    if (this.state.counter === 4) {
+    if (this.state.counter === 5) {
       return 'ResultsPage';
       } else if (this.state.counter === 1) {
         return 'SpanishQuizQ2';
@@ -40,6 +40,8 @@ class SpanishQuiz extends Component {
         return 'SpanishQuizQ3';
       } else if (this.state.counter === 3){
         return 'SpanishQuizQ4'
+      } else if (this.state.counter === 4){
+        return 'SpanishQuizQ5'
       }
       else return 'SpanishQuizQ';
     };
@@ -103,10 +105,10 @@ class SpanishQuiz extends Component {
             scenario={"You want to impress your date with a nice compliment ...."}
             picture={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
             question={"Which of these is the best compliment?"}
-            answer1={"Bello"}
-            correctAnswer={"Guapa"}
-            answer2={"Extraña"}
-            answer3={"Grande"}
+            answer1={"Qué bello estás"}
+            correctAnswer={"Qué guapa estás"}
+            answer2={"Qué extraña estás"}
+            answer3={"Qué grande estás"}
           />
         ),
 
@@ -114,13 +116,83 @@ class SpanishQuiz extends Component {
           <SpanishQuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
-            scenario={"You want to impress your date with a nice compliment ...."}
-            picture={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
-            question={"Which of these is the best compliment?"}
-            answer1={"Bello"}
-            correctAnswer={"Guapa"}
-            answer2={"Extraña"}
-            answer3={"Grande"}
+            scenario={"After a romantic and successfull date, you're inviting your date for a drink..."}
+            picture={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
+            question={"Which of these is the best option?"}
+            answer1={"Mercado"}
+            correctAnswer={"Terraza-Bar de copas"}
+            answer2={"Banco"}
+            answer3={"Tienda"}
+          />
+        ),
+
+        SpanishQuizQ6: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"After a long trip to Malaga, you're getting ready to go to the beach, but you don't know how to the direction"}
+            picture={"https://i.gifer.com/BkoU.gif"}
+            question={"Which of these is a swinsuit?"}
+            answer1={"Toalla"}
+            correctAnswer={"Bañador"}
+            answer2={"Camiseta"}
+            answer3={"Calcetines"}
+          />
+        ),
+
+        SpanishQuizQ7: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"As a person who takes care of the skin, you need to buy sun protection to prevent sunburn.."}
+            picture={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwXOsbPRiAAfruDCcVVkzXGQwvJYDOPjZF1wuJMuBE2jbMPA-"}
+            question={"Which of these is the sun protector?"}
+            answer1={"Crema de cara"}
+            correctAnswer={"Protector solar"}
+            answer2={"Pasta de dientes"}
+            answer3={"Gel de baño"}
+          />
+        ),
+
+        SpanishQuizQ8: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"Now, You're getting to the beach by Bus... "}
+            picture={"https://i.pinimg.com/originals/a3/4f/82/a34f82bc4ee3d8ed199ffd234f2a34e2.jpg"}
+            question={"Which bus you need to get?"}
+            answer1={"Dirección centro"}
+            correctAnswer={"Dirección playa"}
+            answer2={"Dirección Feria"}
+            answer3={"Dirección pueblo"}
+          />
+        ),
+
+        SpanishQuizQ9: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"You're enjoying a nice day on the beach, but You're geting thristy... "}
+            picture={"http://s03.s3c.es/imag/_v0/770x420/6/9/0/botella-agua-770x420-reuters.jpg"}
+            question={"What can you get?"}
+            answer1={"Pan"}
+            correctAnswer={"Botella de agua"}
+            answer2={"Botella de vino"}
+            answer3={"Ensalada"}
+          />
+        ),
+
+        SpanishQuizQ10: (
+          <SpanishQuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={"After a nice day on the beach, you lose the track time and you miss your bus .."}
+            picture={"http://artmansnursery.com/wp-content/uploads/2015/06/clock.jpg"}
+            question={"What time is the next bus?"}
+            answer1={"Cinco y media"}
+            correctAnswer={"Seis en punto"}
+            answer2={"Seis y media "}
+            answer3={"Ocho en punto"}
           />
         ),
     };

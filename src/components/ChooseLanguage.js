@@ -19,7 +19,7 @@ class ChooseLanguage extends Component {
 
   decider (){
     if(this.state.spanish === true){
-      return 'SpanishQuiz'
+      return 'SpanishQuizDating'
     } else return 'LanguageList'
   };
 
@@ -31,7 +31,7 @@ class ChooseLanguage extends Component {
           handlePictureClicked = {this.handlePictureClicked}
         />
       ),
-      SpanishQuiz: <SpanishQuiz/>
+      SpanishQuizDating: <SpanishQuiz/>
     };
 
     return (
