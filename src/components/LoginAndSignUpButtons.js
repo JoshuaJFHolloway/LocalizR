@@ -1,6 +1,6 @@
 import React from 'react'
 import SubmitButton from './SubmitButton';
-import SignUpButton from './SignUpButton';
+// import SignUpButton from './SignUpButton';
 
 const LoginAndSignUpButtons = props => {
   return (

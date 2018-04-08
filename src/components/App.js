@@ -18,17 +18,6 @@ class App extends Component {
 
 
 
-  goTo(route) {
-     this.props.history.replace(`/${route}`)
-   }
-
-   login() {
-     auth.login();
-   }
-
-   logout() {
-     auth.logout();
-   }
 
 
   handleDataSubmitted = () => {
@@ -114,26 +103,6 @@ class App extends Component {
 
     return (
       <div>
-      {
-                // !isAuthenticated() && (
-                    <button
-
-                      onClick={this.login.bind(this)}
-                    >
-                      Log In
-                    </button>
-                  // )
-              }
-              {
-                // isAuthenticated() && (
-                    <button
-                      onClick={this.logout.bind(this)}
-                    >
-                      Log Out
-                    </button>
-                  // )
-              }
-
         {Views[this.decider()]}
       </div>
     )

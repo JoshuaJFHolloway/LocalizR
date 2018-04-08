@@ -3,6 +3,10 @@ import Headers from './Headers';
 import LoginForm from './LoginForm';
 import SignUpForm from './SignUpForm';
 import LoginAndSignUpButtons from './LoginAndSignUpButtons';
+import Auth from '../Auth/Auth.js';
+
+
+const auth = new Auth();
 
 class Form extends Component {
   constructor() {
@@ -40,6 +44,17 @@ class Form extends Component {
   //     SignUpButtonPressed: true
   //   })
   // };
+  goTo(route) {
+     this.props.history.replace(`/${route}`)
+   }
+
+   login() {
+     auth.login();
+   }
+
+   logout() {
+     auth.logout();
+   }
 
   decider() {
     if (this.state.LoginButtonPressed === true) {
@@ -53,36 +68,59 @@ class Form extends Component {
   render() {
 
     const Views = {
-      LoginForm: (
-        <LoginForm
-          handleLoginSubmitted = {this.props.handleLoginSubmitted}
-          handleTextInput = {this.handleTextInput}
-          username ={this.state.Username}
-          email ={this.state.Email}
-          password ={this.state.Password}
-        />
-      ),
-      SignUpForm: (
-        <SignUpForm
-          handleDataSubmitted = {this.props.handleDataSubmitted}
-          handleTextInput = {this.handleTextInput}
-          username ={this.state.Username}
-          email ={this.state.Email}
-          password ={this.state.Password}
-        />),
+      // LoginForm: (
+      //   <LoginForm
+      //     handleLoginSubmitted = {this.props.handleLoginSubmitted}
+      //     handleTextInput = {this.handleTextInput}
+      //     username ={this.state.Username}
+      //     email ={this.state.Email}
+      //     password ={this.state.Password}
+      //   />
+      // ),
+      // SignUpForm: (
+      //   <SignUpForm
+      //     handleDataSubmitted = {this.props.handleDataSubmitted}
+      //     handleTextInput = {this.handleTextInput}
+      //     username ={this.state.Username}
+      //     email ={this.state.Email}
+      //     password ={this.state.Password}
+      //   />),
       LoginAndSignUpButtons: (
         <LoginAndSignUpButtons
         handleDataSubmitted = {this.props.handleDataSubmitted}
 
           handleLoginButton = {this.handleLoginButton}
-          handleSignUpButton = {this.handleSignUpButton}
+
       />
       )
     };
 
+
+
     return (
       <div>
         <Headers/>
+
+        {
+                  // !isAuthenticated() && (
+                      <button
+
+                        onClick={this.login.bind(this)}
+                      >
+                        Log In or Sign Up
+                      </button>
+                    // )
+                }
+                {
+                  // isAuthenticated() && (
+                      <button
+                        onClick={this.logout.bind(this)}
+                      >
+                        Log Out
+                      </button>
+                    // )
+                }
+
         {Views[this.decider()]}
 
         {/*<Login*/}
