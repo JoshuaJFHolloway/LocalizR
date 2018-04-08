@@ -1,11 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-// import CommentBox from './CommentBox';
-import App from './components/App'
+import Routes from './routes';
+// import App from './components/App'
 
 render(
-  <App
-    url="http://localhost:3001/api/users"/>,
+  <Routes />,
     document.getElementById('root')
 );
 

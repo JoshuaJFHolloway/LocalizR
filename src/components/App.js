@@ -4,8 +4,7 @@ import ChooseLanguage from './ChooseLanguage';
 import axios from 'axios';
 import Auth from '../Auth/Auth.js';
 
-
-const auth = new Auth();
+const auth = new Auth()
 
 class App extends Component {
   constructor() {
