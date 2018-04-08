@@ -17,4 +17,4 @@ const EmailInputUnit = props => {
   );
 };
 
-export default EmailInputUnit
+export default EmailInputUnit;

@@ -3,7 +3,7 @@ import React from 'react';
 const QuizCorrectAnswer = props => {
   return (
     <div>
-      <button id={"submitButton"} onClick={props.handleCorrectAnswerSubmitted}> {props.answer}</button>
+      <button id={"submitButton"} onClick={props.handleCorrectAnswerSubmitted}> {props.correctAnswer}</button>
     </div>
   )
 };

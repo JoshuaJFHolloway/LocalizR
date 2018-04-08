@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Picture renders correctly 1`] = `
+exports[`QuizCorrectAnswer renders components correctly renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Picture />,
+  Symbol(enzyme.__unrendered__): <QuizCorrectAnswer />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,13 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <button
+        id="submitButton"
         onClick={undefined}
 >
-        <img
-                alt="themeimage"
-                src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
-                width="150"
-        />
          
 </button>,
     },
@@ -35,31 +31,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <img
-            alt="themeimage"
-            src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
-            width="150"
-/>,
           " ",
+          undefined,
         ],
+        "id": "submitButton",
         "onClick": undefined,
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "alt": "themeimage",
-            "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
-            "width": "150",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
         " ",
+        undefined,
       ],
       "type": "button",
     },
@@ -72,13 +53,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <button
+          id="submitButton"
           onClick={undefined}
 >
-          <img
-                    alt="themeimage"
-                    src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
-                    width="150"
-          />
            
 </button>,
       },
@@ -89,31 +66,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <img
-              alt="themeimage"
-              src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
-              width="150"
-/>,
             " ",
+            undefined,
           ],
+          "id": "submitButton",
           "onClick": undefined,
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "themeimage",
-              "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
-              "width": "150",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
           " ",
+          undefined,
         ],
         "type": "button",
       },

@@ -17,39 +17,138 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <button>
-        id=
-        submitButton
-         onClick=
-        &gt; 
-</button>,
+      "children": Array [
+        <div>
+          <button
+                    id="submitButton1"
+                    onClick={undefined}
+          >
+                     
+          </button>
+</div>,
+        <div>
+          <button
+                    id="submitButton2"
+                    onClick={undefined}
+          >
+                     
+          </button>
+</div>,
+        <div>
+          <button
+                    id="submitButton3"
+                    onClick={undefined}
+          >
+                     
+          </button>
+</div>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          "id=",
-          "submitButton",
-          " onClick=",
-          undefined,
-          "> ",
-          undefined,
-        ],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            id="submitButton1"
+            onClick={undefined}
+>
+             
+</button>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+            ],
+            "id": "submitButton1",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+          ],
+          "type": "button",
+        },
+        "type": "div",
       },
-      "ref": null,
-      "rendered": Array [
-        "id=",
-        "submitButton",
-        " onClick=",
-        undefined,
-        "> ",
-        undefined,
-      ],
-      "type": "button",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            id="submitButton2"
+            onClick={undefined}
+>
+             
+</button>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+            ],
+            "id": "submitButton2",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+          ],
+          "type": "button",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            id="submitButton3"
+            onClick={undefined}
+>
+             
+</button>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+            ],
+            "id": "submitButton3",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+          ],
+          "type": "button",
+        },
+        "type": "div",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -58,39 +157,138 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <button>
-          id=
-          submitButton
-           onClick=
-          &gt; 
-</button>,
+        "children": Array [
+          <div>
+            <button
+                        id="submitButton1"
+                        onClick={undefined}
+            >
+                         
+            </button>
+</div>,
+          <div>
+            <button
+                        id="submitButton2"
+                        onClick={undefined}
+            >
+                         
+            </button>
+</div>,
+          <div>
+            <button
+                        id="submitButton3"
+                        onClick={undefined}
+            >
+                         
+            </button>
+</div>,
+        ],
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "id=",
-            "submitButton",
-            " onClick=",
-            undefined,
-            "> ",
-            undefined,
-          ],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              id="submitButton1"
+              onClick={undefined}
+>
+               
+</button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                undefined,
+              ],
+              "id": "submitButton1",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
+            "type": "button",
+          },
+          "type": "div",
         },
-        "ref": null,
-        "rendered": Array [
-          "id=",
-          "submitButton",
-          " onClick=",
-          undefined,
-          "> ",
-          undefined,
-        ],
-        "type": "button",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              id="submitButton2"
+              onClick={undefined}
+>
+               
+</button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                undefined,
+              ],
+              "id": "submitButton2",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
+            "type": "button",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              id="submitButton3"
+              onClick={undefined}
+>
+               
+</button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                undefined,
+              ],
+              "id": "submitButton3",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
+            "type": "button",
+          },
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],

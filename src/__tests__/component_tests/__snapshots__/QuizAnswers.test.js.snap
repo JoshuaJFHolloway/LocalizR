@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SpanishQuizQ Rendering components renders correctly 1`] = `
+exports[`QuizAnswers renders components correctly renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SpanishQuizQ />,
+  Symbol(enzyme.__unrendered__): <QuizAnswers
+    answer="el vestido rojo"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,21 +20,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <QuizScenario
-          scenario={undefined}
-/>,
-        <QuizPicture
-          picture={undefined}
-/>,
-        <QuizQuestion
-          question={undefined}
-/>,
-        <QuizAnswers
+        <QuizAnswer
           answer1={undefined}
           answer2={undefined}
           answer3={undefined}
-          correctAnswer={undefined}
           handleAnswerSubmitted={undefined}
+/>,
+        <QuizCorrectAnswer
+          correctAnswer={undefined}
           handleCorrectAnswerSubmitted={undefined}
 />,
       ],
@@ -44,44 +39,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "scenario": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "picture": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "question": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
           "answer1": undefined,
           "answer2": undefined,
           "answer3": undefined,
-          "correctAnswer": undefined,
           "handleAnswerSubmitted": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "correctAnswer": undefined,
           "handleCorrectAnswerSubmitted": undefined,
         },
         "ref": null,
@@ -98,21 +70,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <QuizScenario
-            scenario={undefined}
-/>,
-          <QuizPicture
-            picture={undefined}
-/>,
-          <QuizQuestion
-            question={undefined}
-/>,
-          <QuizAnswers
+          <QuizAnswer
             answer1={undefined}
             answer2={undefined}
             answer3={undefined}
-            correctAnswer={undefined}
             handleAnswerSubmitted={undefined}
+/>,
+          <QuizCorrectAnswer
+            correctAnswer={undefined}
             handleCorrectAnswerSubmitted={undefined}
 />,
         ],
@@ -124,44 +89,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "scenario": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "picture": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "question": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
             "answer1": undefined,
             "answer2": undefined,
             "answer3": undefined,
-            "correctAnswer": undefined,
             "handleAnswerSubmitted": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "correctAnswer": undefined,
             "handleCorrectAnswerSubmitted": undefined,
           },
           "ref": null,
