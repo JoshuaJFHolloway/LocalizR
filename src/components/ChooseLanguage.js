@@ -22,27 +22,22 @@ class ChooseLanguage extends Component {
 
   handleScenarioClicked = () => {
     this.setState({
-      spanishScenario1: true
+      spanishScen1: true
     });
   };
 
 
   decider (){
-    if(this.state.spanish === true){
-      return 'SpanishScenarios';
-    } if(this.state.spanishScen1 === true) {
+      if(this.state.spanishScen1 === true && this.state.spanish === true) {
       return 'SpanishQuiz';
+    } if(this.state.spanish === true) {
+      return 'SpanishScenarios';
     } else return 'LanguageList';
   };
 
   render() {
 
     const quizViews = {
-      LanguageList: (
-        <LanguageList
-          handlePictureClicked = {this.handlePictureClicked}
-        />
-      ),
       SpanishScenarios: (
         <LanguageList
           handlePictureClicked = {this.handlePictureClicked}
@@ -53,7 +48,12 @@ class ChooseLanguage extends Component {
       ),
       SpanishQuiz: (
         <SpanishQuiz/>
-      )
+      ),
+      LanguageList: (
+        <LanguageList
+          handlePictureClicked = {this.handlePictureClicked}
+        />
+      ),
     };
 
     return (
