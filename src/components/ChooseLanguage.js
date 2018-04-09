@@ -60,51 +60,44 @@ class ChooseLanguage extends Component {
       SpanishQuiz: (
        <div> 
         <Quiz
-          scenario={"You choose to wear this for your date"}
-          picture={"https://www.opposuits.co.uk/media/catalog/product/cache/1/image/550x/925f46717e92fbc24a8e2d03b22927e1/s/s/ss_reddevil-lifestyle-01.jpg"}
-          question={"Which of these is your suit?"}
-          answer1={"el vestido rojo"}
-          correctAnswer={"el traje rojo"}
-          answer2={"Los pantalones rojos"}
-          answer3={"La camiseta roja"}
+          scenario1={"You choose to wear this for your date"}
+          scenario2={"You're going to the restaurant where your date is waiting for you..."}
+          scenario3={"You want to surprise your date with some ...."}
+          scenario4={"You want to impress your date with a nice compliment ...."}
+          scenario5={"After a romantic and successfull date, you're inviting your date for a drink..."}
+          picture1={"https://www.opposuits.co.uk/media/catalog/product/cache/1/image/550x/925f46717e92fbc24a8e2d03b22927e1/s/s/ss_reddevil-lifestyle-01.jpg"}
+          picture2={"https://www.harvard.edu/sites/default/files/content/harvard-map-google.jpg"}
+          picture3={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvBGJnQZGmYn5x2eq8ObdXtVSGOYVkjw-sUpjVlyTm3sbgrf9"}
+          picture4={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
+          picture5={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
+          question1={"Which of these is your suit?"}
+          question2={"Which direction you should take?"}
+          question3={"What is your idea of the perfect romantic gift?"}
+          question4={"Which of these is the best compliment?"}
+          question5={"Which of these is the best option?"}
+          answer1_1={"el vestido rojo"}
+          answer1_2={"Los pantalones rojos"}
+          correctAnswer1={"el traje rojo"}
+          answer1_3={"La camiseta roja"}
+          answer2_1={"Este"}
+          correctAnswer2={"Oeste"}
+          answer2_2={"Norte"}
+          answer2_3={"Sur"}
+          answer3_1={"Galletas"}
+          correctAnswer3={"Flores"}
+          answer3_2={"Cucharas"}
+          answer3_3={"Uvas"}
+          answer4_1={"Qué bello estás"}
+          correctAnswer4={"Qué guapa estás"}
+          answer4_2={"Qué extraña estás"}
+          answer4_3={"Qué grande estás"}
+          answer5_1={"Mercado"}
+          correctAnswer5={"Terraza-Bar de copas"}
+          answer5_2={"Banco"}
+          answer5_3={"Tienda"} 
         />
-        <Quiz 
-          scenario={"You're going to the restaurant where your date is waiting for you..."}
-          picture={"https://www.harvard.edu/sites/default/files/content/harvard-map-google.jpg"}
-          question={"Which direction you should take?"}
-          answer1={"Este"}
-          correctAnswer={"Oeste"}
-          answer2={"Norte"}
-          answer3={"Sur"}
-          />
-        <Quiz
-          scenario={"You want to surprise your date with some ...."}
-          picture={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvBGJnQZGmYn5x2eq8ObdXtVSGOYVkjw-sUpjVlyTm3sbgrf9"}
-          question={"What is your idea of the perfect romantic gift?"}
-          answer1={"Galletas"}
-          correctAnswer={"Flores"}
-          answer2={"Cucharas"}
-          answer3={"Uvas"}
-          />
-
-        <Quiz 
-          scenario={"You want to impress your date with a nice compliment ...."}
-          picture={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
-          question={"Which of these is the best compliment?"}
-          answer1={"Qué bello estás"}
-          correctAnswer={"Qué guapa estás"}
-          answer2={"Qué extraña estás"}
-          answer3={"Qué grande estás"}
-        />  
-        <Quiz 
-          scenario={"After a romantic and successfull date, you're inviting your date for a drink..."}
-          picture={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
-          question={"Which of these is the best option?"}
-          answer1={"Mercado"}
-          correctAnswer={"Terraza-Bar de copas"}
-          answer2={"Banco"}
-          answer3={"Tienda"}
-        />
+        
+        
         </div>  
       ),
 
@@ -112,12 +105,26 @@ class ChooseLanguage extends Component {
         <div>
         <Quiz
           scenario={"After a long trip to Malaga, you're getting ready to go to the beach, but you don't know how to the direction"}
+          
+          
+          
+          
           picture={"https://i.gifer.com/BkoU.gif"}
+          
+          
+          
           question={"Which of these is a swinsuit?"}
+          
+          
+          
           answer1={"Toalla"}
           correctAnswer={"Bañador"}
           answer2={"Camiseta"}
           answer3={"Calcetines"}
+
+
+
+
         />
 
         <Quiz 

@@ -61,13 +61,13 @@ class Quiz extends Component {
           <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
-            scenario={this.props.scenario}
-            picture={this.props.picture}
-            question={this.props.question}
-            answer1={this.props.answer1}
-            correctAnswer={this.props.correctAnswer}
-            answer2={this.props.answer2}
-            answer3={this.props.answer2}
+            scenario={this.props.scenario1}
+            picture={this.props.picture1}
+            question={this.props.question1}
+            answer1={this.props.answer1_1}
+            correctAnswer={this.props.correctAnswer1}
+            answer2={this.props.answer1_2}
+            answer3={this.props.answer1_3}
           />
         ),
 
@@ -75,13 +75,13 @@ class Quiz extends Component {
           <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
-            scenario={this.props.scenario}
-            picture={this.props.picture}
-            question={this.props.question}
-            answer1={this.props.answer1}
-            correctAnswer={this.props.correctAnswer}
-            answer2={this.props.answer2}
-            answer3={this.props.answer2}
+            scenario={this.props.scenario2}
+            picture={this.props.picture2}
+            question={this.props.question2}
+            answer1={this.props.answer2_1}
+            correctAnswer={this.props.correctAnswer2}
+            answer2={this.props.answer2_2}
+            answer3={this.props.answer2_3}
           />
         ),
 
@@ -89,13 +89,13 @@ class Quiz extends Component {
           <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
-            scenario={this.props.scenario}
-            picture={this.props.picture}
-            question={this.props.question}
-            answer1={this.props.answer1}
-            correctAnswer={this.props.correctAnswer}
-            answer2={this.props.answer2}
-            answer3={this.props.answer2}
+            scenario={this.props.scenario3}
+            picture={this.props.picture3}
+            question={this.props.question3}
+            answer1={this.props.answer3_1}
+            correctAnswer={this.props.correctAnswer3}
+            answer2={this.props.answer3_2}
+            answer3={this.props.answer3_3}
           />
         ),
 
@@ -103,13 +103,13 @@ class Quiz extends Component {
           <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
-            scenario={this.props.scenario}
-            picture={this.props.picture}
-            question={this.props.question}
-            answer1={this.props.answer1}
-            correctAnswer={this.props.correctAnswer}
-            answer2={this.props.answer2}
-            answer3={this.props.answer2}
+            scenario={this.props.scenario4}
+            picture={this.props.picture4}
+            question={this.props.question4}
+            answer1={this.props.answer4_1}
+            correctAnswer={this.props.correctAnswer4}
+            answer2={this.props.answer4_2}
+            answer3={this.props.answer4_3}
           />
         ),
 
@@ -117,13 +117,13 @@ class Quiz extends Component {
           <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
-            scenario={this.props.scenario}
-            picture={this.props.picture}
-            question={this.props.question}
-            answer1={this.props.answer1}
-            correctAnswer={this.props.correctAnswer}
-            answer2={this.props.answer2}
-            answer3={this.props.answer2}
+            scenario={this.props.scenario5}
+            picture={this.props.picture5}
+            question={this.props.question5}
+            answer1={this.props.answer5_1}
+            correctAnswer={this.props.correctAnswer5}
+            answer2={this.props.answer5_2}
+            answer3={this.props.answer5_3}
           />
         ),
     };
