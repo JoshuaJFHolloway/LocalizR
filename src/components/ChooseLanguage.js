@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import Quiz from './Quiz';
 import SpanishScenarios from './SpanishScenarios'
-import "./styledComponents/body.css";
+import "./styledComponents/content.css";
 
 
 class ChooseLanguage extends Component {

@@ -4,7 +4,7 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
 import { Route, Router } from 'react-router-dom';
-import './styledComponents/body.css';
+import './styledComponents/content.css';
 
 const auth = new Auth();
 
@@ -40,7 +40,7 @@ class App extends Component {
         )
     } else {
       return (
-        <div class="index">
+        <div class="chooselanguage">
         <button onClick={this.logout.bind(this)}>
           Log Out
         </button>
