@@ -1,17 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-// import CommentBox from './CommentBox';
-import App from './components/App'
+import Routes from './routes';
 
 render(
-  <App
-    url="http://localhost:3001/api/users"/>,
+  <Routes />,
     document.getElementById('root')
 );
-
-// render(
-//     <CommentBox
-//         url="http://localhost:3001/api/comments"
-//         pollInterval={2000} />,
-//     document.getElementById('root')
-// );

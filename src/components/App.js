@@ -1,99 +1,51 @@
 import React, { Component } from 'react';
-import Form from './Form';
+import Headers from './Headers';
+import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
-import axios from 'axios';
+import Callback from '../Callback/Callback'
+import { Route, Router } from 'react-router-dom';
 
+const auth = new Auth();
+
+const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
+  }
+}
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      dataSubmitted: false,
-    }
+
+  login() {
+    auth.login();
+    return (<Route path="/callback" render={(props) => {
+      handleAuthentication(props);
+      return <Callback {...props} />
+    }}/>)
   }
 
-  handleDataSubmitted = () => {
-    if(this.textEntered() === true) {
-      this.setState({
-        dataSubmitted: true,
-      });
-      const user = {username: this.Form.state.Username,
-                    email: this.Form.state.Email,
-                    password: this.Form.state.Password };
-       axios.post(this.props.url, user)
-      .catch(err => {
-        console.error(err);
-      });
-    }
-  };
-
-  handleLoginSubmitted = () => {
-    if(this.loginDetailsEntered() === true) {
-      this.setState({
-        dataSubmitted: true,
-      });
-      const user = {username: this.Form.state.Username,
-        email: this.Form.state.Email,
-        password: this.Form.state.Password };
-      axios.post(this.props.url, user)
-        .catch(err => {
-          console.error(err);
-        });
-    }
-  };
-
-
-  decider() {
-    if (this.state.dataSubmitted === true) {
-      return 'ChooseLanguage';
-    } else return 'Form';
+  logout() {
+    auth.logout();
   }
-
-
-  loginDetailsEntered() {
-    let Email = this.Form.state.Email;
-    let Password = this.Form.state.Password;
-
-    if(Email && Password !== null) {
-      return true
-    }
-  };
-
-
-  textEntered() {
-    let Username = this.Form.state.Username;
-    let Email = this.Form.state.Email;
-    let Password = this.Form.state.Password;
-
-    if(Username && Email && Password !== null) {
-      return true
-    }
-  };
-
 
   render() {
-
-    const Views = {
-      Form: (
-        <Form
-          handleDataSubmitted = {this.handleDataSubmitted}
-          handleLoginSubmitted ={this.handleLoginSubmitted}
-          ref={(Form) => {this.Form = Form;}}
-
-          // If you want to access the state of a component's children, you can assign
-          // a property called ref to each child. This property takes a callback function
-          // that is passed a reference to the attached component.
-
-        />
-      ),
-      ChooseLanguage: <ChooseLanguage/>
-    };
-
-    return (
-      <div>
-        {Views[this.decider()]}
-      </div>
-    )
+    if (!auth.isAuthenticated()) {
+      return (
+        <div>
+        <Headers/>
+        <button onClick={this.login.bind(this)}>
+            Log In or Sign Up
+        </button>
+        </div>)
+    } else {
+      return (
+        <div>
+        <button onClick={this.logout.bind(this)}>
+          Log Out
+        </button>
+        <ChooseLanguage/>
+        </div>
+      )
+    }
   };
 }
 
