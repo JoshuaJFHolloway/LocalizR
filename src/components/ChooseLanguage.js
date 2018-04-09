@@ -15,6 +15,19 @@ class ChooseLanguage extends Component {
     };
   };
 
+  // handleRetryQuiz = () => {
+  //   if(this.state.spanishScen1=== true){
+  //
+  //   }
+  // };
+
+  handleDataSubmitted = () => {
+    this.setState(prevState => ({
+      spanish: !prevState.spanish,
+      spanishScen1: !prevState.spanishScen1
+    }));
+  };
+
   handlePictureClicked = () => {
     this.setState(prevState => ({
       spanish: !prevState.spanish
@@ -29,7 +42,8 @@ class ChooseLanguage extends Component {
 
 
   decider (){
-      if(this.state.spanishScen1 === true && this.state.spanish === true) {
+      if((this.state.spanishScen1 === true && this.state.spanish === true) ||
+        (this.state.spanishScen1 === true && this.state.spanish === false)) {
       return 'SpanishQuiz';
     } if(this.state.spanish === true) {
       return 'SpanishScenarios';
@@ -48,7 +62,10 @@ class ChooseLanguage extends Component {
         />
       ),
       SpanishQuiz: (
-        <SpanishQuiz/>
+        <SpanishQuiz
+          handleDataSubmitted = {this.handleDataSubmitted}
+          handleRetryQuiz = {this.handlePictureClicked}
+        />
       ),
       LanguageList: (
         <LanguageList

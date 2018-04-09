@@ -14,14 +14,12 @@ class SpanishQuiz extends Component {
     }
   }
 
-
   handleCorrectAnswerSubmitted = () => {
     this.setState({
       counter: this.state.counter + 1,
       score: this.state.score + 1
     })
   };
-
 
 
   handleAnswerSubmitted = () => {
@@ -54,6 +52,8 @@ class SpanishQuiz extends Component {
       ResultsPage: (
         <ResultsPage
           score = {this.state.score}
+          handleDataSubmitted = {this.props.handleDataSubmitted}
+          handleRetryQuiz = {this.props.handleRetryQuiz}
           />
       ),
         SpanishQuizQ: (
