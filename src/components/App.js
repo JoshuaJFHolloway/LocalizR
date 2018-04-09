@@ -15,12 +15,6 @@ const handleAuthentication = (nextState, replace) => {
 
 class App extends Component {
 
-  handleLoginButton = () => {
-    this.setState({
-      dataSubmitted: true
-    })
-  };
-
   login() {
     auth.login();
     return (<Route path="/callback" render={(props) => {
