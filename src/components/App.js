@@ -4,6 +4,7 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
 import { Route, Router } from 'react-router-dom';
+import './styledComponents/body.css';
 
 const auth = new Auth();
 
@@ -30,7 +31,7 @@ class App extends Component {
   render() {
     if (!auth.isAuthenticated()) {
       return (
-        <div>
+        <div class="index">
         <Headers/>
         <button onClick={this.login.bind(this)}>
             Log In or Sign Up
@@ -39,7 +40,7 @@ class App extends Component {
         )
     } else {
       return (
-        <div>
+        <div class="index">
         <button onClick={this.logout.bind(this)}>
           Log Out
         </button>
@@ -49,5 +50,4 @@ class App extends Component {
     }
   };
 }
-
 export default App;
