@@ -104,65 +104,41 @@ class ChooseLanguage extends Component {
       SpanishQuiz2:(
         <div>
         <Quiz
-          scenario={"After a long trip to Malaga, you're getting ready to go to the beach, but you don't know how to the direction"}
-          
-          
-          
-          
-          picture={"https://i.gifer.com/BkoU.gif"}
-          
-          
-          
-          question={"Which of these is a swinsuit?"}
-          
-          
-          
-          answer1={"Toalla"}
-          correctAnswer={"Bañador"}
-          answer2={"Camiseta"}
-          answer3={"Calcetines"}
-
-
-
-
-        />
-
-        <Quiz 
-          scenario={"As a person who takes care of the skin, you need to buy sun protection to prevent sunburn.."}
-          picture={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwXOsbPRiAAfruDCcVVkzXGQwvJYDOPjZF1wuJMuBE2jbMPA-"}
-          question={"Which of these is the sun protector?"}
-          answer1={"Crema de cara"}
-          correctAnswer={"Protector solar"}
-          answer2={"Pasta de dientes"}
-          answer3={"Gel de baño"}
-        />
-        <Quiz 
-          scenario={"Now, You're getting to the beach by Bus... "}
-          picture={"https://i.pinimg.com/originals/a3/4f/82/a34f82bc4ee3d8ed199ffd234f2a34e2.jpg"}
-          question={"Which bus you need to get?"}
-          answer1={"Dirección centro"}
-          correctAnswer={"Dirección playa"}
-          answer2={"Dirección Feria"}
-          answer3={"Dirección pueblo"}
-        />
-         
-        <Quiz 
-          scenario={"You're enjoying a nice day on the beach, but You're geting thristy... "}
-          picture={"http://s03.s3c.es/imag/_v0/770x420/6/9/0/botella-agua-770x420-reuters.jpg"}
-          question={"What can you get?"}
-          answer1={"Pan"}
-          correctAnswer={"Botella de agua"}
-          answer2={"Botella de vino"}
-          answer3={"Ensalada"}
-        /> 
-        <Quiz
-          scenario={"After a nice day on the beach, you lose the track time and you miss your bus .."}
-          picture={"http://artmansnursery.com/wp-content/uploads/2015/06/clock.jpg"}
-          question={"What time is the next bus?"}
-          answer1={"Cinco y media"}
-          correctAnswer={"Seis en punto"}
-          answer2={"Seis y media "}
-          answer3={"Ocho en punto"}
+          scenario1={"After a long trip to Malaga, you're getting ready to go to the beach, but you don't know how to the direction"}
+          scenario2={"As a person who takes care of the skin, you need to buy sun protection to prevent sunburn.."}
+          scenario3={"Now, You're getting to the beach by Bus... "}
+          scenario4={"You're enjoying a nice day on the beach, but You're geting thristy... "}
+          scenario5={"After a nice day on the beach, you lose the track time and you miss your bus .."}
+          picture1={"https://i.gifer.com/BkoU.gif"}
+          picture2={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwXOsbPRiAAfruDCcVVkzXGQwvJYDOPjZF1wuJMuBE2jbMPA-"}
+          picture3={"https://i.pinimg.com/originals/a3/4f/82/a34f82bc4ee3d8ed199ffd234f2a34e2.jpg"}
+          picture4={"http://s03.s3c.es/imag/_v0/770x420/6/9/0/botella-agua-770x420-reuters.jpg"}
+          picture5={"http://artmansnursery.com/wp-content/uploads/2015/06/clock.jpg"}
+          question1={"Which of these is a swinsuit?"}
+          question2={"Which of these is the sun protector?"}
+          question3={"Which bus you need to get?"}
+          question4={"What can you get?"}
+          question5={"What time is the next bus?"}
+          answer1_1={"Toalla"}
+          correctAnswer1={"Bañador"}
+          answer1_2={"Camiseta"}
+          answer1_3={"Calcetines"}
+          answer2_1={"Crema de cara"}
+          correctAnswer2={"Protector solar"}
+          answer2_2={"Pasta de dientes"}
+          answer2_3={"Gel de baño"}
+          answer3_1={"Dirección centro"}
+          correctAnswer3={"Dirección playa"}
+          answer3_2={"Dirección Feria"}
+          answer3_3={"Dirección pueblo"}
+          answer4_1={"Pan"}
+          correctAnswer4={"Botella de agua"}
+          answer4_2={"Botella de vino"}
+          answer4_3={"Ensalada"}
+          answer5_1={"Cinco y media"}
+          correctAnswer5={"Seis en punto"}
+          answer5_2={"Seis y media "}
+          answer5_3={"Ocho en punto"}
         />
         </div>
 
