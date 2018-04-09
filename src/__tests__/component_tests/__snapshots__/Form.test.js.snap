@@ -18,30 +18,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Headers
-          header="Slath!"
-/>,
-        <UsernameInputUnit
-          handleTextInput={[Function]}
-          input="Username"
-          name="Enter your username"
-          value={null}
-/>,
-        <EmailInputUnit
-          handleTextInput={[Function]}
-          input="Email"
-          name="Enter your email"
-          value={null}
-/>,
-        <PasswordInputUnit
-          handleTextInput={[Function]}
-          input="Password"
-          name="Enter your password"
-          value={null}
-/>,
-        <SubmitButton
-          buttonName="Submit"
-          handleDataSubmitted={undefined}
+        <Headers />,
+        <LoginAndSignUpButtons
+          handleLoginButton={[Function]}
+          handleSignUpButton={[Function]}
 />,
       ],
     },
@@ -51,9 +31,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {
-          "header": "Slath!",
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -63,50 +41,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleTextInput": [Function],
-          "input": "Username",
-          "name": "Enter your username",
-          "value": null,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleTextInput": [Function],
-          "input": "Email",
-          "name": "Enter your email",
-          "value": null,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleTextInput": [Function],
-          "input": "Password",
-          "name": "Enter your password",
-          "value": null,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "buttonName": "Submit",
-          "handleDataSubmitted": undefined,
+          "handleLoginButton": [Function],
+          "handleSignUpButton": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -122,30 +58,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Headers
-            header="Slath!"
-/>,
-          <UsernameInputUnit
-            handleTextInput={[Function]}
-            input="Username"
-            name="Enter your username"
-            value={null}
-/>,
-          <EmailInputUnit
-            handleTextInput={[Function]}
-            input="Email"
-            name="Enter your email"
-            value={null}
-/>,
-          <PasswordInputUnit
-            handleTextInput={[Function]}
-            input="Password"
-            name="Enter your password"
-            value={null}
-/>,
-          <SubmitButton
-            buttonName="Submit"
-            handleDataSubmitted={undefined}
+          <Headers />,
+          <LoginAndSignUpButtons
+            handleLoginButton={[Function]}
+            handleSignUpButton={[Function]}
 />,
         ],
       },
@@ -155,9 +71,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {
-            "header": "Slath!",
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -167,50 +81,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleTextInput": [Function],
-            "input": "Username",
-            "name": "Enter your username",
-            "value": null,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleTextInput": [Function],
-            "input": "Email",
-            "name": "Enter your email",
-            "value": null,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleTextInput": [Function],
-            "input": "Password",
-            "name": "Enter your password",
-            "value": null,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "buttonName": "Submit",
-            "handleDataSubmitted": undefined,
+            "handleLoginButton": [Function],
+            "handleSignUpButton": [Function],
           },
           "ref": null,
           "rendered": null,

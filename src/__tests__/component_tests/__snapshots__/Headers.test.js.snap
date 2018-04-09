@@ -19,15 +19,11 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
-          header={undefined}
+          header="slath"
 />,
-        <img
-          alt="themeimage"
-          src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
-          width="150"
-/>,
+        <img />,
         <SubHeader
-          subheader={undefined}
+          subHeader="Be a traveler, not a tourist"
 />,
       ],
     },
@@ -38,7 +34,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "header": undefined,
+          "header": "slath",
         },
         "ref": null,
         "rendered": null,
@@ -48,11 +44,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
-        "props": Object {
-          "alt": "themeimage",
-          "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
-          "width": "150",
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": "img",
@@ -62,7 +54,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "subheader": undefined,
+          "subHeader": "Be a traveler, not a tourist",
         },
         "ref": null,
         "rendered": null,
@@ -79,15 +71,11 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
-            header={undefined}
+            header="slath"
 />,
-          <img
-            alt="themeimage"
-            src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"
-            width="150"
-/>,
+          <img />,
           <SubHeader
-            subheader={undefined}
+            subHeader="Be a traveler, not a tourist"
 />,
         ],
       },
@@ -98,7 +86,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "header": undefined,
+            "header": "slath",
           },
           "ref": null,
           "rendered": null,
@@ -108,11 +96,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
-          "props": Object {
-            "alt": "themeimage",
-            "src": "https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png",
-            "width": "150",
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": "img",
@@ -122,7 +106,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "subheader": undefined,
+            "subHeader": "Be a traveler, not a tourist",
           },
           "ref": null,
           "rendered": null,

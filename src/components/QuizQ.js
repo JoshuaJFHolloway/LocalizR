@@ -4,7 +4,7 @@ import QuizPicture from './QuizPicture';
 import QuizQuestion from './QuizQuestion';
 import QuizAnswers from './QuizAnswers';
 
-const SpanishQuizQ = props => {
+const QuizQ = props => {
   return (
     <div>
       <QuizScenario
@@ -28,4 +28,4 @@ const SpanishQuizQ = props => {
   )
 };
 
-export default SpanishQuizQ;
+export default QuizQ;
