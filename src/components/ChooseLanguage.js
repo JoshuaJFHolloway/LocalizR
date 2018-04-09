@@ -72,9 +72,12 @@ class ChooseLanguage extends Component {
           />}
         />
       ),
-      SpanishQuiz: (        
-       <div> 
+      SpanishQuiz: (
+       <div>
         <Quiz
+        handleScenario1Clicked = {this.handleScenario1Clicked}
+        handleScenario2Clicked = {this.handleScenario2Clicked}
+
           handleDataSubmitted = {this.handleDataSubmitted}
           handleRetryQuiz = {this.handlePictureClicked}
           scenario1={"You choose to wear this for your date"}
@@ -111,11 +114,11 @@ class ChooseLanguage extends Component {
           answer5_1={"Mercado"}
           correctAnswer5={"Terraza-Bar de copas"}
           answer5_2={"Banco"}
-          answer5_3={"Tienda"} 
+          answer5_3={"Tienda"}
         />
-        
-        
-        </div>  
+
+
+        </div>
       ),
 
       SpanishQuiz2:(

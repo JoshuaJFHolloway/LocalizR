@@ -6,7 +6,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 // var Comment = require('./model/comments');
-var User = require('./model/users')
+var Spanish1 = require('./model/spanish1')
 
 // and create our instances
 var app = express();
@@ -14,7 +14,7 @@ var router = express.Router();
 
 // set our port to either a predetermined port number if you have set it up, or 3001
 var port = process.env.API_PORT || 3001;
-mongoose.connect('mongodb://' + process.env.USERNAME + ':' + process.env.PASSWORD + '@ds137019.mlab.com:37019/users')
+mongoose.connect('mongodb://' + process.env.USERNAME + ':' + process.env.PASSWORD + '@ds139219.mlab.com:39219/spanish1')
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'mongodb connection error'))
 
@@ -39,22 +39,22 @@ router.get('/', function(req, res) {
   res.json({ message: 'API Initialized!' });
 });
 
-router.route('/users')
+router.route('/scenario')
   .get(function(req, res) {
-      User.find( function(err, users){
+      Spanish1.find( function(err, answer){
           if (err)
               res.send(err);
-          res.json(users)
+          res.json(answer)
       });
   })
 
   .post(function(req, res) {
-      var user = new User();
-      user.username = req.body.username;
-      user.email = req.body.email;
-      user.password = req.body.password;
+      var spanish1 = new Spanish1();
+      spanish1.user_answer = req.body.user_answer;
+      spanish1.correct_answer = req.body.correct_answer;
+      // user.password = req.body.password;
 
-      user.save(function(err) {
+      spanish1.save(function(err) {
         if (err)
           res.send(err);
         res.json({message: "User successfully added"})
