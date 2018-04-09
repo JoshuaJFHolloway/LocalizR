@@ -1,11 +1,10 @@
 import React from 'react';
-import Title from "./styledComponents/titles.js";
 
 const Header = (props) => {
   return (
-    <Title>
+    <div>
       {props.header}
-    </Title>
+    </div>
   );
 };
 

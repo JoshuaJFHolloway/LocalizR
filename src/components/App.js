@@ -35,7 +35,8 @@ class App extends Component {
         <button onClick={this.login.bind(this)}>
             Log In or Sign Up
         </button>
-        </div>)
+        </div>
+        )
     } else {
       return (
         <div>

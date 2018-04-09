@@ -1,21 +1,12 @@
 import React from 'react';
 import Header from './Header';
 import SubHeader from './SubHeader';
-import Font from "./styledComponents/fonts.js";
 
 const Headers = () => {
-  return (
-    <Font>
-      <Header
-        header={"slath"}
-      />
-      <img
-        // src="https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png" alt="themeimage" width="150"
-        />
-      <SubHeader
-        subHeader={"Be a traveler, not a tourist"}/>
-    </Font>
-  );
+  return <div>
+      <Header header={"slath"} />
+      <SubHeader subHeader={"Be a traveler, not a tourist"} />
+    </div>;
 };
 
 export default Headers;

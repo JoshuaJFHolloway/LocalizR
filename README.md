@@ -9,7 +9,7 @@ __DESIGNED BY__:
 - Hannah Hillis
 - Kaari Strack
 - Magyar-Hunor Tamas
-Jenny Arenas Marin
+- Jenny Arenas Marin
 
 <hr>
 
