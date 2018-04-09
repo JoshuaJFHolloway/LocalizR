@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import SpanishQuizQ from './SpanishQuizQ';
+import QuizQ from './QuizQ';
 import ResultsPage from './ResultsPage';
 
 
-class SpanishQuiz extends Component {
+class Quiz extends Component {
   constructor() {
     super();
     this.state = {
@@ -35,15 +35,15 @@ class SpanishQuiz extends Component {
     if (this.state.counter === 5) {
       return 'ResultsPage';
       } else if (this.state.counter === 1) {
-        return 'SpanishQuizQ2';
+        return 'QuizQ2';
       } else if (this.state.counter === 2){
-        return 'SpanishQuizQ3';
+        return 'QuizQ3';
       } else if (this.state.counter === 3){
-        return 'SpanishQuizQ4'
+        return 'QuizQ4'
       } else if (this.state.counter === 4){
-        return 'SpanishQuizQ5'
+        return 'QuizQ5'
       }
-      else return 'SpanishQuizQ';
+      else return 'QuizQ1';
     };
 
 
@@ -56,8 +56,8 @@ class SpanishQuiz extends Component {
           score = {this.state.score}
           />
       ),
-        SpanishQuizQ: (
-          <SpanishQuizQ
+        QuizQ1: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"You choose to wear this for your date"}
@@ -70,8 +70,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ2: (
-          <SpanishQuizQ
+        QuizQ2: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"You're going to the restaurant where your date is waiting for you..."}
@@ -84,8 +84,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ3: (
-          <SpanishQuizQ
+        QuizQ3: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"You want to surprise your date with some ...."}
@@ -98,8 +98,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ4: (
-          <SpanishQuizQ
+        QuizQ4: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"You want to impress your date with a nice compliment ...."}
@@ -112,8 +112,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ5: (
-          <SpanishQuizQ
+        QuizQ5: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"After a romantic and successfull date, you're inviting your date for a drink..."}
@@ -126,8 +126,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ6: (
-          <SpanishQuizQ
+        QuizQ1: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"After a long trip to Malaga, you're getting ready to go to the beach, but you don't know how to the direction"}
@@ -140,8 +140,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ7: (
-          <SpanishQuizQ
+        QuizQ2: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"As a person who takes care of the skin, you need to buy sun protection to prevent sunburn.."}
@@ -154,8 +154,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ8: (
-          <SpanishQuizQ
+        QuizQ3: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"Now, You're getting to the beach by Bus... "}
@@ -168,8 +168,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ9: (
-          <SpanishQuizQ
+        QuizQ4: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"You're enjoying a nice day on the beach, but You're geting thristy... "}
@@ -182,8 +182,8 @@ class SpanishQuiz extends Component {
           />
         ),
 
-        SpanishQuizQ10: (
-          <SpanishQuizQ
+        QuizQ5: (
+          <QuizQ
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={"After a nice day on the beach, you lose the track time and you miss your bus .."}
@@ -205,4 +205,4 @@ class SpanishQuiz extends Component {
   }
 }
 
-export default SpanishQuiz;
+export default Quiz;

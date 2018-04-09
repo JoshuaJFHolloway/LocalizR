@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LanguageList from './LanguageList';
-import SpanishQuiz from './SpanishQuiz';
+import Quiz from './Quiz';
 import SpanishScenarios from './SpanishScenarios'
 
 
@@ -10,7 +10,7 @@ class ChooseLanguage extends Component {
     super();
     this.state = {
       spanish: false,
-      spanishScen1: false,
+      spanishScen: false,
 
     };
   };
@@ -23,13 +23,14 @@ class ChooseLanguage extends Component {
 
   handleScenarioClicked = () => {
     this.setState({
-      spanishScen1: true
+      spanishScen: true,
+
     });
   };
 
 
   decider (){
-      if(this.state.spanishScen1 === true && this.state.spanish === true) {
+      if(this.state.spanishScen === true && this.state.spanish === true) {
       return 'SpanishQuiz';
     } if(this.state.spanish === true) {
       return 'SpanishScenarios';
@@ -48,7 +49,7 @@ class ChooseLanguage extends Component {
         />
       ),
       SpanishQuiz: (
-        <SpanishQuiz/>
+        <Quiz/>
       ),
       LanguageList: (
         <LanguageList
