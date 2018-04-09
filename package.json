@@ -6,7 +6,6 @@
     "auth0-js": "^9.4.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
-    "cypress": "^2.1.0",
     "dotenv": "^5.0.1",
     "enzyme-adapter-react-16": "^1.1.1",
     "expresss": "0.0.0",
@@ -38,6 +37,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
