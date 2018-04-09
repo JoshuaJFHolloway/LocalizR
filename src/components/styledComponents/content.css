@@ -37,7 +37,7 @@ body {
     margin-top: 20px;
     transition: 0.5s;
     cursor: pointer;
-    border: 4px outset #4682B4;
+    border: 4px inset #4682B4;
     border-radius: 20px;
     -webkit-transition:0.5s;
 
