@@ -33,7 +33,7 @@ class App extends Component {
       return (
         <div class="index">
         <Headers/>
-        <button onClick={this.login.bind(this)}>
+        <button className="loginbutton" onClick={this.login.bind(this)}>
             Log In or Sign Up
         </button>
         </div>
@@ -41,7 +41,7 @@ class App extends Component {
     } else {
       return (
         <div class="chooselanguage">
-        <button onClick={this.logout.bind(this)}>
+        <button className="loginbutton" onClick={this.logout.bind(this)}>
           Log Out
         </button>
         <ChooseLanguage/>
