@@ -1,8 +1,9 @@
 import React from 'react';
+import './styledComponents/content.css';
 
 const Header = (props) => {
   return (
-    <div>
+    <div className="homepagetitle">
       {props.header}
     </div>
   );

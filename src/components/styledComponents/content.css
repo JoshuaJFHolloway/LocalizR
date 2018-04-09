@@ -1,5 +1,5 @@
 body {
-    font-family: "Schoolbell";
+    font-family: "Special Elite";
     font-size: 30px;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
@@ -20,4 +20,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+}
+
+.homepagetitle { 
+    font-size: 160px;
+    padding-top: 25vh;
 }

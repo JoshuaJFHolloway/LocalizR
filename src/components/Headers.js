@@ -4,8 +4,8 @@ import SubHeader from './SubHeader';
 
 const Headers = () => {
   return <div>
-      <Header header={"slath"} />
-      <SubHeader subHeader={"Be a traveler, not a tourist"} />
+      <Header header={"SLATH"} />
+      <SubHeader subHeader={"Be a traveler, not a tourist!"} />
     </div>;
 };
 
