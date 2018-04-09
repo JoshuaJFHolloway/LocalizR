@@ -22,11 +22,15 @@ class ChooseLanguage extends Component {
     }));
   };
 
-  handleScenarioClicked = () => {
+  handleScenario1Clicked = () => {
     this.setState({
       spanishScen1: true,
-      spanishScen2: true,
+    });
+  };
 
+  handleScenario2Clicked = () => {
+    this.setState({
+      spanishScen2: true,
     });
   };
 
@@ -48,7 +52,8 @@ class ChooseLanguage extends Component {
         <LanguageList
           handlePictureClicked = {this.handlePictureClicked}
           spanishScenarios = {<SpanishScenarios
-            handleScenarioClicked = {this.handleScenarioClicked}
+            handleScenario1Clicked = {this.handleScenario1Clicked}
+            handleScenario2Clicked = {this.handleScenario2Clicked}
           />}
         />
       ),
