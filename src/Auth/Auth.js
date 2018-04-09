@@ -1,8 +1,6 @@
 import history from '../history';
-// import auth0 from 'auth0-js';
 import * as auth0 from 'auth0-js'
 require('dotenv').config();
-
 
 export default class Auth {
   auth0 = new auth0.WebAuth({
@@ -19,12 +17,10 @@ export default class Auth {
   }
 
   constructor() {
-
       this.login = this.login.bind(this);
       this.logout = this.logout.bind(this);
       this.handleAuthentication = this.handleAuthentication.bind(this);
       this.isAuthenticated = this.isAuthenticated.bind(this);
-
   }
 
   handleAuthentication() {
