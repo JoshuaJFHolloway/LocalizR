@@ -1,0 +1,30 @@
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.index {
+    background: url("https://image.ibb.co/ch6WsH/la_background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.homepagetitle {
+    font-size: 100px;
+}
+
+.quizbackground {
+    background: linear-gradient(white, steelblue);
+    padding: 100px;
+}
+
+.languagepagetitle {
+    font-size: 50px;
+}

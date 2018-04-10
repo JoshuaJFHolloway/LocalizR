@@ -1,5 +1,4 @@
 import React from 'react';
-import './styledComponents/content.css';
 
 const Header = (props) => {
   return (
