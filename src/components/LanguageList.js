@@ -18,6 +18,7 @@ const LanguageList = (props) => {
       />
       
       {props.spanishScenarios}
+      {props.frenchScenarios}
     </div>
   );
 };

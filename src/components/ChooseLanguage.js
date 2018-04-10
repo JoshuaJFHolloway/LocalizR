@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import Quiz from './Quiz';
-import SpanishScenarios from './SpanishScenarios'
+import Scenarios from './Scenarios'
 
 
 class ChooseLanguage extends Component {
@@ -12,23 +12,19 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishScen2: false,
+      spanishscen2: false,
+      frenchScen2: false,
+      frenchScene2: false,
 
     };
-  };
-
-  // handleRetryQuiz = () => {
-  //   if(this.state.spanishScen1=== true){
-  //
-  //   }
-  // };
+  };  
 
   handleDataSubmitted = () => {
     this.setState({
       spanish: false,
       french: false,
-      spanishScen1: false,
-      spanishScen2: false
+      scen1: false,
+      scen2: false
     });
   };
 
@@ -42,25 +38,34 @@ class ChooseLanguage extends Component {
   handleScenario1Clicked = () => {
     this.setState({
       spanishScen1: true,
+      frenchScen2: true,
+
     });
   };
 
   handleScenario2Clicked = () => {
     this.setState({
-      spanishScen2: true,
+      spanishscen2: true,
+      frenchScene2: true,
+
     });
   };
-//keep scenario for both languages except the states, modify the decider so if this.state.scen1 === true &&
-// this.state.french === false return 'frenchQuiz'
 
   decider (){
-      if((this.state.spanishScen1 === true && this.state.spanish === true) ||
-        (this.state.spanishScen1 === true && this.state.spanish === false)) {
-      return 'SpanishQuiz';
+    if((this.state.spanishScen1 === true && this.state.spanish === true) ||
+       (this.state.spanishScen1 === true && this.state.spanish === false)) {
+        return 'SpanishQuiz';  
+     } else if((this.state.frenchScen1 === true && this.state.french === true) ||
+               (this.state.frenchScen1 === true && this.state.french === false)) {
+        return 'FrenchQuiz';        
     } else if(this.state.spanishScen2 === true && this.state.spanish === true) {
-      return 'SpanishQuiz2';
+        return 'SpanishQuiz2';
+    } else if(this.state.frenchScen2 === true && this.state.french === true) {
+        return 'FenchQuiz2';
     } else if(this.state.spanish === true) {
-      return 'SpanishScenarios';
+        return 'SpanishScenarios';
+    } else if(this.state.french === true) {
+        return 'FrenchScenarios';
     } else return 'LanguageList';
   };
 
@@ -71,10 +76,11 @@ class ChooseLanguage extends Component {
         <LanguageList
           handlePictureClicked = {this.handlePictureClicked}
           spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
-          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
-          spanishScenarios = {<SpanishScenarios
+          spanishScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
+            buttonName1={"Spanish Scenario 1"}
+            buttonName2={"Spanish Scenario 2"}
           />}
         />
       ),
@@ -138,10 +144,7 @@ class ChooseLanguage extends Component {
           correctAnswer8={"Cuánto cuesta?"}
           answer8_2={"Cuánto hay?"}
           answer8_3={"Cuántos hijos tienes?"} 
-
         />
-        
-        
         </div>  
       ),
 
@@ -174,26 +177,26 @@ class ChooseLanguage extends Component {
           question6={"He askes you 'Quieres el postre?'"}
           question7={"How would you ask for Ice Cream?"}
           question8={"How would you ask for the bill?"}
-          answer1_1={"Una mesa para cinco personas, por favor"}
-          correctAnswer1={"Una mesa para dos personas, por favor"}
-          answer1_2={"Una silla para dos personas, por favor"}
-          answer1_3={"Una carta para tres presonas, por favor"}
+          answer1_1={"La parada de metro"}
+          correctAnswer1={"La estacion de tren"}
+          answer1_2={"La estacion de autobus"}
+          answer1_3={"La estacion de bomberos"}
           answer2_1={"Quiero un vaso de agua"}
           correctAnswer2={"Quiero una copa de vino tinto"}
           answer2_2={"Quiero una copa de vino blanco "}
           answer2_3={"Quiero un vaso de vino tinto"}
           answer3_1={"Pescado"}
-          correctAnswer3={"Pulpo a la gallega"}
+          correctAnswer3={"Pulpo"}
           answer3_2={"Albondigas"}
           answer3_3={"Arroz"}
           answer4_1={"Disculpe, la comida está caliente"}
           correctAnswer4={"Disculpe, la comida está fria"}
           answer4_2={"Me encanta la comida"}
           answer4_3={"Disculpe, la bebida está fria"}
-          answer5_1={"respuesta"}
+          answer5_1={"Está crudo"}
           correctAnswer5={"Está delicioso"}
-          answer5_2={"respuesta"}
-          answer5_3={"respuesta"}
+          answer5_2={"Está picante"}
+          answer5_3={"Está salado"}
           answer6_1={"Do you want a drink?"}
           correctAnswer6={"Do you want dessert?"}
           answer6_2={"Do you want fruit?"}
@@ -201,11 +204,153 @@ class ChooseLanguage extends Component {
           answer7_1={"Quiero una servilleta"}
           correctAnswer7={"Quiero un helado"}
           answer7_2={"Quiero un pastel"}
-          answer7_3={"Quiero una copa"}
-          answer8_1={"Me puede invitar, por favor?"}
+          answer7_3={"Quiero una fruta"}
+          answer8_1={"Me puede traer un tenedor, por favor?"}
           correctAnswer8={"Me puede traer la cuenta, por favor?"}
           answer8_2={"Mi amigo paga la cuenta"}
-          answer8_3={"Donde está la salida"}
+          answer8_3={"Me puedes traer la carta, por favor?"}
+        />
+        </div>
+      ),
+
+      FrenchScenarios: (
+        <LanguageList
+          handlePictureClicked = {this.handlePictureClicked}
+          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
+          frenchScenarios = {<Scenarios
+            handleScenario1Clicked = {this.handleScenario1Clicked}
+            handleScenario2Clicked = {this.handleScenario2Clicked}
+            buttonName1={"French Scenario 1"}
+            buttonName2={"French Scenario 2"}
+          />}
+        />
+      ),
+      FrenchQuiz: (        
+       <div> 
+        <Quiz
+          handleDataSubmitted = {this.handleDataSubmitted}
+          handleRetryQuiz = {this.handlePictureClicked}
+          scenario1={"You leave your house and start following these signs"}
+          scenario2={"You arrive at the train station"}
+          scenario3={"You get your ticket"}
+          scenario4={"You head for your train"}
+          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
+          scenario6={"You get lost and stop to ask a stranger for directions"}
+          scenario7={"The stranger replies '<directions in Spanish>' "}
+          picture1={"https://www.opposuits.co.uk/media/catalog/product/cache/1/image/550x/925f46717e92fbc24a8e2d03b22927e1/s/s/ss_reddevil-lifestyle-01.jpg"}
+          picture2={"https://www.harvard.edu/sites/default/files/content/harvard-map-google.jpg"}
+          picture3={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvBGJnQZGmYn5x2eq8ObdXtVSGOYVkjw-sUpjVlyTm3sbgrf9"}
+          picture4={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
+          picture5={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
+          picture6={""}
+          picture7={""}
+          picture8={""}
+          question1={"Where are you going?"}
+          question2={"How do you ask for a ticket?"}
+          question3={"How do you ask how long the journey will take?"}
+          question4={"Which platform do you need?"}
+          question5={"Which way should you go?"}
+          question6={"How do you ask where the market is?"}
+          question7={"Which way should you go?"}
+          question8={"How do you ask how much something costs"}
+          answer1_1={"la gare de bus"}
+          answer1_2={"La parada de metro"}
+          correctAnswer1={"La station de métro"}
+          answer1_3={"La caserne de pompiers"}
+          answer2_1={"Combien coûte un train?"}
+          correctAnswer2={"Combien coûte un billet?"}
+          answer2_2={"Combien coûte une voiture?"}
+          answer2_3={"Combien de temps il faut pour arriver?"}
+          answer3_1={"Quel est le dernier train?"}
+          correctAnswer3={"Combien de temps il faut pour y arriver?"}
+          answer3_2={"Quel est le prochain train"}
+          answer3_3={"Combien y a-t-il de trains?"}
+          answer4_1={"Rue 7"}
+          correctAnswer4={"Plateforme 7"}
+          answer4_2={"Chaise 7"}
+          answer4_3={"Voiture7"}
+          answer5_1={"Nord"}
+          correctAnswer5={"Sud"}
+          answer5_2={"Est"}
+          answer5_3={"Ouest"} 
+          answer6_1={"Où est la banque?"}
+          correctAnswer6={"Où est le marché?"}
+          answer6_2={"Où est le magasin?"}
+          answer6_3={"Où est la source?"}
+          answer7_1={"Tourner à gauche et continuer tout droit"}
+          correctAnswer7={"Tourner à droite et continuer tout droit"}
+          answer7_2={"Aller tout droit"}
+          answer7_3={"au bout de la rue"}
+          answer8_1={"Quel âge as-tu?"}
+          correctAnswer8={"combien coûte?"}
+          answer8_2={"combien il y a?"}
+          answer8_3={"combien d'enfants avez-vous?"} 
+
+        />
+        </div>  
+      ),
+
+      FrenchQuiz2:(
+        <div>
+        <Quiz
+          handleDataSubmitted = {this.handleDataSubmitted}
+          handleRetryQuiz = {this.handlePictureClicked}
+          scenario1={"You enter in a restaurant"}
+          scenario2={"You're seated at a table"}
+          scenario3={"You're ready to order your main meal"}
+          scenario4={"You're not happy with your food"}
+          scenario5={"Your waiter brings you more food"}
+          scenario6={"When you finish your food the waiter comes to your table"}
+          scenario7={"You said yes as you are still pekish"}
+          scenario8={"You finish your dessert"}
+          picture1={"https://i.gifer.com/BkoU.gif"}
+          picture2={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwXOsbPRiAAfruDCcVVkzXGQwvJYDOPjZF1wuJMuBE2jbMPA-"}
+          picture3={"https://i.pinimg.com/originals/a3/4f/82/a34f82bc4ee3d8ed199ffd234f2a34e2.jpg"}
+          picture4={"http://s03.s3c.es/imag/_v0/770x420/6/9/0/botella-agua-770x420-reuters.jpg"}
+          picture5={"http://artmansnursery.com/wp-content/uploads/2015/06/clock.jpg"}
+          picture6={"https://i.pinimg.com/originals/a3/4f/82/a34f82bc4ee3d8ed199ffd234f2a34e2.jpg"}
+          picture7={"http://s03.s3c.es/imag/_v0/770x420/6/9/0/botella-agua-770x420-reuters.jpg"}
+          picture8={"http://artmansnursery.com/wp-content/uploads/2015/06/clock.jpg"}
+          question1={"How do you ask for a table for two?"}
+          question2={"You want to order a glass of red wine.."}
+          question3={"You decide to order Octopus"}
+          question4={"How would you complain when your food is cold??"}
+          question5={"You want to tell the waiter it tastes great"}
+          question6={"He askes you 'Voulez-vous un dessert?'"}
+          question7={"How would you ask for Ice Cream?"}
+          question8={"How would you ask for the bill?"}
+          answer1_1={"table pour cinq personnes s'il vous plaît"}
+          correctAnswer1={"table pour deux personnes s'il vous plaît"}
+          answer1_2={"Chaise pour deux personnes s'il vous plaît"}
+          answer1_3={"Lettre pour deux personnes s'il vous plaît"}
+          answer2_1={"Je veux un verre d'eau"}
+          correctAnswer2={"Je veux un verre de vin rouge"}
+          answer2_2={"Je veux un verre de vin blanc "}
+          answer2_3={"Je veux une bouteille de vin rouge"}
+          answer3_1={"Poisson"}
+          correctAnswer3={"Poulpe"}
+          answer3_2={"Boulettes de viande"}
+          answer3_3={"Riz"}
+          answer4_1={"Excusez-moi, la nourriture est chaude"}
+          correctAnswer4={"Excusez-moi, la nourriture est froide"}
+          answer4_2={"J'adore la nourriture"}
+          answer4_3={"Excusez-moi, la boisson est froide"}
+          answer5_1={"ce cru"}
+          correctAnswer5={"c'est délicieux"}
+          answer5_2={"cette épice"}
+          answer5_3={"ce salé"}
+          answer6_1={"Do you want a drink?"}
+          correctAnswer6={"Do you want dessert?"}
+          answer6_2={"Do you want fruit?"}
+          answer6_3={"Do you want salt"}
+          answer7_1={"Je veux une serviette"}
+          correctAnswer7={"Je veux une glace"}
+          answer7_2={"Je veux un gâteau"}
+          answer7_3={"Je veux un fruit"}
+          answer8_1={"Peux-tu m'apporter une fourchette s'il te plait?"}
+          correctAnswer8={"Pouvez-vous m'apporter la facture s'il vous plaît?"}
+          answer8_2={"Mon ami paie la facture"}
+          answer8_3={"Peux-tu m'apporter la lettre s'il vous plaît?"}
         />
         </div>
       ),

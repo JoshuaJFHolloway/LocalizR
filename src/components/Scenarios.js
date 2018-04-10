@@ -1,19 +1,19 @@
 import React from 'react'
 import SubmitButton from './SubmitButton'
 
-const SpanishScenarios = props => {
+const Scenarios = props => {
   return (
     <div>
     <SubmitButton
-      buttonName = {"Spanish Scenario 1"}
+      buttonName = {props.buttonName1}
       handleDataSubmitted = {props.handleScenario1Clicked}
     />
     <SubmitButton
-      buttonName = {"Spanish Scenario 2"}
+      buttonName = {props.buttonName2}
       handleDataSubmitted = {props.handleScenario2Clicked}
     />
     </div>
   );
 };
 
-export default SpanishScenarios;
+export default Scenarios;
