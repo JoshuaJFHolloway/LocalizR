@@ -46,7 +46,7 @@ import SubmitButton from './SubmitButton'
               handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
             <SubmitButton
-              buttonName={this.props.answer4}
+              buttonName={this.props.correctAnswer}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
           </div>
@@ -63,7 +63,7 @@ import SubmitButton from './SubmitButton'
               handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
             <SubmitButton
-              buttonName={this.props.answer4}
+              buttonName={this.props.correctAnswer}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
             <SubmitButton
@@ -80,7 +80,7 @@ import SubmitButton from './SubmitButton'
               handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
             <SubmitButton
-              buttonName={this.props.answer4}
+              buttonName={this.props.correctAnswer}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
             <SubmitButton
@@ -97,7 +97,7 @@ import SubmitButton from './SubmitButton'
         Selection4: (
           <div>
             <SubmitButton
-              buttonName={this.props.answer4}
+              buttonName={this.props.correctAnswer}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
             <SubmitButton
