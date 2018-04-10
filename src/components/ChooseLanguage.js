@@ -62,7 +62,6 @@ class ChooseLanguage extends Component {
   };
 
   render() {
-
     const quizViews = {
       SpanishScenarios: (
         <LanguageList
@@ -74,7 +73,7 @@ class ChooseLanguage extends Component {
         />
       ),
       SpanishQuiz: (        
-       <div> 
+       <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
           handleRetryQuiz = {this.handlePictureClicked}

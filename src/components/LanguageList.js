@@ -4,7 +4,8 @@ import SubHeader from './SubHeader'
 
 const LanguageList = (props) => {
   return (
-    <div>
+    <div className="displaybox">
+    <div className="languagepagetitle">
       <SubHeader
         subHeader={"Choose your language!"}
       />
@@ -13,6 +14,7 @@ const LanguageList = (props) => {
       />
       {props.spanishScenarios}
     </div>
+  </div>
   );
 };
 
