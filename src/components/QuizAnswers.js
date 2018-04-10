@@ -20,20 +20,20 @@ import SubmitButton from './SubmitButton'
     decider = () => {
       var values = this.randomiser();
         if(values[0] === 1){
-          return 'Here1'
+          return 'Selection1'
         } if(values[0] === 2){
-          return 'Here2'
+          return 'Selection2'
       } if(values[0] === 3){
-        return 'Here3'
+        return 'Selection3'
       } if(values[0] === 4){
-        return 'Here4'
+        return 'Selection4'
       }
     };
 
     render() {
 
       const Views = {
-        Here1: (
+        Selection1: (
           <div>
             <SubmitButton
               buttonName={this.props.answer1}
@@ -54,7 +54,7 @@ import SubmitButton from './SubmitButton'
           </div>
         ),
 
-        Here2: (
+        Selection2: (
           <div>
             <SubmitButton
               buttonName={this.props.answer1}
@@ -75,7 +75,7 @@ import SubmitButton from './SubmitButton'
           </div>
         ),
 
-        Here3: (
+        Selection3: (
           <div>
             <SubmitButton
               buttonName={this.props.answer1}
@@ -96,7 +96,7 @@ import SubmitButton from './SubmitButton'
           </div>
         ),
 
-        Here4: (
+        Selection4: (
           <div>
             <SubmitButton
               buttonName={this.props.answer4}
