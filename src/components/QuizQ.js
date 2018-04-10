@@ -17,7 +17,9 @@ const QuizQ = props => {
         question={props.question}
       />
       <QuizAnswers
-        handleAnswerSubmitted = {props.handleAnswerSubmitted}
+        handleAnswerSubmitted1 = {props.handleAnswerSubmitted1}
+        handleAnswerSubmitted2 = {props.handleAnswerSubmitted2}
+        handleAnswerSubmitted3 = {props.handleAnswerSubmitted3}
         handleCorrectAnswerSubmitted = {props.handleCorrectAnswerSubmitted}
         answer1={props.answer1}
         correctAnswer={props.correctAnswer}
