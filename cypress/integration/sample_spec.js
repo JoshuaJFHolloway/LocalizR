@@ -30,7 +30,29 @@ describe('Slath', function () {
     cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
     cy.get('.auth0-lock-submit').click()
   })
+
+  it('can login just by clicking the last login users e-mail', function () {
+    cy.visit('http://localhost:3000')
+    cy.get('.loginbutton').click()
+    cy.get('.auth0-lock-social-button-text').click()
+  })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //   it('Homepage renders correctly', function () {
 //     cy.visit('http://localhost:3000')
