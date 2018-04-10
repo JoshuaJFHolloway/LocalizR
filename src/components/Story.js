@@ -5,11 +5,6 @@ class Story extends Component {
   constructor() {
     super();
     this.state = {
-      correctanswer1: null,
-      correctanswer2: null,
-      correctanswer3: null,
-      correctanswer4: null,
-      correctanswer5: null,
       answers: [],
       responses: []
     }
@@ -39,7 +34,7 @@ class Story extends Component {
     for( i = 0; i < 5; i++ ) {
       return(
     <div>
-      <h1>Your first answer was {this.state.answers[i]}, {this.state.responses[0]}</h1>
+      <h1>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h1>
       <h1>Your first answer was {this.state.answers[1]}, {this.state.responses[1]}</h1>
       <h1>Your first answer was {this.state.answers[2]}, {this.state.responses[2]}</h1>
       <h1>Your first answer was {this.state.answers[3]}, {this.state.responses[3]}</h1>
