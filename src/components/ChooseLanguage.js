@@ -80,6 +80,7 @@ class ChooseLanguage extends Component {
       SpanishScenarios: (
         <LanguageList
           handleSpanishClicked = {this.handleSpanishClicked}
+          handleFrenchClicked = {this.handleFrenchClicked}
           spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
           frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
           spanishScenarios = {<Scenarios
@@ -220,6 +221,7 @@ class ChooseLanguage extends Component {
       FrenchScenarios: (
         <LanguageList
           handleFrenchClicked = {this.handleFrenchClicked}
+          handleSpanishClicked = {this.handleSpanishClicked}
           frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
           spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
           frenchScenarios = {<Scenarios
