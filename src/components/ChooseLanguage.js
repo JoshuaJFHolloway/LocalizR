@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import Quiz from './Quiz';
 import SpanishScenarios from './SpanishScenarios'
+import axios from 'axios';
 
 
 class ChooseLanguage extends Component {
@@ -12,7 +13,6 @@ class ChooseLanguage extends Component {
       spanish: false,
       spanishScen1: false,
       spanishScen2: false,
-
     };
   };
 
@@ -40,6 +40,13 @@ class ChooseLanguage extends Component {
     this.setState({
       spanishScen1: true,
     });
+    axios.delete('http://localhost:3001/api/scenario')
+      .then(res => {
+        console.log('Cleaned database');
+      })
+      .catch(err => {
+        console.log(err)
+      });
   };
 
   handleScenario2Clicked = () => {

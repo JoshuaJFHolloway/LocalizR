@@ -30,18 +30,16 @@ class Story extends Component {
 
 
   render() {
-    var i;
-    for( i = 0; i < 5; i++ ) {
-      return(
-    <div>
-      <h1>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h1>
-      <h1>Your first answer was {this.state.answers[1]}, {this.state.responses[1]}</h1>
-      <h1>Your first answer was {this.state.answers[2]}, {this.state.responses[2]}</h1>
-      <h1>Your first answer was {this.state.answers[3]}, {this.state.responses[3]}</h1>
-      <h1>Your first answer was {this.state.answers[4]}, {this.state.responses[4]}</h1>
-    </div>
+    return(
+      <div>
+        <h1>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h1>
+        <h1>Your first answer was {this.state.answers[1]}, {this.state.responses[1]}</h1>
+        <h1>Your first answer was {this.state.answers[2]}, {this.state.responses[2]}</h1>
+        <h1>Your first answer was {this.state.answers[3]}, {this.state.responses[3]}</h1>
+        <h1>Your first answer was {this.state.answers[4]}, {this.state.responses[4]}</h1>
+      </div>
     )
   }
-};
+}
 
 export default Story;

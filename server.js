@@ -5,7 +5,6 @@ require('dotenv').config();
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-// var Comment = require('./model/comments');
 var Answer = require('./model/answers')
 
 // and create our instances
@@ -14,7 +13,9 @@ var router = express.Router();
 
 // set our port to either a predetermined port number if you have set it up, or 3001
 var port = process.env.API_PORT || 3001;
-mongoose.connect('mongodb://' + process.env.USERNAME + ':' + process.env.PASSWORD + '@ds139219.mlab.com:39219/spanish1')
+mongoose.connect('mongodb://' + process.env.USERNAME + ':' + process.env.PASSWORD + '@ds139219.mlab.com:39219/spanish1', function() {
+  mongoose.connection.db.dropDatabase();
+})
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'mongodb connection error'))
 
@@ -46,6 +47,13 @@ router.route('/scenario')
               res.send(err);
           res.json(answer)
       });
+  })
+  .delete(function(req, res) {
+    Answer.remove({}, function(err, comment) {
+      if(err)
+        res.send(err);
+      console.log('Database cleaned')
+    })
   })
 
   .post(function(req, res) {

@@ -17,9 +17,6 @@ class Quiz extends Component {
     }
   }
 
-
-
-
   concatenateAnswer1 = () => {
     var string = 'this.props.answer' + (this.state.counter + 1) + "_" + 1
     return eval(string)
