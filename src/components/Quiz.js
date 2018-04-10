@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import QuizQ from './QuizQ';
-import ChooseLanguage from './ChooseLanguage';
 import ResultsPage from './ResultsPage';
 
 
 class Quiz extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       score: 0,
@@ -49,7 +48,7 @@ class Quiz extends Component {
 
 
 
-  render(props) {
+  render() {
 
     const Views = {
       ResultsPage: (
