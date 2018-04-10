@@ -6,7 +6,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 describe('Slath', function () {
   it('opens page and has correct content', function () {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/home')
     cy.title().should('include', 'Slath')
     cy.get('.index').should('contain', 'Be a traveler, not a tourist!')
     cy.get('.loginbutton').should('contain', 'Login / Signup')
@@ -23,7 +23,7 @@ describe('Slath', function () {
   })
 
   it('can login with a registered user', function () {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/home')
     cy.get('.loginbutton').click()
     cy.get('.auth0-lock-alternative').first().click()
     cy.get('.auth0-lock-input').first().type('test_slath105720@slath.com')
@@ -33,7 +33,7 @@ describe('Slath', function () {
   })
 
   it('can login just by clicking the last login users e-mail', function () {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/home')
     cy.get('.loginbutton').click()
     cy.get('.auth0-lock-social-button-text').click()
   })
@@ -49,7 +49,7 @@ describe('Rendering the game', function () {
   })
 
   it('renders French Scenarios correctly', function () {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/home')
     cy.get('.loginbutton').click()
     cy.get('.auth0-lock-social-button-text').click()
     cy.get('img').last().click()
@@ -65,7 +65,7 @@ describe('Playing the game', function () {
   })
 
   it('renders first Spanish scenario if clicked', function () {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/home')
     cy.get('.loginbutton').click()
     cy.get('.auth0-lock-social-button-text').click()
     cy.get('.languagepagetitle').first().click()
