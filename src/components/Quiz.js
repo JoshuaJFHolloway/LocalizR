@@ -9,25 +9,42 @@ class Quiz extends Component {
     this.state = {
       score: 0,
       counter: 0,
-      nextQuestion: false,
-      lastQuestion: false,
+      correctQ: '',
+      incorrectQ: ''
     }
   }
 
+  // reset = () => {
+  //   this.setState({
+  //     CorrectQ: '',
+  //     IncorrectQ: ''
+  //   });
+  // };
 
   handleCorrectAnswerSubmitted = () => {
     this.setState({
-      counter: this.state.counter + 1,
-      score: this.state.score + 1
-    })
+      correctQ: "green",
+    });
+    setTimeout(() => {
+      this.setState({
+        counter: this.state.counter + 1,
+        score: this.state.score + 1,
+        correctQ: ""
+      });
+    }, 3000);
   };
-
 
 
   handleAnswerSubmitted = () => {
     this.setState({
-      counter: this.state.counter + 1
-    })
+      incorrectQ: "red",
+    });
+    setTimeout(() => {
+      this.setState({
+        counter: this.state.counter + 1,
+      });
+    }, 3000);
+
   };
 
 
@@ -35,7 +52,7 @@ class Quiz extends Component {
     if (this.state.counter === 8) {
       return 'ResultsPage';
       } else if (this.state.counter === 1) {
-        return 'QuizQ2';
+        return 'QuizQ2'
       } else if (this.state.counter === 2){
         return 'QuizQ3';
       } else if (this.state.counter === 3){
@@ -66,6 +83,7 @@ class Quiz extends Component {
       ),
         QuizQ1: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario1}
@@ -80,6 +98,7 @@ class Quiz extends Component {
 
         QuizQ2: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario2}
@@ -94,6 +113,7 @@ class Quiz extends Component {
 
         QuizQ3: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario3}
@@ -108,6 +128,7 @@ class Quiz extends Component {
 
         QuizQ4: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario4}
@@ -122,6 +143,7 @@ class Quiz extends Component {
 
         QuizQ5: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario5}
@@ -136,6 +158,7 @@ class Quiz extends Component {
 
         QuizQ6: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario6}
@@ -149,6 +172,7 @@ class Quiz extends Component {
         ),
         QuizQ7: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario7}
@@ -163,6 +187,7 @@ class Quiz extends Component {
 
         QuizQ8: (
           <QuizQ
+            state = {this.state.correctQ}
             handleAnswerSubmitted = {this.handleAnswerSubmitted}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario8}

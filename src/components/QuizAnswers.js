@@ -6,26 +6,31 @@ import SubmitButton from './SubmitButton'
       super();
     }
 
+    componentWillMount() {
+      this.decider();
+    }
+
+
     randomiser = (array= [1,2,3,4]) => {
       for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
       }
-        var num1 = array[0];
-        return [num1];
+        return array[0];
       };
 
+
     decider = () => {
-      var values = this.randomiser();
-        if(values[0] === 1){
-          return 'Selection1'
-        } if(values[0] === 2){
-          return 'Selection2'
-      } if(values[0] === 3){
-        return 'Selection3'
-      } if(values[0] === 4){
-        return 'Selection4'
-      }
+      this.selectionIndex = 'Selection' + this.randomiser();
+      //   if(values[0] === 1){
+      //     return 'Selection1'
+      //   } if(values[0] === 2){
+      //     return 'Selection2'
+      // } if(values[0] === 3){
+      //   return 'Selection3'
+      // } if(values[0] === 4){
+      //   return 'Selection4'
+      // }
     };
 
     render() {
@@ -47,6 +52,8 @@ import SubmitButton from './SubmitButton'
             />
             <SubmitButton
               buttonName={this.props.correctAnswer}
+              style={this.props.style}
+              timeout = {this.props.timeout}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
           </div>
@@ -64,6 +71,7 @@ import SubmitButton from './SubmitButton'
             />
             <SubmitButton
               buttonName={this.props.correctAnswer}
+              style={this.props.style}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
             <SubmitButton
@@ -81,6 +89,7 @@ import SubmitButton from './SubmitButton'
             />
             <SubmitButton
               buttonName={this.props.correctAnswer}
+              style={this.props.style}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
             <SubmitButton
@@ -98,6 +107,7 @@ import SubmitButton from './SubmitButton'
           <div>
             <SubmitButton
               buttonName={this.props.correctAnswer}
+              style={this.props.style}
               handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
             <SubmitButton
@@ -118,7 +128,7 @@ import SubmitButton from './SubmitButton'
 
       return (
         <div>
-          {Views[this.decider()]}
+          {Views[this.selectionIndex]}
         </div>
       )
     };

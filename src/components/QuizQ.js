@@ -1,31 +1,50 @@
-import React from 'react'
+import React, { Component } from 'react'
 import QuizScenario from './QuizScenario';
 import QuizPicture from './QuizPicture';
 import QuizQuestion from './QuizQuestion';
 import QuizAnswers from './QuizAnswers';
 
-const QuizQ = props => {
-  return (
-    <div>
-      <QuizScenario
-        scenario={props.scenario}
-      />
-      <QuizPicture
-        picture={props.picture}
-      />
-      <QuizQuestion
-        question={props.question}
-      />
-      <QuizAnswers
-        handleAnswerSubmitted = {props.handleAnswerSubmitted}
-        handleCorrectAnswerSubmitted = {props.handleCorrectAnswerSubmitted}
-        answer1={props.answer1}
-        correctAnswer={props.correctAnswer}
-        answer2={props.answer2}
-        answer3={props.answer3}
-      />
-    </div>
-  )
-};
+class QuizQ extends Component {
+  constructor(){
+    super()
+  }
+  render() {
+
+    // var button= this.state.CorrectQ;
+    var button= this.props.state;
+    var buttonStyle = {
+          backgroundColor: ""
+    };
+
+    if(button === "green"){
+      buttonStyle= {
+          backgroundColor: "green"
+      }
+    }
+
+    return (
+      <div>
+        <QuizScenario
+          scenario={this.props.scenario}
+        />
+        <QuizPicture
+          picture={this.props.picture}
+        />
+        <QuizQuestion
+          question={this.props.question}
+        />
+        <QuizAnswers
+          handleAnswerSubmitted={this.props.handleAnswerSubmitted}
+          handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
+          style={buttonStyle}
+          answer1={this.props.answer1}
+          correctAnswer={this.props.correctAnswer}
+          answer2={this.props.answer2}
+          answer3={this.props.answer3}
+        />
+      </div>
+    )
+  }
+}
 
 export default QuizQ;
