@@ -6,7 +6,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 describe('Slath', function () {
   it('opens page and has correct content', function () {
-    cy.visit('http://localhost:3000')
+    cy.visit('http://localhost:3000/')
     cy.title().should('include', 'Slath')
     cy.get('.index').should('contain', 'Be a traveler, not a tourist!')
     cy.get('.loginbutton').should('contain', 'Login / Signup')
@@ -23,22 +23,23 @@ describe('Slath', function () {
   })
 
   it('can login with a registered user', function () {
-    cy.visit('http://localhost:3000')
+    cy.visit('http://localhost:3000/')
     cy.get('.loginbutton').click()
-    cy.get('.auth0-lock-alternative-link').click()
+    cy.get('.auth0-lock-alternative').first().click()
     cy.get('.auth0-lock-input').first().type('test_slath105720@slath.com')
     cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
     cy.get('.auth0-lock-submit').click()
+    cy.get('.chooselanguage').click()
   })
 
   it('can login just by clicking the last login users e-mail', function () {
-    cy.visit('http://localhost:3000')
+    cy.visit('http://localhost:3000/')
     cy.get('.loginbutton').click()
     cy.get('.auth0-lock-social-button-text').click()
   })
 })
 
-describe('The game', function () {
+describe('Rendering the game', function () {
   it('renders Spanish Scenarios correctly', function () {
     cy.get('.loginbutton').should('contain', 'Log Out')
     cy.get('.languagepagetitle').should('contain', 'Choose your language!')
@@ -48,7 +49,7 @@ describe('The game', function () {
   })
 
   it('renders French Scenarios correctly', function () {
-    cy.visit('http://localhost:3000')
+    cy.visit('http://localhost:3000/')
     cy.get('.loginbutton').click()
     cy.get('.auth0-lock-social-button-text').click()
     cy.get('img').last().click()
@@ -57,6 +58,22 @@ describe('The game', function () {
   })
 })
 
+describe('Playing the game', function () {
+  it('renders first French scenario if clicked', function () {
+    cy.get('#submitButton').click()
+    cy.get('.chooselanguage').should('contain', 'You leave your house and start following these signs')
+  })
+
+  it('renders first Spanish scenario if clicked', function () {
+    cy.visit('http://localhost:3000/')
+    cy.get('.loginbutton').click()
+    cy.get('.auth0-lock-social-button-text').click()
+    cy.get('.languagepagetitle').first().click()
+    cy.get('#submitButton').first().should('contain', 'Spanish Scenario 1')
+    cy.get('#submitButton').first().click()
+    cy.get('.chooselanguage').should('contain', 'You leave your house and start following these signs')
+  })
+})
 
 
 
