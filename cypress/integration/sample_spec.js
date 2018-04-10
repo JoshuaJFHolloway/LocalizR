@@ -24,7 +24,7 @@ describe('Slath', function () {
   //   cy.get('.icon-budicon-500').click()
   // })
 
-  it('can log in w registered user and log out', function () {
+  it('can log in w/ registered user and log out', function () {
     cy.contains('Log In or Sign Up').click()
     cy.contains('test_slath105720@slath.com').click()
     cy.contains('Log Out').click()
@@ -198,5 +198,31 @@ describe('Slath wrong answers test', function () {
     cy.get('#submitButton3').click()
     cy.get('#submitButton2').click()
     cy.contains('Nice one, your score is 0')
+  })
+})
+
+describe('Mixed good/wrong answers tests', function () {
+  it('has 3 correct answers at the end of Spanish Scenario 1', function () {
+    cy.contains('Languages Page').click()
+    cy.get('img').click()
+    cy.contains('Spanish Scenario 1').click()
+    cy.get('#submitButton2').click()
+    cy.get('#submitButton').click()
+    cy.get('#submitButton').click()
+    cy.get('#submitButton3').click()
+    cy.get('#submitButton').click()
+    cy.contains('Nice one, your score is 3')
+  })
+
+  it('has 2 correct answers at the end of Spanish Scenario 2', function () {
+    cy.contains('Languages Page').click()
+    cy.get('img').click()
+    cy.contains('Spanish Scenario 2').click()
+    cy.get('#submitButton').click()
+    cy.get('#submitButton2').click()
+    cy.get('#submitButton1').click()
+    cy.get('#submitButton3').click()
+    cy.get('#submitButton').click()
+    cy.contains('Nice one, your score is 2')
   })
 })
