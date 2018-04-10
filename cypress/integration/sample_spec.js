@@ -5,45 +5,62 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 })
 
 describe('Slath', function () {
-
-  it('Homepage renders correctly', function () {
+  it('opens page and has correct content', function () {
     cy.visit('http://localhost:3000')
     cy.title().should('include', 'Slath')
-    cy.get('.sc-bwzfXH').should('contain', 'Be a traveler, not a tourist')
+    cy.get('.index').should('contain', 'Be a traveler, not a tourist!')
+    cy.get('.loginbutton').should('contain', 'Login / Signup')
   })
 
-// this one had to be commented due to already havin'
-// a registered account
-  // it('can register and log in', function () {
-  //   cy.contains('Log In or Sign Up').click()
-  //   cy.contains('Sign Up').click()
-  //   cy.get('input.auth0-lock-input').first()
-  //     .type(`test_slath${Math.floor(Math.random() * 200000)}@slath.com`)
-  //   cy.get('input.auth0-lock-input').last()
-  //     .type('slathPASSWORD99')
-  //   cy.get('span.auth0-label-submit').click()
-  //   cy.get('.icon-budicon-500').click()
-  // })
-
-  it('can log in w/ registered user and log out', function () {
-    cy.get('button').should('contain', 'Log In or Sign Up').click()
-    cy.get('.auth0-lock').should('contain', 'test_slath105720@slath.com')
-    cy.get('button').first().click()
+  it('can create a new user and logs in', function () {
+    cy.get('.loginbutton').click()
+    cy.get('.auth0-lock-alternative-link').click()
+    cy.get('.auth0-lock-tabs').last().click()
+    cy.get('.auth0-lock-input').first().type(`test_slath${Math.floor(Math.random() * 200000)}@slath.com`)
+    cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
+    cy.get('.auth0-lock-submit').click()
+    cy.get('#allow').click()
   })
+})
 
-  it('can log in after log out again', function () {
-    cy.get('button').should('contain', 'Log Out')
-    cy.contains('Log Out').click()
-    cy.get('button').should('contain', 'Log In or Sign Up')
-    cy.get('button').click()
-    cy.get('.auth0-lock').should('contain', 'test_slath105720@slath.com')
-    cy.get('button').first().click()
-  })
-
-  it('can play Spanish game', function () {
-    cy.contains('Choose your language!')
-    cy.get('img').first().click()
-  })
+//   it('Homepage renders correctly', function () {
+//     cy.visit('http://localhost:3000')
+//     cy.title().should('include', 'Slath')
+//     cy.get('.sc-bwzfXH').should('contain', 'Be a traveler, not a tourist')
+//   })
+//
+// // this one had to be commented due to already havin'
+// // a registered account
+//   // it('can register and log in', function () {
+//   //   cy.contains('Log In or Sign Up').click()
+//   //   cy.contains('Sign Up').click()
+//   //   cy.get('input.auth0-lock-input').first()
+//   //     .type(`test_slath${Math.floor(Math.random() * 200000)}@slath.com`)
+//   //   cy.get('input.auth0-lock-input').last()
+//   //     .type('slathPASSWORD99')
+//   //   cy.get('span.auth0-label-submit').click()
+//   //   cy.get('.icon-budicon-500').click()
+//   // })
+//
+//   it('can log in w/ registered user and log out', function () {
+//     cy.get('button').should('contain', 'Log In or Sign Up').click()
+//     cy.get('.auth0-lock').should('contain', 'test_slath105720@slath.com')
+//     cy.get('button').first().click()
+//   })
+//
+//   it('can log in after log out again', function () {
+//     cy.get('button').should('contain', 'Log Out')
+//     cy.contains('Log Out').click()
+//     cy.get('button').should('contain', 'Log In or Sign Up')
+//     cy.get('button').click()
+//     cy.get('.auth0-lock').should('contain', 'test_slath105720@slath.com')
+//     cy.get('button').first().click()
+//   })
+//
+//   it('can play Spanish game', function () {
+//     cy.contains('Choose your language!')
+//     cy.get('img').first().click()
+//   })
 //
 //   it('can play scenario1-s first question', function () {
 //     cy.contains('Spanish Scenario 1').click()
@@ -112,7 +129,7 @@ describe('Slath', function () {
 //     cy.contains('Languages Page').click()
 //     cy.contains('Choose your language!')
 //   })
- })
+//
 //
 // describe('Slath scenario 2', function () {
 //   it('can play scenario2-s first question', function () {
