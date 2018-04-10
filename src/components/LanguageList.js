@@ -10,7 +10,13 @@ const LanguageList = (props) => {
       />
       <Picture
         handlePictureClicked = {props.handlePictureClicked}
+        flagImage={props.spanishImage}
       />
+      <Picture
+        handlePictureClicked = {props.handlePictureClicked}
+        flagImage={props.frenchImage}
+      />
+      
       {props.spanishScenarios}
     </div>
   );

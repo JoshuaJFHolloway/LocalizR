@@ -10,6 +10,7 @@ class ChooseLanguage extends Component {
     super();
     this.state = {
       spanish: false,
+      french: false,
       spanishScen1: false,
       spanishScen2: false,
 
@@ -25,6 +26,7 @@ class ChooseLanguage extends Component {
   handleDataSubmitted = () => {
     this.setState({
       spanish: false,
+      french: false,
       spanishScen1: false,
       spanishScen2: false
     });
@@ -32,7 +34,8 @@ class ChooseLanguage extends Component {
 
   handlePictureClicked = () => {
     this.setState(prevState => ({
-      spanish: !prevState.spanish
+      spanish: !prevState.spanish,
+      french: !prevState.french
     }));
   };
 
@@ -47,7 +50,8 @@ class ChooseLanguage extends Component {
       spanishScen2: true,
     });
   };
-
+//keep scenario for both languages except the states, modify the decider so if this.state.scen1 === true &&
+// this.state.french === false return 'frenchQuiz'
 
   decider (){
       if((this.state.spanishScen1 === true && this.state.spanish === true) ||
@@ -66,6 +70,8 @@ class ChooseLanguage extends Component {
       SpanishScenarios: (
         <LanguageList
           handlePictureClicked = {this.handlePictureClicked}
+          spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
+          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
           spanishScenarios = {<SpanishScenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
