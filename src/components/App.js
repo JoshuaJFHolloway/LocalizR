@@ -34,7 +34,7 @@ class App extends Component {
         <div class="index">
         <Headers/>
         <button className="loginbutton" onClick={this.login.bind(this)}>
-            Login / Signup
+            "Start your journey!"
         </button>
         </div>
         )
