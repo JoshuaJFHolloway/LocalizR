@@ -6,7 +6,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 // var Comment = require('./model/comments');
-var Spanish1 = require('./model/spanish1')
+var Answer = require('./model/answers')
 
 // and create our instances
 var app = express();
@@ -41,7 +41,7 @@ router.get('/', function(req, res) {
 
 router.route('/scenario')
   .get(function(req, res) {
-      Spanish1.find( function(err, answer){
+      Answer.find( function(err, answer){
           if (err)
               res.send(err);
           res.json(answer)
@@ -49,12 +49,12 @@ router.route('/scenario')
   })
 
   .post(function(req, res) {
-      var spanish1 = new Spanish1();
-      spanish1.user_answer = req.body.user_answer;
-      spanish1.correct_answer = req.body.correct_answer;
+      var answer = new Answer();
+      answer.user_answer = req.body.user_answer;
+      answer.correct_answer = req.body.correct_answer;
       // user.password = req.body.password;
 
-      spanish1.save(function(err) {
+      answer.save(function(err) {
         if (err)
           res.send(err);
         res.json({message: "User successfully added"})

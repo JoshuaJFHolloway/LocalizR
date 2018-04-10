@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Spanish1Schema = new Schema({
+var AnswersSchema = new Schema({
   context: String,
   user_answer: String,
   user_translation: String,
@@ -11,4 +11,4 @@ var Spanish1Schema = new Schema({
   correct_translation: String
 });
 
-module.exports = mongoose.model('Spanish1', Spanish1Schema);
+module.exports = mongoose.model('Answers', AnswersSchema);

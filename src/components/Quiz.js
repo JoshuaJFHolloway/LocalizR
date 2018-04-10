@@ -13,6 +13,7 @@ class Quiz extends Component {
       counter: 0,
       nextQuestion: false,
       lastQuestion: false,
+      results: null
     }
   }
 
@@ -55,8 +56,6 @@ class Quiz extends Component {
   console.log(err);
 });
   };
-
-
 
 
   handleAnswerSubmitted2 = () => {
