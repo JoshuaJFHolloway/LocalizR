@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import QuizAnswer from './QuizAnswer'
-// import QuizCorrectAnswer from './QuizCorrectAnswer'
 import SubmitButton from './SubmitButton'
 
   class QuizAnswers extends Component {
