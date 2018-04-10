@@ -5,47 +5,45 @@ class Story extends Component {
   constructor() {
     super();
     this.state = {
-      answer1: null,
-      answer2: null,
-      answer3: null,
-      answer4: null,
-      answer5: null,
       correctanswer1: null,
       correctanswer2: null,
       correctanswer3: null,
       correctanswer4: null,
-      correctanswer5: null
+      correctanswer5: null,
+      answers: [],
+      responses: []
     }
   }
 
   componentDidMount() {
-      axios.get('http://localhost:3001/api/scenario')
-        .then(res => {
-          this.setState({ answer1: res.data[0].user_answer })
-          this.setState({ answer2: res.data[1].user_answer })
-          this.setState({ answer3: res.data[2].user_answer })
-          this.setState({ answer4: res.data[3].user_answer })
-          this.setState({ answer5: res.data[4].user_answer })
-          this.setState({ correctanswer1: res.data[0].correct_answer })
-          this.setState({ correctanswer2: res.data[1].correct_answer })
-          this.setState({ correctanswer3: res.data[2].correct_answer })
-          this.setState({ correctanswer4: res.data[3].correct_answer })
-          this.setState({ correctanswer5: res.data[4].correct_answer })
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
+    axios.get('http://localhost:3001/api/scenario')
+      .then(res => {
+        var i;
+        for( i = 0; i < 5; i++ ) {
+          this.setState({answers: [...this.state.answers, res.data[i].user_answer]})
+          if(res.data[i].user_answer === res.data[i].correct_answer) {
+            this.setState({responses: [...this.state.responses, "you got it right!"]})
+          } else {
+            this.setState({responses: [...this.state.responses, "but the correct answer was " + res.data[i].correct_answer]})
+          }
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
 
   render() {
-    return(
+    var i;
+    for( i = 0; i < 5; i++ ) {
+      return(
     <div>
-      <h1>Your first answer was {this.state.answer1}, but the correct answer was {this.state.correctanswer1}</h1>
-      <h1>Your second answer was {this.state.answer2}, but the correct answer was {this.state.correctanswer2}</h1>
-      <h1>Your third answer was {this.state.answer3}, but the correct answer was {this.state.correctanswer3}</h1>
-      <h1>Your forth answer was {this.state.answer4}, but the correct answer was {this.state.correctanswer4}</h1>
-      <h1>Your fifth answer was {this.state.answer5}, but the correct answer was {this.state.correctanswer5}</h1>
+      <h1>Your first answer was {this.state.answers[i]}, {this.state.responses[0]}</h1>
+      <h1>Your first answer was {this.state.answers[1]}, {this.state.responses[1]}</h1>
+      <h1>Your first answer was {this.state.answers[2]}, {this.state.responses[2]}</h1>
+      <h1>Your first answer was {this.state.answers[3]}, {this.state.responses[3]}</h1>
+      <h1>Your first answer was {this.state.answers[4]}, {this.state.responses[4]}</h1>
     </div>
     )
   }

@@ -21,9 +21,7 @@ const ResultsPage = props => {
         buttonName = {"Retry Quiz"}
         handleDataSubmitted = {props.handleRetryQuiz}
       />
-      <Story
-        onLoad = {props.getResults}
-      />
+      <Story />
     </div>
   )
 };
