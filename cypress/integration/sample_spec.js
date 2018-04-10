@@ -46,6 +46,15 @@ describe('The game', function () {
     cy.get('#submitButton').first().should('contain', 'Spanish Scenario 1')
     cy.get('.loginbutton').last().should('contain', 'Spanish Scenario 2')
   })
+
+  it('renders French Scenarios correctly', function () {
+    cy.visit('http://localhost:3000')
+    cy.get('.loginbutton').click()
+    cy.get('.auth0-lock-social-button-text').click()
+    cy.get('img').last().click()
+    cy.get('#submitButton').first().should('contain', 'French Scenario 1')
+    cy.get('.loginbutton').last().should('contain', 'French Scenario 2')
+  })
 })
 
 
