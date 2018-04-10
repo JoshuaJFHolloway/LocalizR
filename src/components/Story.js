@@ -33,10 +33,10 @@ class Story extends Component {
     return(
       <div>
         <h1>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h1>
-        <h1>Your first answer was {this.state.answers[1]}, {this.state.responses[1]}</h1>
-        <h1>Your first answer was {this.state.answers[2]}, {this.state.responses[2]}</h1>
-        <h1>Your first answer was {this.state.answers[3]}, {this.state.responses[3]}</h1>
-        <h1>Your first answer was {this.state.answers[4]}, {this.state.responses[4]}</h1>
+        <h1>Your second answer was {this.state.answers[1]}, {this.state.responses[1]}</h1>
+        <h1>Your third answer was {this.state.answers[2]}, {this.state.responses[2]}</h1>
+        <h1>Your forth answer was {this.state.answers[3]}, {this.state.responses[3]}</h1>
+        <h1>Your fifth answer was {this.state.answers[4]}, {this.state.responses[4]}</h1>
       </div>
     )
   }
