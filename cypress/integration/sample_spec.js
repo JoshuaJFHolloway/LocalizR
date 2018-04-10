@@ -21,6 +21,15 @@ describe('Slath', function () {
     cy.get('.auth0-lock-submit').click()
     cy.get('#allow').click()
   })
+
+  it('can login with a registered user', function () {
+    cy.visit('http://localhost:3000')
+    cy.get('.loginbutton').click()
+    cy.get('.auth0-lock-alternative-link').click()
+    cy.get('.auth0-lock-input').first().type('test_slath105720@slath.com')
+    cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
+    cy.get('.auth0-lock-submit').click()
+  })
 })
 
 //   it('Homepage renders correctly', function () {
