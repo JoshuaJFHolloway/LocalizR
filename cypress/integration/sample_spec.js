@@ -176,15 +176,27 @@ describe('Slath scenario 2', function () {
 })
 
 describe('Slath wrong answers test', function () {
-  it('has 0 correct answers at the end', function () {
+  it('has 0 correct answers at the end of Spanish Scenario 1', function () {
     cy.contains('Languages Page').click()
     cy.get('img').click()
     cy.contains('Spanish Scenario 1').click()
     cy.get('#submitButton1').click()
+    cy.get('#submitButton3').click()
+    cy.get('#submitButton2').click()
     cy.get('#submitButton1').click()
+    cy.get('#submitButton2').click()
+    cy.contains('Nice one, your score is 0')
+  })
+
+  it('has 0 correct answers at the end of Spanish Scenario 2', function () {
+    cy.contains('Languages Page').click()
+    cy.get('img').click()
+    cy.contains('Spanish Scenario 2').click()
+    cy.get('#submitButton2').click()
+    cy.get('#submitButton3').click()
     cy.get('#submitButton1').click()
-    cy.get('#submitButton1').click()
-    cy.get('#submitButton1').click()
+    cy.get('#submitButton3').click()
+    cy.get('#submitButton2').click()
     cy.contains('Nice one, your score is 0')
   })
 })
