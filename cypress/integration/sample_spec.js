@@ -38,6 +38,16 @@ describe('Slath', function () {
   })
 })
 
+describe('The game', function () {
+  it('renders Spanish Scenarios correctly', function () {
+    cy.get('.loginbutton').should('contain', 'Log Out')
+    cy.get('.languagepagetitle').should('contain', 'Choose your language!')
+    cy.get('.languagepagetitle').first().click()
+    cy.get('#submitButton').first().should('contain', 'Spanish Scenario 1')
+    cy.get('.loginbutton').last().should('contain', 'Spanish Scenario 2')
+  })
+})
+
 
 
 
