@@ -32,7 +32,7 @@ class Quiz extends Component {
 
 
   decider = () => {
-    if (this.state.counter === 5) {
+    if (this.state.counter === 8) {
       return 'ResultsPage';
       } else if (this.state.counter === 1) {
         return 'QuizQ2';
@@ -42,6 +42,12 @@ class Quiz extends Component {
         return 'QuizQ4'
       } else if (this.state.counter === 4){
         return 'QuizQ5'
+      } else if (this.state.counter === 5){
+        return 'QuizQ6'
+      } else if (this.state.counter === 6){
+        return 'QuizQ7'
+      } else if (this.state.counter === 7){
+        return 'QuizQ8'
       }
       else return 'QuizQ1';
     };
@@ -125,6 +131,47 @@ class Quiz extends Component {
             correctAnswer={this.props.correctAnswer5}
             answer2={this.props.answer5_2}
             answer3={this.props.answer5_3}
+          />
+        ),
+
+        QuizQ6: (
+          <QuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={this.props.scenario6}
+            picture={this.props.picture6}
+            question={this.props.question6}
+            answer1={this.props.answer6_1}
+            correctAnswer={this.props.correctAnswer6}
+            answer2={this.props.answer6_2}
+            answer3={this.props.answer6_3}
+          />
+        ),
+        QuizQ7: (
+          <QuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={this.props.scenario7}
+            picture={this.props.picture7}
+            question={this.props.question7}
+            answer1={this.props.answer7_1}
+            correctAnswer={this.props.correctAnswer7}
+            answer2={this.props.answer7_2}
+            answer3={this.props.answer7_3}
+          />
+        ),
+
+        QuizQ8: (
+          <QuizQ
+            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
+            scenario={this.props.scenario8}
+            picture={this.props.picture8}
+            question={this.props.question8}
+            answer1={this.props.answer8_1}
+            correctAnswer={this.props.correctAnswer8}
+            answer2={this.props.answer8_2}
+            answer3={this.props.answer8_3}
           />
         ),
     };
