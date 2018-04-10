@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import QuizAnswer from './QuizAnswer'
-import QuizCorrectAnswer from './QuizCorrectAnswer'
+// import QuizAnswer from './QuizAnswer'
+// import QuizCorrectAnswer from './QuizCorrectAnswer'
+import SubmitButton from './SubmitButton'
 
   class QuizAnswers extends Component {
     constructor(){
@@ -34,60 +35,84 @@ import QuizCorrectAnswer from './QuizCorrectAnswer'
       const Views = {
         Here1: (
           <div>
-            <QuizAnswer
+            <SubmitButton
               answer1={this.props.answer1}
-              answer2={this.props.answer2}
-              answer3={this.props.answer3}
-              handleAnswerSubmitted={this.props.handleAnswerSubmitted}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
-            <QuizCorrectAnswer
-              correctAnswer={this.props.correctAnswer}
-              handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
+            <SubmitButton
+              answer2={this.props.answer2}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
+              answer3={this.props.answer3}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
+              answer4={this.props.answer4}
+              handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
           </div>
         ),
 
         Here2: (
           <div>
-            <QuizCorrectAnswer
-              correctAnswer={this.props.correctAnswer}
-              handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
-            />
-            <QuizAnswer
+            <SubmitButton
               answer1={this.props.answer1}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
               answer2={this.props.answer2}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
+              answer4={this.props.answer4}
+              handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
+            />
+            <SubmitButton
               answer3={this.props.answer3}
-              handleAnswerSubmitted={this.props.handleAnswerSubmitted}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
           </div>
         ),
 
         Here3: (
           <div>
-            <QuizCorrectAnswer
-              correctAnswer={this.props.correctAnswer}
-              handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
-            />
-            <QuizAnswer
+            <SubmitButton
               answer1={this.props.answer1}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
+              answer4={this.props.answer4}
+              handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
+            />
+            <SubmitButton
               answer2={this.props.answer2}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
               answer3={this.props.answer3}
-              handleAnswerSubmitted={this.props.handleAnswerSubmitted}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
           </div>
         ),
 
         Here4: (
           <div>
-            <QuizAnswer
-              answer1={this.props.answer1}
-              answer2={this.props.answer2}
-              answer3={this.props.answer3}
-              handleAnswerSubmitted={this.props.handleAnswerSubmitted}
+            <SubmitButton
+              answer4={this.props.answer4}
+              handleDataSubmitted={this.props.handleCorrectAnswerSubmitted}
             />
-            <QuizCorrectAnswer
-              correctAnswer={this.props.correctAnswer}
-              handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
+            <SubmitButton
+              answer1={this.props.answer1}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
+              answer2={this.props.answer2}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
+            />
+            <SubmitButton
+              answer3={this.props.answer3}
+              handleDataSubmitted={this.props.handleAnswerSubmitted}
             />
           </div>
         )
