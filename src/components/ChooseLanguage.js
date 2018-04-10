@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import Quiz from './Quiz';
+import "./styledComponents/content.css";
 import Scenarios from './Scenarios'
 
 
@@ -75,7 +76,6 @@ class ChooseLanguage extends Component {
   };
 
   render() {
-
     const quizViews = {
       SpanishScenarios: (
         <LanguageList
@@ -92,7 +92,7 @@ class ChooseLanguage extends Component {
         />
       ),
       SpanishQuiz: (        
-       <div> 
+       <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}

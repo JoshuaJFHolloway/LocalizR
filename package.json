@@ -23,8 +23,8 @@
     "react-scripts": "1.1.4",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "socks": "^2.1.6",
-    "styled-components": "^3.2.3"
+    "socks": "^2.2.0",
+    "styled-components": "^3.2.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,6 +37,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "css-loader": "^0.28.11",
     "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "eslint": "^4.19.1",
@@ -48,8 +49,9 @@
     "jest-cli": "^20.0.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.2.0",
+    "react-test-renderer": "^16.3.1",
     "selenium-server-standalone-jar": "^3.4.0",
-    "selenium-standalone": "^6.13.0"
+    "selenium-standalone": "^6.13.0",
+    "style-loader": "^0.20.3"
   }
 }

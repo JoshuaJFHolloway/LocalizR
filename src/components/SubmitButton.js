@@ -1,8 +1,9 @@
 import React from 'react';
+import './styledComponents/content.css';
 
 const SubmitButton = props => {
   return (
-    <button id={"submitButton"} onClick={props.handleDataSubmitted}> {props.buttonName} </button>
+      <button className="loginbutton" id={"submitButton"} onClick={props.handleDataSubmitted}> {props.buttonName} </button>
   );
 };
 

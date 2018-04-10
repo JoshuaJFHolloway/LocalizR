@@ -4,6 +4,7 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
 import { Route, Router } from 'react-router-dom';
+import './styledComponents/content.css';
 
 const auth = new Auth();
 
@@ -30,16 +31,17 @@ class App extends Component {
   render() {
     if (!auth.isAuthenticated()) {
       return (
-        <div>
+        <div class="index">
         <Headers/>
-        <button onClick={this.login.bind(this)}>
-            Log In or Sign Up
+        <button className="loginbutton" onClick={this.login.bind(this)}>
+            Login / Signup
         </button>
-        </div>)
+        </div>
+        )
     } else {
       return (
-        <div>
-        <button onClick={this.logout.bind(this)}>
+        <div class="chooselanguage">
+        <button className="loginbutton" onClick={this.logout.bind(this)}>
           Log Out
         </button>
         <ChooseLanguage/>
@@ -48,5 +50,4 @@ class App extends Component {
     }
   };
 }
-
 export default App;
