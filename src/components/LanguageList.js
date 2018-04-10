@@ -9,11 +9,11 @@ const LanguageList = (props) => {
         subHeader={"Choose your language!"}
       />
       <Picture
-        handlePictureClicked = {props.handlePictureClicked}
+        handlePictureClicked = {props.handleSpanishClicked}
         flagImage={props.spanishImage}
       />
       <Picture
-        handlePictureClicked = {props.handlePictureClicked}
+        handlePictureClicked = {props.handleFrenchClicked}
         flagImage={props.frenchImage}
       />
       

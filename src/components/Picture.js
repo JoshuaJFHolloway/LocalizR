@@ -4,7 +4,7 @@ const Picture = props => {
 
     return (
       <div>
-        <button onClick={props.handlePictureClicked}>{props.flagImage} </button>
+        <button onClick={props.handlePictureClicked}><img src={props.flagImage} width="100vh"/> </button>
       </div>
     );
 };

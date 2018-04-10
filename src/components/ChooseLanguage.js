@@ -13,7 +13,7 @@ class ChooseLanguage extends Component {
       french: false,
       spanishScen1: false,
       spanishscen2: false,
-      frenchScen2: false,
+      frenchScene1: false,
       frenchScene2: false,
 
     };
@@ -23,14 +23,21 @@ class ChooseLanguage extends Component {
     this.setState({
       spanish: false,
       french: false,
-      scen1: false,
-      scen2: false
+      spanishScen1: false,
+      spanishscen2: false,
+      frenchScen1: false,
+      frenchScene2: false,
     });
   };
 
-  handlePictureClicked = () => {
+  handleSpanishClicked = () => {
     this.setState(prevState => ({
       spanish: !prevState.spanish,
+    }));
+  };
+
+  handleFrenchClicked = () => {
+    this.setState(prevState => ({
       french: !prevState.french
     }));
   };
@@ -38,7 +45,7 @@ class ChooseLanguage extends Component {
   handleScenario1Clicked = () => {
     this.setState({
       spanishScen1: true,
-      frenchScen2: true,
+      frenchScen1: true,
 
     });
   };
@@ -52,16 +59,14 @@ class ChooseLanguage extends Component {
   };
 
   decider (){
-    if((this.state.spanishScen1 === true && this.state.spanish === true) ||
-       (this.state.spanishScen1 === true && this.state.spanish === false)) {
+    if(this.state.spanishScen1 === true && this.state.spanish === true) {
         return 'SpanishQuiz';  
-     } else if((this.state.frenchScen1 === true && this.state.french === true) ||
-               (this.state.frenchScen1 === true && this.state.french === false)) {
+     } else if(this.state.frenchScen1 === true && this.state.french === true) {
         return 'FrenchQuiz';        
     } else if(this.state.spanishScen2 === true && this.state.spanish === true) {
         return 'SpanishQuiz2';
     } else if(this.state.frenchScen2 === true && this.state.french === true) {
-        return 'FenchQuiz2';
+        return 'FrenchQuiz2';
     } else if(this.state.spanish === true) {
         return 'SpanishScenarios';
     } else if(this.state.french === true) {
@@ -74,8 +79,9 @@ class ChooseLanguage extends Component {
     const quizViews = {
       SpanishScenarios: (
         <LanguageList
-          handlePictureClicked = {this.handlePictureClicked}
+          handleSpanishClicked = {this.handleSpanishClicked}
           spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
+          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
           spanishScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
@@ -88,7 +94,6 @@ class ChooseLanguage extends Component {
        <div> 
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
-          handleRetryQuiz = {this.handlePictureClicked}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
           scenario3={"You get your ticket"}
@@ -152,7 +157,6 @@ class ChooseLanguage extends Component {
         <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
-          handleRetryQuiz = {this.handlePictureClicked}
           scenario1={"You enter in a restaurant"}
           scenario2={"You're seated at a table"}
           scenario3={"You're ready to order your main meal"}
@@ -215,8 +219,9 @@ class ChooseLanguage extends Component {
 
       FrenchScenarios: (
         <LanguageList
-          handlePictureClicked = {this.handlePictureClicked}
+          handleFrenchClicked = {this.handleFrenchClicked}
           frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
+          spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
           frenchScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
@@ -229,7 +234,6 @@ class ChooseLanguage extends Component {
        <div> 
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
-          handleRetryQuiz = {this.handlePictureClicked}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
           scenario3={"You get your ticket"}
@@ -242,9 +246,9 @@ class ChooseLanguage extends Component {
           picture3={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvBGJnQZGmYn5x2eq8ObdXtVSGOYVkjw-sUpjVlyTm3sbgrf9"}
           picture4={"http://www.colorear.net/dibujos/Minnie/thumbs/minnie-68_m.jpg"}
           picture5={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
-          picture6={""}
-          picture7={""}
-          picture8={""}
+          picture6={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
+          picture7={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
+          picture8={"https://www.rooftopguiden.se/takbarer-i-dubai/Bilder/LaTerasseBarTerrace_1_slide.jpg"}
           question1={"Where are you going?"}
           question2={"How do you ask for a ticket?"}
           question3={"How do you ask how long the journey will take?"}
@@ -294,7 +298,6 @@ class ChooseLanguage extends Component {
         <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
-          handleRetryQuiz = {this.handlePictureClicked}
           scenario1={"You enter in a restaurant"}
           scenario2={"You're seated at a table"}
           scenario3={"You're ready to order your main meal"}
@@ -356,7 +359,10 @@ class ChooseLanguage extends Component {
       ),
       LanguageList: (
         <LanguageList
-          handlePictureClicked = {this.handlePictureClicked}
+          handleSpanishClicked = {this.handleSpanishClicked}
+          handleFrenchClicked = {this.handleFrenchClicked}
+          spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
+          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
         />
       ),
     };
