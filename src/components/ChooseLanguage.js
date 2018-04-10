@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import Quiz from './Quiz';
-<<<<<<< HEAD
 import "./styledComponents/content.css";
 import Scenarios from './Scenarios'
-=======
-import SpanishScenarios from './SpanishScenarios'
 import axios from 'axios';
->>>>>>> HanDatabase
 
 
 class ChooseLanguage extends Component {
@@ -18,14 +14,9 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-<<<<<<< HEAD
       spanishscen2: false,
       frenchScene1: false,
       frenchScene2: false,
-
-=======
-      spanishScen2: false,
->>>>>>> HanDatabase
     };
   };
 

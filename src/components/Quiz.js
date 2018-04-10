@@ -45,13 +45,12 @@ class Quiz extends Component {
       correct_answer: this.concatenateCorrectAnswer()
     })
     .then(function (res) {
-  console.log(res);
-})
-.catch(function (err) {
-  console.log(err);
-});
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
   };
-
 
   handleAnswerSubmitted2 = () => {
     this.setState({
@@ -62,11 +61,11 @@ class Quiz extends Component {
       correct_answer: this.concatenateCorrectAnswer()
     })
     .then(function (res) {
-  console.log(res);
-})
-.catch(function (err) {
-  console.log(err);
-});
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
   };
 
   handleAnswerSubmitted3 = () => {
@@ -78,11 +77,11 @@ class Quiz extends Component {
       correct_answer: this.concatenateCorrectAnswer()
     })
     .then(function (res) {
-  console.log(res);
-})
-.catch(function (err) {
-  console.log(err);
-});
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
   };
 
   handleCorrectAnswerSubmitted = () => {
@@ -101,9 +100,6 @@ class Quiz extends Component {
       console.log(err);
     });
   };
-
-
-
 
   decider = () => {
     if (this.state.counter === 8) {
@@ -158,9 +154,9 @@ class Quiz extends Component {
 
         QuizQ2: (
           <QuizQ
-          handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
-          handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
-          handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario2}
             picture={this.props.picture2}
@@ -174,9 +170,9 @@ class Quiz extends Component {
 
         QuizQ3: (
           <QuizQ
-          handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
-          handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
-          handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario3}
             picture={this.props.picture3}
@@ -190,9 +186,9 @@ class Quiz extends Component {
 
         QuizQ4: (
           <QuizQ
-          handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
-          handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
-          handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario4}
             picture={this.props.picture4}
@@ -206,9 +202,9 @@ class Quiz extends Component {
 
         QuizQ5: (
           <QuizQ
-          handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
-          handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
-          handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario5}
             picture={this.props.picture5}
@@ -222,7 +218,9 @@ class Quiz extends Component {
 
         QuizQ6: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario6}
             picture={this.props.picture6}
@@ -235,7 +233,9 @@ class Quiz extends Component {
         ),
         QuizQ7: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario7}
             picture={this.props.picture7}
@@ -249,7 +249,9 @@ class Quiz extends Component {
 
         QuizQ8: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario8}
             picture={this.props.picture8}
