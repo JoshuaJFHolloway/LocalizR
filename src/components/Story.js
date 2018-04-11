@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Text from './styledComponents/text.js';
 
 class Story extends Component {
   constructor() {
@@ -31,7 +32,7 @@ class Story extends Component {
 
   render() {
     return(
-      <div>
+      <Text>
         <h6>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h6>
         <h6>Your second answer was {this.state.answers[1]}, {this.state.responses[1]}</h6>
         <h6>Your third answer was {this.state.answers[2]}, {this.state.responses[2]}</h6>
@@ -40,7 +41,7 @@ class Story extends Component {
         <h6>Your sixth answer was {this.state.answers[5]}, {this.state.responses[5]}</h6>
         <h6>Your seventh answer was {this.state.answers[6]}, {this.state.responses[6]}</h6>
         <h6>Your eighth answer was {this.state.answers[7]}, {this.state.responses[7]}</h6>
-      </div>
+      </Text>
     )
   }
 }
