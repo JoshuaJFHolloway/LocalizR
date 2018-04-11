@@ -14,9 +14,9 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishscen2: false,
-      frenchScene1: false,
-      frenchScene2: false,
+      spanishScen2: false,
+      frenchScen1: false,
+      frenchScen2: false,
     };
   };
 
@@ -25,9 +25,9 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishscen2: false,
+      spanishScen2: false,
       frenchScen1: false,
-      frenchScene2: false,
+      frenchScen2: false,
     });
   };
 
@@ -67,8 +67,8 @@ class ChooseLanguage extends Component {
 
   handleScenario2Clicked = () => {
     this.setState({
-      spanishscen2: true,
-      frenchScene2: true,
+      spanishScen2: true,
+      frenchScen2: true,
 
     });
   };
