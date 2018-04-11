@@ -4,7 +4,7 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
 import { Route, Router } from 'react-router-dom';
-import './styledComponents/content.css';
+import DefButton from './styledComponents/defButton.js';
 
 const auth = new Auth();
 
@@ -30,20 +30,19 @@ class App extends Component {
 
   render() {
     if (!auth.isAuthenticated()) {
-      return (
-        <div class="index">
-        <Headers/>
-        <button className="loginbutton" onClick={this.login.bind(this)}>
-            Login / Signup
-        </button>
-        </div>
-        )
+      return <div class="homebackground">
+            <Headers />
+            <DefButton onClick={this.login.bind(this)}>
+              START YOUR JOURNEY
+            </DefButton>
+          </div>
+        ;
     } else {
       return (
-        <div class="chooselanguage">
-        <button className="loginbutton" onClick={this.logout.bind(this)}>
+        <div class="quizbackground">
+        <DefButton onClick={this.logout.bind(this)}>
           Log Out
-        </button>
+        </DefButton>
         <ChooseLanguage/>
         </div>
       )

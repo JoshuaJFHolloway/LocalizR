@@ -1,0 +1,38 @@
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: Cabin;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-shadow: -1px 0 grey, 0 1px black, 1px 0 grey, 0 -1px grey;
+  -webkit-font-smoothing: antialiased;
+}
+
+.homebackground {
+    background-image: url("https://image.ibb.co/ch6WsH/la_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.flags {
+  padding: 2px;
+  background-color: transparent;
+}
+
+.quizbackground {
+    background: radial-gradient(LightSkyBlue, white);
+    padding: 100px;
+    height: 100vh;
+}

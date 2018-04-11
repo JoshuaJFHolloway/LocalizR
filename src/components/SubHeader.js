@@ -1,10 +1,10 @@
 import React from 'react';
+import Subhead from './styledComponents/subheads.js';
 
 const SubHeader = (props) => {
   return (
-    <div>{props.subHeader}</div>
+    <Subhead>{props.subHeader}</Subhead>
   );
 };
 
 export default SubHeader;
-
