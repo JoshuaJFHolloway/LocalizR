@@ -1,14 +1,11 @@
-html {
-  height: 100vh;
-}
-
 body {
   font-family: Cabin;
   background: linear-gradient(navy, black);
+  background-size: contain;
+  height: 100%;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 150px;
 }
 
 main {
