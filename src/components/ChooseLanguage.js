@@ -56,13 +56,13 @@ class ChooseLanguage extends Component {
       frenchScen1: true,
 
     });
-    axios.delete('http://localhost:3001/api/scenario')
-      .then(res => {
-        console.log('Cleaned database');
-      })
-      .catch(err => {
-        console.log(err)
-      });
+    // axios.delete('http://localhost:3001/api/scenario')
+    //   .then(res => {
+    //     console.log('Cleaned database');
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   });
   };
 
   handleScenario2Clicked = () => {
