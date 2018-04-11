@@ -22,7 +22,7 @@ body {
 .quizbackground {
   background: radial-gradient(LightSkyBlue, white);
   padding: 100px;
-  height: 100vh;
+  height: 100%;
 }
 
 .quizimage {
