@@ -1,11 +1,10 @@
 import React from 'react';
+import Flags from './styledComponents/flags.js';
 
 const Picture = props => {
 
     return (
-      <div>
-        <button onClick={props.handlePictureClicked}><img src={props.flagImage} width="100vh"/> </button>
-      </div>
+      <Flags onClick={props.handlePictureClicked}><img src={props.flagImage} /> </Flags>
     );
 };
 

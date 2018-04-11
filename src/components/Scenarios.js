@@ -1,5 +1,6 @@
 import React from 'react'
 import SubmitButton from './SubmitButton'
+import Button from './styledComponents/submitButton';
 
 const Scenarios = props => {
   return (
