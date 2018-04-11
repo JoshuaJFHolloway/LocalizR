@@ -7,8 +7,8 @@ const Button = styled.button `
     vertical-align: top;
     justify-content: space-evenly;
     margin: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 7px double LightSkyBlue;
     border-radius: 20px;
 `;

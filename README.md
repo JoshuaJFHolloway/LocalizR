@@ -1,6 +1,6 @@
 # SLATH! :es:
 
-<img align="right" src="https://image.ibb.co/kqvkwc/la_index.png" alt="screenshot" width="450"/>
+<img align="right" src="" width="450"/>
 
 Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
 
