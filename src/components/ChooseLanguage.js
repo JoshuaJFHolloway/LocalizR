@@ -17,7 +17,7 @@ class ChooseLanguage extends Component {
       frenchScene2: false,
 
     };
-  };  
+  };
 
   handleDataSubmitted = () => {
     this.setState({
@@ -60,9 +60,9 @@ class ChooseLanguage extends Component {
 
   decider (){
     if(this.state.spanishScen1 === true && this.state.spanish === true) {
-        return 'SpanishQuiz';  
+        return 'SpanishQuiz';
      } else if(this.state.frenchScen1 === true && this.state.french === true) {
-        return 'FrenchQuiz';        
+        return 'FrenchQuiz';
     } else if(this.state.spanishScen2 === true && this.state.spanish === true) {
         return 'SpanishQuiz2';
     } else if(this.state.frenchScen2 === true && this.state.french === true) {
@@ -90,7 +90,7 @@ class ChooseLanguage extends Component {
           />}
         />
       ),
-      SpanishQuiz: (        
+      SpanishQuiz: (
        <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
@@ -136,7 +136,7 @@ class ChooseLanguage extends Component {
           answer5_1={"Norte"}
           correctAnswer5={"Sur"}
           answer5_2={"Este"}
-          answer5_3={"Oeste"} 
+          answer5_3={"Oeste"}
           answer6_1={"Dónde está el banco?"}
           correctAnswer6={"Dónde está el mercado?"}
           answer6_2={"Dónde está la tienda"}
@@ -148,9 +148,9 @@ class ChooseLanguage extends Component {
           answer8_1={"Cuántos años tienes?"}
           correctAnswer8={"Cuánto cuesta?"}
           answer8_2={"Cuánto hay?"}
-          answer8_3={"Cuántos hijos tienes?"} 
+          answer8_3={"Cuántos hijos tienes?"}
         />
-        </div>  
+        </div>
       ),
 
       SpanishQuiz2:(
@@ -231,8 +231,8 @@ class ChooseLanguage extends Component {
           />}
         />
       ),
-      FrenchQuiz: (        
-       <div> 
+      FrenchQuiz: (
+       <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
@@ -277,7 +277,7 @@ class ChooseLanguage extends Component {
           answer5_1={"Nord"}
           correctAnswer5={"Sud"}
           answer5_2={"Est"}
-          answer5_3={"Ouest"} 
+          answer5_3={"Ouest"}
           answer6_1={"Où est la banque?"}
           correctAnswer6={"Où est le marché?"}
           answer6_2={"Où est le magasin?"}
@@ -289,10 +289,10 @@ class ChooseLanguage extends Component {
           answer8_1={"Quel âge as-tu?"}
           correctAnswer8={"combien coûte?"}
           answer8_2={"combien il y a?"}
-          answer8_3={"combien d'enfants avez-vous?"} 
+          answer8_3={"combien d'enfants avez-vous?"}
 
         />
-        </div>  
+        </div>
       ),
 
       FrenchQuiz2:(

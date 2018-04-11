@@ -1,6 +1,7 @@
 import React from 'react'
 import SubHeader from './SubHeader'
-import SubmitButton from "./SubmitButton";
+import SubmitButton from './SubmitButton';
+import DefButton from './styledComponents/defButton.js';
 
 const ResultsPage = props => {
   return (
