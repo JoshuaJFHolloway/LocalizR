@@ -13,10 +13,10 @@ body {
 }
 
 .homebackground {
-    background-image: url("https://image.ibb.co/ch6WsH/la_background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background-image: url("https://image.ibb.co/ch6WsH/la_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .quizbackground {
@@ -28,7 +28,10 @@ body {
 .quizimage {
   width:500px;
   height:500px;
-  object-fit:scale-down;
+  object-fit: cover;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 0px;
   border: 7px double LightSkyBlue;
   border-radius: 20px;
 {

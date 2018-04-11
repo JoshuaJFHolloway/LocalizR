@@ -110,7 +110,7 @@ class ChooseLanguage extends Component {
           scenario6={"You get lost and stop to ask a stranger for directions"}
           scenario7={"The stranger replies '<directions in Spanish>' "}
           scenario8={"You eventually make it to the market"}
-          picture1={"https://image.ibb.co/hOYiRc/la_town_pict1.png"}
+          picture1={"https://image.ibb.co/nKgejx/la_town_pict1.jpg"}
           picture2={"https://preview.ibb.co/n1Uezx/la_town_pict2.jpg"}
           picture3={"https://preview.ibb.co/ekQDRc/la_town_pict3.jpg"}
           picture4={"https://preview.ibb.co/fQ24XH/la_town_pict4.jpg"}
@@ -180,7 +180,7 @@ class ChooseLanguage extends Component {
           picture4={"https://preview.ibb.co/nu9q6c/la_rest_pict4.jpg"}
           picture5={"https://preview.ibb.co/iYq8sH/la_rest_pict5jpg.jpg"}
           picture6={"https://preview.ibb.co/hpf8sH/la_rest_pict6.jpg"}
-          picture7={"https://preview.ibb.co/d6qmex/la_rest_pict7.jpg"}
+          picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
           question2={"You want to order a glass of red wine.."}
@@ -251,7 +251,7 @@ class ChooseLanguage extends Component {
           scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
           scenario7={"The stranger replies '<directions in Spanish>' "}
-          picture1={"https://image.ibb.co/hOYiRc/la_town_pict1.png"}
+          picture1={"https://image.ibb.co/nKgejx/la_town_pict1.jpg"}
           picture2={"https://preview.ibb.co/n1Uezx/la_town_pict2.jpg"}
           picture3={"https://preview.ibb.co/ekQDRc/la_town_pict3.jpg"}
           picture4={"https://preview.ibb.co/fQ24XH/la_town_pict4.jpg"}
@@ -318,11 +318,11 @@ class ChooseLanguage extends Component {
           scenario8={"You finish your dessert"}
           picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
           picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
-          picture3={"https://preview.ibb.co/iT36ex/la_frenchmenu.jpg"}
+          picture3={"https://preview.ibb.co/fZa3cH/la_frenchmenu.jpg"}
           picture4={"https://preview.ibb.co/nu9q6c/la_rest_pict4.jpg"}
           picture5={"https://preview.ibb.co/iYq8sH/la_rest_pict5jpg.jpg"}
           picture6={"https://preview.ibb.co/hpf8sH/la_rest_pict6.jpg"}
-          picture7={"https://preview.ibb.co/d6qmex/la_rest_pict7.jpg"}
+          picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
           question2={"You want to order a glass of red wine.."}
