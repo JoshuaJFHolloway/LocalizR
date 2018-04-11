@@ -73,6 +73,49 @@ describe('Playing the game', function () {
     cy.get('#submitButton').first().click()
     cy.get('.chooselanguage').should('contain', 'You leave your house and start following these signs')
   })
+
+
+  it('renders the correct buttons/answers for 1st question', function () {
+    cy.contains('La estación de autobuses')
+    cy.contains('La parada de metro')
+    cy.contains('La Universidad')
+    cy.contains('La estación de tren').click()
+  })
+
+  it('renders the correct buttons/answers for 2nd question', function () {
+    cy.contains('Cuánto cuesta un tren?')
+    cy.contains('Cuánto cuesta un coche?')
+    cy.contains('Cuánto tarda en llegar? ')
+    cy.contains('Cuánto cuesta un billete?').click()
+  })
+
+  it('renders the correct buttons/answers for 3rd question', function () {
+    cy.contains('Cuál es el ultimo tren?')
+    cy.contains('Cuál es el siguiente tren')
+    cy.contains('Cuántos trenes hay?')
+    cy.contains('Cuánto se tarda en llegar?').click()
+  })
+
+  it('renders the correct buttons/answers for 4th question', function () {
+    cy.contains('Calle 7')
+    cy.contains('Silla 7')
+    cy.contains('Coche 7')
+    cy.contains('Andén 7').click()
+  })
+
+  it('renders the correct buttons/answers for 5th question', function () {
+    cy.contains('Norte')
+    cy.contains('Este')
+    cy.contains('Oeste')
+    cy.contains('Sur').click()
+  })
+
+  it('renders the correct buttons/answers for 6th question', function () {
+    cy.contains('Dónde está el banco?')
+    cy.contains('Dónde está la tienda')
+    cy.contains('Dónde está la fuente?')
+    cy.contains('Dónde está el mercado?').click()
+  })
 })
 
 
