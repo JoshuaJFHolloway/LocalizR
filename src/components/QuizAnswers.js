@@ -75,21 +75,25 @@ import SubmitButton from './SubmitButton'
       return (
         <div>
           <SubmitButton
+            //transitionAppearTimeout={500}
             buttonName={this.state.answers[0]}
             style={this.state.styles[0]}
             handleDataSubmitted={() => this.onButtonClicked(0)}
           />
           <SubmitButton
+            //transitionAppearTimeout={500}
             buttonName={this.state.answers[1]}
             style={this.state.styles[1]}
             handleDataSubmitted={() => this.onButtonClicked(1)}
           />
           <SubmitButton
+            //transitionEnterTimeout={500}
             buttonName={this.state.answers[2]}
             style={this.state.styles[2]}
             handleDataSubmitted={() => this.onButtonClicked(2)}
           />
           <SubmitButton
+            //transitionEnterTimeout={500}
             buttonName={this.state.answers[3]}
             style={this.state.styles[3]}
             handleDataSubmitted={() => this.onButtonClicked(3)}

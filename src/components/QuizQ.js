@@ -30,7 +30,7 @@ class QuizQ extends Component {
           answer3={this.props.answer3}
         />
       </div>
-    )
+    );
   }
 }
 
