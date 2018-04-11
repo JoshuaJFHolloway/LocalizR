@@ -116,6 +116,89 @@ describe('Playing the game', function () {
     cy.contains('Dónde está la fuente?')
     cy.contains('Dónde está el mercado?').click()
   })
+
+  it('renders the correct buttons/answers for 7th question', function () {
+    cy.contains('Gire a la izquierda y siga recto')
+    cy.contains('Siga recto')
+    cy.contains('Al final de la calle')
+    cy.contains('Gire a la derecha y siga recto').click()
+  })
+
+  it('renders the correct buttons/answers for 8th question', function () {
+    cy.contains('Cuántos años tienes?')
+    cy.contains('Cuánto hay?')
+    cy.contains('Cuántos hijos tienes?')
+    cy.contains('Cuánto cuesta?').click()
+  })
+
+  it('renders buttons/score correctly after 8th question', function () {
+    cy.contains('Log Out')
+    cy.contains('Retry Quiz')
+    cy.contains('Languages Page').click()
+    cy.contains('Choose your language!')
+  })
+
+  it('renders first French scenario if clicked', function () {
+    cy.get('img').last().click()
+    cy.contains('French Scenario 2')
+    cy.contains('French Scenario 1').click()
+  })
+
+  it('renders the correct buttons/answers for 1st question', function () {
+    cy.contains('la gare de bus')
+    cy.contains('La parada de metro')
+    cy.contains('La caserne de pompiers')
+    cy.contains('La station de métro').click()
+  })
+
+  it('renders the correct buttons/answers for 2nd question', function () {
+    cy.contains('Combien coûte un train?')
+    cy.contains('Combien coûte une voiture?')
+    cy.contains('Combien de temps il faut pour arriver?')
+    cy.contains('Combien coûte un billet?').click()
+  })
+
+  it('renders the correct buttons/answers for 3rd question', function () {
+    cy.contains('Quel est le dernier train?')
+    cy.contains('Quel est le prochain train')
+    cy.contains('Combien y a-t-il de trains?')
+    cy.contains('Combien de temps il faut pour y arriver?').click()
+  })
+
+  it('renders the correct buttons/answers for 4th question', function () {
+    cy.contains('Rue 7')
+    cy.contains('Chaise 7')
+    cy.contains('Voiture7')
+    cy.contains('Plateforme 7').click()
+  })
+
+  it('renders the correct buttons/answers for 5th question', function () {
+    cy.contains('Nord')
+    cy.contains('Est')
+    cy.contains('Ouest')
+    cy.contains('Sud').click()
+  })
+
+  it('renders the correct buttons/answers for 6th question', function () {
+    cy.contains('Où est la banque?')
+    cy.contains('Où est le magasin?')
+    cy.contains('Où est la source?')
+    cy.contains('Où est le marché?').click()
+  })
+
+  it('renders the correct buttons/answers for 7th question', function () {
+    cy.contains('Tourner à gauche et continuer tout droit')
+    cy.contains('Aller tout droit')
+    cy.contains('au bout de la rue')
+    cy.contains('Tourner à droite et continuer tout droit').click()
+  })
+
+  it('renders the correct buttons/answers for 8th question', function () {
+    cy.contains('Quel âge as-tu?')
+    cy.contains('combien il y a?')
+    cy.contains("combien d'enfants avez-vous?")
+    cy.contains('combien coûte?').click()
+  })
 })
 
 
