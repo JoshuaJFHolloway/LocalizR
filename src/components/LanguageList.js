@@ -1,10 +1,15 @@
 import React from 'react';
 import Picture from './Picture'
 import SubHeader from './SubHeader'
+import SubmitButton from './SubmitButton'
 
 const LanguageList = (props) => {
   return (
     <div>
+      <SubmitButton
+        buttonName={"Pick me a random scenario"}
+        handleDataSubmitted={props.handleRandomScenario}
+        />
       <SubHeader
         subHeader={"Choose your language!"}
       />

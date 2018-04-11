@@ -74,6 +74,12 @@ class ChooseLanguage extends Component {
     });
   };
 
+  handleRandomScenario = () => {
+    this.setState({
+
+    });
+  };
+
   decider (){
     if(this.state.spanishScen1 === true && this.state.spanish === true) {
         return 'SpanishQuiz';
@@ -390,6 +396,7 @@ class ChooseLanguage extends Component {
         <LanguageList
           handleSpanishClicked = {this.handleSpanishClicked}
           handleFrenchClicked = {this.handleFrenchClicked}
+          handleRandomScenario = {this.handleRandomScenario}
           spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
           frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
         />
