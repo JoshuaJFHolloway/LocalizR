@@ -3,6 +3,7 @@ import LanguageList from './LanguageList';
 import Quiz from './Quiz';
 import "./styledComponents/content.css";
 import Scenarios from './Scenarios'
+import axios from 'axios';
 
 
 class ChooseLanguage extends Component {
@@ -34,6 +35,13 @@ class ChooseLanguage extends Component {
     this.setState(prevState => ({
       spanish: !prevState.spanish,
     }));
+    axios.delete('http://localhost:3001/api/scenario')
+      .then(res => {
+        console.log('Cleaned database');
+      })
+      .catch(err => {
+        console.log(err)
+      })
   };
 
   handleFrenchClicked = () => {
