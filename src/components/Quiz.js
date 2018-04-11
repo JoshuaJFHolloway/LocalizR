@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import QuizQ from './QuizQ';
 import ResultsPage from './ResultsPage';
+import axios from 'axios';
 
 
 class Quiz extends Component {
@@ -11,25 +12,121 @@ class Quiz extends Component {
       counter: 0,
       nextQuestion: false,
       lastQuestion: false,
+      results: null
     }
   }
 
+  concatenateAnswer1 = () => {
+    var string = 'this.props.answer' + (this.state.counter + 1) + "_" + 1
+    return eval(string)
+  };
+
+  concatenateAnswer2 = () => {
+    var string = 'this.props.answer' + (this.state.counter + 1) + "_" + 2
+    return eval(string)
+  };
+
+  concatenateAnswer3 = () => {
+    var string = 'this.props.answer' + (this.state.counter + 1) + "_" + 3
+    return eval(string)
+  };
+
+  concatenateCorrectAnswer = () => {
+    var string = 'this.props.correctAnswer' + (this.state.counter + 1)
+    return eval(string)
+  };
+
+  handleAnswerSubmitted1 = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+    if(this.state.counter + 1 == 1){
+      axios.delete('http://localhost:3001/api/scenario')
+        .then(res => {
+          console.log('Cleaned database');
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+    axios.post('http://localhost:3001/api/scenario', {
+      user_answer: this.concatenateAnswer1(),
+      correct_answer: this.concatenateCorrectAnswer()
+    })
+    .then(function (res) {
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+  };
+
+  handleAnswerSubmitted2 = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+    if(this.state.counter + 1 == 1){
+      axios.delete('http://localhost:3001/api/scenario')
+        .then(res => {
+          console.log('Cleaned database');
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+    axios.post('http://localhost:3001/api/scenario', {
+      user_answer: this.concatenateAnswer2(),
+      correct_answer: this.concatenateCorrectAnswer()
+    })
+    .then(function (res) {
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+  };
+
+  handleAnswerSubmitted3 = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+    if(this.state.counter + 1 == 1){
+      axios.delete('http://localhost:3001/api/scenario')
+        .then(res => {
+          console.log('Cleaned database');
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+    axios.post('http://localhost:3001/api/scenario', {
+      user_answer: this.concatenateAnswer3(),
+      correct_answer: this.concatenateCorrectAnswer()
+    })
+    .then(function (res) {
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+  };
 
   handleCorrectAnswerSubmitted = () => {
     this.setState({
       counter: this.state.counter + 1,
       score: this.state.score + 1
     })
-  };
-
-
-
-  handleAnswerSubmitted = () => {
-    this.setState({
-      counter: this.state.counter + 1
+    axios.post('http://localhost:3001/api/scenario', {
+      user_answer: this.concatenateCorrectAnswer(),
+      correct_answer: this.concatenateCorrectAnswer()
     })
+    .then(function (res) {
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
   };
-
 
   decider = () => {
     if (this.state.counter === 8) {
@@ -60,13 +157,17 @@ class Quiz extends Component {
       ResultsPage: (
         <ResultsPage
           score = {this.state.score}
-          handleDataSubmitted = {this.props.handleDataSubmitted}
+          handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+          handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+          handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
           handleRetryQuiz = {this.props.handlePictureClicked}
           />
       ),
         QuizQ1: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario1}
             picture={this.props.picture1}
@@ -80,7 +181,9 @@ class Quiz extends Component {
 
         QuizQ2: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario2}
             picture={this.props.picture2}
@@ -94,7 +197,9 @@ class Quiz extends Component {
 
         QuizQ3: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario3}
             picture={this.props.picture3}
@@ -108,7 +213,9 @@ class Quiz extends Component {
 
         QuizQ4: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario4}
             picture={this.props.picture4}
@@ -122,7 +229,9 @@ class Quiz extends Component {
 
         QuizQ5: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario5}
             picture={this.props.picture5}
@@ -136,7 +245,9 @@ class Quiz extends Component {
 
         QuizQ6: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario6}
             picture={this.props.picture6}
@@ -149,7 +260,9 @@ class Quiz extends Component {
         ),
         QuizQ7: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario7}
             picture={this.props.picture7}
@@ -163,7 +276,9 @@ class Quiz extends Component {
 
         QuizQ8: (
           <QuizQ
-            handleAnswerSubmitted = {this.handleAnswerSubmitted}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+            handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario8}
             picture={this.props.picture8}

@@ -12,10 +12,9 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishscen2: false,
-      frenchScene1: false,
-      frenchScene2: false,
-
+      spanishScen2: false,
+      frenchScen1: false,
+      frenchScen2: false,
     };
   };
 
@@ -24,9 +23,9 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishscen2: false,
+      spanishScen2: false,
       frenchScen1: false,
-      frenchScene2: false,
+      frenchScen2: false,
     });
   };
 
@@ -46,15 +45,13 @@ class ChooseLanguage extends Component {
     this.setState({
       spanishScen1: true,
       frenchScen1: true,
-
     });
   };
 
   handleScenario2Clicked = () => {
     this.setState({
-      spanishscen2: true,
-      frenchScene2: true,
-
+      spanishScen2: true,
+      frenchScen2: true,
     });
   };
 
@@ -93,6 +90,9 @@ class ChooseLanguage extends Component {
       SpanishQuiz: (
        <div>
         <Quiz
+        handleScenario1Clicked = {this.handleScenario1Clicked}
+        handleScenario2Clicked = {this.handleScenario2Clicked}
+
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
