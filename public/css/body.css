@@ -28,7 +28,7 @@ body {
 .quizimage {
   width:500px;
   height:500px;
-  object-fit:cover;
+  object-fit:scale-down;
   border: 7px double LightSkyBlue;
   border-radius: 20px;
 {
