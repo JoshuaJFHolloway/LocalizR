@@ -3,7 +3,7 @@ import Button from './styledComponents/submitButton';
 
 const SubmitButton = props => {
   return (
-      <Button id={"submitButton"} onClick={props.handleDataSubmitted}> {props.buttonName} </Button>
+      <button className="loginbutton" id={"submitButton"} onClick={props.handleDataSubmitted} style={props.style}> {props.buttonName} </button>
   );
 };
 
