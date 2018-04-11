@@ -157,6 +157,7 @@ class Quiz extends Component {
       ResultsPage: (
         <ResultsPage
           score = {this.state.score}
+          handleDataSubmitted = {this.props.handleDataSubmitted}
           handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
           handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
           handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
