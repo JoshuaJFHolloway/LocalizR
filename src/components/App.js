@@ -4,7 +4,8 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
 import { Route, Router } from 'react-router-dom';
-import DefButton from './styledComponents/defButton.js';
+import IndexButton from './styledComponents/indexButton.js';
+import QuizButton from './styledComponents/quizButton.js';
 
 const auth = new Auth();
 
@@ -30,20 +31,24 @@ class App extends Component {
 
   render() {
     if (!auth.isAuthenticated()) {
-      return <div class="homebackground">
+      return <div>
+            <main>
             <Headers />
-            <DefButton onClick={this.login.bind(this)}>
+            <IndexButton onClick={this.login.bind(this)}>
               START YOUR JOURNEY
-            </DefButton>
+            </IndexButton>
+            </main>
           </div>
         ;
     } else {
       return (
-        <div class="quizbackground">
-        <DefButton onClick={this.logout.bind(this)}>
-          Log Out
-        </DefButton>
-        <ChooseLanguage/>
+        <div>
+          <main>
+            <QuizButton onClick={this.logout.bind(this)}>
+              LOG OUT
+            </QuizButton>
+            <ChooseLanguage/>
+        </main>
         </div>
       )
     }

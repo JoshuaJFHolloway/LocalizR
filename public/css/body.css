@@ -4,30 +4,52 @@ html {
 
 body {
   font-family: Cabin;
+  background: linear-gradient(navy, black);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 150px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 180px 1fr;
+  text-align: center;
+}
+
+.buttons {
+  display: grid;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/* body {
+  font-family: Cabin;
   text-align: center;
   margin: 0;
   padding: 0;
   color: #ffffff;
   text-shadow: -1px 0 grey, 0 1px black, 1px 0 grey, 0 -1px grey;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
-.homebackground {
+/* .homebackground {
   background-image: url("https://image.ibb.co/ch6WsH/la_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-}
+} */
 
-.quizbackground {
+/* .quizbackground {
   background: radial-gradient(LightSkyBlue, white);
-  padding: 100px;
-  height: 100%;
-}
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+} */
 
 .quizimage {
-  width:500px;
-  height:500px;
+  width:300px;
+  height:300px;
   object-fit: cover;
   background-size: cover;
   background-position: bottom;
