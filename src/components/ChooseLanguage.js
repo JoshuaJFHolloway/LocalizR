@@ -3,7 +3,6 @@ import LanguageList from './LanguageList';
 import Quiz from './Quiz';
 import "./styledComponents/content.css";
 import Scenarios from './Scenarios'
-import axios from 'axios';
 
 
 class ChooseLanguage extends Component {
@@ -41,35 +40,19 @@ class ChooseLanguage extends Component {
     this.setState(prevState => ({
       french: !prevState.french
     }));
-    axios.delete('http://localhost:3001/api/scenario')
-      .then(res => {
-        console.log('Cleaned database');
-      })
-      .catch(err => {
-        console.log(err)
-      });
   };
 
   handleScenario1Clicked = () => {
     this.setState({
       spanishScen1: true,
       frenchScen1: true,
-
     });
-    // axios.delete('http://localhost:3001/api/scenario')
-    //   .then(res => {
-    //     console.log('Cleaned database');
-    //   })
-    //   .catch(err => {
-    //     console.log(err)
-    //   });
   };
 
   handleScenario2Clicked = () => {
     this.setState({
       spanishScen2: true,
       frenchScen2: true,
-
     });
   };
 
