@@ -20,21 +20,21 @@ describe('Slath', function () {
     cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
     cy.get('.auth0-lock-submit').click()
     cy.get('#allow').click()
+    cy.get('.sc-ifAKCX').click()
   })
   //
-  // it('can login with a registered user', function () {
-  //   cy.visit('http://localhost:3000/home')
-  //   cy.get('.loginbutton').click()
-  //   cy.get('.auth0-lock-alternative').first().click()
-  //   cy.get('.auth0-lock-input').first().type('test_slath105720@slath.com')
-  //   cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
-  //   cy.get('.auth0-lock-submit').click()
-  //   cy.get('.chooselanguage').click()
-  // })
+  it('can login with a registered user', function () {
+    cy.visit('http://localhost:3000/home')
+    cy.get('.sc-ifAKCX').click()
+    cy.get('.auth0-lock-alternative').first().click()
+    cy.get('.auth0-lock-input').first().type('test_slath105720@slath.com')
+    cy.get('.auth0-lock-input').last().type('slathPASSWORD99')
+    cy.get('.auth0-lock-submit').click()
+  })
   //
   // it('can login just by clicking the last login users e-mail', function () {
   //   cy.visit('http://localhost:3000/home')
-  //   cy.get('.loginbutton').click()
+  //   cy.get('.homebackground').first().click()
   //   cy.get('.auth0-lock-social-button-text').click()
   // })
 })
