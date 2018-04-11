@@ -108,7 +108,7 @@ class ChooseLanguage extends Component {
           scenario4={"You head for your train"}
           scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
-          scenario7={"The stranger replies '<directions in Spanish>' "}
+          scenario7={"The stranger tells you turn right and go straight"}
           scenario8={"You eventually make it to the market"}
           picture1={"https://image.ibb.co/nKgejx/la_town_pict1.jpg"}
           picture2={"https://preview.ibb.co/n1Uezx/la_town_pict2.jpg"}
@@ -130,12 +130,12 @@ class ChooseLanguage extends Component {
           answer1_2={"La parada de metro"}
           correctAnswer1={"La estación de tren"}
           answer1_3={"La Universidad"}
-          answer2_1={"Cuánto cuesta un tren?"}
-          correctAnswer2={"Cuánto cuesta un billete?"}
-          answer2_2={"Cuánto cuesta un coche?"}
-          answer2_3={"Cuánto tarda en llegar? "}
+          answer2_1={"Quiero comprar un tren"}
+          correctAnswer2={"Quiero comprar un billete"}
+          answer2_2={"Quiero vender mi coche"}
+          answer2_3={"Quiero ir al cine"}
           answer3_1={"Cuál es el ultimo tren?"}
-          correctAnswer3={"Cuánto se tarda en llegar?"}
+          correctAnswer3={"Cuánto tardaré en llegar?"}
           answer3_2={"Cuál es el siguiente tren"}
           answer3_3={"Cuántos trenes hay?"}
           answer4_1={"Calle 7"}
@@ -183,7 +183,7 @@ class ChooseLanguage extends Component {
           picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
-          question2={"You want to order a glass of red wine.."}
+          question2={"You want to order a glass of red wine"}
           question3={"You decide to order Octopus"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
@@ -191,9 +191,9 @@ class ChooseLanguage extends Component {
           question7={"How would you ask for Ice Cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"La parada de metro"}
-          correctAnswer1={"La estacion de tren"}
-          answer1_2={"La estacion de autobus"}
-          answer1_3={"La estacion de bomberos"}
+          correctAnswer1={"La estación de tren"}
+          answer1_2={"La estación de autobus"}
+          answer1_3={"La estación de bomberos"}
           answer2_1={"Quiero un vaso de agua"}
           correctAnswer2={"Quiero una copa de vino tinto"}
           answer2_2={"Quiero una copa de vino blanco "}
@@ -250,7 +250,7 @@ class ChooseLanguage extends Component {
           scenario4={"You head for your train"}
           scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
-          scenario7={"The stranger replies '<directions in Spanish>' "}
+          scenario7={"The stranger replies tells you turn right and go straight"}
           picture1={"https://image.ibb.co/nKgejx/la_town_pict1.jpg"}
           picture2={"https://preview.ibb.co/n1Uezx/la_town_pict2.jpg"}
           picture3={"https://preview.ibb.co/ekQDRc/la_town_pict3.jpg"}
@@ -332,14 +332,14 @@ class ChooseLanguage extends Component {
           question6={"He askes you 'Voulez-vous un dessert?'"}
           question7={"How would you ask for Ice Cream?"}
           question8={"How would you ask for the bill?"}
-          answer1_1={"table pour cinq personnes s'il vous plaît"}
-          correctAnswer1={"table pour deux personnes s'il vous plaît"}
-          answer1_2={"Chaise pour deux personnes s'il vous plaît"}
-          answer1_3={"Lettre pour deux personnes s'il vous plaît"}
-          answer2_1={"Je veux un verre d'eau"}
-          correctAnswer2={"Je veux un verre de vin rouge"}
-          answer2_2={"Je veux un verre de vin blanc "}
-          answer2_3={"Je veux une bouteille de vin rouge"}
+          answer1_1={"Une table pour cinq personnes s'il vous plaît"}
+          correctAnswer1={"Une table pour deux personnes s'il vous plaît"}
+          answer1_2={"Une chaise pour deux personnes s'il vous plaît"}
+          answer1_3={"Une lettre pour deux personnes s'il vous plaît"}
+          answer2_1={"J'aimerais un verre d'eau"}
+          correctAnswer2={"J'aimerais un verre de vin rouge"}
+          answer2_2={"J'aimerais un verre de vin blanc"}
+          answer2_3={"J'aimerais une bouteille de vin rouge"}
           answer3_1={"Poisson"}
           correctAnswer3={"Poulpe"}
           answer3_2={"Boulettes de viande"}
@@ -360,10 +360,10 @@ class ChooseLanguage extends Component {
           correctAnswer7={"Je veux une glace"}
           answer7_2={"Je veux un gâteau"}
           answer7_3={"Je veux un fruit"}
-          answer8_1={"Peux-tu m'apporter une fourchette s'il te plait?"}
-          correctAnswer8={"Pouvez-vous m'apporter la facture s'il vous plaît?"}
-          answer8_2={"Mon ami paie la facture"}
-          answer8_3={"Peux-tu m'apporter la lettre s'il vous plaît?"}
+          answer8_1={"Pourriez-vous m'apporter une fourchette s'il vous plaît?"}
+          correctAnswer8={"L'addition s'il vous plaît?"}
+          answer8_2={"Mon ami règle l'addition"}
+          answer8_3={"La lettre s'il vous plaît"}
         />
         </div>
       ),
