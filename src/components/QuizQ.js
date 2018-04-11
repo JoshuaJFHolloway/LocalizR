@@ -10,18 +10,6 @@ class QuizQ extends Component {
   }
   render() {
 
-    // var button= this.state.CorrectQ;
-    var button= this.props.state;
-    var buttonStyle = {
-          backgroundColor: ""
-    };
-
-    if(button === "green"){
-      buttonStyle= {
-          backgroundColor: "green"
-      }
-    }
-
     return (
       <div>
         <QuizScenario
@@ -36,7 +24,6 @@ class QuizQ extends Component {
         <QuizAnswers
           handleAnswerSubmitted={this.props.handleAnswerSubmitted}
           handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
-          style={buttonStyle}
           answer1={this.props.answer1}
           correctAnswer={this.props.correctAnswer}
           answer2={this.props.answer2}
