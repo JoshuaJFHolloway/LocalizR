@@ -7,7 +7,7 @@ const LanguageList = (props) => {
   return (
     <div>
       <SubmitButton
-        buttonName={"Pick me a random scenario"}
+        buttonName={"RANDOM"}
         handleDataSubmitted={props.handleRandomScenario}
         />
       <SubHeader

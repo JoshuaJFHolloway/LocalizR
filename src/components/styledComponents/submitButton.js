@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 const Button = styled.button `
-  opacity: 0.8;
   font-size: 15px;
   font-weight: 600;
   margin: 10px;
   width: 150px;
   height: 150px;
-  border-radius: 20px;
+  border: 5px inset grey;
+  border-radius: 10px;
   display: inline-grid;
 `;
 
