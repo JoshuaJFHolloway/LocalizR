@@ -28,6 +28,9 @@ import SubmitButton from './SubmitButton'
       });
 
       this.correctAnswerIndex = array.findIndex(answer => answer === this.props.correctAnswer);
+      this.incorrectAnswerIndex1 = array.findIndex(answer => answer === this.props.answer1);
+      this.incorrectAnswerIndex2 = array.findIndex(answer => answer === this.props.answer2);
+      this.incorrectAnswerIndex3 = array.findIndex(answer => answer === this.props.answer3);
       this.resetStyles();
     };
 
@@ -63,8 +66,12 @@ import SubmitButton from './SubmitButton'
       setTimeout(() => {
         if (buttonIndex === this.correctAnswerIndex) {
           this.props.handleCorrectAnswerSubmitted();
-        } else {
-          this.props.handleAnswerSubmitted();
+        } if (buttonIndex === this.incorrectAnswerIndex1){
+          this.props.handleAnswerSubmitted1();
+        } if (buttonIndex === this.incorrectAnswerIndex2){
+          this.props.handleAnswerSubmitted2();
+        } if (buttonIndex === this.incorrectAnswerIndex3){
+          this.props.handleAnswerSubmitted3();
         }
           this.randomiseAnswers();
       }, 3000);

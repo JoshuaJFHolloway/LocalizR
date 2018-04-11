@@ -22,7 +22,9 @@ class QuizQ extends Component {
           question={this.props.question}
         />
         <QuizAnswers
-          handleAnswerSubmitted={this.props.handleAnswerSubmitted}
+          handleAnswerSubmitted1 = {this.props.handleAnswerSubmitted1}
+          handleAnswerSubmitted2 = {this.props.handleAnswerSubmitted2}
+          handleAnswerSubmitted3 = {this.props.handleAnswerSubmitted3}
           handleCorrectAnswerSubmitted={this.props.handleCorrectAnswerSubmitted}
           answer1={this.props.answer1}
           correctAnswer={this.props.correctAnswer}
