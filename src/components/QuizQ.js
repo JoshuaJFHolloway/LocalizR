@@ -9,7 +9,6 @@ class QuizQ extends Component {
     super()
   }
   render() {
-
     return (
       <div>
         <QuizScenario

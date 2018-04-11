@@ -50,7 +50,7 @@ import SubmitButton from './SubmitButton'
 
     highlightButtonWithIndex = (index) => {
       const styles = this.state.styles;
-
+      
       styles[index] = {
         backgroundColor: 'green',
       };

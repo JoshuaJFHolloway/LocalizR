@@ -3,6 +3,7 @@ import LanguageList from './LanguageList';
 import Quiz from './Quiz';
 import "./styledComponents/content.css";
 import Scenarios from './Scenarios'
+import axios from 'axios';
 
 
 class ChooseLanguage extends Component {
@@ -13,21 +14,20 @@ class ChooseLanguage extends Component {
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishscen2: false,
-      frenchScene1: false,
-      frenchScene2: false,
-
+      spanishScen2: false,
+      frenchScen1: false,
+      frenchScen2: false,
     };
-  };  
+  };
 
   handleDataSubmitted = () => {
     this.setState({
       spanish: false,
       french: false,
       spanishScen1: false,
-      spanishscen2: false,
+      spanishScen2: false,
       frenchScen1: false,
-      frenchScene2: false,
+      frenchScen2: false,
     });
   };
 
@@ -41,6 +41,13 @@ class ChooseLanguage extends Component {
     this.setState(prevState => ({
       french: !prevState.french
     }));
+    axios.delete('http://localhost:3001/api/scenario')
+      .then(res => {
+        console.log('Cleaned database');
+      })
+      .catch(err => {
+        console.log(err)
+      });
   };
 
   handleScenario1Clicked = () => {
@@ -49,21 +56,28 @@ class ChooseLanguage extends Component {
       frenchScen1: true,
 
     });
+    // axios.delete('http://localhost:3001/api/scenario')
+    //   .then(res => {
+    //     console.log('Cleaned database');
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   });
   };
 
   handleScenario2Clicked = () => {
     this.setState({
-      spanishscen2: true,
-      frenchScene2: true,
+      spanishScen2: true,
+      frenchScen2: true,
 
     });
   };
 
   decider (){
     if(this.state.spanishScen1 === true && this.state.spanish === true) {
-        return 'SpanishQuiz';  
+        return 'SpanishQuiz';
      } else if(this.state.frenchScen1 === true && this.state.french === true) {
-        return 'FrenchQuiz';        
+        return 'FrenchQuiz';
     } else if(this.state.spanishScen2 === true && this.state.spanish === true) {
         return 'SpanishQuiz2';
     } else if(this.state.frenchScen2 === true && this.state.french === true) {
@@ -81,8 +95,8 @@ class ChooseLanguage extends Component {
         <LanguageList
           handleSpanishClicked = {this.handleSpanishClicked}
           handleFrenchClicked = {this.handleFrenchClicked}
-          spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
-          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
+          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
           spanishScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
@@ -91,9 +105,12 @@ class ChooseLanguage extends Component {
           />}
         />
       ),
-      SpanishQuiz: (        
+      SpanishQuiz: (
        <div>
         <Quiz
+        handleScenario1Clicked = {this.handleScenario1Clicked}
+        handleScenario2Clicked = {this.handleScenario2Clicked}
+
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
@@ -137,7 +154,7 @@ class ChooseLanguage extends Component {
           answer5_1={"Norte"}
           correctAnswer5={"Sur"}
           answer5_2={"Este"}
-          answer5_3={"Oeste"} 
+          answer5_3={"Oeste"}
           answer6_1={"Dónde está el banco?"}
           correctAnswer6={"Dónde está el mercado?"}
           answer6_2={"Dónde está la tienda"}
@@ -149,9 +166,9 @@ class ChooseLanguage extends Component {
           answer8_1={"Cuántos años tienes?"}
           correctAnswer8={"Cuánto cuesta?"}
           answer8_2={"Cuánto hay?"}
-          answer8_3={"Cuántos hijos tienes?"} 
+          answer8_3={"Cuántos hijos tienes?"}
         />
-        </div>  
+        </div>
       ),
 
       SpanishQuiz2:(
@@ -222,8 +239,8 @@ class ChooseLanguage extends Component {
         <LanguageList
           handleFrenchClicked = {this.handleFrenchClicked}
           handleSpanishClicked = {this.handleSpanishClicked}
-          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
-          spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
+          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
+          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
           frenchScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
@@ -232,8 +249,8 @@ class ChooseLanguage extends Component {
           />}
         />
       ),
-      FrenchQuiz: (        
-       <div> 
+      FrenchQuiz: (
+       <div>
         <Quiz
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
@@ -278,7 +295,7 @@ class ChooseLanguage extends Component {
           answer5_1={"Nord"}
           correctAnswer5={"Sud"}
           answer5_2={"Est"}
-          answer5_3={"Ouest"} 
+          answer5_3={"Ouest"}
           answer6_1={"Où est la banque?"}
           correctAnswer6={"Où est le marché?"}
           answer6_2={"Où est le magasin?"}
@@ -290,10 +307,10 @@ class ChooseLanguage extends Component {
           answer8_1={"Quel âge as-tu?"}
           correctAnswer8={"combien coûte?"}
           answer8_2={"combien il y a?"}
-          answer8_3={"combien d'enfants avez-vous?"} 
+          answer8_3={"combien d'enfants avez-vous?"}
 
         />
-        </div>  
+        </div>
       ),
 
       FrenchQuiz2:(
@@ -363,8 +380,8 @@ class ChooseLanguage extends Component {
         <LanguageList
           handleSpanishClicked = {this.handleSpanishClicked}
           handleFrenchClicked = {this.handleFrenchClicked}
-          spanishImage={"https://cdn2.iconfinder.com/data/icons/Flag/134/Spain.png"}
-          frenchImage={"https://cdn.countryflags.com/thumbs/france/flag-round-250.png"}
+          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
         />
       ),
     };

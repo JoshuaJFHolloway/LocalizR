@@ -13,7 +13,7 @@ class Quiz extends Component {
       results: null
     }
   }
-
+  
   // handleCorrectAnswerSubmitted = () => {
   //   this.setState({
   //     counter: this.state.counter + 1,
@@ -52,10 +52,22 @@ class Quiz extends Component {
     this.setState({
       counter: this.state.counter + 1
     })
+
+    if(this.state.counter + 1 == 1){
+      axios.delete('http://localhost:3001/api/scenario')
+        .then(res => {
+          console.log('Cleaned database');
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer1(),
       correct_answer: this.concatenateCorrectAnswer()
     })
+
       .then(function (res) {
         console.log(res);
       })
@@ -68,10 +80,20 @@ class Quiz extends Component {
     this.setState({
       counter: this.state.counter + 1
     })
+    if(this.state.counter + 1 == 1){
+      axios.delete('http://localhost:3001/api/scenario')
+        .then(res => {
+          console.log('Cleaned database');
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer2(),
       correct_answer: this.concatenateCorrectAnswer()
     })
+
       .then(function (res) {
         console.log(res);
       })
@@ -84,6 +106,16 @@ class Quiz extends Component {
     this.setState({
       counter: this.state.counter + 1
     })
+    if(this.state.counter + 1 == 1){
+      axios.delete('http://localhost:3001/api/scenario')
+        .then(res => {
+          console.log('Cleaned database');
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer3(),
       correct_answer: this.concatenateCorrectAnswer()
@@ -113,6 +145,22 @@ class Quiz extends Component {
       });
   };
 
+  handleCorrectAnswerSubmitted = () => {
+    this.setState({
+      counter: this.state.counter + 1,
+      score: this.state.score + 1
+    })
+    axios.post('http://localhost:3001/api/scenario', {
+      user_answer: this.concatenateCorrectAnswer(),
+      correct_answer: this.concatenateCorrectAnswer()
+    })
+    .then(function (res) {
+      console.log(res);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+  };
 
   decider = () => {
     if (this.state.counter === 8) {
@@ -143,7 +191,9 @@ class Quiz extends Component {
       ResultsPage: (
         <ResultsPage
           score = {this.state.score}
-          handleDataSubmitted = {this.props.handleDataSubmitted}
+          handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+          handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
+          handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
           handleRetryQuiz = {this.props.handlePictureClicked}
           />
       ),
@@ -229,7 +279,7 @@ class Quiz extends Component {
 
         QuizQ6: (
           <QuizQ
-            hhandleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
+            handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
             handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
             handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
             handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}

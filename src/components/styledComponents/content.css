@@ -15,7 +15,7 @@ body {
 }
 
 .chooselanguage {
-    background: url("https://wallpaperbrowse.com/media/images/chalkboard-charmer-free-2-column-background.jpg");
+    background: url("http://www.powerpointhintergrund.com/uploads/2017/05/chalkboard-anything-is-chalkboard-background-chalkboard-shop-21.jpeg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,6 +29,7 @@ body {
 
 .languagepagetitle {
     font-size: 50px;
+    padding: 2vh;
 }
 
 .loginbutton {
@@ -70,6 +71,7 @@ body {
 .displaybox {
     background: rgba(0, 0, 0, 0);
     margin-top: 10vh;
+    border: 3px outset #ffffff;
     border-radius: 10px;
     width: 40%;
 }
