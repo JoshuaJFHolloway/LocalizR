@@ -19,20 +19,21 @@ body {
     height: 100vh;
 }
 
-.img {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
+.quizbackground {
+  background: radial-gradient(LightSkyBlue, white);
+  padding: 100px;
+  height: 100vh;
 }
+
+.quizimage {
+  width:500px;
+  height:500px;
+  object-fit:cover;
+  border: 7px double LightSkyBlue;
+  border-radius: 20px;
+{
 
 .flags {
   padding: 2px;
   background-color: transparent;
-}
-
-.quizbackground {
-    background: radial-gradient(LightSkyBlue, white);
-    padding: 100px;
-    height: 100vh;
 }
