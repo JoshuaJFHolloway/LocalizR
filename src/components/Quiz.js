@@ -10,11 +10,23 @@ class Quiz extends Component {
     this.state = {
       score: 0,
       counter: 0,
-      nextQuestion: false,
-      lastQuestion: false,
       results: null
     }
   }
+  
+  // handleCorrectAnswerSubmitted = () => {
+  //   this.setState({
+  //     counter: this.state.counter + 1,
+  //     score: this.state.score + 1,
+  //   });
+  // };
+  //
+  //
+  // handleAnswerSubmitted = () => {
+  //   this.setState({
+  //     counter: this.state.counter + 1,
+  //   });
+  // };
 
   concatenateAnswer1 = () => {
     var string = 'this.props.answer' + (this.state.counter + 1) + "_" + 1
@@ -40,6 +52,7 @@ class Quiz extends Component {
     this.setState({
       counter: this.state.counter + 1
     })
+
     if(this.state.counter + 1 == 1){
       axios.delete('http://localhost:3001/api/scenario')
         .then(res => {
@@ -49,16 +62,18 @@ class Quiz extends Component {
           console.log(err)
         })
     }
+
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer1(),
       correct_answer: this.concatenateCorrectAnswer()
     })
-    .then(function (res) {
-      console.log(res);
-    })
-    .catch(function (err) {
-      console.log(err);
-    });
+
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
   };
 
   handleAnswerSubmitted2 = () => {
@@ -78,12 +93,13 @@ class Quiz extends Component {
       user_answer: this.concatenateAnswer2(),
       correct_answer: this.concatenateCorrectAnswer()
     })
-    .then(function (res) {
-      console.log(res);
-    })
-    .catch(function (err) {
-      console.log(err);
-    });
+
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
   };
 
   handleAnswerSubmitted3 = () => {
@@ -99,16 +115,34 @@ class Quiz extends Component {
           console.log(err)
         })
     }
+
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer3(),
       correct_answer: this.concatenateCorrectAnswer()
     })
-    .then(function (res) {
-      console.log(res);
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+  };
+
+  handleCorrectAnswerSubmitted = () => {
+    this.setState({
+      counter: this.state.counter + 1,
+      score: this.state.score + 1
     })
-    .catch(function (err) {
-      console.log(err);
-    });
+    axios.post('http://localhost:3001/api/scenario', {
+      user_answer: this.concatenateCorrectAnswer(),
+      correct_answer: this.concatenateCorrectAnswer()
+    })
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
   };
 
   handleCorrectAnswerSubmitted = () => {
@@ -132,7 +166,7 @@ class Quiz extends Component {
     if (this.state.counter === 8) {
       return 'ResultsPage';
       } else if (this.state.counter === 1) {
-        return 'QuizQ2';
+        return 'QuizQ2'
       } else if (this.state.counter === 2){
         return 'QuizQ3';
       } else if (this.state.counter === 3){
@@ -165,10 +199,10 @@ class Quiz extends Component {
       ),
         QuizQ1: (
           <QuizQ
+            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
             handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
             handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
-            handleCorrectAnswerSubmitted = {this.handleCorrectAnswerSubmitted}
             scenario={this.props.scenario1}
             picture={this.props.picture1}
             question={this.props.question1}

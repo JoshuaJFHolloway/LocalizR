@@ -29,16 +29,16 @@ class App extends Component {
   }
 
   render() {
-    if (!auth.isAuthenticated()) {
-      return (
-        <div class="index">
-        <Headers/>
-        <button className="loginbutton" onClick={this.login.bind(this)}>
-            Login / Signup
-        </button>
-        </div>
-        )
-    } else {
+    // if (!auth.isAuthenticated()) {
+    //   return (
+    //     <div class="index">
+    //     <Headers/>
+    //     <button className="loginbutton" onClick={this.login.bind(this)}>
+    //         Login / Signup
+    //     </button>
+    //     </div>
+    //     )
+    // } else {
       return (
         <div class="chooselanguage">
         <button className="loginbutton" onClick={this.logout.bind(this)}>
@@ -48,6 +48,6 @@ class App extends Component {
         </div>
       )
     }
-  };
+  // };
 }
 export default App;
