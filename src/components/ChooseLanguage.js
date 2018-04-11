@@ -16,8 +16,18 @@ class ChooseLanguage extends Component {
       spanishScen2: false,
       frenchScen1: false,
       frenchScen2: false,
+      story: false
     };
   };
+
+  handleResults = () => {
+
+    this.setState({
+      story: true
+    })
+
+  };
+
 
   handleDataSubmitted = () => {
     this.setState({
@@ -27,6 +37,7 @@ class ChooseLanguage extends Component {
       spanishScen2: false,
       frenchScen1: false,
       frenchScen2: false,
+      story: false
     });
   };
 
@@ -98,6 +109,8 @@ class ChooseLanguage extends Component {
       SpanishQuiz: (
        <div>
         <Quiz
+          handleResults = {this.handleResults}
+          storyState={this.state.story}
         handleScenario1Clicked = {this.handleScenario1Clicked}
         handleScenario2Clicked = {this.handleScenario2Clicked}
 
@@ -165,6 +178,8 @@ class ChooseLanguage extends Component {
       SpanishQuiz2:(
         <div>
         <Quiz
+          storyState={this.state.story}
+          handleResults = {this.handleResults}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter in a restaurant"}
           scenario2={"You're seated at a table"}
@@ -243,6 +258,8 @@ class ChooseLanguage extends Component {
       FrenchQuiz: (
        <div>
         <Quiz
+          storyState={this.state.story}
+          handleResults = {this.handleResults}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
@@ -307,6 +324,8 @@ class ChooseLanguage extends Component {
       FrenchQuiz2:(
         <div>
         <Quiz
+          storyState={this.state.story}
+          handleResults = {this.handleResults}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter in a restaurant"}
           scenario2={"You're seated at a table"}

@@ -1,30 +1,58 @@
-import React from 'react'
+import React, { Component } from 'react'
 import SubHeader from './SubHeader'
 import SubmitButton from './SubmitButton';
-import axios from 'axios';
 import Story from './Story';
 
+class ResultsPage extends Component {
+  constructor(){
+    super()
+  }
 
-// function to drop database
+  decider (){
+    if(this.props.storyState === true) {
+      return 'Story';
+    } else return 'ResultsPage';
+  };
 
 
-const ResultsPage = props => {
+  render(){
 
-  return (
-    <div>
-      <SubHeader
-        subHeader={"Nice one, your score is " + props.score}/>
-      <SubmitButton
-        buttonName = {"Languages Page"}
-        handleDataSubmitted = {props.handleDataSubmitted}
-      />
-      <SubmitButton
-        buttonName = {"Retry Quiz"}
-        handleDataSubmitted = {props.handleRetryQuiz}
-      />
-      <Story />
-    </div>
-  )
-};
+
+    const Views = {
+      ResultsPage: (
+        <div>
+          <SubHeader
+            subHeader={"Nice one, your score is " + this.props.score}/>
+          <SubmitButton
+            buttonName={"Try another quiz"}
+            handleDataSubmitted={this.props.handleDataSubmitted}
+          />
+          <SubmitButton
+            buttonName={"See your results"}
+            handleDataSubmitted={this.props.handleRetryQuiz}
+          />
+        </div>
+      ),
+
+      Story: (
+        <div>
+          <SubHeader
+            subHeader={"Nice one, your score is " + this.props.score}/>
+          <SubmitButton
+            buttonName={"Try another quiz"}
+            handleDataSubmitted={this.props.handleDataSubmitted}
+          />
+          <Story/>
+        </div>
+      ),
+    };
+
+      return (
+        <div>
+        {Views[this.decider()]}
+        </div>
+    )
+  }
+}
 
 export default ResultsPage;

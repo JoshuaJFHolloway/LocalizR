@@ -126,6 +126,7 @@ class Quiz extends Component {
   };
 
 
+
   decider = () => {
     if (this.state.counter === 8) {
       return 'ResultsPage';
@@ -154,12 +155,13 @@ class Quiz extends Component {
     const Views = {
       ResultsPage: (
         <ResultsPage
+          storyState={this.props.storyState}
           score = {this.state.score}
           handleDataSubmitted = {this.props.handleDataSubmitted}
           handleAnswerSubmitted1 = {this.handleAnswerSubmitted1}
           handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
           handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
-          handleRetryQuiz = {this.props.handlePictureClicked}
+          handleRetryQuiz = {this.props.handleResults}
           />
       ),
         QuizQ1: (
