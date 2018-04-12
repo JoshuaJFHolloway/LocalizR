@@ -98,6 +98,6 @@ integrate into the project after the completion date (12th April)
 
 - As a user, so I can improve my pronunciation, I want to be able to hear example audio.
 
-- As a user, so finally I can satisfy my competitiveness, I want to see a leaderboard.
+- As a user, so I can satisfy my competitiveness, I want to see a leaderboard.
 
 - As a user, so I can follow my story, I want to see the outcome of my answer.
