@@ -4,8 +4,7 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
 import { Route, Router } from 'react-router-dom';
-import IndexButton from './styledComponents/indexButton.js';
-import QuizButton from './styledComponents/quizButton.js';
+import NavButton from './styledComponents/navButtons.js';
 
 const auth = new Auth();
 
@@ -37,6 +36,9 @@ class App extends Component {
             <IndexButton onClick={this.login.bind(this)}>
               Start your journey
             </IndexButton>
+            <NavButton onClick={this.login.bind(this)}>
+              <i class="material-icons">airplanemode_active</i>
+            </NavButton>
             </main>
           </div>
         ;
@@ -47,6 +49,9 @@ class App extends Component {
             <QuizButton onClick={this.logout.bind(this)}>
               Log Out
             </QuizButton>
+            <NavButton onClick={this.logout.bind(this)}>
+              <i class="material-icons">airplanemode_inactive</i>
+            </NavButton>
             <ChooseLanguage/>
         </main>
         </div>

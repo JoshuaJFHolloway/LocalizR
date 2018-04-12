@@ -118,8 +118,8 @@ class ChooseLanguage extends Component {
         <LanguageList
           handleSpanishClicked = {this.handleSpanishClicked}
           handleFrenchClicked = {this.handleFrenchClicked}
-          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
-          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
+          spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
           spanishScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
@@ -267,8 +267,8 @@ class ChooseLanguage extends Component {
         <LanguageList
           handleFrenchClicked = {this.handleFrenchClicked}
           handleSpanishClicked = {this.handleSpanishClicked}
-          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
-          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
+          spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
           frenchScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
@@ -413,8 +413,8 @@ class ChooseLanguage extends Component {
           handleSpanishClicked = {this.handleSpanishClicked}
           handleFrenchClicked = {this.handleFrenchClicked}
           handleRandomScenario = {this.handleRandomScenario}
-          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
-          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
+          spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
         />
       ),
     };
