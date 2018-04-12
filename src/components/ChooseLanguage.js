@@ -7,7 +7,7 @@ import axios from 'axios';
 
 class ChooseLanguage extends Component {
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
       spanish: false,
@@ -96,18 +96,18 @@ class ChooseLanguage extends Component {
     });
   };
 
-  decider (){
-    if(this.state.spanishScen1 === true && this.state.spanish === true) {
+  decider() {
+    if (this.state.spanishScen1 === true && this.state.spanish === true) {
       return 'SpanishQuiz';
-    } else if(this.state.frenchScen1 === true && this.state.french === true) {
+    } else if (this.state.frenchScen1 === true && this.state.french === true) {
       return 'FrenchQuiz';
-    } else if(this.state.spanishScen2 === true && this.state.spanish === true) {
+    } else if (this.state.spanishScen2 === true && this.state.spanish === true) {
       return 'SpanishQuiz2';
-    } else if(this.state.frenchScen2 === true && this.state.french === true) {
+    } else if (this.state.frenchScen2 === true && this.state.french === true) {
       return 'FrenchQuiz2';
-    } else if(this.state.spanish === true) {
+    } else if (this.state.spanish === true) {
       return 'SpanishScenarios';
-    } else if(this.state.french === true) {
+    } else if (this.state.french === true) {
       return 'FrenchScenarios';
     } else return 'LanguageList';
   };
@@ -116,13 +116,13 @@ class ChooseLanguage extends Component {
     const quizViews = {
       SpanishScenarios: (
         <LanguageList
-          handleSpanishClicked = {this.handleSpanishClicked}
-          handleFrenchClicked = {this.handleFrenchClicked}
+          handleSpanishClicked={this.handleSpanishClicked}
+          handleFrenchClicked={this.handleFrenchClicked}
           spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
           frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
-          spanishScenarios = {<Scenarios
-            handleScenario1Clicked = {this.handleScenario1Clicked}
-            handleScenario2Clicked = {this.handleScenario2Clicked}
+          spanishScenarios={<Scenarios
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
             buttonName1={"Getting around"}
             buttonName2={"Eating out"}
           />}
@@ -131,12 +131,12 @@ class ChooseLanguage extends Component {
       SpanishQuiz: (
         <div>
           <Quiz
-            handleResults = {this.handleResults}
+            handleResults={this.handleResults}
             storyState={this.state.story}
-            handleScenario1Clicked = {this.handleScenario1Clicked}
-            handleScenario2Clicked = {this.handleScenario2Clicked}
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
 
-            handleDataSubmitted = {this.handleDataSubmitted}
+            handleDataSubmitted={this.handleDataSubmitted}
             scenario1={"You leave your house and start following these signs"}
             scenario2={"You arrive at the train station"}
             scenario3={"You get your ticket"}
@@ -197,12 +197,12 @@ class ChooseLanguage extends Component {
         </div>
       ),
 
-      SpanishQuiz2:(
+      SpanishQuiz2: (
         <div>
           <Quiz
             storyState={this.state.story}
-            handleResults = {this.handleResults}
-            handleDataSubmitted = {this.handleDataSubmitted}
+            handleResults={this.handleResults}
+            handleDataSubmitted={this.handleDataSubmitted}
             scenario1={"You enter a restaurant"}
             scenario2={"You're seated at a table"}
             scenario3={"You're ready to order your main meal"}
@@ -265,13 +265,13 @@ class ChooseLanguage extends Component {
 
       FrenchScenarios: (
         <LanguageList
-          handleFrenchClicked = {this.handleFrenchClicked}
-          handleSpanishClicked = {this.handleSpanishClicked}
+          handleFrenchClicked={this.handleFrenchClicked}
+          handleSpanishClicked={this.handleSpanishClicked}
           frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
           spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
-          frenchScenarios = {<Scenarios
-            handleScenario1Clicked = {this.handleScenario1Clicked}
-            handleScenario2Clicked = {this.handleScenario2Clicked}
+          frenchScenarios={<Scenarios
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
             buttonName1={"Getting around"}
             buttonName2={"Eating out"}
           />}
@@ -281,8 +281,8 @@ class ChooseLanguage extends Component {
         <div>
           <Quiz
             storyState={this.state.story}
-            handleResults = {this.handleResults}
-            handleDataSubmitted = {this.handleDataSubmitted}
+            handleResults={this.handleResults}
+            handleDataSubmitted={this.handleDataSubmitted}
             scenario1={"You leave your house and start following these signs"}
             scenario2={"You arrive at the train station"}
             scenario3={"You get your ticket"}
@@ -343,12 +343,12 @@ class ChooseLanguage extends Component {
         </div>
       ),
 
-      FrenchQuiz2:(
+      FrenchQuiz2: (
         <div>
           <Quiz
             storyState={this.state.story}
-            handleResults = {this.handleResults}
-            handleDataSubmitted = {this.handleDataSubmitted}
+            handleResults={this.handleResults}
+            handleDataSubmitted={this.handleDataSubmitted}
             scenario1={"You enter a restaurant"}
             scenario2={"You're seated at a table"}
             scenario3={"You're ready to order your main meal"}
@@ -410,9 +410,9 @@ class ChooseLanguage extends Component {
       ),
       LanguageList: (
         <LanguageList
-          handleSpanishClicked = {this.handleSpanishClicked}
-          handleFrenchClicked = {this.handleFrenchClicked}
-          handleRandomScenario = {this.handleRandomScenario}
+          handleSpanishClicked={this.handleSpanishClicked}
+          handleFrenchClicked={this.handleFrenchClicked}
+          handleRandomScenario={this.handleRandomScenario}
           spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
           frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
         />

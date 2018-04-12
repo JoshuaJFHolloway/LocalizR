@@ -9,16 +9,16 @@ const LanguageList = (props) => {
       <SubmitButton
         buttonName={"Pick me a random scenario"}
         handleDataSubmitted={props.handleRandomScenario}
-        />
+      />
       <SubHeader
         subHeader={"Choose your language!"}
       />
       <Picture
-        handlePictureClicked = {props.handleSpanishClicked}
+        handlePictureClicked={props.handleSpanishClicked}
         flagImage={props.spanishImage}
       />
       <Picture
-        handlePictureClicked = {props.handleFrenchClicked}
+        handlePictureClicked={props.handleFrenchClicked}
         flagImage={props.frenchImage}
       />
       {props.spanishScenarios}
