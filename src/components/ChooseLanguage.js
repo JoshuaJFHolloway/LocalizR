@@ -204,13 +204,13 @@ class ChooseLanguage extends Component {
             handleScenario1Clicked={this.handleScenario1Clicked}
             handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
-          scenario1={"You enter in a restaurant"}
+          scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
           scenario3={"You're ready to order your main meal"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
-          scenario7={"You said yes as you are still pekish"}
+          scenario7={"You say yes as you are still peckish"}
           scenario8={"You finish your dessert"}
           picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
           picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
@@ -361,7 +361,7 @@ class ChooseLanguage extends Component {
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
-          scenario7={"You said yes as you are still pekish"}
+          scenario7={"You say yes as you are still peckish"}
           scenario8={"You finish your dessert"}
           picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
           picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
