@@ -1,35 +1,44 @@
-body {
-  font-family: Neucha;
+html, body {
+  /* background */
   background: radial-gradient(darkblue, black);
   background-size: cover;
-  height: 100vh;
-  margin: 100px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* background positioning */
+  height: 100vh;
+  margin: 80px;
+  /* font style */
+  font-family: Neucha;
+  text-align: center;
   color: black;
+  /* font & browser compatibility */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
 main {
-  margin: auto;
-  width: 800px;
-  height: 70%;
+  /* box opacity */
   background:rgba(255,255,255, 0.8);
+  /* position in relation to background, and content styling */
+  margin: auto;
+  padding: 25px;
+  height: 70%;
+  width: 800px;
+  /* border and shadow */
   border: 5px inset black;
   box-shadow: 5px 10px 10px;
-  padding: 25px;
   border-radius: 10px;
 }
 
-.quizimage {
-  width:400px;
-  height:400px;
-  object-fit: cover;
+.image {
+  /* scale and zoom */
   background-size: cover;
   background-position: bottom;
-  padding-bottom: 0px;
+  object-fit: cover;
+  /* box size */
+  height:400px;
+  width:400px;
+  /* box border */
   border: 3px ridge grey;
   border-radius: 20px;
 {

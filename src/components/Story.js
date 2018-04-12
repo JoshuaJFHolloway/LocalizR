@@ -33,14 +33,14 @@ class Story extends Component {
   render() {
     return (
       <Text>
-        <h6>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h6>
-        <h6>Your second answer was {this.state.answers[1]}, {this.state.responses[1]}</h6>
-        <h6>Your third answer was {this.state.answers[2]}, {this.state.responses[2]}</h6>
-        <h6>Your forth answer was {this.state.answers[3]}, {this.state.responses[3]}</h6>
-        <h6>Your fifth answer was {this.state.answers[4]}, {this.state.responses[4]}</h6>
-        <h6>Your sixth answer was {this.state.answers[5]}, {this.state.responses[5]}</h6>
-        <h6>Your seventh answer was {this.state.answers[6]}, {this.state.responses[6]}</h6>
-        <h6>Your eighth answer was {this.state.answers[7]}, {this.state.responses[7]}</h6>
+        <h3>Your first answer was {this.state.answers[0]}, {this.state.responses[0]}</h3>
+        <h3>Your second answer was {this.state.answers[1]}, {this.state.responses[1]}</h3>
+        <h3>Your third answer was {this.state.answers[2]}, {this.state.responses[2]}</h3>
+        <h3>Your forth answer was {this.state.answers[3]}, {this.state.responses[3]}</h3>
+        <h3>Your fifth answer was {this.state.answers[4]}, {this.state.responses[4]}</h3>
+        <h3>Your sixth answer was {this.state.answers[5]}, {this.state.responses[5]}</h3>
+        <h3>Your seventh answer was {this.state.answers[6]}, {this.state.responses[6]}</h3>
+        <h3>Your eighth answer was {this.state.answers[7]}, {this.state.responses[7]}</h3>
       </Text>
     )
   }
