@@ -56,8 +56,15 @@ class ChooseLanguage extends Component {
 
   handleFrenchClicked = () => {
     this.setState(prevState => ({
-      french: !prevState.french
+      french: !prevState.french,
     }));
+    axios.delete('http://localhost:3001/api/scenario')
+      .then(res => {
+        console.log('Cleaned database');
+      })
+      .catch(err => {
+        console.log(err)
+      })
   };
 
   handleScenario1Clicked = () => {
@@ -94,6 +101,14 @@ class ChooseLanguage extends Component {
       frenchScen1: this.arrayIndex2,
       frenchScen2: this.arrayIndex3
     });
+
+    axios.delete('http://localhost:3001/api/scenario')
+      .then(res => {
+        console.log('Cleaned database');
+      })
+      .catch(err => {
+        console.log(err)
+      })
   };
 
   decider() {
