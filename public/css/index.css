@@ -1,0 +1,44 @@
+html, body {
+  /* background */
+  background: radial-gradient(darkblue, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background positioning */
+  height: 100vh;
+  margin: 80px;
+  /* font style */
+  font-family: Neucha;
+  text-align: center;
+  color: black;
+  /* font & browser compatibility */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  /* box opacity */
+  background:rgba(255,255,255, 0.8);
+  /* position in relation to background, and content styling */
+  margin: auto;
+  padding: 25px;
+  height: 70%;
+  width: 800px;
+  /* border and shadow */
+  border: 5px inset black;
+  box-shadow: 5px 10px 10px;
+  border-radius: 10px;
+}
+
+.image {
+  /* scale and zoom */
+  background-size: cover;
+  background-position: bottom;
+  object-fit: cover;
+  /* box size */
+  height:400px;
+  width:400px;
+  /* box border */
+  border: 3px ridge grey;
+  border-radius: 20px;
+{

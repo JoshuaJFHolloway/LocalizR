@@ -1,6 +1,7 @@
 import React from 'react';
 import Picture from './Picture'
 import SubHeader from './SubHeader'
+import SubmitButton from './SubmitButton'
 
 const LanguageList = (props) => {
   return (
@@ -9,11 +10,15 @@ const LanguageList = (props) => {
         subHeader={"Choose your language!"}
       />
       <Picture
-        handlePictureClicked = {props.handleSpanishClicked}
+        handlePictureClicked={props.handleSpanishClicked}
         flagImage={props.spanishImage}
       />
+      <SubmitButton
+        buttonName={"Pick me a random scenario"}
+        handleDataSubmitted={props.handleRandomScenario}
+      />
       <Picture
-        handlePictureClicked = {props.handleFrenchClicked}
+        handlePictureClicked={props.handleFrenchClicked}
         flagImage={props.frenchImage}
       />
       {props.spanishScenarios}

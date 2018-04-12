@@ -7,7 +7,7 @@ import axios from 'axios';
 
 class ChooseLanguage extends Component {
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
       spanish: false,
@@ -16,8 +16,18 @@ class ChooseLanguage extends Component {
       spanishScen2: false,
       frenchScen1: false,
       frenchScen2: false,
+      story: false
     };
   };
+
+  handleResults = () => {
+
+    this.setState({
+      story: true
+    })
+
+  };
+
 
   handleDataSubmitted = () => {
     this.setState({
@@ -27,6 +37,7 @@ class ChooseLanguage extends Component {
       spanishScen2: false,
       frenchScen1: false,
       frenchScen2: false,
+      story: false
     });
   };
 
@@ -63,19 +74,41 @@ class ChooseLanguage extends Component {
     });
   };
 
-  decider (){
-    if(this.state.spanishScen1 === true && this.state.spanish === true) {
-        return 'SpanishQuiz';
-     } else if(this.state.frenchScen1 === true && this.state.french === true) {
-        return 'FrenchQuiz';
-    } else if(this.state.spanishScen2 === true && this.state.spanish === true) {
-        return 'SpanishQuiz2';
-    } else if(this.state.frenchScen2 === true && this.state.french === true) {
-        return 'FrenchQuiz2';
-    } else if(this.state.spanish === true) {
-        return 'SpanishScenarios';
-    } else if(this.state.french === true) {
-        return 'FrenchScenarios';
+  handleRandomScenario = () => {
+    const array = [true, false, false, false];
+
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+      this.arrayIndex0 = array[0];
+      this.arrayIndex1 = array[1];
+      this.arrayIndex2 = array[2];
+      this.arrayIndex3 = array[3];
+    }
+
+    this.setState({
+      spanish: true,
+      french: true,
+      spanishScen1: this.arrayIndex0,
+      spanishScen2: this.arrayIndex1,
+      frenchScen1: this.arrayIndex2,
+      frenchScen2: this.arrayIndex3
+    });
+  };
+
+  decider() {
+    if (this.state.spanishScen1 === true && this.state.spanish === true) {
+      return 'SpanishQuiz';
+    } else if (this.state.frenchScen1 === true && this.state.french === true) {
+      return 'FrenchQuiz';
+    } else if (this.state.spanishScen2 === true && this.state.spanish === true) {
+      return 'SpanishQuiz2';
+    } else if (this.state.frenchScen2 === true && this.state.french === true) {
+      return 'FrenchQuiz2';
+    } else if (this.state.spanish === true) {
+      return 'SpanishScenarios';
+    } else if (this.state.french === true) {
+      return 'FrenchScenarios';
     } else return 'LanguageList';
   };
 
@@ -83,24 +116,25 @@ class ChooseLanguage extends Component {
     const quizViews = {
       SpanishScenarios: (
         <LanguageList
-          handleSpanishClicked = {this.handleSpanishClicked}
-          handleFrenchClicked = {this.handleFrenchClicked}
-          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
-          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
-          spanishScenarios = {<Scenarios
-            handleScenario1Clicked = {this.handleScenario1Clicked}
-            handleScenario2Clicked = {this.handleScenario2Clicked}
-            buttonName1={"Spanish Scenario 1"}
-            buttonName2={"Spanish Scenario 2"}
+          handleSpanishClicked={this.handleSpanishClicked}
+          handleFrenchClicked={this.handleFrenchClicked}
+          spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
+          spanishScenarios={<Scenarios
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
+            buttonName1={"Getting around"}
+            buttonName2={"Eating out"}
           />}
         />
       ),
       SpanishQuiz: (
-       <div>
-        <Quiz
-        handleScenario1Clicked = {this.handleScenario1Clicked}
-        handleScenario2Clicked = {this.handleScenario2Clicked}
-
+        <div>
+          <Quiz
+            handleResults={this.handleResults}
+            storyState={this.state.story}
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
@@ -158,13 +192,17 @@ class ChooseLanguage extends Component {
           correctAnswer8={"Cuánto cuesta esto?"}
           answer8_2={"Cuánto hay?"}
           answer8_3={"Qué es eso?"}
-        />
+        />        
         </div>
       ),
 
-      SpanishQuiz2:(
+      SpanishQuiz2: (
         <div>
         <Quiz
+         handleResults={this.handleResults}
+            storyState={this.state.story}
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter in a restaurant"}
           scenario2={"You're seated at a table"}
@@ -228,21 +266,25 @@ class ChooseLanguage extends Component {
 
       FrenchScenarios: (
         <LanguageList
-          handleFrenchClicked = {this.handleFrenchClicked}
-          handleSpanishClicked = {this.handleSpanishClicked}
-          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
-          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
-          frenchScenarios = {<Scenarios
-            handleScenario1Clicked = {this.handleScenario1Clicked}
-            handleScenario2Clicked = {this.handleScenario2Clicked}
-            buttonName1={"French Scenario 1"}
-            buttonName2={"French Scenario 2"}
+          handleFrenchClicked={this.handleFrenchClicked}
+          handleSpanishClicked={this.handleSpanishClicked}
+          frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
+          spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
+          frenchScenarios={<Scenarios
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
+            buttonName1={"Getting around"}
+            buttonName2={"Eating out"}
           />}
         />
       ),
       FrenchQuiz: (
        <div>
         <Quiz
+         handleResults={this.handleResults}
+            storyState={this.state.story}
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
@@ -301,13 +343,17 @@ class ChooseLanguage extends Component {
           answer8_2={"Combien y-a-t-il?"}
           answer8_3={"Combien d'enfants avez-vous?"}
 
-        />
+          />
         </div>
       ),
 
-      FrenchQuiz2:(
+      FrenchQuiz2: (
         <div>
         <Quiz
+         handleResults={this.handleResults}
+            storyState={this.state.story}
+            handleScenario1Clicked={this.handleScenario1Clicked}
+            handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter in a restaurant"}
           scenario2={"You're seated at a table"}
@@ -366,21 +412,23 @@ class ChooseLanguage extends Component {
           answer8_2={"Mon ami règle l'addition"}
           answer8_3={"La lettre s'il vous plaît"}
         />
+
         </div>
       ),
       LanguageList: (
         <LanguageList
-          handleSpanishClicked = {this.handleSpanishClicked}
-          handleFrenchClicked = {this.handleFrenchClicked}
-          spanishImage={"https://image.ibb.co/d3XjxH/la_spanishflag.png"}
-          frenchImage={"https://image.ibb.co/e62jxH/la_frenchflag.png"}
+          handleSpanishClicked={this.handleSpanishClicked}
+          handleFrenchClicked={this.handleFrenchClicked}
+          handleRandomScenario={this.handleRandomScenario}
+          spanishImage={"https://image.ibb.co/ksvj1c/la_spanishflag.png"}
+          frenchImage={"https://image.ibb.co/hfnxMc/la_frenchflag.png"}
         />
       ),
     };
 
     return (
       <div>
-      {quizViews[this.decider()]}
+        {quizViews[this.decider()]}
       </div>
     )
   };

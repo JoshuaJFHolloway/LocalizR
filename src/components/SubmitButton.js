@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './styledComponents/submitButton';
+import Button from './styledComponents/quizButtons.js';
 
 const SubmitButton = props => {
   return (

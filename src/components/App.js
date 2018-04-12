@@ -3,8 +3,8 @@ import Headers from './Headers';
 import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from '../Callback/Callback'
-import { Route, Router } from 'react-router-dom';
-import DefButton from './styledComponents/defButton.js';
+import { Route } from 'react-router-dom';
+import NavButton from './styledComponents/navButtons.js';
 
 const auth = new Auth();
 
@@ -29,24 +29,32 @@ class App extends Component {
   }
 
   render() {
+
     if (!auth.isAuthenticated()) {
-      return <div class="homebackground">
-            <Headers />
-            <DefButton onClick={this.login.bind(this)}>
-              START YOUR JOURNEY
-            </DefButton>
-          </div>
-        ;
+      return (
+      <div>
+        <main>
+          <Headers/>
+          <NavButton onClick={this.login}>
+            <i class="material-icons">airplanemode_active</i>
+          </NavButton>
+        </main>
+      </div>
+      )
+
     } else {
       return (
-        <div class="quizbackground">
-        <DefButton onClick={this.logout.bind(this)}>
-          Log Out
-        </DefButton>
-        <ChooseLanguage/>
+        <div>
+          <main>
+            <NavButton onClick={this.logout}>
+              <i class="material-icons">airplanemode_inactive</i>
+            </NavButton>
+            <ChooseLanguage/>
+          </main>
         </div>
       )
     }
   };
 }
+
 export default App;
