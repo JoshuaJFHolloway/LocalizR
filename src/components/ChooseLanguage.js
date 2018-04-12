@@ -131,16 +131,16 @@ class ChooseLanguage extends Component {
       SpanishQuiz: (
         <div>
           <Quiz
-            handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
           scenario3={"You get your ticket"}
           scenario4={"You head for your train"}
-          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
+          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market so you check your map"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
           scenario7={"The stranger tells you to turn right and go straight"}
           scenario8={"You eventually make it to the market"}
@@ -159,11 +159,11 @@ class ChooseLanguage extends Component {
           question5={"Which way should you go?"}
           question6={"How do you ask where the market is?"}
           question7={"Which way should you go?"}
-          question8={"How do you ask how much something costs"}
-          answer1_1={"La estación de autobuses"}
-          answer1_2={"La parada de metro"}
-          correctAnswer1={"La estación de tren"}
-          answer1_3={"La Universidad"}
+          question8={"How do you ask how much something costs?"}
+          answer1_1={"A la estación de autobuses"}
+          answer1_2={"Al aeropuerto"}
+          correctAnswer1={"A la estación de tren"}
+          answer1_3={"A la universidad"}
           answer2_1={"Quiero comprar un coche"}
           correctAnswer2={"Quiero un billete de tren"}
           answer2_2={"Quiero un sitio en el tren"}
@@ -182,7 +182,7 @@ class ChooseLanguage extends Component {
           answer5_3={"Oeste"}
           answer6_1={"Dónde está el banco?"}
           correctAnswer6={"Dónde está el mercado?"}
-          answer6_2={"Dónde está la tienda"}
+          answer6_2={"Dónde está la tienda?"}
           answer6_3={"Dónde está la fuente?"}
           answer7_1={"Gire a la izquierda y siga recto"}
           correctAnswer7={"Gire a la derecha y siga recto"}
@@ -199,18 +199,18 @@ class ChooseLanguage extends Component {
       SpanishQuiz2: (
         <div>
         <Quiz
-         handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
-          scenario1={"You enter in a restaurant"}
+          scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
-          scenario3={"You're ready to order your main meal"}
+          scenario3={"You're ready to order your main meal and want to have fish"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
-          scenario7={"You said yes as you are still pekish"}
+          scenario7={"You say yes as you are still peckish"}
           scenario8={"You finish your dessert"}
           picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
           picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
@@ -221,12 +221,12 @@ class ChooseLanguage extends Component {
           picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
-          question2={"You want to order a glass of red wine"}
-          question3={"You decide to order Octopus"}
-          question4={"How would you complain when your food is cold??"}
-          question5={"You want to tell the waiter it tastes great"}
-          question6={"He askes you 'Quieres el postre?'"}
-          question7={"How would you ask for Ice Cream?"}
+          question2={"How do you order a glass of red wine?"}
+          question3={"Which of these is the right option?"}
+          question4={"How would you complain when your food is cold?"}
+          question5={"How do you tell the waiter it tastes great?"}
+          question6={"She asks you 'Quieres el postre?'. What does this mean?"}
+          question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Una mesa para cinco, por favor"}
           correctAnswer1={"Una mesa para dos, por favor"}
@@ -236,8 +236,8 @@ class ChooseLanguage extends Component {
           correctAnswer2={"Quiero una copa de vino tinto"}
           answer2_2={"Quiero una copa de vino blanco "}
           answer2_3={"Quiero una botella de vino tinto"}
-          answer3_1={"Pescado"}
-          correctAnswer3={"Pulpo"}
+          answer3_1={"Pulpo"}
+          correctAnswer3={"Pescado"}
           answer3_2={"Calamar"}
           answer3_3={"Arroz"}
           answer4_1={"Disculpe, la comida está caliente"}
@@ -251,7 +251,7 @@ class ChooseLanguage extends Component {
           answer6_1={"Do you want a drink?"}
           correctAnswer6={"Do you want dessert?"}
           answer6_2={"Do you want fruit?"}
-          answer6_3={"Do you want salt"}
+          answer6_3={"Do you want salt?"}
           answer7_1={"Quiero una servilleta"}
           correctAnswer7={"Quiero un helado"}
           answer7_2={"Quiero un pastel"}
@@ -281,16 +281,16 @@ class ChooseLanguage extends Component {
       FrenchQuiz: (
        <div>
         <Quiz
-         handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
           scenario3={"You get your ticket"}
           scenario4={"You head for your train"}
-          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
+          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market so you check your map"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
           scenario7={"The stranger tells you to turn right and go straight"}
           scenario8={"You eventually make it to the market"}
@@ -309,9 +309,9 @@ class ChooseLanguage extends Component {
           question5={"Which way should you go?"}
           question6={"How do you ask where the market is?"}
           question7={"Which way should you go?"}
-          question8={"How do you ask how much something costs"}
+          question8={"How do you ask how much something costs?"}
           answer1_1={"À l'arrêt de bus"}
-          answer1_2={"À la station de métro"}
+          answer1_2={"À l'aeroport"}
           correctAnswer1={"À la gare"}
           answer1_3={"À la caserne de pompiers"}
           answer2_1={"Combien coûte un train?"}
@@ -350,18 +350,18 @@ class ChooseLanguage extends Component {
       FrenchQuiz2: (
         <div>
         <Quiz
-         handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
-          scenario1={"You enter in a restaurant"}
+          scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
-          scenario3={"You're ready to order your main meal"}
+          scenario3={"You're ready to order your main meal and want to have fish"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
-          scenario7={"You said yes as you are still pekish"}
+          scenario7={"You say yes as you are still peckish"}
           scenario8={"You finish your dessert"}
           picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
           picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
@@ -372,12 +372,12 @@ class ChooseLanguage extends Component {
           picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
-          question2={"You want to order a glass of red wine.."}
-          question3={"You decide to order Octopus"}
-          question4={"How would you complain when your food is cold??"}
-          question5={"You want to tell the waiter it tastes great"}
-          question6={"He askes you 'Voulez-vous un dessert?'"}
-          question7={"How would you ask for Ice Cream?"}
+          question2={"How do you order a glass of red wine?"}
+          question3={"Which of these is the right option?"}
+          question4={"How would you complain when your food is cold?"}
+          question5={"How do you tell the waiter it tastes great?"}
+          question6={"She asks you 'Voulez-vous un dessert?'. What does this mean?"}
+          question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Une table pour cinq personnes s'il vous plaît"}
           correctAnswer1={"Une table pour deux personnes s'il vous plaît"}
@@ -387,8 +387,8 @@ class ChooseLanguage extends Component {
           correctAnswer2={"J'aimerais un verre de vin rouge"}
           answer2_2={"J'aimerais un verre de vin blanc "}
           answer2_3={"J'aimerais une bouteille de vin rouge"}
-          answer3_1={"Le poisson"}
-          correctAnswer3={"Le poulpe"}
+          answer3_1={"Le poulpe"}
+          correctAnswer3={"Le poisson"}
           answer3_2={"Les boulettes de viande"}
           answer3_3={"Le riz"}
           answer4_1={"Excusez-moi, la nourriture est chaude"}
@@ -402,7 +402,7 @@ class ChooseLanguage extends Component {
           answer6_1={"Do you want a drink?"}
           correctAnswer6={"Do you want dessert?"}
           answer6_2={"Do you want fruit?"}
-          answer6_3={"Do you want salt"}
+          answer6_3={"Do you want salt?"}
           answer7_1={"J'aimerais une serviette"}
           correctAnswer7={"J'aimerais une glace"}
           answer7_2={"J'aimerais un gâteau"}
