@@ -160,7 +160,7 @@ class ChooseLanguage extends Component {
           question6={"How do you ask where the market is?"}
           question7={"Which way should you go?"}
           question8={"How do you ask how much something costs?"}
-          answer1_1={"La estación de autobuses"}
+          answer1_1={"A la estación de autobuses"}
           answer1_2={"Al aeropuerto"}
           correctAnswer1={"A la estación de tren"}
           answer1_3={"A la universidad"}
@@ -224,7 +224,7 @@ class ChooseLanguage extends Component {
           question2={"How do you order a glass of red wine?"}
           question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold?"}
-          question5={"You want to tell the waiter it tastes great"}
+          question5={"How do you tell the waiter it tastes great?"}
           question6={"She asks you 'Quieres el postre?'. What does this mean?"}
           question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
@@ -375,7 +375,7 @@ class ChooseLanguage extends Component {
           question2={"How do you order a glass of red wine?"}
           question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold??"}
-          question5={"You want to tell the waiter it tastes great"}
+          question5={"How do you tell the waiter it tastes great?"}
           question6={"She asks you 'Voulez-vous un dessert?'. What does this mean?"}
           question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
