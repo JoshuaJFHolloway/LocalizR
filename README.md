@@ -65,7 +65,7 @@ $ npm run start-dev
 
 __Minimum Viable Product__:
 
-- As a traveller, so I can learn useful phrases, I want to be able to practice a language.
+- As someone who travels often, so I can learn useful phrases, I want to be able to practice a language.
 
 __Features__:
 
@@ -86,6 +86,13 @@ __Extras__
 - As a user, so I can follow my story, I want to see the outcome of my answer.
 
 - As a user, so I can keep my account secure, I want to be able to sign out.
+
+<hr>
+
+## Future Additions
+
+We have two user stories that we were not able to complete in time. Both of which we will look to
+integrate into the project after the completion date (12th April)
 
 - As a user, so I can improve my pronunciation, I want to be able to hear example audio.
 
