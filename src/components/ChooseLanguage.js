@@ -182,7 +182,7 @@ class ChooseLanguage extends Component {
           answer5_3={"Oeste"}
           answer6_1={"Dónde está el banco?"}
           correctAnswer6={"Dónde está el mercado?"}
-          answer6_2={"Dónde está la tienda"}
+          answer6_2={"Dónde está la tienda?"}
           answer6_3={"Dónde está la fuente?"}
           answer7_1={"Gire a la izquierda y siga recto"}
           correctAnswer7={"Gire a la derecha y siga recto"}
@@ -225,7 +225,7 @@ class ChooseLanguage extends Component {
           question3={"You decide to order Octopus"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
-          question6={"He askes you 'Quieres el postre?'"}
+          question6={"He asks you 'Quieres el postre?'"}
           question7={"How would you ask for Ice Cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Una mesa para cinco, por favor"}
