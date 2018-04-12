@@ -161,7 +161,7 @@ class ChooseLanguage extends Component {
           question7={"Which way should you go?"}
           question8={"How do you ask how much something costs?"}
           answer1_1={"La estación de autobuses"}
-          answer1_2={"La parada de metro"}
+          answer1_2={"El aeropuerto"}
           correctAnswer1={"La estación de tren"}
           answer1_3={"La Universidad"}
           answer2_1={"Quiero comprar un coche"}
@@ -311,7 +311,7 @@ class ChooseLanguage extends Component {
           question7={"Which way should you go?"}
           question8={"How do you ask how much something costs?"}
           answer1_1={"À l'arrêt de bus"}
-          answer1_2={"À la station de métro"}
+          answer1_2={"À l'aeroport"}
           correctAnswer1={"À la gare"}
           answer1_3={"À la caserne de pompiers"}
           answer2_1={"Combien coûte un train?"}
