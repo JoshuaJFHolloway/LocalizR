@@ -7,7 +7,7 @@ const Headers = () => {
   return <div>
       <Header header={"LocalizR"} />
       <SubHeadIndex>
-      <SubHeader subHeader={"BE A TRAVELER, NOT A TOURIST!"} />
+      <SubHeader subHeader={"Be a traveler, not a tourist"} />
       </SubHeadIndex>
     </div>;
 };

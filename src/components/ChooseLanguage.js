@@ -123,8 +123,8 @@ class ChooseLanguage extends Component {
           spanishScenarios = {<Scenarios
             handleScenario1Clicked = {this.handleScenario1Clicked}
             handleScenario2Clicked = {this.handleScenario2Clicked}
-            buttonName1={"GETTING AROUND"}
-            buttonName2={"EATING OUT"}
+            buttonName1={"Getting around"}
+            buttonName2={"Eating out"}
           />}
         />
       ),
@@ -203,13 +203,13 @@ class ChooseLanguage extends Component {
             storyState={this.state.story}
             handleResults = {this.handleResults}
             handleDataSubmitted = {this.handleDataSubmitted}
-            scenario1={"You enter in a restaurant"}
+            scenario1={"You enter a restaurant"}
             scenario2={"You're seated at a table"}
             scenario3={"You're ready to order your main meal"}
             scenario4={"You're not happy with your food"}
             scenario5={"Your waiter brings you more food"}
             scenario6={"When you finish your food the waiter comes to your table"}
-            scenario7={"You said yes as you are still pekish"}
+            scenario7={"You said yes as you are still peckish"}
             scenario8={"You finish your dessert"}
             picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
             picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
@@ -220,12 +220,12 @@ class ChooseLanguage extends Component {
             picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
             picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
             question1={"How do you ask for a table for two?"}
-            question2={"You want to order a glass of red wine.."}
+            question2={"How do you order a glass of red wine"}
             question3={"You decide to order Octopus"}
-            question4={"How would you complain when your food is cold??"}
+            question4={"How would you complain when your food is cold?"}
             question5={"You want to tell the waiter it tastes great"}
             question6={"He askes you 'Quieres el postre?'"}
-            question7={"How would you ask for Ice Cream?"}
+            question7={"How would you ask for ice cream?"}
             question8={"How would you ask for the bill?"}
             answer1_1={"La parada de metro"}
             correctAnswer1={"La estacion de tren"}
@@ -349,13 +349,13 @@ class ChooseLanguage extends Component {
             storyState={this.state.story}
             handleResults = {this.handleResults}
             handleDataSubmitted = {this.handleDataSubmitted}
-            scenario1={"You enter in a restaurant"}
+            scenario1={"You enter a restaurant"}
             scenario2={"You're seated at a table"}
             scenario3={"You're ready to order your main meal"}
             scenario4={"You're not happy with your food"}
             scenario5={"Your waiter brings you more food"}
             scenario6={"When you finish your food the waiter comes to your table"}
-            scenario7={"You said yes as you are still pekish"}
+            scenario7={"You said yes as you are still peckish"}
             scenario8={"You finish your dessert"}
             picture1={"https://preview.ibb.co/cPrEXH/la_rest_pict1.jpg"}
             picture2={"https://preview.ibb.co/b3vmex/la_rest_pict2.jpg"}
@@ -366,12 +366,12 @@ class ChooseLanguage extends Component {
             picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
             picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
             question1={"How do you ask for a table for two?"}
-            question2={"You want to order a glass of red wine.."}
+            question2={"How do you order a glass of red wine.."}
             question3={"You decide to order Octopus"}
-            question4={"How would you complain when your food is cold??"}
+            question4={"How would you complain when your food is cold?"}
             question5={"You want to tell the waiter it tastes great"}
-            question6={"He askes you 'Voulez-vous un dessert?'"}
-            question7={"How would you ask for Ice Cream?"}
+            question6={"She askes you 'Voulez-vous un dessert?' What does this mean"}
+            question7={"How would you ask for ice cream?"}
             question8={"How would you ask for the bill?"}
             answer1_1={"table pour cinq personnes s'il vous plaît"}
             correctAnswer1={"table pour deux personnes s'il vous plaît"}
