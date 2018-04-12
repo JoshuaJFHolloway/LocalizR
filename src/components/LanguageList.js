@@ -14,7 +14,7 @@ const LanguageList = (props) => {
         flagImage={props.spanishImage}
       />
       <Picture
-        handleDataSubmitted={props.handleRandomScenario}
+        handlePictureClicked={props.handleRandomScenario}
         flagImage={"https://image.ibb.co/dJADBc/la_questionmark.png"}
       />
       <Picture
