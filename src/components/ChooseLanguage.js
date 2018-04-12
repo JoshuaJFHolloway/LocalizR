@@ -140,7 +140,7 @@ class ChooseLanguage extends Component {
           scenario2={"You arrive at the train station"}
           scenario3={"You get your ticket"}
           scenario4={"You head for your train"}
-          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
+          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market so you check your map"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
           scenario7={"The stranger tells you to turn right and go straight"}
           scenario8={"You eventually make it to the market"}
@@ -290,7 +290,7 @@ class ChooseLanguage extends Component {
           scenario2={"You arrive at the train station"}
           scenario3={"You get your ticket"}
           scenario4={"You head for your train"}
-          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
+          scenario5={"You take the train to your stop. Once you get off, you want to head towards the market so you check your map"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
           scenario7={"The stranger tells you to turn right and go straight"}
           scenario8={"You eventually make it to the market"}
