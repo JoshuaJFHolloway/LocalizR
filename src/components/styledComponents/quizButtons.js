@@ -8,9 +8,8 @@ const Button = styled.button `
   border: 5px inset grey;
   border-radius: 10px;
 
-  font-family: Neucha;
-  font-size: 20px;
-  font-variant: small-caps;
+  font-family: Cabin;
+  font-size: 15px;
   font-weight: 500;
 
   display: inline-grid;
