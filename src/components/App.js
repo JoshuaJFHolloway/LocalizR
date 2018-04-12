@@ -33,9 +33,6 @@ class App extends Component {
       return <div>
             <main>
             <Headers />
-            <IndexButton onClick={this.login.bind(this)}>
-              Start your journey
-            </IndexButton>
             <NavButton onClick={this.login.bind(this)}>
               <i class="material-icons">airplanemode_active</i>
             </NavButton>
@@ -46,9 +43,6 @@ class App extends Component {
       return (
         <div>
           <main>
-            <QuizButton onClick={this.logout.bind(this)}>
-              Log Out
-            </QuizButton>
             <NavButton onClick={this.logout.bind(this)}>
               <i class="material-icons">airplanemode_inactive</i>
             </NavButton>
