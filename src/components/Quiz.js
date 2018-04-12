@@ -162,6 +162,7 @@ class Quiz extends Component {
           handleAnswerSubmitted2 = {this.handleAnswerSubmitted2}
           handleAnswerSubmitted3 = {this.handleAnswerSubmitted3}
           handleRetryQuiz = {this.props.handleResults}
+          french = {this.state.french}
           />
       ),
         QuizQ1: (
