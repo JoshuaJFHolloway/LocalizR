@@ -1,7 +1,6 @@
 import React from 'react';
 import Picture from './Picture'
 import SubHeader from './SubHeader'
-import SubmitButton from './SubmitButton'
 
 const LanguageList = (props) => {
   return (
