@@ -17,58 +17,131 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <SubHeader
-          subHeader="Nice one, your score is undefined"
-/>,
-        <SubmitButton
-          buttonName="Languages Page"
-          handleDataSubmitted={undefined}
-/>,
-        <SubmitButton
-          buttonName="Retry Quiz"
-          handleDataSubmitted={undefined}
-/>,
-      ],
+      "children": <div>
+        <styled.text>
+                <SubHeader
+                        subHeader="Your score is undefined"
+                />
+                <p
+                        id="outputMessage"
+                >
+                        Perfect score! How many times have you played this scenario?!
+                </p>
+                <SubmitButton
+                        buttonName="Try another quiz"
+                        handleDataSubmitted={undefined}
+                />
+                <SubmitButton
+                        buttonName="See your results"
+                        handleDataSubmitted={undefined}
+                />
+        </styled.text>
+</div>,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <styled.text>
+          <SubHeader
+                    subHeader="Your score is undefined"
+          />
+          <p
+                    id="outputMessage"
+          >
+                    Perfect score! How many times have you played this scenario?!
+          </p>
+          <SubmitButton
+                    buttonName="Try another quiz"
+                    handleDataSubmitted={undefined}
+          />
+          <SubmitButton
+                    buttonName="See your results"
+                    handleDataSubmitted={undefined}
+          />
+</styled.text>,
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "subHeader": "Nice one, your score is undefined",
+          "children": Array [
+            <SubHeader
+              subHeader="Your score is undefined"
+/>,
+            <p
+              id="outputMessage"
+>
+              Perfect score! How many times have you played this scenario?!
+</p>,
+            <SubmitButton
+              buttonName="Try another quiz"
+              handleDataSubmitted={undefined}
+/>,
+            <SubmitButton
+              buttonName="See your results"
+              handleDataSubmitted={undefined}
+/>,
+          ],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "subHeader": "Your score is undefined",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Perfect score! How many times have you played this scenario?!",
+              "id": "outputMessage",
+            },
+            "ref": null,
+            "rendered": "Perfect score! How many times have you played this scenario?!",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "buttonName": "Try another quiz",
+              "handleDataSubmitted": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "buttonName": "See your results",
+              "handleDataSubmitted": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "buttonName": "Languages Page",
-          "handleDataSubmitted": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "buttonName": "Retry Quiz",
-          "handleDataSubmitted": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
+      "type": "div",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -77,58 +150,131 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <SubHeader
-            subHeader="Nice one, your score is undefined"
-/>,
-          <SubmitButton
-            buttonName="Languages Page"
-            handleDataSubmitted={undefined}
-/>,
-          <SubmitButton
-            buttonName="Retry Quiz"
-            handleDataSubmitted={undefined}
-/>,
-        ],
+        "children": <div>
+          <styled.text>
+                    <SubHeader
+                              subHeader="Your score is undefined"
+                    />
+                    <p
+                              id="outputMessage"
+                    >
+                              Perfect score! How many times have you played this scenario?!
+                    </p>
+                    <SubmitButton
+                              buttonName="Try another quiz"
+                              handleDataSubmitted={undefined}
+                    />
+                    <SubmitButton
+                              buttonName="See your results"
+                              handleDataSubmitted={undefined}
+                    />
+          </styled.text>
+</div>,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.text>
+            <SubHeader
+                        subHeader="Your score is undefined"
+            />
+            <p
+                        id="outputMessage"
+            >
+                        Perfect score! How many times have you played this scenario?!
+            </p>
+            <SubmitButton
+                        buttonName="Try another quiz"
+                        handleDataSubmitted={undefined}
+            />
+            <SubmitButton
+                        buttonName="See your results"
+                        handleDataSubmitted={undefined}
+            />
+</styled.text>,
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "subHeader": "Nice one, your score is undefined",
+            "children": Array [
+              <SubHeader
+                subHeader="Your score is undefined"
+/>,
+              <p
+                id="outputMessage"
+>
+                Perfect score! How many times have you played this scenario?!
+</p>,
+              <SubmitButton
+                buttonName="Try another quiz"
+                handleDataSubmitted={undefined}
+/>,
+              <SubmitButton
+                buttonName="See your results"
+                handleDataSubmitted={undefined}
+/>,
+            ],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "subHeader": "Your score is undefined",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Perfect score! How many times have you played this scenario?!",
+                "id": "outputMessage",
+              },
+              "ref": null,
+              "rendered": "Perfect score! How many times have you played this scenario?!",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "buttonName": "Try another quiz",
+                "handleDataSubmitted": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "buttonName": "See your results",
+                "handleDataSubmitted": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "buttonName": "Languages Page",
-            "handleDataSubmitted": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "buttonName": "Retry Quiz",
-            "handleDataSubmitted": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

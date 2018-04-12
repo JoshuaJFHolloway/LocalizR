@@ -15,7 +15,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
         " ",
@@ -24,6 +24,7 @@ ShallowWrapper {
       ],
       "id": "submitButton",
       "onClick": undefined,
+      "style": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -31,13 +32,13 @@ ShallowWrapper {
       undefined,
       " ",
     ],
-    "type": "button",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           " ",
@@ -46,6 +47,7 @@ ShallowWrapper {
         ],
         "id": "submitButton",
         "onClick": undefined,
+        "style": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -53,7 +55,7 @@ ShallowWrapper {
         undefined,
         " ",
       ],
-      "type": "button",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -18,7 +18,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <LanguageList
-        handlePictureClicked={[Function]}
+        frenchImage="https://image.ibb.co/hfnxMc/la_frenchflag.png"
+        handleFrenchClicked={[Function]}
+        handleRandomScenario={[Function]}
+        handleSpanishClicked={[Function]}
+        spanishImage="https://image.ibb.co/ksvj1c/la_spanishflag.png"
 />,
     },
     "ref": null,
@@ -27,7 +31,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "handlePictureClicked": [Function],
+        "frenchImage": "https://image.ibb.co/hfnxMc/la_frenchflag.png",
+        "handleFrenchClicked": [Function],
+        "handleRandomScenario": [Function],
+        "handleSpanishClicked": [Function],
+        "spanishImage": "https://image.ibb.co/ksvj1c/la_spanishflag.png",
       },
       "ref": null,
       "rendered": null,
@@ -42,7 +50,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <LanguageList
-          handlePictureClicked={[Function]}
+          frenchImage="https://image.ibb.co/hfnxMc/la_frenchflag.png"
+          handleFrenchClicked={[Function]}
+          handleRandomScenario={[Function]}
+          handleSpanishClicked={[Function]}
+          spanishImage="https://image.ibb.co/ksvj1c/la_spanishflag.png"
 />,
       },
       "ref": null,
@@ -51,7 +63,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handlePictureClicked": [Function],
+          "frenchImage": "https://image.ibb.co/hfnxMc/la_frenchflag.png",
+          "handleFrenchClicked": [Function],
+          "handleRandomScenario": [Function],
+          "handleSpanishClicked": [Function],
+          "spanishImage": "https://image.ibb.co/ksvj1c/la_spanishflag.png",
         },
         "ref": null,
         "rendered": null,

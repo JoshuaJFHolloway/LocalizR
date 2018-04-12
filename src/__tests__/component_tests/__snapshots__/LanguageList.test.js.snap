@@ -22,8 +22,18 @@ ShallowWrapper {
           subHeader="Choose your language!"
 />,
         <Picture
+          flagImage={undefined}
           handlePictureClicked={undefined}
 />,
+        <Picture
+          flagImage="https://image.ibb.co/dJADBc/la_questionmark.png"
+          handlePictureClicked={undefined}
+/>,
+        <Picture
+          flagImage={undefined}
+          handlePictureClicked={undefined}
+/>,
+        undefined,
         undefined,
       ],
     },
@@ -45,12 +55,38 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "flagImage": undefined,
           "handlePictureClicked": undefined,
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "flagImage": "https://image.ibb.co/dJADBc/la_questionmark.png",
+          "handlePictureClicked": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "flagImage": undefined,
+          "handlePictureClicked": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      undefined,
       undefined,
     ],
     "type": "div",
@@ -66,8 +102,18 @@ ShallowWrapper {
             subHeader="Choose your language!"
 />,
           <Picture
+            flagImage={undefined}
             handlePictureClicked={undefined}
 />,
+          <Picture
+            flagImage="https://image.ibb.co/dJADBc/la_questionmark.png"
+            handlePictureClicked={undefined}
+/>,
+          <Picture
+            flagImage={undefined}
+            handlePictureClicked={undefined}
+/>,
+          undefined,
           undefined,
         ],
       },
@@ -89,12 +135,38 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "flagImage": undefined,
             "handlePictureClicked": undefined,
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "flagImage": "https://image.ibb.co/dJADBc/la_questionmark.png",
+            "handlePictureClicked": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "flagImage": undefined,
+            "handlePictureClicked": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        undefined,
         undefined,
       ],
       "type": "div",
