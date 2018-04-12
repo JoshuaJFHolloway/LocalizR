@@ -138,8 +138,8 @@ class ChooseLanguage extends Component {
           spanishScenarios={<Scenarios
             handleScenario1Clicked={this.handleScenario1Clicked}
             handleScenario2Clicked={this.handleScenario2Clicked}
-            buttonName1={"Spanish: Getting around"}
-            buttonName2={"Spanish: Eating out"}
+            buttonName1={"Spanish: Travelling"}
+            buttonName2={"Spanish: Eating at a restaurant"}
           />}
         />
       ),
@@ -294,8 +294,8 @@ class ChooseLanguage extends Component {
           frenchScenarios={<Scenarios
             handleScenario1Clicked={this.handleScenario1Clicked}
             handleScenario2Clicked={this.handleScenario2Clicked}
-            buttonName1={"French: Getting around"}
-            buttonName2={"French: Eating out"}
+            buttonName1={"French: Travelling"}
+            buttonName2={"French: Eating at a restaurant"}
           />}
         />
       ),
