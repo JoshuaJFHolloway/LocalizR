@@ -108,7 +108,7 @@ class ChooseLanguage extends Component {
           scenario4={"You head for your train"}
           scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
-          scenario7={"The stranger tells you 'turn right and go straight'"}
+          scenario7={"The stranger tells you to turn right and go straight"}
           scenario8={"You eventually make it to the market"}
           picture1={"https://image.ibb.co/nKgejx/la_town_pict1.jpg"}
           picture2={"https://preview.ibb.co/n1Uezx/la_town_pict2.jpg"}
@@ -190,14 +190,14 @@ class ChooseLanguage extends Component {
           question6={"He askes you 'Quieres el postre?'"}
           question7={"How would you ask for Ice Cream?"}
           question8={"How would you ask for the bill?"}
+          answer1_1={"Una mesa para cinco, por favor"}
+          correctAnswer1={"Una mesa para dos, por favor"}
+          answer1_2={"Una silla para dos, por favor "}
+          answer1_3={"Una carta para dos, por favor"}
           answer2_1={"Quiero un vaso de agua"}
           correctAnswer2={"Quiero una copa de vino tinto"}
           answer2_2={"Quiero una copa de vino blanco "}
-          answer2_3={"Quiero un vaso de vino tinto"}
-          answer2_1={"Quiero un vaso de agua"}
-          correctAnswer2={"Quiero una copa de vino tinto"}
-          answer2_2={"Quiero una copa de vino blanco "}
-          answer2_3={"Quiero un vaso de vino tinto"}
+          answer2_3={"Quiero una botella de vino tinto"}
           answer3_1={"Pescado"}
           correctAnswer3={"Pulpo"}
           answer3_2={"Calamar"}
@@ -250,7 +250,7 @@ class ChooseLanguage extends Component {
           scenario4={"You head for your train"}
           scenario5={"You take the train to your stop. Once you get off, you want to head towards the market"}
           scenario6={"You get lost and stop to ask a stranger for directions"}
-          scenario7={"The stranger replies tells you turn right and go straight"}
+          scenario7={"The stranger tells you to turn right and go straight"}
           scenario8={"You eventually make it to the market"}
           picture1={"https://image.ibb.co/nKgejx/la_town_pict1.jpg"}
           picture2={"https://preview.ibb.co/n1Uezx/la_town_pict2.jpg"}
