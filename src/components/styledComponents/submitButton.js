@@ -9,6 +9,8 @@ const Button = styled.button `
   border: 5px inset grey;
   border-radius: 10px;
   display: inline-grid;
+  vertical-align: top;
+  justify-content: space-evenly;
 `;
 
 export default Button;

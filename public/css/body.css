@@ -1,18 +1,30 @@
 body {
   font-family: Cabin;
-  background: radial-gradient(navy, black);
+  background: radial-gradient(white, navy, black);
   background-size: cover;
   height: 100vh;
   margin: 100px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #ffffff;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
 
+main {
+  margin: auto;
+  width: 800px;
+  height: 70%;
+  background:rgba(255,255,255, 0.2);
+  border: 5px inset midnightblue;
+  box-shadow: 5px 10px 10px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
 /* main {
+background: rgba(0, 0, 0, 0.4);
   display: inline-grid;
   grid-template-rows: 180px 1fr;
 } */
@@ -48,13 +60,13 @@ body {
 } */
 
 .quizimage {
-  width:300px;
-  height:300px;
+  width:400px;
+  height:400px;
   object-fit: cover;
   background-size: cover;
   background-position: bottom;
   padding-bottom: 0px;
-  border: 7px double LightSkyBlue;
+  border: 7px double white;
   border-radius: 20px;
 {
 

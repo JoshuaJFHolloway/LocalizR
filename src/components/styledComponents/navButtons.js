@@ -2,14 +2,11 @@ import styled from 'styled-components';
 
 const NavButton = styled.button `
   background-color: rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: Righteous;
-  font-size: 15px;
-  font-weight: 600;
+  color: #000000;
   margin: 10px;
-  width: 50px;
-  height: 50px;
-  border: 5px inset grey;
+  width: 70px;
+  height: 70px;
+  border: 5px inset black;
   border-radius: 10px;
   display: inline-block;
   justify-content: space-evenly;
