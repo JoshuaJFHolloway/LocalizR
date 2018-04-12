@@ -13,9 +13,9 @@ const LanguageList = (props) => {
         handlePictureClicked={props.handleSpanishClicked}
         flagImage={props.spanishImage}
       />
-      <SubmitButton
-        buttonName={"Pick me a random scenario"}
+      <Picture
         handleDataSubmitted={props.handleRandomScenario}
+        flagImage={"https://image.ibb.co/dJADBc/la_questionmark.png"}
       />
       <Picture
         handlePictureClicked={props.handleFrenchClicked}

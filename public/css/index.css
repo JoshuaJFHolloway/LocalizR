@@ -10,7 +10,7 @@ html, body {
   /* font style */
   font-family: Cabin;
   text-align: center;
-  color: black;
+  color: white;
   /* font & browser compatibility */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +18,8 @@ html, body {
 
 main {
   /* box opacity */
-  background:rgba(255,255,255, 0.8);
+  background: transparent;
+  /* background:rgba(255,255,255, 0.8); */
   /* position in relation to background, and content styling */
   margin: auto;
   padding: 25px;
@@ -26,7 +27,7 @@ main {
   width: 800px;
   /* border and shadow */
   border: 5px inset black;
-  box-shadow: 5px 10px 10px;
+  box-shadow: 5px 10px 10px black;
   border-radius: 10px;
 }
 

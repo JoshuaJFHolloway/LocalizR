@@ -36,7 +36,7 @@ class App extends Component {
         <main>
           <Headers/>
           <NavButton onClick={this.login}>
-            <i class="material-icons">airplanemode_active</i>
+            <i class="material-icons">airplanemode_active</i>Login
           </NavButton>
         </main>
       </div>
@@ -47,7 +47,7 @@ class App extends Component {
         <div>
           <main>
             <NavButton onClick={this.logout}>
-              <i class="material-icons">airplanemode_inactive</i>
+              <i class="material-icons">airplanemode_inactive</i>Logout
             </NavButton>
             <ChooseLanguage/>
           </main>
