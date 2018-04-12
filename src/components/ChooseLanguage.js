@@ -206,7 +206,7 @@ class ChooseLanguage extends Component {
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
-          scenario3={"You're ready to order your main meal and want to have Octopus"}
+          scenario3={"You're ready to order your main meal and want to have fish"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
