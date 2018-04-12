@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import SubHeader from './SubHeader'
 import SubmitButton from './SubmitButton';
 import Story from './Story';
 
 class ResultsPage extends Component {
-  constructor(){
+  constructor() {
     super()
   }
 
-  decider (){
-    if(this.props.storyState === true) {
+  decider() {
+    if (this.props.storyState === true) {
       return 'Story';
     } else return 'ResultsPage';
   };
@@ -23,31 +23,34 @@ class ResultsPage extends Component {
       return (
         this.randomnChoice(worstScore)
       );
-    } if (this.props.score > 0 && this.props.score <= 3) {
+    }
+    if (this.props.score > 0 && this.props.score <= 3) {
       return (
         this.randomnChoice(badScore)
       );
-    } if (this.props.score === 4) {
+    }
+    if (this.props.score === 4) {
       return (
         this.randomnChoice(averageScore)
       );
-    } if (this.props.score > 4 && this.props.score <= 7) {
+    }
+    if (this.props.score > 4 && this.props.score <= 7) {
       return (
         this.randomnChoice(goodScore)
       );
     } else return (
-        this.randomnChoice(perfectScore)
+      this.randomnChoice(perfectScore)
     )
   };
 
   whatLanguage = () => {
-    if(this.props.french === true) {
+    if (this.props.french === true) {
       return "French"
     } else return "Spanish"
   };
 
 
-  render(){
+  render() {
 
     const worstScore = [
       'Your ' + this.whatLanguage() + " is abysmal. But that's okay! Play more!",
@@ -107,10 +110,10 @@ class ResultsPage extends Component {
       ),
     };
 
-      return (
-        <div>
+    return (
+      <div>
         {Views[this.decider()]}
-        </div>
+      </div>
     )
   }
 }

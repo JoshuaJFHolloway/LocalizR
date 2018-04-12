@@ -6,15 +6,15 @@ const Scenarios = props => {
   return (
     <div>
       <SubHeader
-        subHeader = {"Choose your scenario"}
+        subHeader={"Choose your scenario"}
       />
       <SubmitButton
-        buttonName = {props.buttonName1}
-        handleDataSubmitted = {props.handleScenario1Clicked}
+        buttonName={props.buttonName1}
+        handleDataSubmitted={props.handleScenario1Clicked}
       />
       <SubmitButton
-        buttonName = {props.buttonName2}
-        handleDataSubmitted = {props.handleScenario2Clicked}
+        buttonName={props.buttonName2}
+        handleDataSubmitted={props.handleScenario2Clicked}
       />
     </div>
   );

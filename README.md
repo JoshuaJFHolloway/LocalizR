@@ -6,7 +6,7 @@ Welcome to the repo for our final project at Makers Academy! Our application is 
 
 __DESIGNED BY__:
 - Joshua Holloway
-- Hannah Hillis
+- Hannah Lillis
 - Kaari Strack
 - Magyar-Hunor Tamas
 - Jenny Arenas Marin
@@ -29,6 +29,8 @@ __Back End__:
 
 __TDD__:
 - Jest
+- Enzyme
+- Cypress
 
 <hr>
 
