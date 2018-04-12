@@ -225,7 +225,7 @@ class ChooseLanguage extends Component {
           question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold?"}
           question5={"You want to tell the waiter it tastes great"}
-          question6={"She asks you 'Quieres el postre?'"}
+          question6={"She asks you 'Quieres el postre?'. What does this mean?"}
           question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Una mesa para cinco, por favor"}
@@ -251,7 +251,7 @@ class ChooseLanguage extends Component {
           answer6_1={"Do you want a drink?"}
           correctAnswer6={"Do you want dessert?"}
           answer6_2={"Do you want fruit?"}
-          answer6_3={"Do you want salt"}
+          answer6_3={"Do you want salt?"}
           answer7_1={"Quiero una servilleta"}
           correctAnswer7={"Quiero un helado"}
           answer7_2={"Quiero un pastel"}
@@ -376,7 +376,7 @@ class ChooseLanguage extends Component {
           question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
-          question6={"She asks you 'Voulez-vous un dessert?'"}
+          question6={"She asks you 'Voulez-vous un dessert?'. What does this mean?"}
           question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Une table pour cinq personnes s'il vous plaît"}
@@ -402,7 +402,7 @@ class ChooseLanguage extends Component {
           answer6_1={"Do you want a drink?"}
           correctAnswer6={"Do you want dessert?"}
           answer6_2={"Do you want fruit?"}
-          answer6_3={"Do you want salt"}
+          answer6_3={"Do you want salt?"}
           answer7_1={"J'aimerais une serviette"}
           correctAnswer7={"J'aimerais une glace"}
           answer7_2={"J'aimerais un gâteau"}
