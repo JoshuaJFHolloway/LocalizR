@@ -160,7 +160,9 @@ class Quiz extends Component {
           handleAnswerSubmitted2={this.handleAnswerSubmitted2}
           handleAnswerSubmitted3={this.handleAnswerSubmitted3}
           handleRetryQuiz={this.props.handleResults}
-          french={this.state.french}
+          french={this.props.french}
+          frenchScen1={this.props.frenchscen1}
+          frenchScen2={this.props.frenchscen2}
         />
       ),
       QuizQ1: (
@@ -299,4 +301,4 @@ class Quiz extends Component {
   }
 }
 
-export default Quiz;
+export default Quiz

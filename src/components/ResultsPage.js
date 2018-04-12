@@ -45,7 +45,9 @@ class ResultsPage extends Component {
   };
 
   whatLanguage = () => {
-    if (this.props.french === true) {
+    if (this.props.french === true && this.props.frenchScen1 === true) {
+      return "French"
+    } if (this.props.french === true && this.props.frenchScen2 === true) {
       return "French"
     } else return "Spanish"
   };
@@ -82,19 +84,19 @@ class ResultsPage extends Component {
       ResultsPage: (
         <div>
           <Text>
-          <SubHeader
-            subHeader={"Your score is " + this.props.score}/>
-          <p id="outputMessage">
-            {this.stringPrinter(worstScore, badScore, averageScore, goodScore, perfectScore)}
-          </p>
-          <SubmitButton
-            buttonName={"Try another quiz"}
-            handleDataSubmitted={this.props.handleDataSubmitted}
-          />
-          <SubmitButton
-            buttonName={"See your results"}
-            handleDataSubmitted={this.props.handleRetryQuiz}
-          />
+            <SubHeader
+              subHeader={"Your score is " + this.props.score}/>
+            <p id="outputMessage">
+              {this.stringPrinter(worstScore, badScore, averageScore, goodScore, perfectScore)}
+            </p>
+            <SubmitButton
+              buttonName={"Try another quiz"}
+              handleDataSubmitted={this.props.handleDataSubmitted}
+            />
+            <SubmitButton
+              buttonName={"See your results"}
+              handleDataSubmitted={this.props.handleRetryQuiz}
+            />
           </Text>
         </div>
       ),
