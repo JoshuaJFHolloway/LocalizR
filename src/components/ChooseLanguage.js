@@ -173,7 +173,7 @@ class ChooseLanguage extends Component {
             question1={"Where are you going?"}
             question2={"How do you ask for a ticket?"}
             question3={"How do you ask how long the journey will take?"}
-            question4={"Which platform do you need?"}
+            question4={"Which of these is platform 7?"}
             question5={"Which way should you go?"}
             question6={"How do you ask where the market is?"}
             question7={"Which way should you go?"}
@@ -329,7 +329,7 @@ class ChooseLanguage extends Component {
             question1={"Where are you going?"}
             question2={"How do you ask for a ticket?"}
             question3={"How do you ask how long the journey will take?"}
-            question4={"Which platform do you need?"}
+            question4={"Which of these is platform 7?"}
             question5={"Which way should you go?"}
             question6={"How do you ask where the market is?"}
             question7={"Which way should you go?"}

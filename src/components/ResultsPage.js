@@ -62,7 +62,7 @@ class ResultsPage extends Component {
 
     const badScore = [
       "Okay, your " + this.whatLanguage() + " could be worse. Your learning starts here! Check out your results!",
-      "Dont worry about it. Just repeat these scenarios and drill in those answers!"
+      "Don't worry about it. Just repeat these scenarios and drill in those answers!"
     ];
 
     const averageScore = [
