@@ -221,7 +221,7 @@ class ChooseLanguage extends Component {
           picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
-          question2={"You want to order a glass of red wine"}
+          question2={"How do you order a glass of red wine?"}
           question3={"You decide to order Octopus"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
@@ -372,7 +372,7 @@ class ChooseLanguage extends Component {
           picture7={"https://preview.ibb.co/d6yWxH/la_rest_pict7.jpg"}
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
-          question2={"You want to order a glass of red wine.."}
+          question2={"How do you order a glass of red wine?"}
           question3={"You decide to order Octopus"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
