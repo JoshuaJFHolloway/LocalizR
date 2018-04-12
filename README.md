@@ -1,4 +1,4 @@
-# LocalizR! :es:
+# LocalizR!
 
 <img align="right" src="" width="450"/>
 
