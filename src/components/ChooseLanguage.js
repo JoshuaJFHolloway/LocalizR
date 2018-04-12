@@ -161,9 +161,9 @@ class ChooseLanguage extends Component {
           question7={"Which way should you go?"}
           question8={"How do you ask how much something costs?"}
           answer1_1={"La estación de autobuses"}
-          answer1_2={"El aeropuerto"}
-          correctAnswer1={"La estación de tren"}
-          answer1_3={"La Universidad"}
+          answer1_2={"Al aeropuerto"}
+          correctAnswer1={"A la estación de tren"}
+          answer1_3={"A la universidad"}
           answer2_1={"Quiero comprar un coche"}
           correctAnswer2={"Quiero un billete de tren"}
           answer2_2={"Quiero un sitio en el tren"}
