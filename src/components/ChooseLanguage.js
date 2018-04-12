@@ -206,7 +206,7 @@ class ChooseLanguage extends Component {
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
-          scenario3={"You're ready to order your main meal"}
+          scenario3={"You're ready to order your main meal and want to have Octopus"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
@@ -222,8 +222,8 @@ class ChooseLanguage extends Component {
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
           question2={"How do you order a glass of red wine?"}
-          question3={"You decide to order Octopus"}
-          question4={"How would you complain when your food is cold??"}
+          question3={"Which of these is the right option?"}
+          question4={"How would you complain when your food is cold?"}
           question5={"You want to tell the waiter it tastes great"}
           question6={"He asks you 'Quieres el postre?'"}
           question7={"How would you ask for Ice Cream?"}
@@ -357,7 +357,7 @@ class ChooseLanguage extends Component {
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
-          scenario3={"You're ready to order your main meal"}
+          scenario3={"You're ready to order your main meal and want to have Octopus"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
@@ -373,7 +373,7 @@ class ChooseLanguage extends Component {
           picture8={"https://preview.ibb.co/kRLKzx/la_rest_pict8.jpg"}
           question1={"How do you ask for a table for two?"}
           question2={"How do you order a glass of red wine?"}
-          question3={"You decide to order Octopus"}
+          question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
           question6={"He askes you 'Voulez-vous un dessert?'"}
