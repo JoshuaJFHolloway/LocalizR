@@ -1,9 +1,9 @@
 import React from 'react';
-import Subhead from './styledComponents/subheads.js';
+import LargeText from './styledComponents/subHeaders.js';
 
 const SubHeader = (props) => {
   return (
-    <Subhead>{props.subHeader}</Subhead>
+    <LargeText>{props.subHeader}</LargeText>
   );
 };
 

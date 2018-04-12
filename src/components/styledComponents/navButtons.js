@@ -6,7 +6,7 @@ const NavButton = styled.button `
   margin: 10px;
   width: 70px;
   height: 70px;
-  border: 5px inset black;
+  border: 5px inset grey;
   border-radius: 10px;
   display: inline-block;
   justify-content: space-evenly;
@@ -14,7 +14,7 @@ const NavButton = styled.button `
   webkit-transition: 0.5s;
 
   &:hover {
-    border: 5px double white;
+    border: 5px double black;
   }
 `;
 

@@ -1,0 +1,35 @@
+body {
+  font-family: Neucha;
+  background: radial-gradient(darkblue, black);
+  background-size: cover;
+  height: 100vh;
+  margin: 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  width: 800px;
+  height: 70%;
+  background:rgba(255,255,255, 0.8);
+  border: 5px inset black;
+  box-shadow: 5px 10px 10px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.quizimage {
+  width:400px;
+  height:400px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 0px;
+  border: 3px ridge grey;
+  border-radius: 20px;
+{
