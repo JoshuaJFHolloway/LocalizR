@@ -131,10 +131,10 @@ class ChooseLanguage extends Component {
       SpanishQuiz: (
         <div>
           <Quiz
-            handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
@@ -199,10 +199,10 @@ class ChooseLanguage extends Component {
       SpanishQuiz2: (
         <div>
         <Quiz
-         handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
@@ -281,10 +281,10 @@ class ChooseLanguage extends Component {
       FrenchQuiz: (
        <div>
         <Quiz
-         handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You leave your house and start following these signs"}
           scenario2={"You arrive at the train station"}
@@ -350,10 +350,10 @@ class ChooseLanguage extends Component {
       FrenchQuiz2: (
         <div>
         <Quiz
-         handleResults={this.handleResults}
-            storyState={this.state.story}
-            handleScenario1Clicked={this.handleScenario1Clicked}
-            handleScenario2Clicked={this.handleScenario2Clicked}
+          handleResults={this.handleResults}
+          storyState={this.state.story}
+          handleScenario1Clicked={this.handleScenario1Clicked}
+          handleScenario2Clicked={this.handleScenario2Clicked}
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
@@ -374,7 +374,7 @@ class ChooseLanguage extends Component {
           question1={"How do you ask for a table for two?"}
           question2={"How do you order a glass of red wine?"}
           question3={"Which of these is the right option?"}
-          question4={"How would you complain when your food is cold??"}
+          question4={"How would you complain when your food is cold?"}
           question5={"How do you tell the waiter it tastes great?"}
           question6={"She asks you 'Voulez-vous un dessert?'. What does this mean?"}
           question7={"How would you ask for ice cream?"}
