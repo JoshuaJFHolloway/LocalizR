@@ -35,7 +35,7 @@ class App extends Component {
             <main>
             <Headers />
             <IndexButton onClick={this.login.bind(this)}>
-              START YOUR JOURNEY
+              Start your journey
             </IndexButton>
             </main>
           </div>
@@ -45,7 +45,7 @@ class App extends Component {
         <div>
           <main>
             <QuizButton onClick={this.logout.bind(this)}>
-              LOG OUT
+              Log Out
             </QuizButton>
             <ChooseLanguage/>
         </main>
