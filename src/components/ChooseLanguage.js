@@ -225,8 +225,8 @@ class ChooseLanguage extends Component {
           question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold?"}
           question5={"You want to tell the waiter it tastes great"}
-          question6={"He asks you 'Quieres el postre?'"}
-          question7={"How would you ask for Ice Cream?"}
+          question6={"She asks you 'Quieres el postre?'"}
+          question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Una mesa para cinco, por favor"}
           correctAnswer1={"Una mesa para dos, por favor"}
@@ -236,8 +236,8 @@ class ChooseLanguage extends Component {
           correctAnswer2={"Quiero una copa de vino tinto"}
           answer2_2={"Quiero una copa de vino blanco "}
           answer2_3={"Quiero una botella de vino tinto"}
-          answer3_1={"Pescado"}
-          correctAnswer3={"Pulpo"}
+          answer3_1={"Pulpo"}
+          correctAnswer3={"Pescado"}
           answer3_2={"Calamar"}
           answer3_3={"Arroz"}
           answer4_1={"Disculpe, la comida está caliente"}
@@ -357,7 +357,7 @@ class ChooseLanguage extends Component {
           handleDataSubmitted = {this.handleDataSubmitted}
           scenario1={"You enter a restaurant"}
           scenario2={"You're seated at a table"}
-          scenario3={"You're ready to order your main meal and want to have Octopus"}
+          scenario3={"You're ready to order your main meal and want to have fish"}
           scenario4={"You're not happy with your food"}
           scenario5={"Your waiter brings you more food"}
           scenario6={"When you finish your food the waiter comes to your table"}
@@ -376,8 +376,8 @@ class ChooseLanguage extends Component {
           question3={"Which of these is the right option?"}
           question4={"How would you complain when your food is cold??"}
           question5={"You want to tell the waiter it tastes great"}
-          question6={"He askes you 'Voulez-vous un dessert?'"}
-          question7={"How would you ask for Ice Cream?"}
+          question6={"She asks you 'Voulez-vous un dessert?'"}
+          question7={"How would you ask for ice cream?"}
           question8={"How would you ask for the bill?"}
           answer1_1={"Une table pour cinq personnes s'il vous plaît"}
           correctAnswer1={"Une table pour deux personnes s'il vous plaît"}
@@ -387,8 +387,8 @@ class ChooseLanguage extends Component {
           correctAnswer2={"J'aimerais un verre de vin rouge"}
           answer2_2={"J'aimerais un verre de vin blanc "}
           answer2_3={"J'aimerais une bouteille de vin rouge"}
-          answer3_1={"Le poisson"}
-          correctAnswer3={"Le poulpe"}
+          answer3_1={"Le poulpe"}
+          correctAnswer3={"Le poisson"}
           answer3_2={"Les boulettes de viande"}
           answer3_3={"Le riz"}
           answer4_1={"Excusez-moi, la nourriture est chaude"}
