@@ -1,4 +1,4 @@
-# SLATH! :es:
+# LocalizR! :es:
 
 <img align="right" src="" width="450"/>
 
