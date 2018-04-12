@@ -9,7 +9,7 @@ const Button = styled.button `
   border-radius: 10px;
 
   font-family: Neucha;
-  font-size: 22px;
+  font-size: 20px;
   font-variant: small-caps;
   font-weight: 500;
 
