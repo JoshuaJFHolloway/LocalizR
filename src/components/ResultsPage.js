@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import SubHeader from './SubHeader'
 import SubmitButton from './SubmitButton';
 import Story from './Story';
+import Text from './styledComponents/text.js'
 
 class ResultsPage extends Component {
   constructor() {
@@ -51,16 +52,15 @@ class ResultsPage extends Component {
 
 
   render() {
-
     const worstScore = [
       'Your ' + this.whatLanguage() + " is abysmal. But that's okay! Play more!",
-      'This is embarrassing. Definitely check out your results to learn what went wrong',
-      "Well, you could have done worse...actually no. That's incorrect, just like all your answers"
+      'This is embarrassing. Definitely check out your results to learn what went wrong!',
+      "Well, you could have done worse...actually no. That's incorrect, just like all your answers!"
     ];
 
     const badScore = [
-      "Okay, your " + this.whatLanguage() + " could be worse. Your learning starts here! Check out your results",
-      "Dont worry about it. Just repeat these scenarios and drill in those answers"
+      "Okay, your " + this.whatLanguage() + " could be worse. Your learning starts here! Check out your results!",
+      "Dont worry about it. Just repeat these scenarios and drill in those answers!"
     ];
 
     const averageScore = [
@@ -69,7 +69,7 @@ class ResultsPage extends Component {
 
     const goodScore = [
       "Well done! You are well on your way to grasping the basics in " + this.whatLanguage(),
-      "Good work, iron out those creases by checking out your results"
+      "Good work, iron out those creases by checking out your results!"
     ];
 
     const perfectScore = [
@@ -81,6 +81,7 @@ class ResultsPage extends Component {
     const Views = {
       ResultsPage: (
         <div>
+          <Text>
           <SubHeader
             subHeader={"Your score is " + this.props.score}/>
           <p id="outputMessage">
@@ -94,6 +95,7 @@ class ResultsPage extends Component {
             buttonName={"See your results"}
             handleDataSubmitted={this.props.handleRetryQuiz}
           />
+          </Text>
         </div>
       ),
 
