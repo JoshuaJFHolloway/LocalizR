@@ -1,6 +1,6 @@
 # LocalizR!
 
-<img align="right" src="https://s18.postimg.cc/nad8ud2a1/front_page.png" width="450"/>
+<img align="right" src="https://s18.postimg.cc/tdute22rt/Screen_Shot_2018-04-16_at_12.43.59.png" width="450"/>
 
 Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
 
@@ -101,3 +101,8 @@ integrate into the project after the completion date (12th April)
 - As a user, so I can satisfy my competitiveness, I want to see a leaderboard.
 
 - As a user, so I can follow my story, I want to see the outcome of my answer.
+
+## Screenshots of use!
+
+<img align="centre" src="https://s18.postimg.cc/ycibsleah/Screen_Shot_2018-04-16_at_12.44.19.png" width="450"/>
+<img align="centre" src="https://s18.postimg.cc/d2uphqik9/Screen_Shot_2018-04-16_at_12.44.37.png" width="450"/>
