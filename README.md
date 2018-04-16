@@ -1,6 +1,6 @@
 # LocalizR!
 
-<img align="right" src="src/images/front_page.png" width="450"/>
+<img align="right" src="[front_page.png](https://postimg.cc/image/nn4n0jkjp/)" width="450"/>
 
 Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
 
