@@ -102,7 +102,7 @@ __Teamwork and XP values__
 Each day we held two stand-ups. One in the morning and one in the afternoon. In these sessions we would outline our focus for the day
 and discuss any issues or thoughts anyone was having. On top of this, we held retros most days to allow knowledge sharing. This was very
 important to us as we agreed as a group to divide our coding responsibilities at the start of the project. As I had prior knowledge on React,
-Jest and Enzyme, I was mainly on the Front End. Also, Hannah had prior knowledge in Node so mainly did the Backend. Kaari was
+Jest and Enzyme, I was mainly on the Front End. Hannah had prior knowledge in Node so mainly did the Backend. Kaari was
 mostly interested in doing the styling so she focused on that while the remaining team members did a bit of everything. This was to ensure
 that there was nearly always someone who was knowledgeable in each section to help their pair partner get up to speed. 
 
