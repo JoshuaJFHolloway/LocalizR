@@ -129,7 +129,7 @@ on what React is and how to TDD it. My previous group project was a pure ReactJS
 I was already aware of how to use Jest and Enzyme to guide our code. Due to this, I probably overlooked the importance of my existing
 experience and was too ambitious in setting out what I wanted from our MVP. Hence, on reflection I would have vocalised to the team
 that we should scale our app back a bit and have our MVP include less functionality. ReactJS is infamous for a steep learning curve and
-I think that we as a group didnt respect that.
+I think that I should have vocalised this a bit more.
 
 
 2. Fully test-drive post MVP features
