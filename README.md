@@ -71,7 +71,7 @@ __Features__:
 
 - As a user, so I can decide what to practice, I want to be able to select a language.
 
-- As a traveller, so I can learn a language, I want to be able to choose an answer to a question.
+- As a user, so I can learn a language, I want to be able to choose an answer to a question.
 
 - As a user, so I can play the game, I want to be able to enter my details.
 
@@ -85,9 +85,75 @@ __Extras__
 
 - As a user, so I can enjoy my results, I want to be able to read a comment on how well I did.
 
+- As a user, so I can see as I play if I got the question correct, I want the correct answer to always light up green (1)
+
 - As a user, so I can keep my account secure, I want to be able to sign out.
 
-- As a user, so I can play a random scenario, I want to be able to click a button to randomly choose a quiz for me.
+- As a user, so I can play a random scenario, I want to be able to click a button to randomly choose a quiz for me
+
+- As a user, so I can't cheat and remember the layout of the answers, I want the answers to be in a randomised format each time I play (2)
+
+<hr>
+
+## What we did well
+
+__Teamwork and XP values__ 
+
+Each day we held two stand-ups. One in the morning and one in the afternoon. In these sessions we would outline our focus for the day
+and discuss any issues or thoughts anyone was having. On top of this, we held retros most days to allow knowledge sharing. This was very
+important to us as we agreed as a group to divide our coding responsibilities at the start of the project. As I had prior knowledge on React,
+Jest and Enzyme, I was mainly on the Front End. Also, Hannah had prior knowledge in Node so mainly did the Backend. Kaari was
+mostly interested in doing the styling so she focused on that while the remaining team members did a bit of everything. This was to ensure
+that there was nearly always someone who was knowledgeable in each section to help their pair partner get up to speed. 
+
+Furthermore, as React has a steep learning curve I made sure that from the beginning I ran knowledge shares on React, Jest and Enzyme. These
+consisted of me talking everyone through the codebase. I would analyse and pick apart each little bit of code to ensure that everyone
+understands what the code is doing and how it all interacts. Throughout these sessions I made sure it was a relaxed atmosphere where everyone
+felt comfortable asking questions or asking me to run over something again. This was one of my highlights of the whole project as I had many
+of my group members tell me how productive the knowledge shares were and they thanked me for being calm and clear in my explanations.
+
+
+
+## What I would have done differently
+
+#### Simplify our MVP
+
+As soon as the group agreed to create a language learning app we came up with many great ideas of how to make this something special.
+We narrowed these ideas down to the few that would represent the core functionality of the app, our MVP. It was important to all
+of us that we achieved our MVP through practicing the principles that we learnt throughout our time at Makers(particularly TDD).
+However, unfortunately, this took longer than we anticipated to achieve and we were a day late on reaching it. As a team we were too
+ambitious and didn't recognise that it would take longer to understand the new tech we were learning.
+
+It was probably partially my fault for us being too ambitious as I was the only person in the group to already have a basic understanding
+on what React is and how to TDD it. My previous group project was a pure ReactJS project and we TDD'd throughout the week so 
+I was already aware of how to use Jest and Enzyme to guide our code. Due to this, I probably overlooked the importance of my existing
+experience and was too ambitious in setting out what I wanted from our MVP. Hence, on reflection I would have vocalised to the team
+that we should scale our app back a bit and have our MVP include less functionality. ReactJS is infamous for a steep learning curve and
+I think that we as a group didnt respect that.
+
+
+#### Fully test-drive post MVP features
+
+After achieving our MVP through thorough tests we came together to decide upon what remaining features we would like to prioritise. As a
+group we felt it was particularly important that we implemented two specific features into our Front End. These two features I have labelled 1. and 2.
+in the Extras section above (numbers at the end of the sentence). Without these features we thought that the app would be too basic and
+it wouldn't be significant enough as a final project for our graduation from Makers Academy. Hence, we all worked towards getting these 
+completed by the end of the week. The only issue was that by this point my two colleagues working with me on the Front End were a bit 
+overcome by the complexity of learning React in 8 days and were struggling to TDD them with me. There is little point in me pushing on with writing
+code if my Front End colleagues need further time to understand how to test the functionality of these features using Jest and Enzyme. Therefore,
+over the coming days I spent time with them going over the syntax and how we are looking to implement these features and thus how we should
+be looking to test it. I regularly paired with them and caught up with them during morning and evening standups and lunchtime retros but
+couldn't consistently be beside them as I was also helping my Backend colleagues.
+
+The feature freeze day was rapidly coming up and we hadn't managed to implement much or any of the functionality or tests for the new
+features, so we held a group discussion. It was apparent to everyone that we needed these features otherwise we wouldn't feel content with
+the final project. The group said that they wanted these features implemented either way and told me to get them done ASAP in the two days
+we had remaining. Due to this, I was not able to follow TDD for these features. It is something I regret and I wish that we gave ourselves more time
+to implement these features in a proper test driven manner. Hence, on reflection, we would have also scaled back on our ideas of what our
+post MVP app would look like. In doing this we would have been able to follow good practices from start to finish and not have tarnished our
+project with relatively untested features.
+
+
 
 <hr>
 
