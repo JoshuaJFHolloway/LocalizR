@@ -136,14 +136,15 @@ I think that I should have vocalised this a bit more.
 
 After achieving our MVP through thorough tests we came together to decide upon what remaining features we would like to prioritise. As a
 group we felt it was particularly important that we implemented two specific features into our Front End. These two features I have labelled 1. and 2.
-in the Extras section above (numbers at the end of the sentence). Without these features we thought that the app would be too basic and
+in the Extras section above (numbers are at the end of the sentences). Without these features we thought that the app would be too basic and
 it wouldn't be significant enough as a final project for our graduation from Makers Academy. Hence, we all worked towards getting these 
-completed by the end of the week. The only issue was that by this point my two colleagues working with me on the Front End were a bit 
-overcome by the complexity of learning React in 8 days and were struggling to TDD them with me. There is little point in me pushing on with writing
+completed by the end of the week.
+
+The only issue was that by this point my two colleagues working with me on the Front End were a bit exhausted by the complexity of learning React in 8 days and were struggling to TDD the features with me. There is little point in me pushing on with writing
 code if my Front End colleagues need further time to understand how to test the functionality of these features using Jest and Enzyme. Therefore,
 over the coming days I spent time with them going over the syntax and how we are looking to implement these features and thus how we should
-be looking to test it. I regularly paired with them and caught up with them during morning and evening standups and lunchtime retros but
-couldn't consistently be beside them as I was also helping my Backend colleagues.
+be looking to test it. I regularly paired with them and caught up with them during morning and evening stand-ups and lunchtime retros but
+couldn't consistently be beside them as I was also helping my Backend colleagues too. 
 
 The feature freeze day was rapidly coming up and we hadn't managed to implement much or any of the functionality or tests for the new
 features, so we held a group discussion. It was apparent to everyone that we needed these features otherwise we wouldn't feel content with
