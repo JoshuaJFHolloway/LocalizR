@@ -169,6 +169,16 @@ integrate into the project after the completion date (12th April)
 
 - As a user, so I can follow my story, I want to see the outcome of my answer.
 
+
+Furthermore, given more time we would have refactored our code by:
+
+- Extracting questions and answers into our database
+- Simplifying functions to follow the SRP closer
+- DRYing up our code (if, else statements in particular)
+- Clearing up the use of a dirty callback into a child component to steal its state
+- Re-organising where state and functions are being held to ensure that each Class is also abiding to the SRP
+
+
 ## Screenshots of use!
 
 <img align="centre" src="https://s18.postimg.cc/ycibsleah/Screen_Shot_2018-04-16_at_12.44.19.png" width="450"/>
