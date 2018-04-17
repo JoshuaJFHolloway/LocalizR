@@ -150,9 +150,9 @@ The feature freeze day was rapidly coming up and we hadn't managed to implement 
 features, so we held a group discussion. It was apparent to everyone that we needed these features otherwise we wouldn't feel content with
 the final project. The group said that they wanted these features implemented either way and told me to get them done ASAP in the two days
 we had remaining. Due to this, I was not able to follow TDD for these features. It is something I regret and I wish that we gave ourselves more time
-to implement these features in a proper test driven manner. Hence, on reflection, we would have also scaled back on our ideas of what our
-post MVP app would look like. In doing this we would have been able to follow good practices from start to finish and not have tarnished our
-project with relatively untested features.
+to implement these features in a proper test driven manner. Hence, on reflection, we should have also scaled back on our ideas of what our
+post MVP app would look like. In doing this we would have been able to follow good practices from start to finish and not experience the dissatisfaction
+of including a relatively untested features in our project.
 
 
 
