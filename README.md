@@ -95,7 +95,7 @@ __Extras__
 
 <hr>
 
-## What we did well
+## Approach
 
 __Teamwork and XP values__ 
 
@@ -114,9 +114,9 @@ of my group members tell me how productive the knowledge shares were and they th
 
 
 
-## What I would have done differently
+__What I would have done differently__
 
-#### Simplify our MVP
+1. Simplify our MVP
 
 As soon as the group agreed to create a language learning app we came up with many great ideas of how to make this something special.
 We narrowed these ideas down to the few that would represent the core functionality of the app, our MVP. It was important to all
@@ -132,7 +132,7 @@ that we should scale our app back a bit and have our MVP include less functional
 I think that we as a group didnt respect that.
 
 
-#### Fully test-drive post MVP features
+2. Fully test-drive post MVP features
 
 After achieving our MVP through thorough tests we came together to decide upon what remaining features we would like to prioritise. As a
 group we felt it was particularly important that we implemented two specific features into our Front End. These two features I have labelled 1. and 2.
