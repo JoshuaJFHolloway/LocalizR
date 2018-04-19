@@ -4,6 +4,9 @@
 
 Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
 
+You can watch a demo <a href="https://drive.google.com/file/d/1W6bZvriSezpICfNLzMZp4kgpO7OQm700/view">here</a> of it.
+
+
 __DESIGNED BY__:
 - Joshua Holloway
 - Hannah Lillis
