@@ -4,7 +4,7 @@ import LanguageList from '../../components/LanguageList';
 
 describe('LanguageList', () => {
 
-  let languagelist = shallow(<LanguageList />)
+  let languagelist = shallow(<LanguageList />);
 
   describe('renders components correctly', () => {
     
