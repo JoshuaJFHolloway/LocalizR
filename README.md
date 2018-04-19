@@ -180,8 +180,8 @@ __What I would have done differently__
 
 ## Future Additions
 
-We have two user stories that we were not able to complete in time. Both of which we will look to
-integrate into the project after the completion date (12th April)
+We have three user stories that we were not able to complete in time. We will look to
+integrate these into the project after the completion date (12th April) alongside refactoring the code.
 
 - As a user, so I can improve my pronunciation, I want to be able to hear example audio.
 
