@@ -99,18 +99,33 @@ __Extras__
 
 __Teamwork and XP values__ 
 
-Each day we held two stand-ups. One in the morning and one in the afternoon. In these sessions we would outline our focus for the day
-and discuss any issues or thoughts anyone was having. On top of this, we held retros most days to allow knowledge sharing. This was very
-important to us as we agreed as a group to divide our coding responsibilities at the start of the project. As I had prior knowledge on React,
-Jest and Enzyme, I was mainly on the Front End. Hannah had prior knowledge in Node so mainly did the Backend. Kaari was
-mostly interested in doing the styling so she focused on that while the remaining team members did a bit of everything. This was to ensure
-that there was nearly always someone who was knowledgeable in each section to help their pair partner get up to speed. 
+- Standups
 
-Furthermore, as React has a steep learning curve I made sure that from the beginning I ran knowledge shares on React, Jest and Enzyme. These
-consisted of me talking everyone through the codebase. I would analyse and pick apart each little bit of code to ensure that everyone
-understands what the code is doing and how it all interacts. Throughout these sessions I made sure it was a relaxed atmosphere where everyone
-felt comfortable asking questions or asking me to run over something again. This was one of my highlights of the whole project as I had many
-of my group members tell me how productive the knowledge shares were and they thanked me for being calm and clear in my explanations.
+    Each day we held two stand-ups. One in the morning and one in the afternoon. In these sessions we would outline our focus for the day
+    and discuss any issues or thoughts anyone was having. 
+    
+- Retros
+
+    On top of this, we held retros most days to allow for people to discuss what is going well, what isn't going well and what actions we can take to ensure that things improve or continue to go well. This was very important to us as we agreed as a group to divide our coding responsibilities at the start of the project. As I had prior knowledge on React,
+    Jest and Enzyme, I was mainly on the Front End. Hannah had prior knowledge in Node so mainly did the Backend. Kaari was
+    mostly interested in doing the styling so she focused on that while the remaining team members did a bit of everything. Therefore, these retros were key to making sure that all three separate parts of the project were cohesive
+    and the respective people were aware of how the whole project was progressing.
+
+- Knowledge shares
+
+    Due to the aforementioned division of the workload into Front end, Backend and styling, there was nearly always someone who was knowledgeable in each section to help their pair partner get up to speed. 
+    Furthermore, as React has a steep learning curve, I made sure that from the beginning I ran knowledge shares on React, Jest and Enzyme. These
+    consisted of me talking everyone through the codebase. I would analyse and pick apart each little bit of code to ensure that everyone
+    understood what the code was doing and how it all interacts. Throughout these sessions I made sure it was a relaxed atmosphere where everyone
+    felt comfortable asking questions or asking me to run over something again. This was one of my highlights of the whole project as I had many
+    of my group members tell me how productive the knowledge shares were and thanked me for being calm and clear in my explanations.
+    
+- TDD to our MVP
+    
+    As soon as the group agreed to create a language learning app we came up with many great ideas of how to make this something special.
+    We narrowed these ideas down to the few that would represent the core functionality of the app, our MVP. It was important to all
+    of us that we achieved our MVP through practicing the principles that we learnt throughout our time at Makers(particularly TDD). This is
+    what we did and we were proud of it.
 
 
 
@@ -120,11 +135,8 @@ __What I would have done differently__
 
 - Be less ambitious
 
-    As soon as the group agreed to create a language learning app we came up with many great ideas of how to make this something special.
-    We narrowed these ideas down to the few that would represent the core functionality of the app, our MVP. It was important to all
-    of us that we achieved our MVP through practicing the principles that we learnt throughout our time at Makers(particularly TDD).
-    However, unfortunately, this took longer than we anticipated to achieve and we were a day late on reaching it. As a team we were too
-    ambitious and didn't recognise that it would take longer to understand the new tech we were learning.
+    Reaching our MVP took longer than we anticipated and we were a day late on reaching it. As a team we were too
+    ambitious and didn't recognise that it would take longer to understand the new tech we were learning. 
 
 - Time management
 
