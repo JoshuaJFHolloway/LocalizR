@@ -127,7 +127,7 @@ __Teamwork and XP values__
     of us that we achieved our MVP through practicing the principles that we learnt throughout our time at Makers(particularly TDD). This is
     what we did and we were proud of it.
 
-
+<hr>
 
 __What I would have done differently__
 
