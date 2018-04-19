@@ -190,7 +190,7 @@ integrate these into the project after the completion date (12th April) alongsid
 - As a user, so I can follow my story, I want to see the outcome of my answer.
 
 
-Furthermore, given more time we would have refactored our code by:
+Given more time we would have refactored our code by:
 
 - Extracting questions and answers into our database
 - Simplifying functions to follow the SRP closer
