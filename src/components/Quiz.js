@@ -9,8 +9,7 @@ class Quiz extends Component {
     super();
     this.state = {
       score: 0,
-      counter: 0,
-      results: null
+      counter: 0
     }
   }
 
