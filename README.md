@@ -7,13 +7,6 @@ Welcome to the repo for our final project at Makers Academy! Our application is 
 You can watch a demo <a href="https://drive.google.com/file/d/1W6bZvriSezpICfNLzMZp4kgpO7OQm700/view">here</a> of it.
 
 
-__DESIGNED BY__:
-- Joshua Holloway
-- Hannah Lillis
-- Kaari Strack
-- Magyar-Hunor Tamas
-- Jenny Arenas Marin
-
 <hr>
 
 ## Tech Stack
@@ -206,3 +199,12 @@ Given more time we would have refactored our code by:
 
 <img align="centre" src="https://s18.postimg.cc/ycibsleah/Screen_Shot_2018-04-16_at_12.44.19.png" width="450"/>
 <img align="centre" src="https://s18.postimg.cc/d2uphqik9/Screen_Shot_2018-04-16_at_12.44.37.png" width="450"/>
+
+
+## Contributors
+
+- Joshua Holloway
+- Hannah Lillis
+- Kaari Strack
+- Magyar-Hunor Tamas
+- Jenny Arenas Marin
