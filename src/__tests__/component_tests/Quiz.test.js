@@ -1,29 +1,27 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SpanishQuizQ from '../../components/SpanishQuizQ';
+import Quiz from '../../components/Quiz';
 
-describe('SpanishQuizQ', () => {
-  let spanishquizq = shallow(<SpanishQuizQ />);
+describe('Quiz', () => {
+  let quiz = shallow(<Quiz />);
 
   describe('Rendering components', () => {
     it('renders correctly', () => {
-      expect(spanishquizq).toMatchSnapshot();
-    })
+      expect(quiz).toMatchSnapshot();
+    });
 
-    it('renders a QuizScenario component', () => {
-      expect(spanishquizq.find('QuizScenario').exists()).toBe(true);
-    })
+    it('renders a QuizQ component when counter is 0', () => {
 
-    it('renders a QuizPicture component', () => {
-      expect(spanishquizq.find('QuizPicture').exists()).toBe(true);
-    })
+      expect(quiz.find('QuizQ').exists()).toBe(true);
+    });
 
-    it('renders a QuizAnswer component', () => {
-      expect(spanishquizq.find('QuizAnswers').exists()).toBe(true);
-    })
+    it('renders a QuizQ component when counter is 7', () => {
+      expect(quiz.find('QuizQ').exists()).toBe(true);
+    });
 
-    it('renders a QuizQuestion component', () => {
-      expect(spanishquizq.find('QuizQuestion').exists()).toBe(true);
-    })
+    it('renders the ResultsPage component when the counter is 8', () => {
+      expect(quiz.find('ResultsPage').exists()).toBe(true);
+    });
+
   });
 });

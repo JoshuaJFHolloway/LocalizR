@@ -194,12 +194,14 @@ Given more time we would have refactored our code by:
 - Clearing up the use of a dirty callback into a child component to steal its state
 - Re-organising where state and functions are being held to ensure that each Class is also abiding to the SRP
 
+<hr>
 
 ## Screenshots of use!
 
 <img align="centre" src="https://s18.postimg.cc/ycibsleah/Screen_Shot_2018-04-16_at_12.44.19.png" width="450"/>
 <img align="centre" src="https://s18.postimg.cc/d2uphqik9/Screen_Shot_2018-04-16_at_12.44.37.png" width="450"/>
 
+<hr>
 
 ## Contributors
 
