@@ -56,16 +56,6 @@ class Quiz extends Component {
       counter: this.state.counter + 1
     });
 
-
-    if (this.state.counter + 1 == 1) {
-      axios.delete('http://localhost:3001/api/scenario')
-        .then(res => {
-          console.log('Cleaned database');
-        })
-        .catch(err => {
-          console.log(err)
-        })
-    }
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer2(),
       correct_answer: this.concatenateCorrectAnswer()
@@ -84,15 +74,6 @@ class Quiz extends Component {
     this.setState({
       counter: this.state.counter + 1
     });
-    if (this.state.counter + 1 == 1) {
-      axios.delete('http://localhost:3001/api/scenario')
-        .then(res => {
-          console.log('Cleaned database');
-        })
-        .catch(err => {
-          console.log(err)
-        })
-    }
 
     axios.post('http://localhost:3001/api/scenario', {
       user_answer: this.concatenateAnswer3(),
