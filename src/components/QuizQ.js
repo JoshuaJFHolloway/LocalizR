@@ -5,9 +5,6 @@ import QuizQuestion from './QuizQuestion';
 import QuizAnswers from './QuizAnswers';
 
 class QuizQ extends Component {
-  constructor() {
-    super()
-  }
 
   render() {
     return (
