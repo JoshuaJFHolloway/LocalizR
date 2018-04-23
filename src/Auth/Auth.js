@@ -1,7 +1,7 @@
 import history from '../history';
 import * as auth0 from 'auth0-js'
 
-export default class Auth {
+class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'slath.eu.auth0.com',
     clientID: 'qsZlI0HHcX2dPXajSwmc3KkNiAlNcVmA',
@@ -53,3 +53,5 @@ export default class Auth {
     return new Date().getTime() < expiresAt;
   }
 }
+
+export default Auth;
