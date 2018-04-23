@@ -2,7 +2,7 @@
 
 <img align="right" src="https://s18.postimg.cc/tdute22rt/Screen_Shot_2018-04-16_at_12.43.59.png" width="450"/>
 
-Welcome to the repo for our final project at Makers Academy! Our application is an interactive game that takes the user on a language-learning journey.
+Welcome to the repo for our final project at Makers Academy! Over 9 days we built an interactive app that takes the user on a language-learning journey.
 
 You can watch a demo <a href="https://drive.google.com/file/d/1W6bZvriSezpICfNLzMZp4kgpO7OQm700/view">here</a> of it.
 
