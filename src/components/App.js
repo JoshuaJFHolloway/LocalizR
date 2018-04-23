@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Headers from './Headers';
 import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
-import Callback from '../Callback/Callback'
+import Callback from './Callback';
 import { Route } from 'react-router-dom';
 import NavButton from './styledComponents/navButtons.js';
 

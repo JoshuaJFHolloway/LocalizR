@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './components/App';
-import Callback from './Callback/Callback';
+import Callback from './components/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
 
