@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
 require('dotenv').config();
 
 // first we import our dependencies...
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var Answer = require('./model/answers')
+var Answer = require('./model/answers');
 
 // and create our instances
 var app = express();
@@ -13,10 +13,10 @@ var router = express.Router();
 
 // set our port to either a predetermined port number if you have set it up, or 3001
 var port = process.env.API_PORT || 3001;
-var connectionString = 'mongodb://' + process.env.USERNAME + ':' + process.env.PASSWORD + '@ds139219.mlab.com:39219/spanish1'
-mongoose.connect(connectionString)
+var connectionString = 'mongodb://' + process.env.USERNAME + ':' + process.env.PASSWORD + '@ds139219.mlab.com:39219/spanish1';
+mongoose.connect(connectionString);
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'mongodb connection error'))
+db.on('error', console.error.bind(console, 'mongodb connection error'));
 
 // now we should configure the API to use bodyParser and look for JSON data in the request body
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -41,7 +41,7 @@ router.get('/', function(req, res) {
 
 router.route('/scenario')
   .get(function(req, res) {
-    console.log(connectionString)
+    console.log(connectionString);
       Answer.find( function(err, answer){
           if (err)
               res.send(err);
@@ -67,7 +67,7 @@ router.route('/scenario')
           res.send(err);
         res.json({message: "User successfully added"})
       })
-  })
+  });
 
 //Use our router configuration when we call /api
 app.use('/api', router);
