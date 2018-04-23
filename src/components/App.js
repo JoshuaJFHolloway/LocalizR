@@ -5,6 +5,7 @@ import ChooseLanguage from './ChooseLanguage';
 import Callback from './Callback';
 import {Route} from 'react-router-dom';
 import NavButton from './styledComponents/navButtons.js';
+import Picture from './Picture'
 
 const auth = new Auth();
 
@@ -46,7 +47,7 @@ class App extends Component {
       Homepage: (
         <div>
           <main>
-            <img src="https://image.ibb.co/jGCwEx/la_logo.png" alt="emblem"/>
+            <Picture flagImage ={"https://image.ibb.co/jGCwEx/la_logo.png"}/>
             <Headers/>
             <NavButton onClick={this.login}>
               <i className="material-icons">airplanemode_active</i>Login
