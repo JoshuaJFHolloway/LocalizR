@@ -11,7 +11,7 @@ const handleAuthentication = (nextState, replace) => {
   if (/access_token|id_token|error/.test(nextState.location.hash)) {
     auth.handleAuthentication();
   }
-}
+};
 
 export const Routes = () => {
   return (
@@ -25,6 +25,6 @@ export const Routes = () => {
       </div>
     </Router>
   );
-}
+};
 
 export default Routes;

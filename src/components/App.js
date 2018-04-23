@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Headers from './Headers';
 import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from './Callback';
-import { Route } from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import NavButton from './styledComponents/navButtons.js';
 
 const auth = new Auth();
@@ -15,6 +15,12 @@ const handleAuthentication = (nextState, replace) => {
 };
 
 class App extends Component {
+
+  authenticator() {
+    if (auth.isAuthenticated()) {
+     return true
+    }
+  }
 
   login() {
     auth.login();
@@ -28,33 +34,44 @@ class App extends Component {
     auth.logout();
   }
 
+  decider() {
+    if (this.authenticator() !== true) {
+      return "Homepage";
+    } else return "LanguageList"
+  }
+
   render() {
 
-    if (!auth.isAuthenticated()) {
-      return (
-      <div>
-        <main>
-          <img src="https://image.ibb.co/jGCwEx/la_logo.png" alt="flag" />
-          <Headers/>
-          <NavButton onClick={this.login}>
-            <i class="material-icons">airplanemode_active</i>Login
-          </NavButton>
-        </main>
-      </div>
-      )
+    const Views = {
+      Homepage: (
+        <div>
+          <main>
+            <img src="https://image.ibb.co/jGCwEx/la_logo.png" alt="emblem"/>
+            <Headers/>
+            <NavButton onClick={this.login}>
+              <i className="material-icons">airplanemode_active</i>Login
+            </NavButton>
+          </main>
+        </div>
+      ),
 
-    } else {
-      return (
+      LanguageList: (
         <div>
           <main>
             <NavButton onClick={this.logout}>
-              <i class="material-icons">airplanemode_inactive</i>Logout
+              <i className="material-icons">airplanemode_inactive</i>Logout
             </NavButton>
             <ChooseLanguage/>
           </main>
         </div>
       )
-    }
+    };
+
+    return (
+      <div>
+        {Views[this.decider()]}
+      </div>
+    )
   };
 }
 
