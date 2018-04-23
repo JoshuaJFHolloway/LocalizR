@@ -1,46 +1,43 @@
-import React, {Component} from 'react'
-import SubHeader from './SubHeader'
+import React, {Component} from 'react';
+import SubHeader from './SubHeader';
 import SubmitButton from './SubmitButton';
 import Story from './Story';
-import Text from './styledComponents/text.js'
+import Text from './styledComponents/text.js';
 
 class ResultsPage extends Component {
-  constructor() {
-    super()
-  }
 
-  decider() {
+  decider = () => {
     if (this.props.storyState === true) {
       return 'Story';
     } else return 'ResultsPage';
   };
 
-  randomnChoice = strings => {
+  randomChoice = strings => {
     return strings[Math.floor(Math.random() * strings.length)];
   };
 
   stringPrinter = (worstScore, badScore, averageScore, goodScore, perfectScore) => {
     if (this.props.score === 0) {
       return (
-        this.randomnChoice(worstScore)
+        this.randomChoice(worstScore)
       );
     }
     if (this.props.score > 0 && this.props.score <= 3) {
       return (
-        this.randomnChoice(badScore)
+        this.randomChoice(badScore)
       );
     }
     if (this.props.score === 4) {
       return (
-        this.randomnChoice(averageScore)
+        this.randomChoice(averageScore)
       );
     }
     if (this.props.score > 4 && this.props.score <= 7) {
       return (
-        this.randomnChoice(goodScore)
+        this.randomChoice(goodScore)
       );
     } else return (
-      this.randomnChoice(perfectScore)
+      this.randomChoice(perfectScore)
     )
   };
 
