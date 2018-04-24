@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import SubHeader from './SubHeader';
 import SubmitButton from './SubmitButton';
 import Story from './Story';
-import Text from './styledComponents/text.js';
+import Text from './styledComponents/text';
 
 class ResultsPage extends Component {
 
@@ -92,7 +92,7 @@ class ResultsPage extends Component {
             />
             <SubmitButton
               buttonName={"See your results"}
-              handleDataSubmitted={this.props.handleRetryQuiz}
+              handleDataSubmitted={this.props.handleResults}
             />
           </Text>
         </div>

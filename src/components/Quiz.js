@@ -136,10 +136,7 @@ class Quiz extends Component {
           storyState={this.props.storyState}
           score={this.state.score}
           handleDataSubmitted={this.props.handleDataSubmitted}
-          handleAnswerSubmitted1={this.handleAnswerSubmitted1}
-          handleAnswerSubmitted2={this.handleAnswerSubmitted2}
-          handleAnswerSubmitted3={this.handleAnswerSubmitted3}
-          handleRetryQuiz={this.props.handleResults}
+          handleResults={this.props.handleResults}
           french={this.props.french}
           frenchScen1={this.props.frenchscen1}
           frenchScen2={this.props.frenchscen2}
