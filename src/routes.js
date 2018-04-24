@@ -13,7 +13,7 @@ const handleAuthentication = (nextState, replace) => {
   }
 };
 
-export const Routes = () => {
+const Routes = () => {
   return (
     <Router history={history} component={App}>
       <div>

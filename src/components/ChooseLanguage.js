@@ -21,13 +21,10 @@ class ChooseLanguage extends Component {
   };
 
   handleResults = () => {
-
     this.setState({
       story: true
     })
-
   };
-
 
   handleDataSubmitted = () => {
     this.setState({
@@ -43,7 +40,7 @@ class ChooseLanguage extends Component {
 
   handleSpanishClicked = () => {
     this.setState(prevState => ({
-      spanish: !prevState.spanish,
+      spanish: !prevState.spanish
     }));
     axios.delete('http://localhost:3001/api/scenario')
       .then(res => {
@@ -56,7 +53,7 @@ class ChooseLanguage extends Component {
 
   handleFrenchClicked = () => {
     this.setState(prevState => ({
-      french: !prevState.french,
+      french: !prevState.french
     }));
     axios.delete('http://localhost:3001/api/scenario')
       .then(res => {

@@ -4,7 +4,7 @@ import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from './Callback';
 import {Route} from 'react-router-dom';
-import NavButton from './styledComponents/navButtons.js';
+import NavButton from './styledComponents/navButtons';
 import Picture from './Picture'
 
 const auth = new Auth();
