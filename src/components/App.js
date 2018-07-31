@@ -26,7 +26,7 @@ class App extends Component {
     auth.login();
     return (<Route path='/callback' render={(props) => {
       handleAuthentication(props);
-      return <Callback {...props} />;
+      return <Callback />;
     }}/>);
   }
 
@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   decider() {
-    if (this.authenticator() !== true) {
+    if (!!this.authenticator()) {
       return 'Homepage';
     } else return 'LanguageList';
   }
