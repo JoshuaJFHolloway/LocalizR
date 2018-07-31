@@ -130,7 +130,7 @@ class Quiz extends Component {
 
   render() {
 
-    const Views = {
+    const views = {
       ResultsPage: (
         <ResultsPage
           storyState={this.props.storyState}
@@ -272,7 +272,7 @@ class Quiz extends Component {
 
     return (
       <div>
-        {Views[this.decider()]}
+        {views[this.decider()]}
       </div>
     )
   }

@@ -1,8 +1,9 @@
 import React from 'react';
-import Picture from './Picture'
-import SubHeader from './SubHeader'
+import Picture from './Picture';
+import SubHeader from './SubHeader';
 
 const LanguageList = (props) => {
+
   return (
     <div>
       <SubHeader
