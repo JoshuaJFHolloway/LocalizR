@@ -3,7 +3,7 @@ import Headers from './Headers';
 import Auth from '../Auth/Auth.js';
 import ChooseLanguage from './ChooseLanguage';
 import Callback from './Callback';
-import {Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import NavButton from './styledComponents/navButtons';
 import Picture from './Picture';
 
@@ -42,7 +42,7 @@ class App extends Component {
 
   render() {
 
-    const Views = {
+    const views = {
       Homepage: (
         <div>
           <main>
@@ -69,7 +69,7 @@ class App extends Component {
 
     return (
       <div>
-        {Views[this.decider()]}
+        {views[this.decider()]}
       </div>
     );
   };
