@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import Quiz from './Quiz';
-import Scenarios from './Scenarios'
+import Scenarios from './Scenarios';
 import axios from 'axios';
 
 
@@ -43,7 +43,7 @@ class ChooseLanguage extends Component {
       spanish: !prevState.spanish
     }));
     axios.delete('http://localhost:3001/api/scenario')
-      .then(res => {
+      .then(() => {
         console.log('Cleaned database');
       })
       .catch(err => {
@@ -56,7 +56,7 @@ class ChooseLanguage extends Component {
       french: !prevState.french
     }));
     axios.delete('http://localhost:3001/api/scenario')
-      .then(res => {
+      .then(() => {
         console.log('Cleaned database');
       })
       .catch(err => {
@@ -81,8 +81,8 @@ class ChooseLanguage extends Component {
   handleRandomScenario = () => {
     const array = [true, false, false, false];
 
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
       this.arrayIndex0 = array[0];
       this.arrayIndex1 = array[1];
@@ -100,7 +100,7 @@ class ChooseLanguage extends Component {
     });
 
     axios.delete('http://localhost:3001/api/scenario')
-      .then(res => {
+      .then(() => {
         console.log('Cleaned database');
       })
       .catch(err => {
