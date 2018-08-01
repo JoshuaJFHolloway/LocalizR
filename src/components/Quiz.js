@@ -14,22 +14,22 @@ class Quiz extends Component {
   }
 
   concatenateAnswer1 = () => {
-    var string = 'this.props.answer' + (this.state.counter) + "_" + 1;
+    const string = 'this.props.answer' + (this.state.counter) + "_" + 1;
     return eval(string)
   };
 
   concatenateAnswer2 = () => {
-    var string = 'this.props.answer' + (this.state.counter) + "_" + 2;
+    const string = 'this.props.answer' + (this.state.counter) + "_" + 2;
     return eval(string)
   };
 
   concatenateAnswer3 = () => {
-    var string = 'this.props.answer' + (this.state.counter) + "_" + 3;
+    const string = 'this.props.answer' + (this.state.counter) + "_" + 3;
     return eval(string)
   };
 
   concatenateCorrectAnswer = () => {
-    var string = 'this.props.correctAnswer' + (this.state.counter);
+    const string = 'this.props.correctAnswer' + (this.state.counter);
     return eval(string)
   };
 
