@@ -16,10 +16,10 @@ class QuizAnswers extends Component {
   };
 
   randomiseAnswers = () => {
-    const array = [this.props.answer1, this.props.answer2, this.props.answer3, this.props.correctAnswer];
+    let array = [this.props.answer1, this.props.answer2, this.props.answer3, this.props.correctAnswer];
 
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
 
@@ -48,7 +48,7 @@ class QuizAnswers extends Component {
     });
   };
 
-  highlightButtonWithIndex = (index) => {
+  highlightCorrectAnswer = (index) => {
     const styles = this.state.styles;
 
     styles[index] = {
@@ -60,8 +60,23 @@ class QuizAnswers extends Component {
     });
   };
 
+  highlightIncorrectAnswer = (index) => {
+      const styles = this.state.styles;
+
+      styles[index] = {
+          backgroundColor: 'red',
+      };
+
+      this.setState({
+          styles: styles,
+      });
+  };
+
   onButtonClicked = (buttonIndex) => {
-    this.highlightButtonWithIndex(this.correctAnswerIndex);
+      this.highlightCorrectAnswer(this.correctAnswerIndex);
+      this.highlightIncorrectAnswer(this.incorrectAnswerIndex1);
+      this.highlightIncorrectAnswer(this.incorrectAnswerIndex2);
+      this.highlightIncorrectAnswer(this.incorrectAnswerIndex3);
 
     setTimeout(() => {
       if (buttonIndex === this.correctAnswerIndex) {
