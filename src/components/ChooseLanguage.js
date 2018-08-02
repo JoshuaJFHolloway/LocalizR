@@ -42,6 +42,7 @@ class ChooseLanguage extends Component {
     this.setState(prevState => ({
       spanish: !prevState.spanish
     }));
+    this.setState({french: false});
     axios.delete('http://localhost:3001/api/scenario')
       .then(() => {
         console.log('Cleaned database');
@@ -55,6 +56,7 @@ class ChooseLanguage extends Component {
     this.setState(prevState => ({
       french: !prevState.french
     }));
+    this.setState({spanish: false});
     axios.delete('http://localhost:3001/api/scenario')
       .then(() => {
         console.log('Cleaned database');
